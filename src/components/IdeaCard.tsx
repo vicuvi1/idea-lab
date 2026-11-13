@@ -10,6 +10,7 @@ export function IdeaCard({ idea, fit, score }: { idea: Idea; fit: number; score:
         <StatusBadge status={idea.status} />
         <span className="row" style={{ gap: 6 }}>
           {idea.favorite && <span title="Favourite">★</span>}
+          {idea.rank && <span className="tag" title="Rank in the research report">Research #{idea.rank}</span>}
           <span className="score-pill" title="Fit for you (0–100)">Fit {fit}</span>
         </span>
       </div>

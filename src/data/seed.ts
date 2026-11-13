@@ -26,7 +26,7 @@ export const defaultProfile: Profile = {
 }
 
 export function freshState(): AppState {
-  return { version: 1, ideas: structuredClone(seedIdeas), profile: structuredClone(defaultProfile), todos: [] }
+  return { version: 1, ideas: structuredClone(seedIdeas), profile: structuredClone(defaultProfile), todos: [], seenSeeds: seedIdeas.map((i) => i.id) }
 }
 
 export function blankIdea(color: string): Idea {

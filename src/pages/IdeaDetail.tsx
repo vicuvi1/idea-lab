@@ -4,7 +4,7 @@ import { useIdea, useStore } from '../store'
 import { fitFor, validationStats, weightedScore } from '../lib/scoring'
 import { STATUSES } from '../lib/criteria'
 import type { Status } from '../types'
-import { Meter, Rich } from '../components/ui'
+import { ExtLink, Meter, Rich } from '../components/ui'
 import { RevenueCalc } from '../components/RevenueCalc'
 import { InterviewLog } from '../components/InterviewLog'
 import { ScoreEditor } from '../components/ScoreEditor'
@@ -64,10 +64,16 @@ export default function IdeaDetail() {
 
       {tab === 'Overview' && (
         <div className="stack" style={{ gap: 24 }}>
+          {idea.whyNow && (<div className="card" style={{ borderLeft: '3px solid var(--accent)' }}><div className="card-title">Why now</div><p><Rich text={idea.whyNow} /></p></div>)}
           {idea.story && (<div><h2 style={{ marginBottom: 10 }}>The problem, in a real story</h2><div className="story"><Rich text={idea.story} /></div></div>)}
           {idea.whyReal.length > 0 && (
             <div><h2 style={{ marginBottom: 10 }}>Why this problem is real</h2>
               <div className="grid g2">{idea.whyReal.map((w) => <div key={w.title} className="card why"><h3>{w.title}</h3><p className="text-2 small mt"><Rich text={w.text} /></p></div>)}</div>
+            </div>
+          )}
+          {idea.evidence && idea.evidence.length > 0 && (
+            <div><h2 style={{ marginBottom: 10 }}>Evidence from research</h2>
+              <div className="card"><ul className="clean">{idea.evidence.map((e, i) => <li key={i}><Rich text={e} /></li>)}</ul></div>
             </div>
           )}
           {idea.whoPays.length > 0 && (
@@ -123,6 +129,11 @@ export default function IdeaDetail() {
             )}
             <p className="muted small mt">Competition: <strong>{idea.numbers.competition}</strong> · Who sells: {idea.numbers.whoSells || '—'}</p>
           </div>
+          {idea.sources && idea.sources.length > 0 && (
+            <div><h2 style={{ marginBottom: 10 }}>Sources</h2>
+              <div className="card"><ol style={{ margin: 0, paddingLeft: 20, display: 'grid', gap: 4 }}>{idea.sources.map((s) => <li key={s.url} className="small"><ExtLink href={s.url}>{s.title || s.url}</ExtLink></li>)}</ol></div>
+            </div>
+          )}
         </div>
       )}
 

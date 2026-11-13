@@ -28,6 +28,13 @@ function migrate(s: AppState): AppState {
     return { ...(seed ?? {}), ...i, interviews: i.interviews ?? [], notes: i.notes ?? '' } as Idea
   })
   merged.todos = s.todos ?? []
+  // Add built-in ideas shipped by an update that this install hasn't seen yet.
+  const seen = new Set(s.seenSeeds ?? (s.ideas ?? []).map((i) => i.id))
+  const have = new Set(merged.ideas.map((i) => i.id))
+  for (const seed of seedIdeas) {
+    if (!seen.has(seed.id) && !have.has(seed.id)) merged.ideas.push(structuredClone(seed))
+  }
+  merged.seenSeeds = seedIdeas.map((i) => i.id)
   return merged
 }
 

@@ -60,3 +60,15 @@ export function Section({ title, children, right }: { title: string; children: R
 
 export const money = (n: number, cur = '$') => (n < 0 ? '−' : '') + cur + Math.abs(Math.round(n)).toLocaleString('en-US')
 export const uid = () => Math.random().toString(36).slice(2, 10)
+
+/** External link: opens the system browser in the desktop app, a new tab on the web. */
+export function ExtLink({ href, children }: { href: string; children: ReactNode }) {
+  const open = async (e: React.MouseEvent) => {
+    if ('__TAURI_INTERNALS__' in window) {
+      e.preventDefault()
+      const { openUrl } = await import('@tauri-apps/plugin-opener')
+      await openUrl(href)
+    }
+  }
+  return <a href={href} target="_blank" rel="noreferrer" onClick={open} style={{ color: 'var(--accent)' }}>{children}</a>
+}

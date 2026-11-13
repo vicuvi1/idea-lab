@@ -70,6 +70,12 @@ export interface Idea {
   notes: string
   interviews: Interview[]
   favorite?: boolean
+  /** Research extras (from the deep-research batch) */
+  rank?: number
+  batch?: string
+  whyNow?: string
+  evidence?: string[]
+  sources?: { title: string; url: string }[]
   createdAt?: string
   updatedAt?: string
 }
@@ -97,4 +103,6 @@ export interface AppState {
   ideas: Idea[]
   profile: Profile
   todos: Todo[]
+  /** ids of built-in ideas this install has already received (so new ones get added, deleted ones stay deleted) */
+  seenSeeds?: string[]
 }

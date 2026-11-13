@@ -6,7 +6,7 @@ import { IDEA_COLORS, STATUSES } from '../lib/criteria'
 import { IdeaCard } from '../components/IdeaCard'
 import { blankIdea } from '../data/seed'
 
-type Sort = 'fit' | 'score' | 'cost' | 'mvp' | 'title' | 'updated'
+type Sort = 'rank' | 'fit' | 'score' | 'cost' | 'mvp' | 'title' | 'updated'
 
 export default function Library() {
   const { state, addIdea } = useStore()
@@ -15,6 +15,7 @@ export default function Library() {
   const [q, setQ] = useState('')
   const [industry, setIndustry] = useState('')
   const [comp, setComp] = useState('')
+  const [batch, setBatch] = useState('')
   const [sort, setSort] = useState<Sort>('fit')
   const status = params.get('status') ?? ''
 
@@ -29,6 +30,7 @@ export default function Library() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
+  const batches = [...new Set(state.ideas.map((i) => i.batch ?? 'Original 8 ideas'))]
   const industries = [...new Set(state.ideas.map((i) => i.industry).filter(Boolean))].sort()
   const list = useMemo(() => {
     const s = q.toLowerCase()
@@ -36,10 +38,12 @@ export default function Library() {
       .filter((i) => !status || i.status === status)
       .filter((i) => !industry || i.industry === industry)
       .filter((i) => !comp || i.numbers.competitionLevel === comp)
+      .filter((i) => !batch || (i.batch ?? 'Original 8 ideas') === batch)
       .filter((i) => !s || [i.title, i.summary, i.industry, ...i.tags, i.story ?? ''].join(' ').toLowerCase().includes(s))
       .map((idea) => ({ idea, fit: fitFor(idea, state.profile).total, score: weightedScore(idea, state.profile) }))
       .sort((a, b) => {
         switch (sort) {
+          case 'rank': return (a.idea.rank ?? 999) - (b.idea.rank ?? 999)
           case 'fit': return b.fit - a.fit
           case 'score': return b.score - a.score
           case 'cost': return a.idea.numbers.cashMax - b.idea.numbers.cashMax
@@ -48,7 +52,7 @@ export default function Library() {
           case 'updated': return (b.idea.updatedAt ?? '').localeCompare(a.idea.updatedAt ?? '')
         }
       })
-  }, [state, q, status, industry, comp, sort])
+  }, [state, q, status, industry, comp, sort, batch])
 
   return (
     <>
@@ -80,6 +84,7 @@ export default function Library() {
             </select>
             <select className="select" value={sort} onChange={(e) => setSort(e.target.value as Sort)} aria-label="Sort">
               <option value="fit">Sort: fit for me</option>
+              <option value="rank">Sort: research rank</option>
               <option value="score">Sort: weighted score</option>
               <option value="cost">Sort: cheapest</option>
               <option value="mvp">Sort: fastest MVP</option>
@@ -89,6 +94,14 @@ export default function Library() {
           </div>
         </div>
       </div>
+
+      {batches.length > 1 && (
+        <div className="row mt" style={{ gap: 6 }}>
+          {['', ...batches].map((b) => (
+            <span key={b || 'all'} className={'tag chip' + (batch === b ? ' on' : '')} onClick={() => setBatch(b)}>{b || `All (${state.ideas.length})`}</span>
+          ))}
+        </div>
+      )}
 
       {list.length === 0 ? (
         <div className="empty mt">No ideas match these filters.</div>
