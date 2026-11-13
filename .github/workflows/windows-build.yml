@@ -24,17 +24,26 @@ jobs:
     env:
       VERSION: 0.2.${{ github.run_number }}
     steps:
-      - name: Check secrets are set
+      - name: Check secrets are set and look right
         shell: bash
         env:
-          HAS_KEY: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY != '' }}
-          HAS_TOKEN: ${{ secrets.RELEASES_TOKEN != '' }}
+          KEY: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY }}
+          TOKEN: ${{ secrets.RELEASES_TOKEN }}
         run: |
-          echo "TAURI_SIGNING_PRIVATE_KEY set: $HAS_KEY"
-          echo "RELEASES_TOKEN set: $HAS_TOKEN"
-          if [ "$HAS_KEY" != "true" ]; then echo "::error::Secret TAURI_SIGNING_PRIVATE_KEY is missing (add it under Settings → Secrets and variables → Actions → Repository secrets)."; fi
-          if [ "$HAS_TOKEN" != "true" ]; then echo "::error::Secret RELEASES_TOKEN is missing (add it under Settings → Secrets and variables → Actions → Repository secrets)."; fi
-          [ "$HAS_KEY" = "true" ] && [ "$HAS_TOKEN" = "true" ]
+          ok=true
+          if [ -z "$KEY" ]; then echo "::error::TAURI_SIGNING_PRIVATE_KEY is missing."; ok=false
+          elif ! printf '%s' "$KEY" | tr -d ' \r\n' | base64 -d 2>/dev/null | head -c 40 | grep -q "untrusted comment"; then
+            echo "::error::TAURI_SIGNING_PRIVATE_KEY is not a valid Tauri key. Paste the full contents of the idea-lab.key file (one long line, no 'github_pat_')."; ok=false
+          else echo "TAURI_SIGNING_PRIVATE_KEY: looks valid"; fi
+          if [ -z "$TOKEN" ]; then echo "::error::RELEASES_TOKEN is missing."; ok=false
+          else
+            code=$(curl -s -o /dev/null -w "%{http_code}" -H "Authorization: Bearer $TOKEN" https://api.github.com/repos/vicuvi1/idea-lab-releases)
+            push=$(curl -s -H "Authorization: Bearer $TOKEN" https://api.github.com/repos/vicuvi1/idea-lab-releases | grep -o '"push": *[a-z]*' | head -1)
+            if [ "$code" != "200" ]; then echo "::error::RELEASES_TOKEN can't access vicuvi1/idea-lab-releases (HTTP $code). Create a new fine-grained token for that repo with Contents: Read and write."; ok=false
+            elif ! echo "$push" | grep -q true; then echo "::error::RELEASES_TOKEN can read but not write vicuvi1/idea-lab-releases. Give it Contents: Read and write."; ok=false
+            else echo "RELEASES_TOKEN: can write to idea-lab-releases"; fi
+          fi
+          $ok
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
