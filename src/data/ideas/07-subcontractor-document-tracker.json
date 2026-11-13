@@ -1,0 +1,249 @@
+{
+  "id": "subcontractor-document-tracker",
+  "title": "Subcontractor Document Tracker",
+  "color": "#9085e9",
+  "industry": "Construction / Facility",
+  "status": "idea",
+  "source": "Victor × Jonatan idea list",
+  "tags": [
+    "New idea",
+    "Jonatan knows this world",
+    "Legal risk = strong pain"
+  ],
+  "summary": "Insurance and certificates of subcontractors expire unnoticed, which is a legal risk. AI reads the documents and chases renewals.",
+  "priceLabel": "$5 / subcontractor / month",
+  "hook": "\"The roofer's insurance expired two months ago. Nobody noticed. Then he fell.\"",
+  "story": "**A facility-services company manages cleaning, maintenance and repairs** using 40 subcontractors. Each subcontractor must have valid **liability insurance, a business registration, safety certificates and sometimes permits**, and the big clients (property owners, industrial sites) demand proof.\n\nToday it's an Excel sheet and a folder of PDFs. Documents expire silently. When a client audit comes, someone spends **days chasing** subcontractors. If an accident happens while insurance has lapsed, the main company is liable.",
+  "whyReal": [
+    {
+      "title": "Legal and financial risk",
+      "text": "Working with uninsured or unregistered subcontractors can make the main contractor liable. That fear sells."
+    },
+    {
+      "title": "Big clients demand it",
+      "text": "Property owners and industrial sites require proof of compliance from everyone on site."
+    },
+    {
+      "title": "Constant chasing",
+      "text": "Documents expire at different dates; chasing 40 subcontractors by email never ends."
+    },
+    {
+      "title": "Jonatan sells to this industry",
+      "text": "His window-cleaning company works on commercial and industrial sites. He knows the buyers."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "general contractors, facility-management and cleaning companies, property managers with 10+ subcontractors."
+    },
+    {
+      "label": "Buyer",
+      "text": "owner, operations manager or HSE (health & safety) manager."
+    },
+    {
+      "label": "Market",
+      "text": "start in Sweden/Nordics through Jonatan, but the problem is global (in the US, insurance-certificate tracking is a known category)."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Invite",
+      "text": "add subcontractors; each gets a link (no login needed)."
+    },
+    {
+      "title": "Upload",
+      "text": "they upload insurance, registration and certificates as photos or PDFs."
+    },
+    {
+      "title": "Read",
+      "text": "AI reads each document and extracts type, company name, coverage amounts and **expiry date**, and checks them against requirements."
+    },
+    {
+      "title": "Dashboard",
+      "text": "green / yellow (expiring in 30 days) / red (expired or missing) for every subcontractor."
+    },
+    {
+      "title": "Chase automatically",
+      "text": "reminders at 30, 14 and 3 days before expiry until a new document arrives."
+    },
+    {
+      "title": "Audit-ready",
+      "text": "one click exports a full compliance pack for a client."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Subcontractor invite + upload link",
+      "AI document reading (expiry, type, name)",
+      "Requirements per role",
+      "Status dashboard",
+      "Automatic email/SMS reminders"
+    ],
+    "later": [
+      "Client-facing compliance portal",
+      "Integration with business registries (check company status)",
+      "Worker-level certificates (safety training)",
+      "Mobile app for site check-in",
+      "Multi-language"
+    ]
+  },
+  "techStack": [
+    "Python + Django",
+    "OCR + OpenAI/Claude vision",
+    "Resend + Twilio/46elks",
+    "PostgreSQL",
+    "EU hosting"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "**Validate.** Jonatan calls 20 facility/construction companies. For 2 of them, we collect their subcontractor docs and build the tracker manually in a spreadsheet."
+    },
+    {
+      "when": "Week 3–4",
+      "what": "Upload links, AI reading, dashboard."
+    },
+    {
+      "when": "Week 5",
+      "what": "Reminders, export pack, first paid customers."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": "",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server + database",
+      "note": "EU hosting",
+      "cost": "€10–25 / month"
+    },
+    {
+      "item": "AI / OCR",
+      "note": "Reading documents",
+      "cost": "€10–40 / month"
+    },
+    {
+      "item": "SMS + email",
+      "note": "Reminders",
+      "cost": "€10–40 / month"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €420–750",
+  "pricing": [
+    {
+      "name": "$5 per subcontractor / month",
+      "description": "40 subs = $200/mo"
+    },
+    {
+      "name": "Minimum $99/mo",
+      "description": "Small firms"
+    },
+    {
+      "name": "Setup: $300",
+      "description": "We import existing documents"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 500,
+      "value": 30,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 49,
+      "max": 599,
+      "value": 199,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "US insurance-certificate tools (e.g. myCOI, TrustLayer)",
+      "what": "Track insurance certificates",
+      "gap": "US-focused, insurance-only",
+      "isUs": false
+    },
+    {
+      "name": "Big contractor-prequalification platforms",
+      "what": "Supplier compliance for enterprises",
+      "gap": "Expensive, complex for small companies",
+      "isUs": false
+    },
+    {
+      "name": "Excel + folders",
+      "what": "Manual",
+      "gap": "Documents expire unnoticed",
+      "isUs": false
+    },
+    {
+      "name": "Us",
+      "what": "Upload link → AI reads → auto-chase",
+      "gap": "Simple, cheap, Nordic/EU first",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Rules differ per country",
+      "answer": "Start with Sweden; make requirements configurable."
+    },
+    {
+      "risk": "Subcontractors don't upload",
+      "answer": "No-login link, SMS reminders, and the main company makes it mandatory."
+    },
+    {
+      "risk": "AI misreads a date",
+      "answer": "Human confirm on first upload; highlight low confidence."
+    },
+    {
+      "risk": "Niche size",
+      "answer": "Expand from facility services to construction and property management."
+    }
+  ],
+  "questions": [
+    "How many subcontractors do you work with? What documents do you require from them?",
+    "How do you track expiry dates today?",
+    "Have you ever discovered a subcontractor's insurance had expired? What happened?",
+    "Do your clients audit your subcontractors? How long does preparing take?",
+    "What would it be worth to never chase a document again?"
+  ],
+  "numbers": {
+    "cashMin": 420.0,
+    "cashMax": 750.0,
+    "mvpWeeksMin": 4.0,
+    "mvpWeeksMax": 5.0,
+    "priceLabel": "$5/sub/mo",
+    "competition": "Gap in Nordics/EU",
+    "competitionLevel": "low",
+    "whoSells": "Jonatan → facility/construction"
+  },
+  "skills": [
+    "coding",
+    "ai",
+    "construction",
+    "b2b-sales"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 8,
+    "willingnessToPay": 7,
+    "lowCompetition": 6,
+    "easyToBuild": 7,
+    "easyToSell": 8,
+    "skillFit": 7,
+    "globalPotential": 8,
+    "excitement": 6
+  },
+  "notes": "",
+  "interviews": []
+}

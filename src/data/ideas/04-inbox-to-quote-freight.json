@@ -1,0 +1,250 @@
+{
+  "id": "inbox-to-quote-freight",
+  "title": "Inbox-to-Quote for Freight Forwarders",
+  "color": "#c98500",
+  "industry": "Logistics",
+  "status": "idea",
+  "source": "Victor × Jonatan idea list",
+  "tags": [
+    "New idea",
+    "Global logistics",
+    "Speed = money"
+  ],
+  "summary": "Forwarders retype dozens of quote-request emails a day. AI reads them, prices them from the rate table and drafts the reply in a minute.",
+  "priceLabel": "$99–249 / month",
+  "hook": "\"Need a price: 2 pallets, Bucharest → Hamburg, pickup Thursday.\" Whoever answers first gets the load.",
+  "story": "**Tom runs a 10-person freight forwarding company.** Every day his inbox gets **60–100 emails** asking for prices: different formats, attachments, in English, German, Polish and more. A dispatcher reads each one, copies the route, weight and dates into a spreadsheet, checks rates, calculates and writes a reply.\n\nEach quote takes **10–20 minutes**. By the time they answer, a faster competitor has often already won the load. Good dispatchers are expensive, and they spend half their day **retyping emails**.",
+  "whyReal": [
+    {
+      "title": "Volume is huge",
+      "text": "Forwarders and brokers handle a constant stream of quote requests by email every day."
+    },
+    {
+      "title": "First answer wins",
+      "text": "In spot freight, the quickest reasonable quote often gets the job, so speed is revenue."
+    },
+    {
+      "title": "Messy input, perfect for AI",
+      "text": "Emails are unstructured and multilingual. LLMs are now good enough to extract route, weight, dates and cargo type reliably."
+    },
+    {
+      "title": "Lots of small players",
+      "text": "Thousands of small forwarders across Europe and beyond still run on email, Excel and phone."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "freight forwarders and transport brokers with 3–50 staff."
+    },
+    {
+      "label": "Buyer",
+      "text": "owner or head of dispatch."
+    },
+    {
+      "label": "Start market",
+      "text": "EU and UK forwarders, sold in English by Jonatan. Victor can help with Romanian/Russian-speaking companies as a bonus market."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Connect inbox",
+      "text": "the company connects its Gmail or Outlook quote inbox."
+    },
+    {
+      "title": "Read",
+      "text": "AI reads every request email and attachment and extracts origin, destination, weight, pallets, dates and cargo type."
+    },
+    {
+      "title": "Price",
+      "text": "it calculates a price from the company's own rate table (per km, per pallet, per zone) plus margin rules."
+    },
+    {
+      "title": "Draft",
+      "text": "a reply in the customer's language is ready in seconds."
+    },
+    {
+      "title": "Approve",
+      "text": "the dispatcher checks it and clicks Send. Unclear requests are flagged with a question for the customer."
+    },
+    {
+      "title": "Track",
+      "text": "a dashboard shows quotes sent, answered and won, and the win rate."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Gmail/Outlook connection",
+      "AI extraction of shipment details",
+      "Rate table upload (Excel)",
+      "Price calculation + reply draft",
+      "Approve / edit / send screen"
+    ],
+    "later": [
+      "Integration with TMS software",
+      "Freight exchange posting",
+      "Win/loss analytics",
+      "Automatic follow-up on unanswered quotes",
+      "Multi-language templates"
+    ]
+  },
+  "techStack": [
+    "Python + Django",
+    "Gmail / Microsoft Graph API",
+    "OpenAI/Claude (extraction + drafting)",
+    "Google Maps / OSRM for distances",
+    "PostgreSQL",
+    "EU hosting"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "**Validate.** Jonatan calls 15+ forwarders (in English), Victor joins some calls on the tech side. We collect 50 real anonymised quote emails. We test the AI extraction on them by hand."
+    },
+    {
+      "when": "Week 3–4",
+      "what": "Inbox connection, extraction, rate table, draft replies."
+    },
+    {
+      "when": "Week 5",
+      "what": "Approve screen, dashboard, first 3 pilot companies."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": "",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server + database",
+      "note": "EU hosting",
+      "cost": "€10–25 / month"
+    },
+    {
+      "item": "AI API",
+      "note": "Per email processed",
+      "cost": "€20–60 / month"
+    },
+    {
+      "item": "Maps / distance API",
+      "note": "Free tier or OSRM self-hosted",
+      "cost": "€0–20 / month"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €450–750",
+  "pricing": [
+    {
+      "name": "Starter: $99/mo",
+      "description": "Up to 300 quote emails"
+    },
+    {
+      "name": "Pro: $249/mo",
+      "description": "Unlimited + analytics + 5 users"
+    },
+    {
+      "name": "Setup: $300",
+      "description": "We import their rate tables"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 500,
+      "value": 30,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 49,
+      "max": 499,
+      "value": 179,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "TMS software (transport management)",
+      "what": "Manages shipments",
+      "gap": "Quote intake from email is still mostly manual",
+      "isUs": false
+    },
+    {
+      "name": "Freight exchanges (e.g. Timocom, Trans.eu)",
+      "what": "Load marketplaces",
+      "gap": "Don't answer your private email requests",
+      "isUs": false
+    },
+    {
+      "name": "A few AI freight-quoting startups",
+      "what": "Mostly US-focused",
+      "gap": "Little focus on small European forwarders",
+      "isUs": false
+    },
+    {
+      "name": "Us",
+      "what": "Email → extract → price → reply in 1 min",
+      "gap": "Built for small forwarders, works in any language",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Pricing is complex",
+      "answer": "Start with simple rate tables; the human always approves."
+    },
+    {
+      "risk": "Conservative industry",
+      "answer": "Concierge pilot: we process their emails for 2 weeks and show the time saved."
+    },
+    {
+      "risk": "Email access = trust",
+      "answer": "Read-only access to one inbox, EU hosting, data processing agreement."
+    },
+    {
+      "risk": "New industry for Jonatan",
+      "answer": "He leads the calls in English; Victor joins to answer technical questions. Logistics groups on LinkedIn are a good start."
+    }
+  ],
+  "questions": [
+    "How many quote requests do you get per day, and through which channels?",
+    "How long does one quote take? Who does it?",
+    "How many quotes do you lose because you answered too late?",
+    "How do you calculate prices today: Excel, gut feeling, software?",
+    "Would you let a tool read your quote inbox if it saved 3 hours a day?"
+  ],
+  "numbers": {
+    "cashMin": 450.0,
+    "cashMax": 750.0,
+    "mvpWeeksMin": 4.0,
+    "mvpWeeksMax": 5.0,
+    "priceLabel": "$99–249/mo",
+    "competition": "Underserved locally",
+    "competitionLevel": "low",
+    "whoSells": "Jonatan → forwarders (Victor helps)"
+  },
+  "skills": [
+    "coding",
+    "ai",
+    "integrations",
+    "logistics"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 8,
+    "willingnessToPay": 7,
+    "lowCompetition": 6,
+    "easyToBuild": 7,
+    "easyToSell": 5,
+    "skillFit": 8,
+    "globalPotential": 7,
+    "excitement": 7
+  },
+  "notes": "",
+  "interviews": []
+}

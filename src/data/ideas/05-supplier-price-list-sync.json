@@ -1,0 +1,248 @@
+{
+  "id": "supplier-price-list-sync",
+  "title": "Supplier Price-List Sync",
+  "color": "#d55181",
+  "industry": "E-commerce",
+  "status": "idea",
+  "source": "Victor × Jonatan idea list",
+  "tags": [
+    "New idea",
+    "Wholesale & e-commerce",
+    "Mistakes = selling at a loss"
+  ],
+  "summary": "Shops and wholesalers update hundreds of prices by hand from messy supplier PDFs. AI matches products and shows the changes.",
+  "priceLabel": "$49–299 / month",
+  "hook": "\"Supplier sent a new 40-page PDF price list. Someone has to update 1,200 products by hand… again.\"",
+  "story": "**Rachel runs an online shop with 3,000 products from 15 suppliers.** Every month, suppliers send new price lists, each in a different format: PDF, Excel with merged cells, or prices pasted into the email body. Her assistant spends **2–3 days a month** finding each product and updating cost and selling prices.\n\nLast quarter one supplier raised prices by 12% and they **missed it for 3 weeks**, selling 200 orders at almost no margin.",
+  "whyReal": [
+    {
+      "title": "Happens every month",
+      "text": "Suppliers update prices regularly, more often when inflation or exchange rates move."
+    },
+    {
+      "title": "Mistakes cost real money",
+      "text": "A missed price increase means selling at a loss; a typo can mean a disastrous price."
+    },
+    {
+      "title": "Messy formats, ideal for AI",
+      "text": "Matching \"BOSCH GSR 18V-55 2x2Ah\" to your SKU \"Bosch drill 18V 55Nm kit\" is exactly what LLMs are now good at."
+    },
+    {
+      "title": "But: buyers are spread out",
+      "text": "Many small shops, so we need a good channel (e.g. a Shopify/WooCommerce app store listing)."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "online shops and small wholesalers/distributors with 500+ products and 5+ suppliers."
+    },
+    {
+      "label": "Buyer",
+      "text": "owner or purchasing manager."
+    },
+    {
+      "label": "Market",
+      "text": "global, via Shopify / WooCommerce app stores, plus direct sales to distributors."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Upload",
+      "text": "drop in the supplier's file (PDF, Excel, CSV) or forward the email."
+    },
+    {
+      "title": "Read",
+      "text": "AI extracts every product line: name, code, price, unit."
+    },
+    {
+      "title": "Match",
+      "text": "each line is matched to your existing products, with a confidence score. New products are flagged."
+    },
+    {
+      "title": "Review changes",
+      "text": "\"43 prices up (avg +8%), 5 down, 12 new products, 3 discontinued\". Approve all or one by one."
+    },
+    {
+      "title": "Margin rules",
+      "text": "selling prices update automatically using your margin rules (e.g. cost × 1.35, round to .99)."
+    },
+    {
+      "title": "Sync",
+      "text": "push updates to Shopify / WooCommerce / Excel export."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Upload PDF / Excel / CSV",
+      "AI extraction + product matching",
+      "Change review screen",
+      "Margin rules",
+      "Shopify or WooCommerce sync (one platform first)"
+    ],
+    "later": [
+      "Forward-by-email inbox",
+      "Price-change alerts & history",
+      "More platforms / ERPs",
+      "Competitor price comparison",
+      "Stock level updates from supplier files"
+    ]
+  },
+  "techStack": [
+    "Python + Django",
+    "pdfplumber / openpyxl + LLM extraction",
+    "embeddings for product matching",
+    "Shopify / WooCommerce APIs",
+    "PostgreSQL"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "**Validate.** Collect 10 real supplier price lists from shops; we do the matching by hand with AI scripts and send them the result."
+    },
+    {
+      "when": "Week 3–4",
+      "what": "Extraction, matching, change review."
+    },
+    {
+      "when": "Week 5–6",
+      "what": "Margin rules, Shopify/WooCommerce sync, first paying shops."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": "",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server + database",
+      "note": "EU hosting",
+      "cost": "€10–25 / month"
+    },
+    {
+      "item": "AI API",
+      "note": "Per price list",
+      "cost": "€20–60 / month"
+    },
+    {
+      "item": "Shopify app listing",
+      "note": "One-time developer fee",
+      "cost": "≈ €20"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €450–750",
+  "pricing": [
+    {
+      "name": "Basic: $49/mo",
+      "description": "5 suppliers, 2,000 products"
+    },
+    {
+      "name": "Pro: $149/mo",
+      "description": "Unlimited suppliers, margin rules, history"
+    },
+    {
+      "name": "Wholesale: $299/mo",
+      "description": "ERP export, multiple users"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 800,
+      "value": 60,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 29,
+      "max": 299,
+      "value": 99,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "PIM tools (e.g. Plytix, Akeneo)",
+      "what": "Product information management",
+      "gap": "Heavy setup, not focused on messy supplier PDFs",
+      "isUs": false
+    },
+    {
+      "name": "Generic import apps (CSV importers)",
+      "what": "Bulk import",
+      "gap": "Need clean files; no AI matching",
+      "isUs": false
+    },
+    {
+      "name": "Manual work / freelancers",
+      "what": "Assistant or VA updates prices",
+      "gap": "Slow, error-prone, every month",
+      "isUs": false
+    },
+    {
+      "name": "Us",
+      "what": "Messy file in → reviewed price changes out",
+      "gap": "AI matching + margin rules + sync",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Matching errors",
+      "answer": "Always show changes for approval; never auto-publish low-confidence matches."
+    },
+    {
+      "risk": "Many small customers",
+      "answer": "Use app stores for distribution; content marketing (\"how to update supplier prices\")."
+    },
+    {
+      "risk": "Each supplier format is different",
+      "answer": "That's exactly why AI beats fixed import templates."
+    },
+    {
+      "risk": "Lower prices per customer",
+      "answer": "Volume play; keep onboarding fully self-serve."
+    }
+  ],
+  "questions": [
+    "How many suppliers and products do you have?",
+    "How often do suppliers send new price lists, and in what format?",
+    "How many hours does updating them take each month? Who does it?",
+    "Have you ever sold at the wrong price because of a missed update? What did it cost?",
+    "Which shop platform or ERP do you use?"
+  ],
+  "numbers": {
+    "cashMin": 450.0,
+    "cashMax": 750.0,
+    "mvpWeeksMin": 5.0,
+    "mvpWeeksMax": 6.0,
+    "priceLabel": "$49–299/mo",
+    "competition": "Medium",
+    "competitionLevel": "medium",
+    "whoSells": "App stores + direct"
+  },
+  "skills": [
+    "coding",
+    "ai",
+    "e-commerce"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 7,
+    "willingnessToPay": 6,
+    "lowCompetition": 6,
+    "easyToBuild": 6,
+    "easyToSell": 6,
+    "skillFit": 7,
+    "globalPotential": 8,
+    "excitement": 6
+  },
+  "notes": "",
+  "interviews": []
+}

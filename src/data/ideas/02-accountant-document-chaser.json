@@ -1,0 +1,271 @@
+{
+  "id": "accountant-document-chaser",
+  "title": "Accountant Document Chaser",
+  "color": "#d95926",
+  "industry": "Accounting",
+  "status": "idea",
+  "source": "Victor × Jonatan idea list",
+  "tags": [
+    "Global market",
+    "Daily, recurring pain",
+    "1 sale = many seats"
+  ],
+  "summary": "Accountants waste hours every week chasing clients for missing receipts. The bot finds what's missing and chases the client automatically.",
+  "priceLabel": "$5–10 / client company / month",
+  "hook": "\"Hi, can you please send the March receipts? … Hi again, just a reminder about March… Hi, still missing March…\"",
+  "story": "**Emma runs a small accounting firm with 4 people and 90 client companies.** Every month, before she can close the books, she needs every receipt and invoice from every client. But clients are busy: a restaurant owner forgets, a plumber sends a blurry photo, a shop owner sends the wrong month.\n\nHer team spends **hours every week** writing reminder emails, checking which transaction has no receipt and calling clients. That time is mostly **not billable**. Month-end gets delayed, VAT filings get stressful, and everyone is annoyed.",
+  "whyReal": [
+    {
+      "title": "Every accountant has it",
+      "text": "Chasing clients for paperwork is one of the most common complaints in accounting communities. Some accountants describe spending half their week on reminders."
+    },
+    {
+      "title": "It costs them money",
+      "text": "Chasing time is usually unbilled. It's either written off or causes fights over the bill."
+    },
+    {
+      "title": "It repeats every month",
+      "text": "It's not a one-time problem. Every client, every month, so the tool is used constantly."
+    },
+    {
+      "title": "Concentrated buyers",
+      "text": "One accounting firm brings 30–200 client companies. One sale means many paying seats."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "accounting firms with 2–30 staff, worldwide."
+    },
+    {
+      "label": "Buyer",
+      "text": "firm owner or partner."
+    },
+    {
+      "label": "Start market",
+      "text": "one country and one accounting software first (e.g. Xero or QuickBooks for English-speaking markets, Fortnox in Sweden, SmartBill/Saga in Romania), then expand."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Connect",
+      "text": "the firm connects its accounting software (Xero / QuickBooks / Fortnox API) in one click."
+    },
+    {
+      "title": "Detect",
+      "text": "every day the bot checks bank transactions and finds the ones with **no receipt or invoice attached**."
+    },
+    {
+      "title": "Chase",
+      "text": "it sends the client a friendly SMS or email in the firm's name: \"Hi James, we're missing the receipt for €84.20 at Shell on 12 March. Tap here to upload.\""
+    },
+    {
+      "title": "Upload",
+      "text": "the client taps the link, takes a photo and it's done. No login, no app."
+    },
+    {
+      "title": "Match",
+      "text": "AI reads the receipt (OCR), checks it matches the transaction and attaches it automatically."
+    },
+    {
+      "title": "Escalate",
+      "text": "if the client ignores 3 reminders, the accountant gets an alert. The dashboard shows each client's status (complete / missing 4 / ignoring)."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Connection to ONE accounting software",
+      "Missing-document detection",
+      "Automatic email + SMS reminders",
+      "Upload link (no login)",
+      "OCR + AI matching",
+      "Firm dashboard"
+    ],
+    "later": [
+      "More accounting integrations",
+      "WhatsApp reminders",
+      "Client onboarding / KYC document collection",
+      "Monthly \"missing items\" report per client",
+      "Multi-language"
+    ]
+  },
+  "techStack": [
+    "Python + Django (backend + scheduled jobs)",
+    "Accounting APIs (Xero / QuickBooks / Fortnox)",
+    "Twilio or 46elks (SMS)",
+    "Resend (email)",
+    "OCR + OpenAI/Claude vision (reading receipts)",
+    "PostgreSQL",
+    "EU hosting"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "**Concierge pilot.** 2 accounting firms export their missing-receipt list, we send the reminders manually, and we measure how many get resolved."
+    },
+    {
+      "when": "Week 3–4",
+      "what": "Accounting API integration, missing-document detection, reminder engine."
+    },
+    {
+      "when": "Week 5",
+      "what": "Upload page, OCR matching, dashboard."
+    },
+    {
+      "when": "Week 6",
+      "what": "Pilot firms switch to paid; Jonatan signs the next 5 firms."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": "",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server + database",
+      "note": "EU hosting",
+      "cost": "€10–25 / month"
+    },
+    {
+      "item": "SMS",
+      "note": "~€0.04–0.08 per SMS",
+      "cost": "€20–80 / month"
+    },
+    {
+      "item": "Email",
+      "note": "Resend / Postmark",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "AI / OCR",
+      "note": "Reading receipts",
+      "cost": "€10–40 / month"
+    },
+    {
+      "item": "Accounting API access",
+      "note": "Some require partner approval",
+      "cost": "€0–100 one-off"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €500–850",
+  "pricing": [
+    {
+      "name": "$6 / client company / month",
+      "description": "Firm with 80 clients = $480/month"
+    },
+    {
+      "name": "Minimum $99/mo",
+      "description": "For small firms"
+    },
+    {
+      "name": "Free 30-day pilot",
+      "description": "We show the hours saved, then they pay"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 200,
+      "value": 15,
+      "label": "Accounting firms paying"
+    },
+    "price": {
+      "min": 2,
+      "max": 15,
+      "value": 6,
+      "label": "Price per client company / month ($)"
+    },
+    "multiplier": {
+      "min": 10,
+      "max": 300,
+      "value": 60,
+      "label": "Average client companies per firm"
+    }
+  },
+  "competitors": [
+    {
+      "name": "Dext, Hubdoc",
+      "what": "Receipt capture",
+      "gap": "Client must remember to upload; no proactive chasing",
+      "isUs": false
+    },
+    {
+      "name": "Content Snare, TaxDome, Karbon",
+      "what": "Document requests / practice management",
+      "gap": "Big, English/US-focused, not tied to \"which bank transaction is missing a receipt\"",
+      "isUs": false
+    },
+    {
+      "name": "Accounting software reminders",
+      "what": "Basic reminders",
+      "gap": "Generic, not personalised, no SMS, no auto-matching",
+      "isUs": false
+    },
+    {
+      "name": "Us",
+      "what": "Detect missing → chase by SMS → auto-match",
+      "gap": "Fully automatic, works in the firm's name and language",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "API access",
+      "answer": "Start with the software that has the easiest public API (Xero / QuickBooks)."
+    },
+    {
+      "risk": "Accountants are conservative",
+      "answer": "Free pilot, results in 2 weeks, no change to their workflow."
+    },
+    {
+      "risk": "Accounting software builds it",
+      "answer": "Move fast, go deeper on chasing and on local markets."
+    },
+    {
+      "risk": "GDPR / financial data",
+      "answer": "EU hosting, data processing agreement, read-only access."
+    }
+  ],
+  "questions": [
+    "How many hours a month does your team spend chasing clients for documents?",
+    "How do you chase today: email, phone, software reminders?",
+    "How much of that time can you bill?",
+    "Would you let a tool text your clients in your firm's name?",
+    "Which accounting software do you and your clients use?"
+  ],
+  "numbers": {
+    "cashMin": 500.0,
+    "cashMax": 850.0,
+    "mvpWeeksMin": 4.0,
+    "mvpWeeksMax": 5.0,
+    "priceLabel": "$6/client co./mo",
+    "competition": "Medium",
+    "competitionLevel": "medium",
+    "whoSells": "Jonatan → accountants"
+  },
+  "skills": [
+    "coding",
+    "ai",
+    "integrations",
+    "accounting"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 8,
+    "willingnessToPay": 7,
+    "lowCompetition": 6,
+    "easyToBuild": 6,
+    "easyToSell": 7,
+    "skillFit": 7,
+    "globalPotential": 8,
+    "excitement": 7
+  },
+  "notes": "",
+  "interviews": []
+}

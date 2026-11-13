@@ -1,0 +1,248 @@
+{
+  "id": "public-tender-finder",
+  "title": "Public Tender Finder + Bid Writer",
+  "color": "#e66767",
+  "industry": "Public sector",
+  "status": "idea",
+  "source": "Victor × Jonatan idea list",
+  "tags": [
+    "New idea",
+    "Big market",
+    "Crowded at the top"
+  ],
+  "summary": "Small companies miss public contracts and take days to write bids. Daily matches, 1-page summaries and AI bid drafts.",
+  "priceLabel": "$49–199 / month",
+  "hook": "\"There was a €200K cleaning contract with our city. We found out after the deadline.\"",
+  "story": "**A 25-person IT consultancy** could win public contracts (municipalities, hospitals, agencies), but finding the right tenders means checking multiple portals every day, and the documents are 80+ pages.\n\nWhen they do find one, writing the bid takes the owner **3–5 days**: company description, references, CVs, methodology, compliance forms. Most of it is the same content as last time, rewritten. So they bid rarely and **miss most opportunities**.",
+  "whyReal": [
+    {
+      "title": "Huge amount of money",
+      "text": "Public procurement is a large share of EU GDP, with thousands of new tenders every week."
+    },
+    {
+      "title": "Small companies are under-represented",
+      "text": "Finding and writing bids is the barrier, not ability."
+    },
+    {
+      "title": "AI is good at this",
+      "text": "Matching tenders to a company profile and drafting from past bids are strong LLM tasks."
+    },
+    {
+      "title": "But: established players exist",
+      "text": "Tender alert services and AI bid tools already exist in several countries, so we need a niche."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "small companies (5–100 staff) that can sell to the public sector: IT, cleaning, construction, consulting, training."
+    },
+    {
+      "label": "Buyer",
+      "text": "owner or sales lead."
+    },
+    {
+      "label": "Niche idea",
+      "text": "one country + one sector first (e.g. Romanian IT firms, or Swedish facility services)."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Profile",
+      "text": "describe the company once: services, regions, references, certifications."
+    },
+    {
+      "title": "Match daily",
+      "text": "we scan tender portals (e.g. EU TED + national portals) and send only relevant tenders with a match score."
+    },
+    {
+      "title": "Summarise",
+      "text": "AI turns an 80-page tender into a 1-page summary: requirements, deadline, budget, red flags."
+    },
+    {
+      "title": "Go / no-go",
+      "text": "a checklist of whether you meet the requirements."
+    },
+    {
+      "title": "Draft bid",
+      "text": "AI drafts the answer sections from past bids and the company profile."
+    },
+    {
+      "title": "Track",
+      "text": "deadlines, submitted bids, win rate."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Company profile",
+      "Tender scraping from 1–2 portals",
+      "AI matching + daily email",
+      "1-page AI summaries",
+      "Requirements checklist"
+    ],
+    "later": [
+      "Bid drafting from past bids",
+      "More countries and portals",
+      "Team collaboration",
+      "Win-rate analytics",
+      "Partner matching (consortium bids)"
+    ]
+  },
+  "techStack": [
+    "Python (scrapers + Django)",
+    "TED API / national portal data",
+    "OpenAI/Claude for summaries and drafting",
+    "PostgreSQL + vector search"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "**Validate.** Pick one country and sector. Manually send 10 companies a weekly list of matching tenders with AI summaries. Do they open it? Do they bid?"
+    },
+    {
+      "when": "Week 3–4",
+      "what": "Scraper, matching, daily emails, summaries."
+    },
+    {
+      "when": "Week 5–6",
+      "what": "Checklist and first paying users; bid drafting later."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": "",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server + database",
+      "note": "EU hosting",
+      "cost": "€10–25 / month"
+    },
+    {
+      "item": "AI API",
+      "note": "Summarising long documents",
+      "cost": "€30–80 / month"
+    },
+    {
+      "item": "Scraping infrastructure",
+      "note": "Small server / proxies",
+      "cost": "€0–30 / month"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €450–850",
+  "pricing": [
+    {
+      "name": "Alerts: $49/mo",
+      "description": "Matching tenders + summaries"
+    },
+    {
+      "name": "Pro: $199/mo",
+      "description": "+ checklists + bid drafts"
+    },
+    {
+      "name": "Done-with-you bid: $500+",
+      "description": "We help write one bid"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 500,
+      "value": 40,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 29,
+      "max": 399,
+      "value": 129,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "Tender alert services (e.g. Mercell, Tendium, national services)",
+      "what": "Alerts, sometimes AI analysis",
+      "gap": "Often generic, pricey or limited to certain countries",
+      "isUs": false
+    },
+    {
+      "name": "Bid-writing consultants",
+      "what": "Write bids for you",
+      "gap": "Expensive, per bid",
+      "isUs": false
+    },
+    {
+      "name": "Checking portals manually",
+      "what": "Free",
+      "gap": "Slow, opportunities missed",
+      "isUs": false
+    },
+    {
+      "name": "Us",
+      "what": "Niche-focused alerts + summaries + drafts",
+      "gap": "One sector/country done really well",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Crowded at the top",
+      "answer": "Pick a niche where nobody is focused (country × sector)."
+    },
+    {
+      "risk": "Long sales/win cycle",
+      "answer": "Customers may not win quickly; show value through time saved and tenders found."
+    },
+    {
+      "risk": "Scraping portals",
+      "answer": "Prefer official APIs/open data (e.g. TED)."
+    },
+    {
+      "risk": "Bid quality",
+      "answer": "Drafts only; the company finalises."
+    }
+  ],
+  "questions": [
+    "Do you bid on public tenders today? How many per year?",
+    "How do you find them?",
+    "How long does writing one bid take you?",
+    "Have you missed a tender you could have won? Why?",
+    "What would you pay to never miss a relevant tender?"
+  ],
+  "numbers": {
+    "cashMin": 450.0,
+    "cashMax": 850.0,
+    "mvpWeeksMin": 5.0,
+    "mvpWeeksMax": 6.0,
+    "priceLabel": "$49–199/mo",
+    "competition": "Crowded at top",
+    "competitionLevel": "high",
+    "whoSells": "Niche country × sector"
+  },
+  "skills": [
+    "coding",
+    "ai",
+    "writing",
+    "government"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 7,
+    "willingnessToPay": 6,
+    "lowCompetition": 5,
+    "easyToBuild": 6,
+    "easyToSell": 6,
+    "skillFit": 7,
+    "globalPotential": 7,
+    "excitement": 6
+  },
+  "notes": "",
+  "interviews": []
+}

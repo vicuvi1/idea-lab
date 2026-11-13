@@ -1,0 +1,265 @@
+{
+  "id": "security-questionnaire-autopilot",
+  "title": "Security Questionnaire Autopilot",
+  "color": "#3987e5",
+  "industry": "Cybersecurity",
+  "status": "idea",
+  "source": "Victor × Jonatan idea list",
+  "tags": [
+    "Top pick",
+    "Global market",
+    "Fits Victor's cybersecurity path"
+  ],
+  "summary": "Small B2B companies lose days filling in 100–300-question security spreadsheets from big customers. AI fills in about 80% from their own documents.",
+  "priceLabel": "$99–299 / month",
+  "hook": "\"A big customer wants to buy from you, but first you have to answer 200 security questions.\"",
+  "story": "**Sarah runs a 20-person software agency.** A bank wants to hire her company, which would be a €60K contract. Before signing, the bank's procurement team sends an **Excel file with 180 questions**: \"Do you encrypt data at rest?\", \"Do you have an incident response plan?\", \"Who has admin access?\", \"Do you do background checks on employees?\"\n\nNobody on her team is a security expert. Her CTO stops coding and spends **4–5 days** on it, searching old emails, guessing, rewriting. A month later a logistics company sends a **different** questionnaire with the same questions in a different format, and it starts all over again. Meanwhile the deal sits waiting.",
+  "whyReal": [
+    {
+      "title": "It happens constantly",
+      "text": "Big companies must check their suppliers' security. New EU rules (NIS2, in force across the EU and in Sweden since Jan 2026) legally push security requirements down to suppliers. In the US, SOC 2 questionnaires are standard in every B2B deal."
+    },
+    {
+      "title": "It costs real time and money",
+      "text": "Questionnaires typically run to 150–200+ questions. One well-known security writer estimates 25–75% of security teams' effort goes into sending and answering them. For a small company, that's the CTO's week."
+    },
+    {
+      "title": "It blocks revenue",
+      "text": "The deal doesn't close until the questionnaire is done, so the pain is tied directly to money. That makes it easy to sell."
+    },
+    {
+      "title": "The existing tools are too expensive",
+      "text": "Vanta and Drata start around **$10,000+ a year** and are built for funded SaaS companies. Small agencies, IT consultancies and suppliers can't justify that."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "B2B companies with 5–200 employees that sell to bigger companies: software agencies, IT consultancies, small SaaS startups, outsourcing firms (including many in Romania and Moldova selling to the EU and US), managed IT providers."
+    },
+    {
+      "label": "Buyer",
+      "text": "founder, CEO or CTO, the person who loses the week."
+    },
+    {
+      "label": "Market",
+      "text": "worldwide, in English first. Swedish, Romanian and German can be added later for local deals."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Onboarding (30 min, once)",
+      "text": "the company uploads what it has (old questionnaires, policies, website, tech stack list) and answers a short AI interview: \"Where is your data hosted? Do you use 2FA?\""
+    },
+    {
+      "title": "Knowledge base is built",
+      "text": "we store everything as a searchable \"company security profile\"."
+    },
+    {
+      "title": "New questionnaire arrives",
+      "text": "they drag and drop the Excel or Word file into our app."
+    },
+    {
+      "title": "AI fills it in",
+      "text": "for each question, the AI finds the answer in their own documents and writes it, with a **confidence level** and the source it used."
+    },
+    {
+      "title": "Human review",
+      "text": "green answers are ready, yellow ones need a quick check, and red ones mean \"you don't have this yet\". For those we suggest how to fix the gap, such as a policy template."
+    },
+    {
+      "title": "Export",
+      "text": "download the finished file in the **original format** and send it back. Every new answer makes the next questionnaire faster."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Sign-up and company workspace",
+      "Upload documents (PDF, DOCX, XLSX)",
+      "Import a questionnaire from Excel",
+      "AI answer drafting with sources",
+      "Review screen (approve / edit)",
+      "Export back to Excel"
+    ],
+    "later": [
+      "Public \"Trust page\" to share with customers",
+      "Policy templates generator",
+      "Basic external security scan (SPF/DMARC/TLS): Victor's specialty",
+      "Team members and approvals",
+      "Swedish, Romanian, German"
+    ]
+  },
+  "techStack": [
+    "Python + Django REST (backend)",
+    "React or simple HTML templates (frontend)",
+    "PostgreSQL + pgvector (search over documents)",
+    "OpenAI / Claude API (answer drafting)",
+    "openpyxl (Excel import/export)",
+    "Hosting on Hetzner or Render (EU)"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "**Validate, no code.** Jonatan talks to founders (Web Summit, LinkedIn, cold calls). We fill in 3 real questionnaires for free by hand, using ChatGPT/Claude plus Victor's review."
+    },
+    {
+      "when": "Week 3–4",
+      "what": "Victor builds upload, knowledge base, Excel import and AI drafting."
+    },
+    {
+      "when": "Week 5",
+      "what": "Review screen, export, login, payments (Stripe)."
+    },
+    {
+      "when": "Week 6",
+      "what": "First paying customers move from \"we do it for you\" to self-serve."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server + database",
+      "note": "Hetzner / Render, EU hosting",
+      "cost": "€10–25 / month"
+    },
+    {
+      "item": "AI API (OpenAI / Claude)",
+      "note": "~€0.20–1 per questionnaire",
+      "cost": "€20–60 / month"
+    },
+    {
+      "item": "Email sending",
+      "note": "Resend / Postmark",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Landing page",
+      "note": "Built by us",
+      "cost": "€0"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €450–800",
+  "pricing": [
+    {
+      "name": "Starter: $99/mo",
+      "description": "3 questionnaires/month, 1 user"
+    },
+    {
+      "name": "Growth: $249/mo",
+      "description": "Unlimited questionnaires, trust page, 5 users"
+    },
+    {
+      "name": "Done-for-you: $500 one-off",
+      "description": "We set everything up and fill in the first questionnaire"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 500,
+      "value": 30,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 49,
+      "max": 499,
+      "value": 179,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "Vanta, Drata, Secureframe",
+      "what": "Full compliance platforms (SOC 2, ISO)",
+      "gap": "~$10K+/year, many integrations, built for funded SaaS",
+      "isUs": false
+    },
+    {
+      "name": "Loopio, Conveyor, HyperComply",
+      "what": "Questionnaire response for sales teams",
+      "gap": "Enterprise pricing and sales process",
+      "isUs": false
+    },
+    {
+      "name": "Consultants",
+      "what": "Fill it in for you",
+      "gap": "€100+/hour, slow, has to be repeated every time",
+      "isUs": false
+    },
+    {
+      "name": "Us",
+      "what": "Upload → AI fills → review → export",
+      "gap": "Self-serve, $99–249/mo, done in an hour instead of a week",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Wrong answers = liability",
+      "answer": "Position it as \"AI drafts, you approve\". Every answer shows its source and needs human sign-off."
+    },
+    {
+      "risk": "Trust: we're 18–19",
+      "answer": "Bring in a credentialed security advisor. Use EU hosting, a clear privacy policy and a data processing agreement from day 1."
+    },
+    {
+      "risk": "Big players move down-market",
+      "answer": "Win on price, speed and language, and serve the small companies they ignore."
+    },
+    {
+      "risk": "Not enough questionnaires per customer",
+      "answer": "Validate this first: ask how many they got in the last 12 months."
+    }
+  ],
+  "questions": [
+    "How many security questionnaires did customers send you in the last 12 months?",
+    "Who filled in the last one, and how many hours did it take?",
+    "Has a deal ever been delayed or lost because of one?",
+    "What do you use today: old answers, a consultant, a tool? What does it cost?",
+    "If we gave you the next one back 80% done in 48 hours, what would that be worth to you?"
+  ],
+  "numbers": {
+    "cashMin": 450.0,
+    "cashMax": 800.0,
+    "mvpWeeksMin": 4.0,
+    "mvpWeeksMax": 5.0,
+    "priceLabel": "$99–249/mo",
+    "competition": "Gap at low end",
+    "competitionLevel": "low",
+    "whoSells": "Jonatan → founders, CTOs"
+  },
+  "skills": [
+    "security",
+    "coding",
+    "ai",
+    "b2b-sales"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 9,
+    "willingnessToPay": 8,
+    "lowCompetition": 7,
+    "easyToBuild": 6,
+    "easyToSell": 7,
+    "skillFit": 9,
+    "globalPotential": 9,
+    "excitement": 7
+  },
+  "notes": "",
+  "interviews": []
+}

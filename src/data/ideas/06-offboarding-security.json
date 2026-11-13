@@ -1,0 +1,248 @@
+{
+  "id": "offboarding-security",
+  "title": "Offboarding Security for Small Companies",
+  "color": "#0ca30c",
+  "industry": "Cybersecurity",
+  "status": "idea",
+  "source": "Victor × Jonatan idea list",
+  "tags": [
+    "New idea",
+    "Fits Victor's cybersecurity path",
+    "Global"
+  ],
+  "summary": "When someone leaves a small company, nobody knows which of 50 tools they can still access. Find and remove it all in one click.",
+  "priceLabel": "$3 / employee / month",
+  "hook": "\"He left 4 months ago. Why is his account still logged into our AWS and our customer database?\"",
+  "story": "**A 35-person marketing agency uses about 50 cloud tools:** Google Workspace, Slack, Figma, Notion, HubSpot, AWS, Canva, a password manager and many more. When a designer leaves, the office manager disables her Google account and assumes that's enough.\n\nBut she signed up to **12 tools with her own password**, shared files publicly, and still has access to a client's ad account. Nobody has a list. Months later, a former employee's old account is used to **log in and download client data**.",
+  "whyReal": [
+    {
+      "title": "Every company has people leaving",
+      "text": "Staff turnover happens all the time, and each departure is a security moment."
+    },
+    {
+      "title": "Small companies have no IT team",
+      "text": "There's no one whose job is \"remove access everywhere\"."
+    },
+    {
+      "title": "Real security and compliance risk",
+      "text": "Former employees with access are a known cause of data leaks, and security questionnaires (idea ①) ask about offboarding."
+    },
+    {
+      "title": "But: competitors exist",
+      "text": "SaaS-management tools exist, mostly aimed at mid-size and larger companies with matching prices."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "companies with 10–150 employees and no dedicated IT/security person (agencies, startups, consultancies)."
+    },
+    {
+      "label": "Buyer",
+      "text": "founder, COO or office manager."
+    },
+    {
+      "label": "Market",
+      "text": "global, starting with companies on Google Workspace or Microsoft 365."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Connect",
+      "text": "one click to connect Google Workspace or Microsoft 365 (admin)."
+    },
+    {
+      "title": "Discover",
+      "text": "we find every app employees signed into with Google/Microsoft, plus licences and shared files."
+    },
+    {
+      "title": "Map",
+      "text": "each person gets a profile: \"Sarah uses 23 apps, admin in 4, owns 312 shared files\"."
+    },
+    {
+      "title": "Offboard",
+      "text": "when someone leaves, click \"Offboard Sarah\" to get a checklist, automatic removal where APIs allow, and ownership transfer of files."
+    },
+    {
+      "title": "Prove it",
+      "text": "a report shows everything removed, with timestamps, ready for audits or security questionnaires."
+    },
+    {
+      "title": "Monitor",
+      "text": "weekly alerts for risky things like public file links or ex-employees still active."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Google Workspace connection",
+      "App discovery (OAuth tokens / sign-ins)",
+      "Per-person access view",
+      "Offboarding checklist + Google account actions",
+      "PDF report"
+    ],
+    "later": [
+      "Microsoft 365",
+      "Auto-removal in Slack, GitHub, Notion, AWS…",
+      "Onboarding templates",
+      "Shadow-IT and unused-licence savings report",
+      "Link with idea ① (security questionnaire answers)"
+    ]
+  },
+  "techStack": [
+    "Python + Django",
+    "Google Workspace Admin SDK / Microsoft Graph",
+    "Celery jobs",
+    "PostgreSQL",
+    "strong security practices (encryption, least privilege) since we hold admin access"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "**Validate.** Ask 15 small companies: \"What happens when someone leaves?\" Do a free manual audit for 3 of them."
+    },
+    {
+      "when": "Week 3–4",
+      "what": "Google Workspace connection, app discovery, access view."
+    },
+    {
+      "when": "Week 5–6",
+      "what": "Offboarding flow, reports, first paying customers."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": "",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server + database",
+      "note": "EU hosting",
+      "cost": "€10–25 / month"
+    },
+    {
+      "item": "Google app verification",
+      "note": "Security review may be needed for sensitive scopes",
+      "cost": "€0–?"
+    },
+    {
+      "item": "Email",
+      "note": "Alerts",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €400–750 (+ possible Google security assessment later)",
+  "pricing": [
+    {
+      "name": "$3 per employee / month",
+      "description": "35 people = $105/mo"
+    },
+    {
+      "name": "Minimum $49/mo",
+      "description": "Small teams"
+    },
+    {
+      "name": "Free audit",
+      "description": "One-time access report as the hook"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 500,
+      "value": 40,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 29,
+      "max": 499,
+      "value": 120,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "SaaS management (e.g. Torii, Zluri, BetterCloud)",
+      "what": "Discover apps, automate offboarding",
+      "gap": "Priced and built for bigger companies",
+      "isUs": false
+    },
+    {
+      "name": "Google/Microsoft admin consoles",
+      "what": "Disable the main account",
+      "gap": "Don't cover the other 40 tools",
+      "isUs": false
+    },
+    {
+      "name": "Spreadsheet checklists",
+      "what": "Manual",
+      "gap": "Things get forgotten",
+      "isUs": false
+    },
+    {
+      "name": "Us",
+      "what": "Simple, cheap, 15-minute setup",
+      "gap": "Made for companies with no IT person",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "We hold admin access = big trust ask",
+      "answer": "Minimal permissions, security-first build, clear policies; Victor's security skills are the selling point."
+    },
+    {
+      "risk": "Google OAuth verification is strict",
+      "answer": "Start with less sensitive scopes; plan time for review."
+    },
+    {
+      "risk": "\"It hasn't happened to us\"",
+      "answer": "Free audit shows real exposed accounts, which is the wake-up call."
+    },
+    {
+      "risk": "Competitors move down-market",
+      "answer": "Win on simplicity, price and local languages."
+    }
+  ],
+  "questions": [
+    "When someone left recently, what exactly did you do to remove their access?",
+    "How many tools does your team use? Do you have a list?",
+    "Who is responsible for IT and security at your company?",
+    "Have you ever found an ex-employee still had access somewhere?",
+    "Do customers ask about your offboarding process in security questionnaires?"
+  ],
+  "numbers": {
+    "cashMin": 400.0,
+    "cashMax": 750.0,
+    "mvpWeeksMin": 5.0,
+    "mvpWeeksMax": 6.0,
+    "priceLabel": "$3/employee/mo",
+    "competition": "Medium (big players up-market)",
+    "competitionLevel": "medium",
+    "whoSells": "Both → small companies"
+  },
+  "skills": [
+    "security",
+    "coding",
+    "integrations"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 7,
+    "willingnessToPay": 6,
+    "lowCompetition": 5,
+    "easyToBuild": 6,
+    "easyToSell": 6,
+    "skillFit": 9,
+    "globalPotential": 9,
+    "excitement": 7
+  },
+  "notes": "",
+  "interviews": []
+}
