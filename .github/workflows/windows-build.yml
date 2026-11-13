@@ -30,10 +30,11 @@ jobs:
           HAS_KEY: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY != '' }}
           HAS_TOKEN: ${{ secrets.RELEASES_TOKEN != '' }}
         run: |
-          if [ "$HAS_KEY" != "true" ] || [ "$HAS_TOKEN" != "true" ]; then
-            echo "::error::Missing secret. Add TAURI_SIGNING_PRIVATE_KEY and RELEASES_TOKEN in Settings → Secrets and variables → Actions (see README)."
-            exit 1
-          fi
+          echo "TAURI_SIGNING_PRIVATE_KEY set: $HAS_KEY"
+          echo "RELEASES_TOKEN set: $HAS_TOKEN"
+          if [ "$HAS_KEY" != "true" ]; then echo "::error::Secret TAURI_SIGNING_PRIVATE_KEY is missing (add it under Settings → Secrets and variables → Actions → Repository secrets)."; fi
+          if [ "$HAS_TOKEN" != "true" ]; then echo "::error::Secret RELEASES_TOKEN is missing (add it under Settings → Secrets and variables → Actions → Repository secrets)."; fi
+          [ "$HAS_KEY" = "true" ] && [ "$HAS_TOKEN" = "true" ]
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
