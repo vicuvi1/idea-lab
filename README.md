@@ -31,17 +31,27 @@ Your browser opens at http://localhost:5173. On Windows you can also just double
 
 ## Run it as a desktop app (Windows)
 
-**Option A: download the installer (easiest).** On GitHub, go to **Actions → Build Windows app → Run workflow**. When it finishes, download `idea-lab-windows` and run the `.exe` installer.
+**Install:** download the latest `Idea.Lab_x.y.z_x64-setup.exe` from
+**https://github.com/vicuvi1/idea-lab-releases/releases/latest** and run it. The installer adds a desktop and Start-menu icon.
 
-**Option B: run from source.** Install [Rust](https://rustup.rs) (and the "Desktop development with C++" tools it asks for), then:
+**Updates:** the app checks for a new version at start-up. Click **Update** in the sidebar (or **Settings → App updates**) and it downloads, installs and restarts itself. Your data is kept.
 
-```bash
-npm install
-npm run desktop          # opens the app window
-npm run desktop:build    # builds an installer in src-tauri/target/release/bundle/
-```
+**From source:** install [Rust](https://rustup.rs) (and the "Desktop development with C++" tools it asks for), then run `npm run desktop`, or double-click **`start-desktop.bat`**.
 
-Or double-click **`start-desktop.bat`**.
+### How releases work
+
+Every push to `main` triggers **.github/workflows/windows-build.yml**, which:
+
+1. Builds version `0.2.<run number>` on a Windows machine
+2. Signs the update with the updater key
+3. Publishes the installer and `latest.json` to the public repo **vicuvi1/idea-lab-releases**. The code itself stays private in this repo.
+
+The workflow needs two repository secrets (**Settings → Secrets and variables → Actions**):
+
+| Secret | What it is |
+|---|---|
+| `TAURI_SIGNING_PRIVATE_KEY` | The updater signing key. Keep a copy somewhere safe: if it's lost, installed apps can't verify new updates and you'd have to reinstall once with a new key. |
+| `RELEASES_TOKEN` | A fine-grained GitHub token with **Contents: Read and write** on `vicuvi1/idea-lab-releases` |
 
 ## Where your data is stored
 
@@ -57,7 +67,7 @@ The two keep separate data. To move data between them, use **Settings → Downlo
 
 ## Tech
 
-React + TypeScript + Vite · Recharts · Tauri 2 (desktop) · plain CSS with light/dark themes.
+React + TypeScript + Vite · Recharts · Tauri 2 (desktop, with self-updater) · plain CSS with light/dark themes.
 
 ## Roadmap
 

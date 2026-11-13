@@ -3,6 +3,7 @@ import { useStore } from '../store'
 import { downloadFile, storageLocation } from '../lib/storage'
 import type { AppState, Idea } from '../types'
 import { CRITERIA } from '../lib/criteria'
+import { UpdatePanel } from '../components/UpdatePanel'
 
 function ideaToMarkdown(i: Idea) {
   const L: string[] = [`## ${i.title}`, '', `*${i.industry} · ${i.status} · ${i.priceLabel}*`, '', i.summary, '']
@@ -51,6 +52,7 @@ export default function Settings() {
           <button className="btn" style={{ width: 'fit-content' }} onClick={() => downloadFile(`idea-lab-notes-${stamp}.md`, `# Idea Lab export (${stamp})\n\n` + state.ideas.map(ideaToMarkdown).join('\n---\n\n'), 'text/markdown')}>⬇ Export all ideas as Markdown</button>
           {msg && <p className="small">{msg}</p>}
         </div>
+        <UpdatePanel />
         <div className="card stack">
           <div className="card-title">Danger zone</div>
           <p className="muted small">Reset brings back the original 8 ideas and deletes your edits, conversations and notes.</p>

@@ -1,12 +1,16 @@
 {
   "$schema": "../gen/schemas/desktop-schema.json",
   "identifier": "default",
-  "description": "Main window: core features + reading/writing the app's own data folder",
-  "windows": ["main"],
+  "description": "Main window: core features, own data folder, self-update and restart",
+  "windows": [
+    "main"
+  ],
   "permissions": [
     "core:default",
     "fs:default",
     "fs:allow-appdata-read-recursive",
-    "fs:allow-appdata-write-recursive"
+    "fs:allow-appdata-write-recursive",
+    "updater:default",
+    "process:allow-restart"
   ]
 }

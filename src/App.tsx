@@ -10,6 +10,7 @@ import FitPage from './pages/Fit'
 import Money from './pages/Money'
 import Validation from './pages/Validation'
 import Settings from './pages/Settings'
+import { UpdaterProvider } from './lib/updater'
 
 function Routed() {
   const { ready } = useStore()
@@ -35,9 +36,11 @@ function Routed() {
 export default function App() {
   return (
     <StoreProvider>
-      <HashRouter>
-        <Routed />
-      </HashRouter>
+      <UpdaterProvider>
+        <HashRouter>
+          <Routed />
+        </HashRouter>
+      </UpdaterProvider>
     </StoreProvider>
   )
 }

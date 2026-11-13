@@ -1,6 +1,7 @@
 import { NavLink, Outlet } from 'react-router-dom'
 import { useStore } from '../store'
 import { useEffect, useState } from 'react'
+import { UpdateBadge } from './UpdatePanel'
 
 const NAV = [
   { to: '/', label: 'Dashboard', ico: '◧' },
@@ -35,6 +36,7 @@ export function Layout() {
           <button className="btn sm" onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
             {theme === 'dark' ? '☀ Light mode' : '☾ Dark mode'}
           </button>
+          <UpdateBadge />
           <span>{state.ideas.length} ideas</span>
           <span className="saved-dot" style={{ opacity: saved ? 1 : 0 }}>Saved</span>
         </div>
