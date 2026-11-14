@@ -1,0 +1,320 @@
+{
+  "id": "r-extrawork",
+  "title": "ExtraWork: change-order capture for small subcontractors",
+  "color": "#d95926",
+  "industry": "Construction",
+  "status": "idea",
+  "source": "Top 25 SaaS ideas for Victor (research report, Nov 2026)",
+  "rank": 2,
+  "batch": "Top 50 research (Nov 2026)",
+  "tags": [
+    "Jonatan's network",
+    "Strong money pain",
+    "Voice + AI"
+  ],
+  "summary": "Foremen record extra work by voice note or photo; AI turns it into a priced change order that the client's site manager signs on their phone before anyone forgets.",
+  "priceLabel": "€39–199 / month",
+  "hook": "\"The site manager said 'just do it'. Three months later the main contractor called it original scope and refused to pay.\"",
+  "story": "**Mikael owns a 20-person electrical subcontracting firm in the UK.** On a typical job the main contractor's site manager asks his foreman to move six sockets and add a cable run. It is agreed by voice or on WhatsApp. The foreman means to write it down, but by Friday nobody remembers the hours or materials.\n\nWhen Mikael invoices at the end of the project, the main contractor disputes the extras: there is **no signed paper**. He either writes the money off or accepts a big discount. Industry surveys say this is normal: **66% of subcontractors wrote off change-order revenue in the last year**. With ExtraWork, the foreman speaks a 20-second voice note, AI prices it from the rate card, and the site manager signs a link on his phone **the same day**.",
+  "whyNow": "A 2026 Clearstory and Dodge Construction Network report says 92% of subcontractors are not always paid in full for change orders and 66% wrote off change-order revenue in the last 12 months. Cheap speech-to-text and LLMs make a voice-first tool possible for small firms for the first time. There is no regulatory deadline.",
+  "evidence": [
+    "92% of subcontractors are not always paid in full for change orders; only 6% say all are paid in full (vendor survey) [Clearstory]",
+    "66% of subcontractors wrote off change-order revenue in the last 12 months; change orders are discounted by an average of 22% (vendor survey) [Clearstory]",
+    "\"Up to 36% of T&M tags never make it from the field to the office\" (vendor claim) [Clearstory blog]",
+    "An older 2023 vendor survey estimated 32% of project revenue lost to unbilled or unpaid change orders (probably inflated) [Procore]",
+    "Procore starts at roughly $4.5k–10k a year with a one-year minimum; Fieldwire is free for 5 users, then $39/$64/$89 per user per month [Projul / BuilderSoftwareGuide]"
+  ],
+  "sources": [
+    {
+      "title": "Clearstory: 2026 subcontractor industry report",
+      "url": "https://www.clearstory.build/sc-industry-report"
+    },
+    {
+      "title": "Clearstory: how change orders affect subcontractor cash flow",
+      "url": "https://www.clearstory.build/construction-blog/how-change-orders-affect-subcontractor-cash-flow"
+    },
+    {
+      "title": "Clearstory: 2026 state of change orders webinar",
+      "url": "https://www.clearstory.build/webinar-the-2026-state-of-change-orders-subcontactors"
+    },
+    {
+      "title": "Procore: unbilled and unpaid change orders",
+      "url": "https://www.procore.com/jobsite/unbilled-and-unpaid-change-orders-are-hurting-your-revenue"
+    },
+    {
+      "title": "eSUB: change order management for trade contractors",
+      "url": "https://esub.com/blog/change-order-management-for-trade-contractors-what-to-track-and-why-it-matters"
+    },
+    {
+      "title": "Projul: Procore pricing analysis 2026",
+      "url": "https://projul.com/blog/procore-pricing-analysis-2026/"
+    },
+    {
+      "title": "BuilderSoftwareGuide: Procore vs Fieldwire",
+      "url": "https://buildersoftwareguide-site.pages.dev/compare/procore-vs-fieldwire"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "The money loss is direct",
+      "text": "Unpaid extras come straight out of profit. Even a 2–5% leak for a subcontractor with €2M revenue would be €40–100k a year (an inference, not a measured number), many times the price of the tool."
+    },
+    {
+      "title": "The paper trail breaks in the field",
+      "text": "Extras are agreed verbally or on WhatsApp, and Clearstory says up to 36% of T&M tags never reach the office. General contractors then reclassify undocumented extras as original scope (eSUB)."
+    },
+    {
+      "title": "Existing tools are too big",
+      "text": "Clearstory serves enterprise contractors; Procore costs thousands a year with a one-year minimum. Small subcontractors need something as simple as WhatsApp."
+    },
+    {
+      "title": "Same calls as SubDocs",
+      "text": "Jonatan can ask about subcontractor documents and unpaid extra work in one phone call to the same firms."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "Specialist subcontractors with 5–50 staff: electrical, HVAC, drywall, painting, steel, scaffolding."
+    },
+    {
+      "label": "Buyer",
+      "text": "The owner or project manager. The daily users are the foremen."
+    },
+    {
+      "label": "Start market",
+      "text": "UK and Sweden (Jonatan's calls), then US and Australia, where the pain is higher than in Nordic markets with strong standard contracts."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Foreman records the extra",
+      "text": "a voice note or typed line plus photos in a phone web app: \"moved 6 sockets per site manager, 2 men 4 hours + materials\"."
+    },
+    {
+      "title": "AI structures it",
+      "text": "speech-to-text + LLM pull out labour hours, materials and the reason for the extra work."
+    },
+    {
+      "title": "Priced from the rate card",
+      "text": "the company's own rates turn the tag into a priced change order."
+    },
+    {
+      "title": "Client signs on the phone",
+      "text": "the site manager gets a signing link; the signature is stored with timestamp, location and a PDF."
+    },
+    {
+      "title": "Status board and reminders",
+      "text": "draft, sent, signed, invoiced, disputed; unsigned tags trigger reminder emails."
+    },
+    {
+      "title": "Monthly export",
+      "text": "a CSV for invoicing so nothing signed is forgotten."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Progressive web app with voice-to-text and photo capture",
+      "AI extraction of labour hours, materials and reason",
+      "Company rate card that prices each tag",
+      "Client signing link with timestamp, location and PDF",
+      "Status board: draft, sent, signed, invoiced, disputed",
+      "Reminder emails for unsigned tags",
+      "Monthly CSV export for invoicing"
+    ],
+    "later": [
+      "Rates library (part of the €199 plan)",
+      "Accounting integrations (Fortnox, Xero, QuickBooks)",
+      "WhatsApp capture",
+      "Swedish and German interface",
+      "Dispute pack: all tags and photos for a project in one PDF"
+    ]
+  },
+  "techStack": [
+    "Progressive web app (React / Next.js)",
+    "Speech-to-text API (Whisper-class)",
+    "Small LLM for structuring tags",
+    "PostgreSQL / Supabase",
+    "E-signature via own signing page + PDF generation",
+    "Resend / Postmark email, optional SMS",
+    "Stripe billing"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "**Validate, no code.** Post in r/Construction, r/electricians and on LinkedIn; Jonatan calls 15 Swedish and UK subcontractors (same calls as SubDocs). Give them a free \"digital T&M tag\" made with Typeform and a PDF template, and check whether foremen use it on real jobs within a week. Ask 5 firms for a €39/month pre-order."
+    },
+    {
+      "when": "Week 3–5",
+      "what": "Victor builds the phone app with voice and photo capture, AI extraction and the rate card."
+    },
+    {
+      "when": "Week 6–8",
+      "what": "Signing link, status board, reminders, CSV export and Stripe billing."
+    },
+    {
+      "when": "Week 9–10",
+      "what": "Pilot firms use it on live jobs; measure how many tags get signed and invoiced."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server, database and email (basic stack)",
+      "note": "Small EU cloud server or Vercel/Supabase free tiers + transactional email (report estimate)",
+      "cost": "€25–45 / month"
+    },
+    {
+      "item": "AI API",
+      "note": "Speech-to-text + LLM per tag are cheap",
+      "cost": "€5–20 / month"
+    },
+    {
+      "item": "SMS / email notifications",
+      "note": "Signing links and reminders",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Landing page and validation tools",
+      "note": "Carrd / Typeform / Google Forms for the no-code test",
+      "cost": "€0–20 / month"
+    },
+    {
+      "item": "Running cost with 20–50 customers",
+      "note": "Report estimate, not a price quote",
+      "cost": "€20–50 / month"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €500–750 (report: €200–300 product costs + €300–450 AI coding tools)",
+  "pricing": [
+    {
+      "name": "Crew: €39/mo",
+      "description": "Up to 3 field users"
+    },
+    {
+      "name": "Team: €99/mo",
+      "description": "Up to 15 field users"
+    },
+    {
+      "name": "Company: €199/mo",
+      "description": "Unlimited users plus a rates library"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 300,
+      "value": 30,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 39,
+      "max": 199,
+      "value": 79,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "Clearstory",
+      "what": "Change-order management for enterprise contractors",
+      "gap": "No public price; built for large firms",
+      "isUs": false
+    },
+    {
+      "name": "Procore",
+      "what": "Full construction management platform",
+      "gap": "About $4.5k–10k a year with a one-year minimum",
+      "isUs": false
+    },
+    {
+      "name": "Fieldwire",
+      "what": "Field management app",
+      "gap": "Free for 5 users, then $39–89 per user per month; not focused on signed extras",
+      "isUs": false
+    },
+    {
+      "name": "eSUB",
+      "what": "Trade-contractor project management",
+      "gap": "A bigger system than a small subcontractor needs",
+      "isUs": false
+    },
+    {
+      "name": "Paper, WhatsApp, memory",
+      "what": "What most small subcontractors use",
+      "gap": "No signature, no price, extras forgotten or disputed",
+      "isUs": false
+    },
+    {
+      "name": "Us",
+      "what": "Voice note → priced change order → client signs on phone",
+      "gap": "WhatsApp-simple, under €100/mo for most small subcontractors",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "The client's site manager may refuse to sign",
+      "answer": "Ask this in every interview; the signed link is optional, and a timestamped, photo-backed record still helps in disputes."
+    },
+    {
+      "risk": "Foremen may not use it",
+      "answer": "Voice-first, no login, under 30 seconds per tag; test real usage with the Typeform version first."
+    },
+    {
+      "risk": "Lower pain in the Nordics",
+      "answer": "Strong standard contracts (AB04/ABT06) reduce disputes; push UK, US and Australia harder."
+    }
+  ],
+  "questions": [
+    "Roughly how much extra work did you do last year that you were never paid for?",
+    "How does a foreman record extra work today, and how does it reach the office?",
+    "How often does the main contractor dispute a variation, and on what grounds?",
+    "How long is it from doing the extra work to invoicing it?",
+    "Would your clients' site managers sign on a phone link? Why or why not?"
+  ],
+  "numbers": {
+    "cashMin": 500.0,
+    "cashMax": 750.0,
+    "mvpWeeksMin": 7.0,
+    "mvpWeeksMax": 8.0,
+    "priceLabel": "€39–199/mo",
+    "competition": "Enterprise tools only; gap for small subs",
+    "competitionLevel": "low",
+    "whoSells": "Jonatan → specialist subcontractors (same calls as SubDocs)"
+  },
+  "skills": [
+    "coding",
+    "ai",
+    "construction",
+    "b2b-sales"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 9,
+    "willingnessToPay": 7,
+    "lowCompetition": 7,
+    "easyToBuild": 7,
+    "easyToSell": 8,
+    "skillFit": 7,
+    "globalPotential": 8,
+    "excitement": 6
+  },
+  "notes": "",
+  "interviews": []
+}

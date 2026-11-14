@@ -1,0 +1,309 @@
+{
+  "id": "r-agencypulse",
+  "title": "AgencyPulse: white-label website health, security and accessibility reports for web agencies",
+  "color": "#d95926",
+  "industry": "Web agencies",
+  "status": "idea",
+  "source": "Top 25 SaaS ideas for Victor (research report, Nov 2026)",
+  "rank": 10,
+  "batch": "Top 50 research (Nov 2026)",
+  "tags": [
+    "EAA accessibility",
+    "White-label",
+    "Victor's security skills"
+  ],
+  "summary": "One monthly report with the agency's logo on every client website (uptime, security, expiry dates, speed and EU accessibility) that web agencies resell to clients as a \"care plan\".",
+  "priceLabel": "$29–199 / month",
+  "hook": "\"A client's SSL certificate expired on a Saturday and they found out from their customers, not from us.\"",
+  "story": "**Marco runs a 5-person web agency in Berlin that maintains 60 client sites** on WordPress, Webflow, Shopify and a few Next.js builds. He sells \"care plans\", but reporting to clients means logging into different tools for each stack and pasting screenshots into a monthly email.\n\nSince the **European Accessibility Act** became enforceable, shop clients ask whether their checkout is compliant; German shops have already received warning letters. With AgencyPulse, every site gets one **outside-in report with Marco's logo**: uptime, SSL and domain expiry, email security, exposed files, speed, and honest accessibility checks on the checkout, plus AI fix suggestions.",
+  "whyNow": "The European Accessibility Act has been enforceable since 28 June 2025, and its second year of enforcement began on 28 June 2026. Sweden's regulator PTS opened its first e-commerce cases, German shops received warning letters, and a July 2026 article says most businesses are \"still catching up\".",
+  "evidence": [
+    "The EAA has been enforceable since 28 June 2025; Sweden's PTS opened its first e-commerce cases and German shops received warning letters [Disability World / TestParty]",
+    "Most businesses are \"still catching up\" one year after the EAA (July 2026) [KEYT/Stacker]",
+    "WP Umbrella charges €1.99 per site per month for white-label WordPress maintenance reports [WP Umbrella]",
+    "ManageWP has a free core with paid per-site add-ons such as +$2 for backups and +$1 for uptime [Gautam Khorana]",
+    "62% of second-year EAA sanctions targeted checkout flows (single editorial source, unverified) [Disability World]",
+    "Very small firms (under 10 staff and up to €2M turnover) are exempt for services, which shrinks the EU market [fudge.ai]"
+  ],
+  "sources": [
+    {
+      "title": "Disability World: EAA penalty year 2",
+      "url": "https://www.disabilityworld.org/articles/eaa-penalty-year-2/"
+    },
+    {
+      "title": "TestParty: EAA enforcement examples Germany and France 2026",
+      "url": "https://testparty.ai/blog/eaa-enforcement-examples-germany-france-2026"
+    },
+    {
+      "title": "KEYT/Stacker: one year after the EAA",
+      "url": "https://keyt.com/stacker-business-economy/2026/07/31/one-year-after-the-european-accessibility-act-most-businesses-are-still-catching-up/"
+    },
+    {
+      "title": "WP Umbrella",
+      "url": "https://wp-umbrella.com/"
+    },
+    {
+      "title": "Gautam Khorana: ManageWP alternatives",
+      "url": "https://gautamkhorana.com/blog/managewp-alternatives/"
+    },
+    {
+      "title": "fudge.ai: European Accessibility Act for Shopify",
+      "url": "https://www.fudge.ai/blog/european-accessibility-act-shopify/"
+    },
+    {
+      "title": "Level Access: EAA compliance in 2026",
+      "url": "https://www.levelaccess.com/blog/eaa-compliance-in-2026-how-enforcement-has-evolved-and-what-to-expect-next/"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "Agencies already pay per site",
+      "text": "WP Umbrella (€1.99/site) and ManageWP add-ons prove agencies pay for white-label reports, but only for WordPress."
+    },
+    {
+      "title": "Accessibility is a new, enforced reason",
+      "text": "EAA enforcement started in 2025, with first cases in Sweden and warning letters in Germany."
+    },
+    {
+      "title": "Stacks are mixed",
+      "text": "Agencies run WordPress, Webflow, Shopify and Next.js side by side; one outside-in report covers all of them."
+    },
+    {
+      "title": "Security is Victor's skill",
+      "text": "Checks for exposed .git/.env files, headers, email security and outdated libraries come straight from his cybersecurity background."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "Web agencies and freelancers that maintain 10–300 client sites on WordPress, Webflow, Shopify, Next.js or static hosting."
+    },
+    {
+      "label": "Buyer",
+      "text": "The agency owner."
+    },
+    {
+      "label": "Start market",
+      "text": "EU agencies (Sweden and Germany for the EAA hook), then worldwide in English."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Add sites",
+      "text": "paste a list or upload a CSV of client sites."
+    },
+    {
+      "title": "Scheduled outside-in checks",
+      "text": "uptime, SSL/domain/DNS expiry, SPF/DKIM/DMARC, security headers, exposed files (.git, .env), outdated JavaScript libraries and CMS versions, Core Web Vitals, broken links."
+    },
+    {
+      "title": "Accessibility tests",
+      "text": "axe-core with Playwright on key pages, including a scripted checkout."
+    },
+    {
+      "title": "AI fix suggestions",
+      "text": "plain-English fixes, alt-text drafts and an accessibility statement generator."
+    },
+    {
+      "title": "Alerts",
+      "text": "instant alerts for downtime and expiries."
+    },
+    {
+      "title": "White-label report",
+      "text": "monthly PDF and web report with the agency's logo."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Add sites by CSV",
+      "Uptime, SSL/domain/DNS expiry and email-security checks",
+      "Security headers, exposed files, outdated libraries and CMS versions",
+      "Core Web Vitals (PageSpeed API) and broken links",
+      "axe-core + Playwright accessibility tests incl. scripted checkout",
+      "AI fix suggestions and alt-text drafts",
+      "White-label PDF and web report + alerts"
+    ],
+    "later": [
+      "Accessibility statement generator",
+      "Free \"site health grade\" lead-magnet page",
+      "Client-facing dashboard",
+      "Plugin-based deeper checks for WordPress",
+      "Shopify Partners listing"
+    ]
+  },
+  "techStack": [
+    "Node + Playwright (headless browser checks)",
+    "axe-core (accessibility)",
+    "Google PageSpeed Insights API (free within quota)",
+    "Scheduled job queue on a small server",
+    "PostgreSQL",
+    "LLM for fix suggestions and report text",
+    "PDF generation, Stripe billing"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "**Validate, no code.** Produce reports by hand with free tools (PageSpeed Insights, SSL Labs, MXToolbox, the axe browser extension) for the checkouts of 30 Swedish and German shops and for 3 client sites each of 50 agencies. Target 5 agencies asking for a bulk version and 2 pre-paying."
+    },
+    {
+      "when": "Week 3–5",
+      "what": "Victor builds the scanner: uptime, expiry, email security, headers, exposed files, speed."
+    },
+    {
+      "when": "Week 6–8",
+      "what": "Accessibility tests, AI fix suggestions, white-label PDF, alerts, billing."
+    },
+    {
+      "when": "Week 9–10",
+      "what": "Free \"site health grade\" page; Jonatan emails agencies a free report on three of their client sites."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server, database and email (basic stack)",
+      "note": "Small EU cloud server or Vercel/Supabase free tiers + transactional email (report estimate)",
+      "cost": "€25–45 / month"
+    },
+    {
+      "item": "AI API",
+      "note": "Report text and fix suggestions",
+      "cost": "€5–15 / month"
+    },
+    {
+      "item": "Landing page and validation tools",
+      "note": "Carrd / Typeform / Google Forms for the no-code test",
+      "cost": "€0–20 / month"
+    },
+    {
+      "item": "Running cost with 20–50 customers",
+      "note": "Report estimate, not a price quote",
+      "cost": "€20–40 / month"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €500–750 (report: €200–300 product costs + €300–450 AI coding tools)",
+  "pricing": [
+    {
+      "name": "Per site: $1.50/site/mo",
+      "description": "Minimum $29/month"
+    },
+    {
+      "name": "Bundles: $49 / $99 / $199 per month",
+      "description": "25 / 75 / 250 sites"
+    },
+    {
+      "name": "Accessibility module",
+      "description": "$29 per store or $149 for 10 stores"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 300,
+      "value": 30,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 29,
+      "max": 199,
+      "value": 79,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "ManageWP, WP Umbrella, MainWP",
+      "what": "WordPress maintenance and white-label reports",
+      "gap": "WordPress only",
+      "isUs": false
+    },
+    {
+      "name": "UptimeRobot, Better Stack",
+      "what": "Uptime monitoring",
+      "gap": "Uptime only; no security or accessibility report",
+      "isUs": false
+    },
+    {
+      "name": "accessiBe, TestParty, Level Access, Deque",
+      "what": "Accessibility overlays or enterprise services",
+      "gap": "Overlay promises or enterprise pricing",
+      "isUs": false
+    },
+    {
+      "name": "Us",
+      "what": "One outside-in report for any stack: health, security and honest accessibility checks",
+      "gap": "White-label, $1.50/site, no \"overlay\" promises",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Low barrier to entry; many cheap monitors",
+      "answer": "Bundle security + accessibility + white-label in one report; that is the difference."
+    },
+    {
+      "risk": "Price-sensitive agencies",
+      "answer": "Per-site pricing that the agency marks up in its care plan."
+    },
+    {
+      "risk": "Outside-in scanning is shallower than plugin tools",
+      "answer": "Be clear about scope; add plugins later for WordPress."
+    },
+    {
+      "risk": "Automated accessibility tests find only part of the problems",
+      "answer": "Never promise full compliance; position as monitoring and fix guidance."
+    }
+  ],
+  "questions": [
+    "How many client sites do you maintain, and on which platforms?",
+    "Do you sell care or maintenance plans, and what do you include and charge?",
+    "How do you report to clients today?",
+    "Has a client asked about the European Accessibility Act, or had a site hacked or a domain or SSL certificate expire?",
+    "What would you pay per site for automated white-label reports?"
+  ],
+  "numbers": {
+    "cashMin": 500.0,
+    "cashMax": 750.0,
+    "mvpWeeksMin": 7.0,
+    "mvpWeeksMax": 8.0,
+    "priceLabel": "$29–199/mo",
+    "competition": "Many monitors; few cross-stack reports",
+    "competitionLevel": "medium",
+    "whoSells": "Jonatan → web agency owners (free report on 3 client sites)"
+  },
+  "skills": [
+    "coding",
+    "security",
+    "ai",
+    "design",
+    "marketing"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 7,
+    "willingnessToPay": 6,
+    "lowCompetition": 5,
+    "easyToBuild": 7,
+    "easyToSell": 8,
+    "skillFit": 8,
+    "globalPotential": 9,
+    "excitement": 6
+  },
+  "notes": "",
+  "interviews": []
+}

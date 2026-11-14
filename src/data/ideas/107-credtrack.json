@@ -1,0 +1,309 @@
+{
+  "id": "r-credtrack",
+  "title": "CredTrack: staff certificate and right-to-work tracking for care and staffing agencies",
+  "color": "#9085e9",
+  "industry": "Healthcare / staffing",
+  "status": "idea",
+  "source": "Top 25 SaaS ideas for Victor (research report, Nov 2026)",
+  "rank": 7,
+  "batch": "Top 50 research (Nov 2026)",
+  "tags": [
+    "Document engine",
+    "Reuses SubDocs code",
+    "Weak evidence: test first"
+  ],
+  "summary": "Staff upload certificates and right-to-work documents from their phone; AI reads the expiry dates and chases renewals, so the agency, clinic or care home is always ready for an inspection.",
+  "priceLabel": "$49–199 / month",
+  "hook": "\"We had to stand a nurse down on the morning of a shift because her training certificate had expired and nobody noticed.\"",
+  "story": "**Priya is compliance manager at a UK care staffing agency with 120 workers.** Every worker needs valid right-to-work documents, DBS checks, training certificates and sometimes a driving licence. She keeps them in shared folders and a spreadsheet, and she chases workers by text message when something is about to expire.\n\nBefore an inspection she spends days checking every file by hand. One expired certificate can mean a worker cannot take a shift, or a client loses trust. With CredTrack, workers **upload a photo from their phone**, AI reads the **issuer and expiry date**, reminders go out automatically, and Priya can export an **inspection-ready pack per worker** in one click.",
+  "whyNow": "In 2026 several funded US companies added AI credential checks for staffing firms (KarmaCheck inside Bullhorn, Asurint with Bullhorn in July 2026, Firstwork). This shows the workflow has value, but they focus on US healthcare staffing on Bullhorn, leaving small UK and EU agencies. No regulatory deadline was found.",
+  "evidence": [
+    "KarmaCheck expanded its Bullhorn integration with AI credentialing automation in 2026 [HR Tech Edge]",
+    "Asurint and Bullhorn launched a healthcare-staffing credential solution in July 2026 [Asurint]",
+    "Firstwork offers credential and onboarding automation for staffing firms [BERI]",
+    "Credential and expiry tracking is named a \"boring but profitable\" niche, with estimated (not reported) revenue potential of $7k–18k a month [Redwerk / MicroGaps]",
+    "Evidence is weak: no UK small-agency survey was found, so this idea must be tested first [Report]"
+  ],
+  "sources": [
+    {
+      "title": "HR Tech Edge: KarmaCheck expands Bullhorn integration",
+      "url": "https://hrtechedge.com/ai-in-hr/karmacheck-expands-bullhorn-integration-with-ai-credentialing-automation/"
+    },
+    {
+      "title": "Asurint: Asurint and Bullhorn credential management",
+      "url": "https://asurint.com/news/asurint-and-bullhorn-streamline-healthcare-staffing-credential-management-solution/"
+    },
+    {
+      "title": "BERI: Firstwork",
+      "url": "https://www.beri.net/tools/firstwork"
+    },
+    {
+      "title": "NextCrew: Crew Pilot platform",
+      "url": "https://www.nextcrew.com/platform/crew-pilot"
+    },
+    {
+      "title": "Redwerk: micro-SaaS ideas that print money",
+      "url": "https://redwerk.com/blog/micro-saas-ideas-that-print-money/"
+    },
+    {
+      "title": "MicroGaps: boring micro-SaaS ideas that make money",
+      "url": "https://www.microgaps.com/blog/boring-micro-saas-ideas-that-make-money"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "Funded companies prove the workflow",
+      "text": "KarmaCheck, Asurint and Firstwork all added AI credential checks in 2026, which shows staffing firms pay for it."
+    },
+    {
+      "title": "They leave small UK/EU agencies out",
+      "text": "Those tools focus on US healthcare staffing on Bullhorn; small agencies without Bullhorn use spreadsheets and folders."
+    },
+    {
+      "title": "Almost no new code",
+      "text": "The magic-link upload, AI expiry extraction and reminders are the same engine as SubDocs."
+    },
+    {
+      "title": "Evidence is still weak",
+      "text": "No UK small-agency survey was found and UK competitors were not researched, so the 2-week test matters more here than for other ideas."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "Care homes, staffing agencies (care, nursing, education, drivers, warehouse temps), private clinics, nurseries and sports clubs with 5–200 workers."
+    },
+    {
+      "label": "Buyer",
+      "text": "The owner, compliance manager or office manager."
+    },
+    {
+      "label": "Start market",
+      "text": "UK, Ireland and the Nordics."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Requirement profiles",
+      "text": "the agency sets which documents each role needs (nurse, carer, driver)."
+    },
+    {
+      "title": "Phone upload",
+      "text": "each worker gets a magic link and uploads photos of documents; no app or login."
+    },
+    {
+      "title": "AI reads the document",
+      "text": "OCR + AI extract name, issuer, issue date and expiry."
+    },
+    {
+      "title": "Compliance matrix",
+      "text": "a green/amber/red grid of workers against required documents."
+    },
+    {
+      "title": "Automatic reminders",
+      "text": "to workers and managers before anything expires."
+    },
+    {
+      "title": "Inspection-ready export",
+      "text": "PDF and CSV pack per worker."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Requirement profiles per role",
+      "Magic-link upload page for phone photos",
+      "OCR + AI extraction of name, issuer, issue date and expiry",
+      "Green/amber/red compliance matrix",
+      "Reminders to workers and managers",
+      "Inspection-ready PDF and CSV pack per worker"
+    ],
+    "later": [
+      "Price per active worker (£2–4/worker/month)",
+      "Integrations with ATS / rostering tools",
+      "Country-specific credential templates (Ireland, Nordics)",
+      "Sports-club welfare officer edition",
+      "Client portal for agencies' customers"
+    ]
+  },
+  "techStack": [
+    "Same stack as SubDocs (shared document engine)",
+    "Next.js or Django web app",
+    "PostgreSQL / Supabase (EU/UK region)",
+    "OCR + small LLM extraction",
+    "Resend / Postmark + SMS reminders",
+    "Encrypted document storage",
+    "Stripe billing"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "**Validate, no code.** Send 100 cold emails to UK care homes and agencies and 50 to sports clubs. Do a concierge audit of one agency's worker files with a spreadsheet and ChatGPT extraction, and count expired or missing documents. Also check UK competitors. Target 3 paying pilots."
+    },
+    {
+      "when": "Week 3–5",
+      "what": "Re-skin the SubDocs engine: role profiles, phone upload, extraction."
+    },
+    {
+      "when": "Week 6–8",
+      "what": "Compliance matrix, reminders, inspection pack, billing."
+    },
+    {
+      "when": "Week 9–10",
+      "what": "Pilots go live; measure expired documents caught and hours saved."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server, database and email (basic stack)",
+      "note": "Small EU cloud server or Vercel/Supabase free tiers + transactional email (report estimate)",
+      "cost": "€25–45 / month"
+    },
+    {
+      "item": "AI API",
+      "note": "A few cents per document extracted",
+      "cost": "€5–20 / month"
+    },
+    {
+      "item": "Landing page and validation tools",
+      "note": "Carrd / Typeform / Google Forms for the no-code test",
+      "cost": "€0–20 / month"
+    },
+    {
+      "item": "Running cost with 20–50 customers",
+      "note": "Report estimate, not a price quote",
+      "cost": "€30–80 / month"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €500–750 (report: €200–300 product costs + €300–450 AI coding tools)",
+  "pricing": [
+    {
+      "name": "Small: $49/mo",
+      "description": "Up to 25 staff"
+    },
+    {
+      "name": "Agency: $99/mo",
+      "description": "Up to 100 staff"
+    },
+    {
+      "name": "Large: $199/mo",
+      "description": "Up to 250 staff (or £2–4 per active worker per month)"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 300,
+      "value": 30,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 49,
+      "max": 199,
+      "value": 89,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "KarmaCheck",
+      "what": "AI credentialing inside Bullhorn",
+      "gap": "US healthcare staffing on Bullhorn",
+      "isUs": false
+    },
+    {
+      "name": "Asurint",
+      "what": "Background and credential checks with Bullhorn",
+      "gap": "US focus; built for Bullhorn users",
+      "isUs": false
+    },
+    {
+      "name": "Firstwork, NextCrew",
+      "what": "Staffing onboarding and credential automation",
+      "gap": "US agencies; heavier platforms",
+      "isUs": false
+    },
+    {
+      "name": "Generic HR tools and spreadsheets",
+      "what": "What small UK/EU agencies use",
+      "gap": "No AI expiry reading, manual chasing (UK competitors not yet researched)",
+      "isUs": false
+    },
+    {
+      "name": "Us",
+      "what": "Phone upload → AI reads expiry → automatic reminders → inspection pack",
+      "gap": "Dead simple for agencies without Bullhorn, $49–199/mo",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Right-to-work and criminal-record checks have legal rules",
+      "answer": "The tool helps track documents; it does not certify. Say so clearly."
+    },
+    {
+      "risk": "Sensitive personal data under GDPR",
+      "answer": "UK/EU hosting, encryption, a data processing agreement and strict access control."
+    },
+    {
+      "risk": "HR suites or ATS vendors may add the feature",
+      "answer": "Target agencies too small for a big ATS; move fast with the shared engine."
+    },
+    {
+      "risk": "Credential types differ by country",
+      "answer": "Start with UK only; add Ireland and the Nordics later."
+    }
+  ],
+  "questions": [
+    "How do you know today whose certificates expire next month?",
+    "Have you ever failed an inspection or had to stand someone down because of an expired document?",
+    "Who chases workers, and how many hours a week does it take?",
+    "Which tool or ATS do you use now, and what does it cost?",
+    "What would losing a contract over compliance cost you, and who signs off on a €50–100 monthly purchase?"
+  ],
+  "numbers": {
+    "cashMin": 500.0,
+    "cashMax": 750.0,
+    "mvpWeeksMin": 6.0,
+    "mvpWeeksMax": 8.0,
+    "priceLabel": "$49–199/mo",
+    "competition": "US tools on Bullhorn; UK not yet checked",
+    "competitionLevel": "medium",
+    "whoSells": "Jonatan → UK care homes and staffing agencies (cold email)"
+  },
+  "skills": [
+    "coding",
+    "ai",
+    "security",
+    "healthcare",
+    "b2b-sales"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 7,
+    "willingnessToPay": 7,
+    "lowCompetition": 6,
+    "easyToBuild": 8,
+    "easyToSell": 7,
+    "skillFit": 8,
+    "globalPotential": 7,
+    "excitement": 6
+  },
+  "notes": "",
+  "interviews": []
+}

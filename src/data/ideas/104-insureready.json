@@ -1,0 +1,342 @@
+{
+  "id": "r-insureready",
+  "title": "InsureReady: cyber-insurance evidence from Microsoft 365, sold through MSPs",
+  "color": "#c98500",
+  "industry": "IT services / MSP",
+  "status": "idea",
+  "source": "Top 25 SaaS ideas for Victor (research report, Nov 2026)",
+  "rank": 4,
+  "batch": "Top 50 research (Nov 2026)",
+  "tags": [
+    "Victor's security skills",
+    "MSP channel",
+    "Insurance renewals"
+  ],
+  "summary": "Connects read-only to a company's Microsoft 365 and produces the evidence pack that cyber insurers now ask for. Sold mainly through small IT providers (MSPs), who resell it to their clients.",
+  "priceLabel": "$4 / tenant / month (min $49)",
+  "hook": "\"The insurer doesn't want a yes anymore. They want proof that MFA is on for every admin, every mailbox and the backups.\"",
+  "story": "**Tom runs a 6-person MSP in Leeds that looks after 35 small businesses' Microsoft 365.** Every few weeks a client's cyber-insurance renewal arrives with a long questionnaire: is MFA enforced for remote access, admin accounts and email? Are legacy logins blocked? Are backups tested? Tom's engineer clicks through each tenant's admin pages and takes screenshots for **hours per client**.\n\nInsurers now check these answers, and claims can be refused if reality does not match the questionnaire. With InsureReady, Tom connects each tenant **read-only once**, and gets a **white-label evidence PDF** mapped to the insurance questions, plus a weekly \"what changed\" email. He resells it to every client as a renewal service.",
+  "whyNow": "Insurers have moved from yes/no questions to asking where MFA is enforced, and partial MFA can count as no MFA. Business email compromise and payment fraud made up 58% of incidents in Coalition's 2026 claims report, and the UK's Cyber Essentials version 3.3 tightened MFA rules from 27 April 2026.",
+  "evidence": [
+    "BEC and payment fraud made up 58% of incidents in Coalition's 2026 claims report, with an average payment-fraud loss of $112k [Coalition]",
+    "BEC claims rose about 30% in the second half of 2025 [Risk & Insurance]",
+    "UK Cyber Essentials v3.3 tightened MFA rules from 27 April 2026 [Computing]",
+    "19% of MSPs name \"inability to quickly demonstrate value to clients\" as a growth barrier (from a search summary) [MSP Success]",
+    "Inforcer needs a 20-tenant minimum and 12-month terms; CoreView runs about $24.7k–49.5k a year (reseller listing) [Inforcer / ChannelOnline]"
+  ],
+  "sources": [
+    {
+      "title": "Consilien: cyber insurance requirements 2026 checklist",
+      "url": "https://consilien.com/news/cyber-insurance-requirements-2026-checklist"
+    },
+    {
+      "title": "UnderDefense: cyber insurance readiness checklist",
+      "url": "https://underdefense.com/blog/cyber-insurance-readiness-checklist/"
+    },
+    {
+      "title": "Todyl: cyber insurance is forcing MSPs to get serious about GRC",
+      "url": "https://www.todyl.com/blog/how-cyber-insurance-is-forcing-msps-to-get-serious-about-grc"
+    },
+    {
+      "title": "Coalition: 2026 cyber claims report",
+      "url": "https://www.coalitioninc.com/announcements/2026-cyber-claims-report"
+    },
+    {
+      "title": "Risk & Insurance: BEC claims jump 30%",
+      "url": "https://riskandinsurance.com/business-email-compromise-claims-jump-30-as-a-i-reshapes-cyber-risk/"
+    },
+    {
+      "title": "Computing: Cyber Essentials discount and v3.3",
+      "url": "https://www.computing.co.uk/news/2026/security/smes-offered-75-percent-discount-cyber-essentials"
+    },
+    {
+      "title": "MSP Success: MSP growth barriers",
+      "url": "https://mspsuccess.com/?p=21070"
+    },
+    {
+      "title": "Inforcer: pricing",
+      "url": "https://www.inforcer.com/request-pricing"
+    },
+    {
+      "title": "Nerdio: CIPP overview",
+      "url": "https://getnerdio.com/cyberdrain-cipp/"
+    },
+    {
+      "title": "Beagle Security: Intruder pricing",
+      "url": "https://beaglesecurity.com/blog/article/intruder-pricing.html"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "Insurers now want proof",
+      "text": "Questionnaires ask where MFA is enforced (remote access, admins, email, backups), and claims are denied when answers do not match reality (Todyl, Consilien)."
+    },
+    {
+      "title": "The losses are big",
+      "text": "BEC and payment fraud are 58% of Coalition's 2026 incidents, with an average payment-fraud loss of $112k."
+    },
+    {
+      "title": "MSP tools have minimums",
+      "text": "Inforcer needs 20 tenants and 12-month terms; CoreView costs tens of thousands a year; CIPP is free but must be self-hosted and maintained."
+    },
+    {
+      "title": "One sale = many clients",
+      "text": "One MSP brings 5–60 client tenants, and Victor's cybersecurity skills are the core of the product."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "Small MSPs (1–15 staff, 5–60 client Microsoft tenants); second, small businesses with 10–250 staff renewing cyber insurance."
+    },
+    {
+      "label": "Buyer",
+      "text": "The MSP owner or technical lead; for direct sales, the office manager or finance lead. Small insurance brokers act as referral partners."
+    },
+    {
+      "label": "Start market",
+      "text": "UK, Nordics, US, Australia and New Zealand, in English."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Connect read-only",
+      "text": "the MSP gives admin consent to a multi-tenant Microsoft Entra app with least-privilege, read-only permissions."
+    },
+    {
+      "title": "Check the tenant",
+      "text": "MFA registration and enforcement per user and role, Conditional Access, legacy logins, number of global admins, mailbox forwarding rules, stale accounts, Secure Score."
+    },
+    {
+      "title": "Check from the outside",
+      "text": "SPF/DKIM/DMARC, TLS certificates and exposed remote-desktop ports per domain."
+    },
+    {
+      "title": "Add backup proof",
+      "text": "upload a backup restore-test record with a timestamp."
+    },
+    {
+      "title": "Fill the questionnaire",
+      "text": "a standard 30-question insurance questionnaire is answered automatically, each answer linked to evidence."
+    },
+    {
+      "title": "White-label PDF + weekly changes",
+      "text": "the MSP's logo on the pack, and a weekly \"what changed\" email."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Multi-tenant Microsoft Entra app with read-only consent",
+      "MFA, Conditional Access, legacy auth, admin count, forwarding rules, stale accounts, Secure Score checks",
+      "External checks: SPF/DKIM/DMARC, TLS, exposed RDP",
+      "Backup restore-test upload with timestamp",
+      "Auto-filled 30-question insurance questionnaire with evidence",
+      "White-label PDF evidence pack",
+      "Weekly \"what changed\" email"
+    ],
+    "later": [
+      "Google Workspace connector",
+      "Insurer-specific form mappings",
+      "Pax8 marketplace listing",
+      "Broker referral portal",
+      "Modules shared with QBR Autopilot, Leaver and AI Use Guard"
+    ]
+  },
+  "techStack": [
+    "Microsoft Entra multi-tenant app + Microsoft Graph API (free)",
+    "Python or Node backend",
+    "PostgreSQL",
+    "DNS/TLS/port checks (own scanner)",
+    "PDF generation (Playwright / WeasyPrint)",
+    "Resend / Postmark email",
+    "Stripe billing"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "**Validate, no code.** Publish a free \"M365 cyber-insurance readiness checklist\" on r/msp and LinkedIn and count downloads. Jonatan books 15 calls with MSP owners. Victor hand-produces 5 evidence packs for 2–3 MSPs' real client renewals with free tools (Microsoft admin exports, MXToolbox, Shodan). Ask for a $99 pre-order or $10 per client per month. Success = 3 MSPs commit with named clients."
+    },
+    {
+      "when": "Week 3–6",
+      "what": "Victor builds the Entra app, Graph checks and external checks."
+    },
+    {
+      "when": "Week 7–9",
+      "what": "Questionnaire mapping, white-label PDF, weekly change email, published security documentation."
+    },
+    {
+      "when": "Week 10",
+      "what": "Pilot MSPs run real renewals; collect testimonials for r/msp and MSPGeek."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server, database and email (basic stack)",
+      "note": "Small EU cloud server or Vercel/Supabase free tiers + transactional email (report estimate)",
+      "cost": "€25–45 / month"
+    },
+    {
+      "item": "AI API",
+      "note": "Light use: questionnaire wording and summaries only",
+      "cost": "€5–15 / month"
+    },
+    {
+      "item": "Microsoft test tenant",
+      "note": "May need a paid trial (unverified); Graph API itself is free",
+      "cost": "€0–25 / month"
+    },
+    {
+      "item": "Landing page and validation tools",
+      "note": "Carrd / Typeform / Google Forms for the no-code test",
+      "cost": "€0–20 / month"
+    },
+    {
+      "item": "Running cost with 20–50 customers",
+      "note": "Report estimate, not a price quote",
+      "cost": "€20–60 / month"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €550–850 (report: €250–400 product costs + €300–450 AI coding tools)",
+  "pricing": [
+    {
+      "name": "MSP per tenant: $4/tenant/mo",
+      "description": "Minimum $49/month; plus $29 one-off renewal report per tenant"
+    },
+    {
+      "name": "MSP flat: $149/mo",
+      "description": "Up to 40 tenants"
+    },
+    {
+      "name": "Direct business: $39–79/mo",
+      "description": "Or a $299 one-off renewal pack"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 200,
+      "value": 20,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 2,
+      "max": 10,
+      "value": 4,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": {
+      "min": 5,
+      "max": 60,
+      "value": 20,
+      "label": "Client tenants per MSP"
+    }
+  },
+  "competitors": [
+    {
+      "name": "Inforcer",
+      "what": "Multi-tenant M365 management for MSPs",
+      "gap": "Priced per tenant with a 20-tenant minimum and 12-month terms",
+      "isUs": false
+    },
+    {
+      "name": "CoreView",
+      "what": "Microsoft 365 management",
+      "gap": "About $24.7k–49.5k a year (reseller listing)",
+      "isUs": false
+    },
+    {
+      "name": "CIPP",
+      "what": "Free open-source M365 multi-tenant tool",
+      "gap": "The MSP must host and maintain it; no insurance-mapped report",
+      "isUs": false
+    },
+    {
+      "name": "Intruder, UpGuard",
+      "what": "External attack-surface scanning",
+      "gap": "Intruder from about $119/month, UpGuard Starter $1,599/month",
+      "isUs": false
+    },
+    {
+      "name": "Insurers' own scans",
+      "what": "Outside-in scans during underwriting",
+      "gap": "Do not show internal M365 controls like MFA coverage",
+      "isUs": false
+    },
+    {
+      "name": "Us",
+      "what": "Hosted, insurance-questionnaire-mapped evidence PDF per client",
+      "gap": "No tenant minimum, $4/tenant, white-label, plus outside-in checks per domain",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "MSPs may not trust a young vendor with admin consent",
+      "answer": "Least-privilege, read-only permissions; publish security documentation and a clear data policy."
+    },
+    {
+      "risk": "Microsoft API changes; CIPP adds a similar free report",
+      "answer": "Focus on the insurance mapping and the client-ready PDF, not raw data."
+    },
+    {
+      "risk": "Each insurer uses a different form",
+      "answer": "Start with one standard 30-question set and add insurer mappings as customers ask."
+    },
+    {
+      "risk": "Liability if an answer in the pack is wrong",
+      "answer": "Every answer links to evidence; the MSP reviews and signs off before sending."
+    }
+  ],
+  "questions": [
+    "Walk me through the last time a client renewed cyber insurance: who filled in the questionnaire and how long did it take?",
+    "How do you prove MFA coverage today?",
+    "Have you or a client had a claim questioned, a premium raised or cover refused because of a control gap?",
+    "What do you use for multi-tenant Microsoft 365 management, and what do you pay?",
+    "Who would pay for a client-ready evidence PDF (you, the client or the broker), and at what price per tenant would it be a no-brainer?"
+  ],
+  "numbers": {
+    "cashMin": 550.0,
+    "cashMax": 850.0,
+    "mvpWeeksMin": 8.0,
+    "mvpWeeksMax": 10.0,
+    "priceLabel": "$4/tenant/mo or $149/mo",
+    "competition": "Tools have tenant minimums or are self-hosted",
+    "competitionLevel": "medium",
+    "whoSells": "Jonatan → MSP owners; brokers refer"
+  },
+  "skills": [
+    "security",
+    "coding",
+    "integrations",
+    "ai",
+    "b2b-sales"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 8,
+    "willingnessToPay": 7,
+    "lowCompetition": 6,
+    "easyToBuild": 6,
+    "easyToSell": 7,
+    "skillFit": 9,
+    "globalPotential": 8,
+    "excitement": 6
+  },
+  "notes": "",
+  "interviews": []
+}

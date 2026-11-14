@@ -1,0 +1,296 @@
+{
+  "id": "r-quotedesk",
+  "title": "QuoteDesk: request-to-quote assistant for small translation agencies",
+  "color": "#c98500",
+  "industry": "Translation services",
+  "status": "idea",
+  "source": "Top 25 SaaS ideas for Victor (research report, Nov 2026)",
+  "rank": 12,
+  "batch": "Top 50 research (Nov 2026)",
+  "tags": [
+    "Low competition",
+    "Small market",
+    "Eastern Europe beachhead"
+  ],
+  "summary": "Turns a translation request email and its attachments into a word count, a price from the agency's rate card and a draft reply in minutes, working next to Gmail or Outlook.",
+  "priceLabel": "€39–199 / month",
+  "hook": "\"By the time I've opened the PDFs, counted the words and priced it, the client has already accepted someone else's quote.\"",
+  "story": "**Ioana runs a 6-person translation agency in Bucharest.** Every day requests arrive by email: a scanned contract to translate into German, a website in three languages, a certified birth certificate. For each one she opens the attachments, runs a word count (OCR for scans), checks the language pair and deadline, prices it from her rate sheet and writes a reply.\n\nBig agency systems like XTRF cost **$9,000+ a year**, far too much for her. With QuoteDesk, she forwards the email, and within minutes gets the **word count, a price from her rate card and a draft reply**, plus suggested freelancers for the language pair. She stays in Gmail.",
+  "whyNow": "The professional systems for translation agencies are priced for large firms: XTRF Professional costs $9,000/year and Ultimate $34,000/year, and Plunet uses custom quotes that small shops \"rarely qualify for\". On G2, Plunet scores only 6.7 for AI text generation. There is no regulatory deadline.",
+  "evidence": [
+    "XTRF Professional costs $9,000/year and Ultimate $34,000/year (vendor page, May 2026) [XTM]",
+    "Plunet uses custom quotes that small shops \"rarely qualify for\" [FitGap]",
+    "Plunet scores only 6.7 for AI text generation on G2 [G2]",
+    "Projetex costs €2,900 one-time; Protemos is a cheap alternative [Report / MakerStack]",
+    "Evidence is indirect only: no time study of quoting at small agencies was found [Report]"
+  ],
+  "sources": [
+    {
+      "title": "XTM: XTRF pricing",
+      "url": "https://xtm.cloud/pricing/xtrf-pricing/"
+    },
+    {
+      "title": "FitGap: Plunet alternatives",
+      "url": "https://us.fitgap.com/products/007661/plunet/alternatives"
+    },
+    {
+      "title": "G2: Plunet vs XTRF",
+      "url": "https://www.g2.com/compare/plunet-vs-xtrf-translation-management-system"
+    },
+    {
+      "title": "MakerStack: Protemos review",
+      "url": "https://makerstack.co/reviews/protemos-review/"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "The tools are too expensive",
+      "text": "XTRF starts at $9,000 a year and Plunet is custom-quoted; small agencies are priced out."
+    },
+    {
+      "title": "Incumbents are weak on AI",
+      "text": "Plunet scores 6.7 for AI text generation on G2."
+    },
+    {
+      "title": "Few direct competitors",
+      "text": "Nobody offers a light AI layer that sits next to the inbox instead of replacing the agency's system."
+    },
+    {
+      "title": "Victor's region is a beachhead",
+      "text": "Eastern Europe has many small agencies, and Victor's languages help."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "Translation and localisation agencies with 2–20 people."
+    },
+    {
+      "label": "Buyer",
+      "text": "The owner or a project manager."
+    },
+    {
+      "label": "Start market",
+      "text": "Small agencies in Eastern Europe (Romania, Moldova) as a beachhead, then the EU, UK and US."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Connect the inbox",
+      "text": "Gmail or Outlook connection, or a forwarding address."
+    },
+    {
+      "title": "Read the attachments",
+      "text": "DOCX and PDF (with OCR) are read and word-counted."
+    },
+    {
+      "title": "Extract the job",
+      "text": "AI pulls out language pairs, subject, certified or not, and deadline."
+    },
+    {
+      "title": "Price it",
+      "text": "a rate-card engine prices the job and makes a quote PDF."
+    },
+    {
+      "title": "Draft the reply",
+      "text": "one click to a ready reply in the agency's tone."
+    },
+    {
+      "title": "Plan the work",
+      "text": "a simple job board, freelancer roster with language pairs and rates, and a deadline calendar."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Gmail/Outlook connection or forwarding address",
+      "DOCX and PDF reading with OCR and word counts",
+      "AI extraction of job details (languages, subject, certified, deadline)",
+      "Rate-card engine and quote PDF",
+      "One-click draft reply",
+      "Simple job board, freelancer roster and deadline calendar"
+    ],
+    "later": [
+      "Freelancer matching (€199 plan)",
+      "Win/loss tracking by turnaround time",
+      "Invoicing export",
+      "CAT-tool analysis import (fuzzy-match discounts)",
+      "Client portal for repeat customers"
+    ]
+  },
+  "techStack": [
+    "Python backend",
+    "Gmail API / Microsoft Graph (Outlook)",
+    "python-docx, PDF parsing, OCR",
+    "Small LLM for job extraction and reply drafts",
+    "PostgreSQL",
+    "PDF quote generation, Stripe billing"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "**Validate, no code.** Contact 50 agencies and offer to quote their next 20 incoming requests within 15 minutes, using ChatGPT and a spreadsheet rate card. Measure turnaround and whether faster quotes win more jobs."
+    },
+    {
+      "when": "Week 3–5",
+      "what": "Victor builds inbox connection, attachment reading, word counts and AI extraction."
+    },
+    {
+      "when": "Week 6–8",
+      "what": "Rate card, quote PDF, draft reply, job board and freelancer roster; billing."
+    },
+    {
+      "when": "Week 9–10",
+      "what": "Pilot agencies use it on live requests; track quote speed and win rate."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server, database and email (basic stack)",
+      "note": "Small EU cloud server or Vercel/Supabase free tiers + transactional email (report estimate)",
+      "cost": "€25–45 / month"
+    },
+    {
+      "item": "AI API",
+      "note": "Per request extraction and reply draft",
+      "cost": "€5–20 / month"
+    },
+    {
+      "item": "Landing page and validation tools",
+      "note": "Carrd / Typeform / Google Forms for the no-code test",
+      "cost": "€0–20 / month"
+    },
+    {
+      "item": "Running cost with 20–50 customers",
+      "note": "Report estimate, not a price quote",
+      "cost": "€20–60 / month"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €450–700 (report: €150–250 product costs + €300–450 AI coding tools)",
+  "pricing": [
+    {
+      "name": "Solo: €39/mo",
+      "description": "One project manager"
+    },
+    {
+      "name": "Team: €99/mo",
+      "description": "Whole team"
+    },
+    {
+      "name": "Plus: €199/mo",
+      "description": "Team plus freelancer matching"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 200,
+      "value": 25,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 39,
+      "max": 199,
+      "value": 79,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "Plunet",
+      "what": "Translation business management",
+      "gap": "Custom quotes small shops \"rarely qualify for\"; 6.7 on G2 for AI text generation",
+      "isUs": false
+    },
+    {
+      "name": "XTRF",
+      "what": "Translation management system",
+      "gap": "$9,000/year Professional, $34,000/year Ultimate",
+      "isUs": false
+    },
+    {
+      "name": "Protemos",
+      "what": "Cheap translation management",
+      "gap": "A full system to move to, not an AI layer",
+      "isUs": false
+    },
+    {
+      "name": "Projetex, LSP.expert",
+      "what": "Desktop / small-agency management",
+      "gap": "Projetex €2,900 one-time; no AI request reading",
+      "isUs": false
+    },
+    {
+      "name": "Us",
+      "what": "Request email → word count, price and draft reply in minutes, next to Gmail/Outlook",
+      "gap": "€39–199/mo; no new system to move to",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Machine translation pressures agency margins; the market may shrink",
+      "answer": "Sell speed and win rate: faster quotes help agencies compete for what remains."
+    },
+    {
+      "risk": "Overlap with cheap tools such as Protemos",
+      "answer": "Stay an add-on to the inbox, not a replacement system."
+    },
+    {
+      "risk": "Small total market",
+      "answer": "Keep costs low; reuse the same \"messy input to structured data\" engine for other ideas."
+    }
+  ],
+  "questions": [
+    "How many quote requests do you get per week, and how long does each take?",
+    "What share of quotes do you win, and does speed matter?",
+    "How do you assign freelancers today?",
+    "Which tool do you use for projects and invoices, and what would you never move away from?",
+    "What would make you pay €99 a month tomorrow?"
+  ],
+  "numbers": {
+    "cashMin": 450.0,
+    "cashMax": 700.0,
+    "mvpWeeksMin": 6.0,
+    "mvpWeeksMax": 8.0,
+    "priceLabel": "€39–199/mo",
+    "competition": "Expensive incumbents; no AI layer",
+    "competitionLevel": "low",
+    "whoSells": "Jonatan → agency owners from ATA/ITI/ProZ directories; Victor → Eastern European agencies"
+  },
+  "skills": [
+    "ai",
+    "coding",
+    "integrations",
+    "writing",
+    "b2b-sales"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 6,
+    "willingnessToPay": 6,
+    "lowCompetition": 8,
+    "easyToBuild": 8,
+    "easyToSell": 6,
+    "skillFit": 8,
+    "globalPotential": 7,
+    "excitement": 6
+  },
+  "notes": "",
+  "interviews": []
+}

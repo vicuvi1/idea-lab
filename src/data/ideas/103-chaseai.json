@@ -1,0 +1,334 @@
+{
+  "id": "r-chaseai",
+  "title": "ChaseAI: client document collection and checking for small accounting firms",
+  "color": "#199e70",
+  "industry": "Accounting",
+  "status": "idea",
+  "source": "Top 25 SaaS ideas for Victor (research report, Nov 2026)",
+  "rank": 3,
+  "batch": "Top 50 research (Nov 2026)",
+  "tags": [
+    "Global market",
+    "Document engine",
+    "Crowded: needs a sharp wedge"
+  ],
+  "summary": "Collects clients' tax and bookkeeping documents by email or WhatsApp, with no portal password, and checks with AI that each file is the right one for the right period.",
+  "priceLabel": "€29–149 / month",
+  "hook": "\"I send three reminders, the client finally uploads something, and it's last year's bank statement.\"",
+  "story": "**Emma runs a 4-person bookkeeping firm in Manchester with 120 clients.** Every tax season she sends checklists by email. Clients forget their portal passwords, send blurry photos, or upload the wrong year. On average clients take **5 days** to send what she asks for, and many need several reminders.\n\nIn peak season her team spends hours a week just asking for and checking documents. A missing page is often found only when the return is half done. With ChaseAI, each client gets a **magic link or replies by email or WhatsApp**, and the AI immediately says \"this is the 2024 statement, we need 2025\" before Emma even opens the file.",
+  "whyNow": "Document collection became the number-one workflow challenge for accounting firms in 2025, named by 55% of about 816 firm owners. Firms are ready for AI: 98% of accounting firms now use AI, most of them daily.",
+  "evidence": [
+    "55% of about 816 accounting firm owners named document collection their biggest workflow challenge in 2025 (secondary coverage) [CPA Practice Advisor]",
+    "98% of accounting firms now use AI, most of them daily [Karbon]",
+    "Clients take on average 5 days to send requested documents [Financial Cents]",
+    "Mango's 2025 survey of about 300 professionals ranks document collection as the top client-communication challenge [Mango]",
+    "Automated chasing saves 3.2–3.5 hours per employee per week (vendor figure) [Karbon]",
+    "About 10,000 document checks a month cost roughly $20 in AI fees at current small-model prices [AnotherWrapper]"
+  ],
+  "sources": [
+    {
+      "title": "CPA Practice Advisor: State of Accounting Workflow Automation 2025",
+      "url": "https://www.cpapracticeadvisor.com/2025/04/16/third-annual-state-of-accounting-workflow-automation-report-released/159243/"
+    },
+    {
+      "title": "Karbon: State of AI in Accounting 2026",
+      "url": "https://karbonhq.com/resources/state-of-ai-accounting-2026/"
+    },
+    {
+      "title": "Financial Cents: client document delays",
+      "url": "https://financial-cents.com/?p=29459"
+    },
+    {
+      "title": "Mango: 2025 industry trends report",
+      "url": "https://mangopractice.com/blog/insights-from-the-2025-industry-trends-report/"
+    },
+    {
+      "title": "Karbon: what is Karbon",
+      "url": "https://karbonhq.com/resources/what-is-karbon/"
+    },
+    {
+      "title": "SmartVault: why tax clients don't respond",
+      "url": "https://www.smartvault.com/resources/why-your-tax-clients-arent-responding-to-your-document-requests/"
+    },
+    {
+      "title": "Capterra: Content Snare pricing",
+      "url": "https://www.capterra.com/p/167019/Content-Snare/pricing/"
+    },
+    {
+      "title": "Capterra: TaxDome pricing",
+      "url": "https://www.capterra.com/p/186749/TaxDome/pricing/"
+    },
+    {
+      "title": "Capterra: Financial Cents pricing",
+      "url": "https://www.capterra.com/p/186837/Financial-Cents/pricing/"
+    },
+    {
+      "title": "AnotherWrapper: LLM pricing comparison",
+      "url": "https://anotherwrapper.com/tools/llm-pricing/gpt-5-mini-2025-08-07/gemini-2.5-flash"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "It is the top complaint",
+      "text": "Two separate 2025 surveys (CPA Practice Advisor, Mango) rank document collection as the biggest workflow or client-communication problem."
+    },
+    {
+      "title": "Tools chase but do not check",
+      "text": "Most tools send reminders but nobody checks what arrives: wrong year, missing pages, wrong account. Practitioners say vague requests fail and clients forget portal passwords (SmartVault)."
+    },
+    {
+      "title": "Firms already pay for software",
+      "text": "Content Snare ($29–99/month), TaxDome (from $695/year), Financial Cents ($19/user/month) and Dext ($31.50/user/month) prove the willingness to pay."
+    },
+    {
+      "title": "Same engine as SubDocs",
+      "text": "If construction firms are slow to buy, the same document code can be re-skinned for accountants in days."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "Accounting and bookkeeping firms with 1–15 people."
+    },
+    {
+      "label": "Buyer",
+      "text": "The owner or practice manager."
+    },
+    {
+      "label": "Start market",
+      "text": "UK, Ireland, the Nordics and the EU; later US tax preparers."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Import clients and checklists",
+      "text": "the firm uploads its client list and picks a checklist template (UK Self Assessment, Swedish K10/INK1, Irish Form 11)."
+    },
+    {
+      "title": "No-login collection",
+      "text": "each client gets a magic-link upload page and their own inbound email address; WhatsApp in version 1.1."
+    },
+    {
+      "title": "AI checks every file",
+      "text": "the LLM classifies each upload and validates document type, period and name match."
+    },
+    {
+      "title": "Missing / incorrect list",
+      "text": "the client sees exactly what is still missing or wrong, in plain words."
+    },
+    {
+      "title": "Escalating reminders",
+      "text": "email first, then WhatsApp, until the checklist is complete."
+    },
+    {
+      "title": "Export and digest",
+      "text": "files go to Google Drive, Dropbox or OneDrive; the firm gets a weekly status digest."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Firm dashboard and client list (CSV import)",
+      "Checklist builder with country templates",
+      "Magic-link upload page and inbound email address per client",
+      "LLM classification and validation of uploads (type, period, name match)",
+      "Missing/incorrect list per client",
+      "Escalating automatic email reminders",
+      "Export to Google Drive, Dropbox or OneDrive + weekly digest"
+    ],
+    "later": [
+      "WhatsApp reminders and replies (version 1.1)",
+      "White-label client pages (€149 plan)",
+      "More country checklists",
+      "Integrations with practice-management tools",
+      "US tax-preparer templates"
+    ]
+  },
+  "techStack": [
+    "Next.js or Django web app",
+    "PostgreSQL / Supabase (EU region)",
+    "OCR + small LLM for classification and validation",
+    "Postmark / Resend inbound email",
+    "WhatsApp Business API (v1.1)",
+    "Google Drive / Dropbox / OneDrive APIs",
+    "Stripe billing"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "**Validate, no code.** Jonatan contacts 100 UK and Swedish bookkeepers: \"send us your client list and checklist; we will chase your clients and tell you what is missing, free for 2 weeks\". Run it by hand with a shared inbox, Google Forms upload and ChatGPT to check files. Success = 3+ firms using it and at least one agreeing to pay €29+."
+    },
+    {
+      "when": "Week 3–5",
+      "what": "Victor reuses the document engine: client list, checklists, magic links, inbound email, AI validation."
+    },
+    {
+      "when": "Week 6–8",
+      "what": "Reminders, exports, weekly digest, Stripe billing; move pilot firms onto the product."
+    },
+    {
+      "when": "Week 9–10",
+      "what": "Add WhatsApp; push before the next tax deadline, when the pain peaks."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server, database and email (basic stack)",
+      "note": "Small EU cloud server or Vercel/Supabase free tiers + transactional email (report estimate)",
+      "cost": "€25–45 / month"
+    },
+    {
+      "item": "AI API",
+      "note": "About $20 per 10,000 document checks with a small model",
+      "cost": "€5–25 / month"
+    },
+    {
+      "item": "WhatsApp business number",
+      "note": "For WhatsApp reminders (included in the report's 3-month cash)",
+      "cost": "€5–20 / month"
+    },
+    {
+      "item": "Landing page and validation tools",
+      "note": "Carrd / Typeform / Google Forms for the no-code test",
+      "cost": "€0–20 / month"
+    },
+    {
+      "item": "Running cost with 20–50 customers",
+      "note": "Report estimate, not a price quote",
+      "cost": "€30–100 / month"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €550–800 (report: €250–350 product costs + €300–450 AI coding tools)",
+  "pricing": [
+    {
+      "name": "Solo: €29/mo",
+      "description": "Up to 50 active clients"
+    },
+    {
+      "name": "Practice: €79/mo",
+      "description": "Up to 200 active clients"
+    },
+    {
+      "name": "Unlimited: €149/mo",
+      "description": "Unlimited clients plus white-label (or about €1 per active client per month)"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 500,
+      "value": 40,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 29,
+      "max": 149,
+      "value": 59,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "Content Snare",
+      "what": "Client document request tool",
+      "gap": "About $29–99/month; chases but does not check what arrives",
+      "isUs": false
+    },
+    {
+      "name": "TaxDome",
+      "what": "Full practice-management platform",
+      "gap": "From $695/year; a big system to adopt",
+      "isUs": false
+    },
+    {
+      "name": "Financial Cents",
+      "what": "Practice management with client requests",
+      "gap": "From $19/user/month; no AI check of uploads",
+      "isUs": false
+    },
+    {
+      "name": "Dext",
+      "what": "Receipt and invoice capture",
+      "gap": "About $31.50/user/month; receipts only",
+      "isUs": false
+    },
+    {
+      "name": "Indie AI clones (e.g. NudgeDocs)",
+      "what": "AI document chasers",
+      "gap": "Many exist already; the market is crowded",
+      "isUs": false
+    },
+    {
+      "name": "Us",
+      "what": "No-login collection + AI check of every file + country checklists",
+      "gap": "Priced per active client so tiny firms pay little (€29–149/mo)",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Crowded market; Karbon or TaxDome can add AI checks",
+      "answer": "Win on the narrow wedge: validation of each upload, no-login replies and UK/Nordic/Irish checklists."
+    },
+    {
+      "risk": "Financial documents bring GDPR and security duties",
+      "answer": "EU hosting, encryption and a data processing agreement; Victor's security skills are a selling point."
+    },
+    {
+      "risk": "Demand is seasonal around tax deadlines",
+      "answer": "Sell bookkeeping (monthly) as well as year-end; time outreach before deadlines."
+    }
+  ],
+  "questions": [
+    "Walk me through the last client whose documents arrived late: what happened, and how many reminders did it take?",
+    "How many hours per week do you or your staff spend asking for or checking documents in peak season?",
+    "What do you use today (portal, email, Content Snare, TaxDome), and what do clients hate about it?",
+    "How often do clients send the wrong or an incomplete document, and how do you notice?",
+    "If a tool cut chasing time in half, what would you pay per month, and who decides?"
+  ],
+  "numbers": {
+    "cashMin": 550.0,
+    "cashMax": 800.0,
+    "mvpWeeksMin": 6.0,
+    "mvpWeeksMax": 8.0,
+    "priceLabel": "€29–149/mo",
+    "competition": "Crowded; wedge = AI checks every upload",
+    "competitionLevel": "high",
+    "whoSells": "Jonatan → UK and Swedish bookkeepers (LinkedIn, email)"
+  },
+  "skills": [
+    "coding",
+    "ai",
+    "security",
+    "accounting",
+    "b2b-sales"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 9,
+    "willingnessToPay": 7,
+    "lowCompetition": 3,
+    "easyToBuild": 8,
+    "easyToSell": 8,
+    "skillFit": 8,
+    "globalPotential": 9,
+    "excitement": 6
+  },
+  "notes": "",
+  "interviews": []
+}

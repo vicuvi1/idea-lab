@@ -1,0 +1,306 @@
+{
+  "id": "r-quotechaser",
+  "title": "QuoteChaser: instant replies and follow-up for B2B quotes and leads",
+  "color": "#3987e5",
+  "industry": "Sales / B2B e-commerce",
+  "status": "idea",
+  "source": "Top 25 SaaS ideas for Victor (research report, Nov 2026)",
+  "rank": 9,
+  "batch": "Top 50 research (Nov 2026)",
+  "tags": [
+    "Easy pitch: open quotes",
+    "App-store distribution",
+    "Speed to lead"
+  ],
+  "summary": "Replies to new B2B leads within a minute and follows up open quotes with AI-written messages until the buyer says yes or no.",
+  "priceLabel": "$39–149 / month",
+  "hook": "\"We sent the quote, the buyer went quiet, and nobody followed up. We found out a month later they bought elsewhere.\"",
+  "story": "**Sara runs a B2B Shopify store selling packaging to cafés and shops.** Her \"request a quote\" form brings in dozens of requests a month. She or her one sales rep replies when they have time, often the next day, and follow-ups happen only when someone remembers.\n\nWhen she exports the last 90 days of quotes, a big share never converted and most got **no second message**. With QuoteChaser, each new request gets an AI-drafted reply **within 60 seconds** that reads the quote lines, and open quotes get polite follow-ups until the buyer answers. A weekly report shows the **money left on the table**.",
+  "whyNow": "AI can now write a context-aware reply (reading the quote lines and the customer's history) for a fraction of a cent, while most small sales teams still answer slowly. There is no regulatory deadline.",
+  "evidence": [
+    "A 2025 study of 1,333 law firms found a 13-minute median response time, only 25% replying within 5 minutes, and 26% never replying [Focus Digital]",
+    "Only about 3% of teams respond to new leads within 5 minutes [Neil Patel]",
+    "The \"100 times more likely to connect within 5 minutes\" figure comes from an old MIT/InsideSales study (around 2007): a direction, not a fact [Verse.ai]",
+    "B2B QuoteAutomator leads quote intake on Shopify with 4.9 stars from 658 reviews [Shopify App Store]",
+    "SetuBridge's AI quote app starts at $7.99/month [eCommerce Guide]"
+  ],
+  "sources": [
+    {
+      "title": "Focus Digital: average speed to lead by industry",
+      "url": "https://focus-digital.co/average-speed-to-lead-by-industry-and-what-every-minute-of-delay-costs/"
+    },
+    {
+      "title": "Neil Patel: response time to new leads",
+      "url": "https://neilpatel.com/marketing-stats/response-time-new-leads/"
+    },
+    {
+      "title": "Verse.ai: speed to lead statistics",
+      "url": "https://www.verse.ai/blog/speed-to-lead-statistics"
+    },
+    {
+      "title": "Shopify App Store: B2B QuoteAutomator",
+      "url": "https://apps.shopify.com/b2b-quoteautomator"
+    },
+    {
+      "title": "Shopify App Store: Quote Desk",
+      "url": "https://apps.shopify.com/quote-desk"
+    },
+    {
+      "title": "eCommerce Guide: AI request a quote / hide price",
+      "url": "https://ecommerceguide.com/apps/ai-request-a-quote-hide-price/"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "Slow replies are the norm",
+      "text": "In the law-firm study only 25% replied within 5 minutes and 26% never replied; across teams only about 3% reply within 5 minutes."
+    },
+    {
+      "title": "Quote apps are popular",
+      "text": "B2B QuoteAutomator has 658 reviews on Shopify: stores clearly use quote forms. But intake is solved; follow-up is not."
+    },
+    {
+      "title": "The pitch is simple",
+      "text": "Jonatan can say \"you have €X of open quotes\" after looking at a store's own export."
+    },
+    {
+      "title": "Cheap to run",
+      "text": "Each AI message costs a fraction of a cent."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "B2B and wholesale online stores with \"request a quote\" forms, and small sales teams (2–10 reps) on HubSpot free/Starter or Pipedrive."
+    },
+    {
+      "label": "Buyer",
+      "text": "The owner or head of sales."
+    },
+    {
+      "label": "Start market",
+      "text": "English-speaking B2B stores worldwide via the Shopify App Store and HubSpot App Marketplace."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Connect the source",
+      "text": "Shopify draft orders, a WooCommerce quote plugin or a HubSpot form webhook."
+    },
+    {
+      "title": "Instant AI reply",
+      "text": "a reply that reads the quote lines and customer history, within 60 seconds; approve-first or automatic mode."
+    },
+    {
+      "title": "Follow-up cadence",
+      "text": "polite follow-ups that stop as soon as the buyer replies."
+    },
+    {
+      "title": "Reply sorting",
+      "text": "interested, price objection, not now."
+    },
+    {
+      "title": "Weekly report",
+      "text": "\"money left on the table\": value of open and lost quotes."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Shopify draft orders connection",
+      "WooCommerce quote plugin or HubSpot form webhook",
+      "AI-drafted reply within 60 seconds (approve-first or automatic)",
+      "Follow-up cadence that stops on reply",
+      "Reply sorting (interested, price objection, not now)",
+      "Weekly \"money left on the table\" report"
+    ],
+    "later": [
+      "Pipedrive integration",
+      "HubSpot App Marketplace listing",
+      "SMS / WhatsApp follow-up",
+      "Partnerships with quote-form apps",
+      "Multi-language replies"
+    ]
+  },
+  "techStack": [
+    "Node or Python backend",
+    "Shopify / WooCommerce / HubSpot APIs and webhooks",
+    "Small LLM for replies and classification",
+    "Transactional email with own sending domain (Postmark / Resend)",
+    "PostgreSQL",
+    "Stripe billing / Shopify billing"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "**Validate, no code.** Find 20 B2B Shopify or WooCommerce stores with \"request a quote\" buttons; ask for an export of the last 90 days of quotes; calculate the value of unconverted quotes; offer a hand-run pilot. Goal: 3 pilots at $49."
+    },
+    {
+      "when": "Week 3–5",
+      "what": "Victor builds the Shopify connection, AI reply drafting and follow-up cadence."
+    },
+    {
+      "when": "Week 6–8",
+      "what": "WooCommerce/HubSpot connection, reply sorting, weekly report, billing."
+    },
+    {
+      "when": "Week 9–10",
+      "what": "Shopify App Store listing; pilots move to paid plans."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server, database and email (basic stack)",
+      "note": "Small EU cloud server or Vercel/Supabase free tiers + transactional email (report estimate)",
+      "cost": "€25–45 / month"
+    },
+    {
+      "item": "AI API",
+      "note": "A fraction of a cent per message",
+      "cost": "€5–15 / month"
+    },
+    {
+      "item": "Landing page and validation tools",
+      "note": "Carrd / Typeform / Google Forms for the no-code test",
+      "cost": "€0–20 / month"
+    },
+    {
+      "item": "Running cost with 20–50 customers",
+      "note": "Report estimate, not a price quote",
+      "cost": "€15–40 / month"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €500–750 (report: €200–300 product costs + €300–450 AI coding tools)",
+  "pricing": [
+    {
+      "name": "Starter: $39/mo",
+      "description": "Small number of quotes and leads"
+    },
+    {
+      "name": "Growth: $79/mo",
+      "description": "More quotes and leads"
+    },
+    {
+      "name": "Pro: $149/mo",
+      "description": "High volume (or $99/month per sales team)"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 500,
+      "value": 40,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 39,
+      "max": 149,
+      "value": 79,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "B2B QuoteAutomator",
+      "what": "Shopify quote intake (4.9 stars, 658 reviews)",
+      "gap": "Collects quotes; does not chase open quotes with AI",
+      "isUs": false
+    },
+    {
+      "name": "Quote Desk",
+      "what": "Shopify quotes with AI price suggestions",
+      "gap": "No reviews yet; focus on pricing, not follow-up",
+      "isUs": false
+    },
+    {
+      "name": "SetuBridge AI quote app",
+      "what": "AI request-a-quote from $7.99/month",
+      "gap": "Quote forms, not cross-platform follow-up",
+      "isUs": false
+    },
+    {
+      "name": "US speed-to-lead AI tools",
+      "what": "Instant reply for leads",
+      "gap": "Target home services and real estate",
+      "isUs": false
+    },
+    {
+      "name": "HubSpot / Shopify native features",
+      "what": "Sequences and automations",
+      "gap": "Could add native AI follow-up",
+      "isUs": false
+    },
+    {
+      "name": "Us",
+      "what": "AI reply in 60 seconds + follow-up on open quotes across Shopify, WooCommerce and CRM",
+      "gap": "$39–149/mo, weekly \"money left on the table\" report",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Email deliverability and sender reputation",
+      "answer": "Send from the store's own domain with proper SPF/DKIM/DMARC; low volume; stop on reply."
+    },
+    {
+      "risk": "HubSpot and Shopify add native AI follow-up",
+      "answer": "Work across platforms and focus on B2B quotes, not generic sequences."
+    },
+    {
+      "risk": "Crowded US speed-to-lead market",
+      "answer": "Stay in B2B quotes and wholesale stores, not home services."
+    }
+  ],
+  "questions": [
+    "How many quotes or leads do you get per month, and what share convert?",
+    "Who follows up, how fast, and how many times?",
+    "What happened to the last quote that went silent?",
+    "What tools send your follow-ups today?",
+    "If we recovered 5% of unconverted quotes, what would that be worth to you?"
+  ],
+  "numbers": {
+    "cashMin": 500.0,
+    "cashMax": 750.0,
+    "mvpWeeksMin": 7.0,
+    "mvpWeeksMax": 8.0,
+    "priceLabel": "$39–149/mo",
+    "competition": "Intake apps exist; follow-up gap",
+    "competitionLevel": "medium",
+    "whoSells": "Jonatan → B2B and wholesale stores with quote forms"
+  },
+  "skills": [
+    "coding",
+    "ai",
+    "integrations",
+    "e-commerce",
+    "b2b-sales"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 8,
+    "willingnessToPay": 7,
+    "lowCompetition": 5,
+    "easyToBuild": 7,
+    "easyToSell": 8,
+    "skillFit": 8,
+    "globalPotential": 7,
+    "excitement": 6
+  },
+  "notes": "",
+  "interviews": []
+}

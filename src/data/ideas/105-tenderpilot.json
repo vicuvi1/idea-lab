@@ -1,0 +1,303 @@
+{
+  "id": "r-tenderpilot",
+  "title": "TenderPilot: public-tender search and bid drafting for small suppliers",
+  "color": "#d55181",
+  "industry": "Public sector",
+  "status": "idea",
+  "source": "Top 25 SaaS ideas for Victor (research report, Nov 2026)",
+  "rank": 5,
+  "batch": "Top 50 research (Nov 2026)",
+  "tags": [
+    "Highest willingness to pay",
+    "Free lead lists",
+    "Answer library (RAG)"
+  ],
+  "summary": "Finds public tenders that fit a small supplier, turns the long tender PDF into a requirements checklist, and drafts first answers from the company's past bids.",
+  "priceLabel": "€79–199 / month",
+  "hook": "\"We skip half the tenders we could win, because nobody has three days to read a 120-page PDF.\"",
+  "story": "**Lena runs a 15-person cleaning and facility-services company in Ireland.** Public contracts for schools and offices would be steady work, but each tender is a long PDF with dozens of requirements, and each bid takes days of copying old answers, CVs and case studies from folders. So she only bids a few times a year.\n\nAI tender tools exist, but they cost **$500–900 a month** and are built for big proposal teams. With TenderPilot, Lena gets alerts for cleaning tenders in her region, a **one-page requirements checklist** for each one, and **first-draft answers with links to her own past bids**. She bids twice as often in the same time.",
+  "whyNow": "Tender data is public and free (EU TED, UK Find a Tender, Nordic portals; API terms still need checking), and AI that drafts answers with citations to the source is now good enough to save real hours. There is no regulatory deadline.",
+  "evidence": [
+    "AI tender-response tools cost about $500–800/month for small teams [SiftHub]",
+    "AutoRFP is listed at $899/month billed yearly (competitor figure) [Inventive]",
+    "DeepRFP now explicitly targets small businesses and consultants, showing the small-bidder segment is real [Capterra]",
+    "Proposify starts at $29/month but is a proposal tool, not a tender tool [Inventive]",
+    "No survey of hours spent per bid was found; the pain evidence is indirect [Report]"
+  ],
+  "sources": [
+    {
+      "title": "SiftHub: AutoRFP pricing, reviews and features",
+      "url": "https://www.sifthub.io/blog/autorfp-pricing-reviews-features-breakdown"
+    },
+    {
+      "title": "Inventive: AutoRFP AI pricing",
+      "url": "https://www.inventive.ai/blog-posts/autorfp-ai-pricing-features-reviews"
+    },
+    {
+      "title": "Capterra: DeepRFP",
+      "url": "https://www.capterra.com/p/10028620/DeepRFP/"
+    },
+    {
+      "title": "Inventive: Proposify pricing",
+      "url": "https://www.inventive.ai/blog-posts/proposify-pricing-features-reviews"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "Buyers already pay a lot",
+      "text": "AI tender tools cost $500–900 a month, which shows bid writing is worth real money."
+    },
+    {
+      "title": "Small bidders are left out",
+      "text": "Those tools target large proposal teams; DeepRFP's move to small businesses shows the segment exists but is barely served."
+    },
+    {
+      "title": "Free, exact lead lists",
+      "text": "Public award notices list exactly which small firms bid for government contracts, filterable by CPV code, so Jonatan can build a target list for free."
+    },
+    {
+      "title": "Links to Jonatan's world",
+      "text": "Cleaning and facility-services firms bid for public contracts too."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "Companies with 2–50 staff that sell to the public sector: IT services, translation agencies, cleaning and facility services, training providers, consultancies, design and marketing agencies."
+    },
+    {
+      "label": "Buyer",
+      "text": "The founder, managing director or bid manager."
+    },
+    {
+      "label": "Start market",
+      "text": "English-language UK, Irish and Nordic tenders plus English notices on EU TED."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Tender alerts",
+      "text": "by CPV code (the EU's product/service code) and keyword from TED plus one national feed."
+    },
+    {
+      "title": "Upload the tender",
+      "text": "the PDF becomes a compliance matrix (every requirement) and a deadline list."
+    },
+    {
+      "title": "Build the answer library",
+      "text": "upload past bids, CVs and case studies once."
+    },
+    {
+      "title": "AI first drafts",
+      "text": "each question gets a draft answer with citations to the library, so nothing is made up."
+    },
+    {
+      "title": "Human review and export",
+      "text": "edit, approve and export to Word."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Tender alerts by CPV code and keyword (TED + one national feed)",
+      "Tender document upload → compliance matrix and deadline list",
+      "Answer library from uploaded past bids",
+      "AI first draft per question with citations",
+      "Word export",
+      "Stripe billing"
+    ],
+    "later": [
+      "More national portals",
+      "Bid/no-bid scoring",
+      "Partner workspace for freelance bid writers",
+      "Swedish, German and other languages",
+      "Award-notice analytics (who wins what, at what price)"
+    ]
+  },
+  "techStack": [
+    "Python backend (FastAPI / Django)",
+    "PostgreSQL + pgvector (answer library)",
+    "LLM with retrieval and citations (RAG)",
+    "PDF parsing / OCR",
+    "TED and national tender feeds",
+    "python-docx (Word export)",
+    "Stripe billing"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "**Validate, no code.** Pull 200 recent award notices in 3 CPV codes. Email 100 winners and runners-up a free \"tender digest + requirement checklist\" for one live tender, made by hand with ChatGPT. Target 10 calls and 3 pre-orders (€79 for the first month or €500 for a year)."
+    },
+    {
+      "when": "Week 3–6",
+      "what": "Victor builds alerts, tender upload and the compliance matrix."
+    },
+    {
+      "when": "Week 7–9",
+      "what": "Answer library, AI drafting with citations, Word export, billing."
+    },
+    {
+      "when": "Week 10",
+      "what": "Pre-order customers use it on live tenders; collect win/loss feedback."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server, database and email (basic stack)",
+      "note": "Small EU cloud server or Vercel/Supabase free tiers + transactional email (report estimate)",
+      "cost": "€25–45 / month"
+    },
+    {
+      "item": "AI API",
+      "note": "Long tender PDFs and drafting; still cents per tender",
+      "cost": "€10–30 / month"
+    },
+    {
+      "item": "Landing page and validation tools",
+      "note": "Carrd / Typeform / Google Forms for the no-code test",
+      "cost": "€0–20 / month"
+    },
+    {
+      "item": "Running cost with 20–50 customers",
+      "note": "Report estimate, not a price quote",
+      "cost": "€20–80 / month"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €500–750 (report: €200–300 product costs + €300–450 AI coding tools)",
+  "pricing": [
+    {
+      "name": "Alerts: €79/mo",
+      "description": "Tender alerts and requirement extraction, 5 tenders a month"
+    },
+    {
+      "name": "Bid: €199/mo",
+      "description": "Unlimited tenders, AI drafting and an answer library"
+    },
+    {
+      "name": "Annual",
+      "description": "Discount for paying yearly (e.g. €500 for a year as a pre-order offer)"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 300,
+      "value": 25,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 79,
+      "max": 199,
+      "value": 129,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "AutoRFP, Inventive",
+      "what": "AI RFP/tender response",
+      "gap": "About $500–900/month; built for large proposal teams",
+      "isUs": false
+    },
+    {
+      "name": "DeepRFP",
+      "what": "AI RFP tool aimed at small businesses",
+      "gap": "Moving down-market; a real competitor to watch",
+      "isUs": false
+    },
+    {
+      "name": "Loopio",
+      "what": "Enterprise RFP response",
+      "gap": "Enterprise pricing (price not found)",
+      "isUs": false
+    },
+    {
+      "name": "Tendium (Sweden) and national alert services",
+      "what": "Tender alerts",
+      "gap": "Price not found; mainly search, not drafting",
+      "isUs": false
+    },
+    {
+      "name": "Proposify",
+      "what": "Proposal software from $29/month",
+      "gap": "Proposals, not public-tender requirements",
+      "isUs": false
+    },
+    {
+      "name": "Us",
+      "what": "Find tenders + requirements checklist + cited first drafts",
+      "gap": "€79–199/mo for firms that bid a few times a month",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Made-up AI answers in a bid",
+      "answer": "Every draft cites the library; mandatory human review before export."
+    },
+    {
+      "risk": "National portals differ",
+      "answer": "Start with TED and one English-language national feed; add portals by demand."
+    },
+    {
+      "risk": "Many languages",
+      "answer": "Start with English-language UK, Irish and Nordic tenders plus English notices on TED."
+    },
+    {
+      "risk": "Competitors like DeepRFP move down-market",
+      "answer": "Win on price, alerts + checklist in one, and Jonatan's direct outreach to past bidders."
+    }
+  ],
+  "questions": [
+    "How many tenders did you bid on last year, and how many did you skip for lack of time?",
+    "Walk me through the last bid: how many hours, and spent on what?",
+    "How do you find tenders today, and what do you pay for that?",
+    "Where do you store past answers, CVs and case studies?",
+    "What would a tool need to do for you to pay €100+ a month?"
+  ],
+  "numbers": {
+    "cashMin": 500.0,
+    "cashMax": 750.0,
+    "mvpWeeksMin": 8.0,
+    "mvpWeeksMax": 10.0,
+    "priceLabel": "€79–199/mo",
+    "competition": "Expensive tools; few cheap options",
+    "competitionLevel": "medium",
+    "whoSells": "Jonatan → past bidders from public award notices"
+  },
+  "skills": [
+    "ai",
+    "coding",
+    "government",
+    "writing",
+    "b2b-sales"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 8,
+    "willingnessToPay": 8,
+    "lowCompetition": 6,
+    "easyToBuild": 6,
+    "easyToSell": 7,
+    "skillFit": 9,
+    "globalPotential": 7,
+    "excitement": 6
+  },
+  "notes": "",
+  "interviews": []
+}

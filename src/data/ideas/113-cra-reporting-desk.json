@@ -1,0 +1,311 @@
+{
+  "id": "r-cra-reporting-desk",
+  "title": "CRA Reporting Desk: Cyber Resilience Act reporting and SBOM for small product makers",
+  "color": "#d55181",
+  "industry": "Cybersecurity",
+  "status": "idea",
+  "source": "Top 25 SaaS ideas for Victor (research report, Nov 2026)",
+  "rank": 13,
+  "batch": "Top 50 research (Nov 2026)",
+  "tags": [
+    "Hard legal deadline",
+    "Victor's security skills",
+    "Technical buyer"
+  ],
+  "summary": "Helps small device and software makers meet the EU Cyber Resilience Act's 24-hour vulnerability-reporting clock, with ready report drafts and an up-to-date list of the software parts in each product (SBOM).",
+  "priceLabel": "€79–199 / month",
+  "hook": "\"If a vulnerability in our device were exploited tomorrow, I honestly don't know who would file the report, or where.\"",
+  "story": "**Lukas is CTO of a 30-person smart-home device maker in Austria.** Since 11 September 2026, the Cyber Resilience Act says that if a vulnerability in one of his products is actively exploited, he must send an **early warning within 24 hours** and a full notification within **72 hours** through ENISA's reporting platform. He has no security response team and no list of all the open-source parts in his firmware.\n\nEnterprise tools like Black Duck are far beyond his budget, and consultants are slow. With CRA Reporting Desk, his team imports an **SBOM for each product**, gets alerts when a component is **actively exploited**, and when it happens a **countdown clock** starts with AI-drafted report text in ENISA's field structure.",
+  "whyNow": "This is the strongest legal deadline in the report. Since 11 September 2026, every maker of a product with digital elements sold in the EU must report actively exploited vulnerabilities and severe incidents through ENISA's Single Reporting Platform: a 24-hour early warning, a 72-hour notification, then a final report. Full obligations, including a machine-readable SBOM, follow on 11 December 2027.",
+  "evidence": [
+    "Since 11 September 2026: 24-hour early warning, 72-hour notification and a final report for actively exploited vulnerabilities, via ENISA's Single Reporting Platform [Noerr / usd.de]",
+    "CRA fines reach €15M or 2.5% of global turnover (secondary source) [advisori]",
+    "Full CRA obligations, including a machine-readable SBOM, apply from 11 December 2027 [SafeDep]",
+    "ENISA's 2026 SME survey (194 organisations, 31 countries): 66% had heard of the CRA, but incident-response and lifecycle maturity was only 2.6 out of 5 [ENISA]",
+    "73% of surveyed SMEs asked for documentation templates and 71% for secure-development templates [ENISA]"
+  ],
+  "sources": [
+    {
+      "title": "Noerr: CRA Single Reporting Platform launched",
+      "url": "https://www.noerr.com/en/insights/cra-single-reporting-platform-launched-reporting-requirements-apply-with-immediate-effect"
+    },
+    {
+      "title": "usd.de: CRA reporting obligations from September 2026",
+      "url": "https://www.usd.de/en/cyber-resilience-act-reporting-obligations-sep-2026/"
+    },
+    {
+      "title": "advisori: CRA SRP registration",
+      "url": "https://www.advisori.de/blog/cra-single-reporting-platform-srp-registration"
+    },
+    {
+      "title": "SafeDep: SBOM and the EU CRA",
+      "url": "https://safedep.io/sbom-and-eu-cra-cyber-resilience-act"
+    },
+    {
+      "title": "ENISA: where do SMEs stand on the CRA",
+      "url": "https://www.enisa.europa.eu/news/where-do-smes-stand-in-preparing-for-the-cyber-resilience-act"
+    },
+    {
+      "title": "ENISA: SME CRA survey report (PDF)",
+      "url": "https://www.enisa.europa.eu/sites/default/files/2026-06/SME%20CRA%20survey%20report.pdf"
+    },
+    {
+      "title": "Revenera: EU CRA checklist",
+      "url": "https://resources.flexera.com/web/eloqua/pdf/Revenera-EU-CRA-Checklist.pdf"
+    },
+    {
+      "title": "OpenChain: CRA checklist",
+      "url": "https://cra-compliance.openchainproject.org/CRA_Checklist_RC1.html"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "The deadline is already live",
+      "text": "Reporting duties started on 11 September 2026, and fines reach €15M or 2.5% of global turnover (secondary source)."
+    },
+    {
+      "title": "SMEs are not ready",
+      "text": "ENISA found incident-response maturity of only 2.6 out of 5, and the survey probably over-represents the more prepared firms."
+    },
+    {
+      "title": "They ask for templates",
+      "text": "73% want documentation templates and 71% secure-development templates: exactly what the product provides."
+    },
+    {
+      "title": "No SMB-priced tool found",
+      "text": "Enterprise tools and consultancies exist, but no self-serve CRA workflow tool with public pricing was found. And it is a perfect fit for Victor's security skills."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "Small and medium companies (5–250 staff) that sell connected or software products in the EU: IoT and embedded device makers, smart-home and industrial gadget firms, desktop and mobile software vendors, including non-EU makers selling into the EU."
+    },
+    {
+      "label": "Buyer",
+      "text": "The CTO, head of engineering or founder. CRA consultants could resell it."
+    },
+    {
+      "label": "Start market",
+      "text": "EU product makers plus non-EU makers selling into the EU, in English."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Inventory products",
+      "text": "list products and their components."
+    },
+    {
+      "title": "SBOM import or generation",
+      "text": "wrapping the open-source Syft/CycloneDX tools, plus a GitHub Action."
+    },
+    {
+      "title": "Vulnerability matching",
+      "text": "through OSV, with an \"actively exploited\" flag from the US CISA KEV list."
+    },
+    {
+      "title": "Intake and disclosure",
+      "text": "a vulnerability intake form plus a security.txt and disclosure-policy generator."
+    },
+    {
+      "title": "Countdown and drafts",
+      "text": "a 24h / 72h / final-report clock with AI-drafted text in ENISA's field structure."
+    },
+    {
+      "title": "Audit log and notifications",
+      "text": "every step logged; customer-notification templates ready."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Product and component inventory",
+      "SBOM import or generation (Syft/CycloneDX) + GitHub Action",
+      "Vulnerability matching via OSV with CISA KEV \"actively exploited\" flag",
+      "Vulnerability intake form, security.txt and disclosure-policy generator",
+      "24h / 72h / final-report countdown with AI drafts in ENISA's field structure",
+      "Audit log and customer-notification templates"
+    ],
+    "later": [
+      "€990 CRA readiness pack (documentation skeleton)",
+      "SBOM monitoring for up to 10 products",
+      "Consultant/reseller workspace",
+      "Firmware binary SBOM analysis",
+      "Mappings shared with Questionnaire Autopilot (NIS2)"
+    ]
+  },
+  "techStack": [
+    "Python backend",
+    "Syft / CycloneDX (SBOM generation)",
+    "OSV and NVD feeds (free) + CISA KEV list",
+    "GitHub Action for CI SBOMs",
+    "PostgreSQL",
+    "LLM for report drafts",
+    "Stripe billing"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "**Validate, no code.** Publish a landing page (\"Meet the CRA's 24-hour reporting deadline without a security team\") with a free downloadable \"CRA reporting runbook\" PDF. Post in embedded/IoT communities and on LinkedIn, and cold-email 100 small IoT makers. Success = 20+ email sign-ups and 5+ booked calls."
+    },
+    {
+      "when": "Week 3–6",
+      "what": "Victor builds the inventory, SBOM import/generation and OSV/KEV matching."
+    },
+    {
+      "when": "Week 7–9",
+      "what": "Intake form, security.txt generator, countdown clock with AI drafts, audit log."
+    },
+    {
+      "when": "Week 10",
+      "what": "First paying product makers; approach CRA consultants as resellers."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server, database and email (basic stack)",
+      "note": "Small EU cloud server or Vercel/Supabase free tiers + transactional email (report estimate)",
+      "cost": "€25–45 / month"
+    },
+    {
+      "item": "AI API",
+      "note": "Report drafts only; vulnerability feeds (OSV, NVD) are free",
+      "cost": "€5–15 / month"
+    },
+    {
+      "item": "Landing page and validation tools",
+      "note": "Carrd / Typeform / Google Forms for the no-code test",
+      "cost": "€0–20 / month"
+    },
+    {
+      "item": "Running cost with 20–50 customers",
+      "note": "Report estimate, not a price quote",
+      "cost": "€30–80 / month"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €500–750 (report: €200–300 product costs + €300–450 AI coding tools)",
+  "pricing": [
+    {
+      "name": "Product: €79/mo",
+      "description": "One product family"
+    },
+    {
+      "name": "Portfolio: €199/mo",
+      "description": "Up to 10 products with SBOM monitoring"
+    },
+    {
+      "name": "CRA readiness pack: €990 one-off",
+      "description": "Documentation skeleton and vulnerability-disclosure policy"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 200,
+      "value": 20,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 79,
+      "max": 199,
+      "value": 129,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "Black Duck, Revenera",
+      "what": "Enterprise software-composition analysis",
+      "gap": "Enterprise pricing and setup",
+      "isUs": false
+    },
+    {
+      "name": "CRA consultancies",
+      "what": "Readiness projects",
+      "gap": "Expensive and slow; not a daily workflow tool",
+      "isUs": false
+    },
+    {
+      "name": "OpenChain CRA checklist",
+      "what": "Free checklist",
+      "gap": "A checklist, not a reporting workflow or clock",
+      "isUs": false
+    },
+    {
+      "name": "Us",
+      "what": "Self-serve reporting runbook + countdown clock + AI drafts + SBOM",
+      "gap": "€79–199/mo for teams with no security response team",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Technical buyers are hard for Jonatan to sell to",
+      "answer": "Jonatan books the calls; Victor joins them. Use CRA consultants as resellers."
+    },
+    {
+      "risk": "Legal liability if a draft is wrong",
+      "answer": "Position it as a workflow tool, not legal advice; a human always submits."
+    },
+    {
+      "risk": "Big security vendors could add the same features",
+      "answer": "Stay SMB-priced and self-serve; move fast while the deadline is new."
+    },
+    {
+      "risk": "ENISA's form may change; market limited to product makers",
+      "answer": "Keep field mappings configurable; target the many small IoT and software makers."
+    }
+  ],
+  "questions": [
+    "If a vulnerability in your product were exploited tomorrow, who would file the CRA report, and how?",
+    "Do you have an SBOM for each product today, and how do you make it?",
+    "How do you find out today that a component you ship is vulnerable or actively exploited?",
+    "What have you spent or budgeted on CRA readiness (consultants, tools, staff time)?",
+    "If a tool handled the deadline clock, report drafts and SBOM, what would it need to do for you to pay €100–200 a month?"
+  ],
+  "numbers": {
+    "cashMin": 500.0,
+    "cashMax": 750.0,
+    "mvpWeeksMin": 8.0,
+    "mvpWeeksMax": 10.0,
+    "priceLabel": "€79–199/mo",
+    "competition": "No SMB-priced CRA tool found",
+    "competitionLevel": "low",
+    "whoSells": "Jonatan books calls, Victor joins → CTOs of small IoT/software makers; CRA consultants resell"
+  },
+  "skills": [
+    "security",
+    "coding",
+    "ai",
+    "writing",
+    "b2b-sales"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 8,
+    "willingnessToPay": 7,
+    "lowCompetition": 7,
+    "easyToBuild": 6,
+    "easyToSell": 4,
+    "skillFit": 10,
+    "globalPotential": 6,
+    "excitement": 6
+  },
+  "notes": "",
+  "interviews": []
+}

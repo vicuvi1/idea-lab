@@ -1,0 +1,328 @@
+{
+  "id": "r-orderdesk",
+  "title": "OrderDesk: email, PDF and WhatsApp orders turned into draft orders for small wholesalers",
+  "color": "#199e70",
+  "industry": "Wholesale / distribution",
+  "status": "idea",
+  "source": "Top 25 SaaS ideas for Victor (research report, Nov 2026)",
+  "rank": 11,
+  "batch": "Top 50 research (Nov 2026)",
+  "tags": [
+    "AI order entry",
+    "Nordics + Eastern Europe",
+    "Integration heavy"
+  ],
+  "summary": "Turns order and quote-request emails, PDFs and WhatsApp messages into draft orders matched to the wholesaler's own product list, ready to approve.",
+  "priceLabel": "€99–249 / month",
+  "hook": "\"Two people in my office do nothing all morning but type orders from emails and WhatsApp into Fortnox.\"",
+  "story": "**Erik owns a building-materials wholesaler in Sweden with 12 staff.** Customers order by email, PDF purchase orders and WhatsApp messages like \"same as last time but 20 more of the grey ones\". Two office staff type every order into the accounting system by hand, matching vague product names to codes.\n\nMistakes cost money: wrong products shipped, wrong prices invoiced. AI order-entry tools exist, but they are built for big distributors on Epicor, NetSuite or SAP. With OrderDesk, every order goes to one inbound address, AI pulls out **customer, lines, quantities and dates**, matches them to Erik's **product list**, and his staff just **review and approve** before it goes to Fortnox.",
+  "whyNow": "AI order entry is moving into distribution, but for big companies: Proton.ai launched AI order and quote entry in July 2026, and trade press wrote in September 2026 that \"AI moves into the distributor order desk\". Small distributors on small accounting systems are left out.",
+  "evidence": [
+    "More than 30% of wholesale orders arrive through unstructured channels and manual entry takes about 6 minutes per order (vendor figures) [Workd]",
+    "A distributor with 200 orders a day spends about $130k a year on manual order entry (vendor figure) [Workd]",
+    "Proton.ai launched AI order and quote entry for distributors in July 2026 [Distribution Strategy]",
+    "\"AI moves into the distributor order desk as new tools target manual work\" (September 2026) [Distribution Strategy]",
+    "Nexcade's reported $6M seed round for AI freight-forwarder agents confirms quote-request emails are a real pain [The Loadstar]"
+  ],
+  "sources": [
+    {
+      "title": "Distribution Strategy: Proton.ai launches AI order and quote entry",
+      "url": "https://distributionstrategy.com/2026/07/proton-ai-launches-ai-platform-to-automate-order-and-quote-entry-for-distributors/"
+    },
+    {
+      "title": "Distribution Strategy: AI moves into the distributor order desk",
+      "url": "https://distributionstrategy.com/2026/09/ai-moves-into-the-distributor-order-desk-as-new-tools-target-manual-work/"
+    },
+    {
+      "title": "MDM: Proton.ai launches automated order and quote entry",
+      "url": "https://www.mdm.com/news/breaking-news-in-wholesale-distribution/proton-ai-launches-automated-order-quote-entry-system/"
+    },
+    {
+      "title": "Workd: automating order entry",
+      "url": "https://www.workd.com/insights/articles/automating-order-entry/"
+    },
+    {
+      "title": "The Loadstar: Nexcade raises $6M",
+      "url": "https://theloadstar.com/ls_press_release/nexcade-raises-6m-to-build-ai-agents-for-freight-forwarders/"
+    },
+    {
+      "title": "WizCommerce: top AI order entry automation software",
+      "url": "https://wizcommerce.com/blog/top-ai-order-entry-automation-software/"
+    },
+    {
+      "title": "Y Meadows: AI order entry for distributors",
+      "url": "https://www.ymeadows.com/en/insights/blog/ai-order-entry-for-distributors/"
+    },
+    {
+      "title": "SoftwareConnect: manufacturing estimating and quoting software",
+      "url": "https://softwareconnect.com/roundups/best-manufacturing-estimating-quoting-software/"
+    },
+    {
+      "title": "ToolRadar: QuotedPart",
+      "url": "https://toolradar.com/tools/quotedpart"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "Manual entry is expensive",
+      "text": "Vendor figures: 30%+ of orders unstructured, about 6 minutes each, around $130k a year for a 200-orders-a-day distributor."
+    },
+    {
+      "title": "Big vendors are moving in, at the top",
+      "text": "Proton.ai, Y Meadows, WizCommerce and others target mid-market ERPs like Epicor, P21, NetSuite and SAP."
+    },
+    {
+      "title": "Small systems are left out",
+      "text": "Fortnox, Visma, Odoo, SmartBill and Excel users in the Nordics, Eastern Europe and the UK have no self-serve option."
+    },
+    {
+      "title": "Two networks to test in",
+      "text": "Jonatan reaches Swedish wholesalers; Victor knows Romanian and Moldovan wholesalers as a test bed."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "Wholesalers and distributors with 3–50 staff (food, building materials, industrial supplies, farm inputs) that receive 20–200 orders a day by email, PDF or WhatsApp. Later: small road forwarders and CNC job shops with quote requests."
+    },
+    {
+      "label": "Buyer",
+      "text": "The owner or sales-operations lead."
+    },
+    {
+      "label": "Start market",
+      "text": "Sweden (Fortnox first) and Romania/Moldova, then the UK and other Nordic/CEE countries."
+    }
+  ],
+  "solution": [
+    {
+      "title": "One inbound address",
+      "text": "customers keep ordering the way they do; orders are forwarded to a dedicated email address."
+    },
+    {
+      "title": "AI extracts the order",
+      "text": "customer, order lines, quantities and dates from emails, PDFs and messages."
+    },
+    {
+      "title": "Match to the product list",
+      "text": "fuzzy matching of product names to the wholesaler's uploaded product CSV."
+    },
+    {
+      "title": "Review screen",
+      "text": "staff check and fix the draft order in seconds."
+    },
+    {
+      "title": "Export",
+      "text": "to CSV or one accounting API (Fortnox first)."
+    },
+    {
+      "title": "Confirm to the customer",
+      "text": "an automatic confirmation email goes back."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Dedicated inbound email address",
+      "AI extraction of customer, lines, quantities and dates",
+      "Fuzzy matching of product names to an uploaded product CSV",
+      "Review screen",
+      "Export to CSV or the Fortnox API",
+      "Confirmation email back to the customer"
+    ],
+    "later": [
+      "WhatsApp intake",
+      "Visma, Odoo and SmartBill integrations",
+      "Learning from corrections (customer-specific product aliases)",
+      "Quote-request mode for road forwarders and job shops",
+      "Accounting-system app marketplace listings"
+    ]
+  },
+  "techStack": [
+    "Python backend",
+    "PostgreSQL",
+    "LLM extraction + fuzzy matching (e.g. trigram / embeddings)",
+    "Inbound email parsing, PDF/OCR",
+    "Fortnox API (first integration)",
+    "WhatsApp Business API (later)",
+    "Stripe billing"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "**Validate, no code.** Find 10 Swedish or Romanian wholesalers; ask for 50 real past order emails; run them through an LLM by hand; show the accuracy and time saved. Target 2 letters of intent."
+    },
+    {
+      "when": "Week 3–6",
+      "what": "Victor builds inbound email, AI extraction, product matching and the review screen."
+    },
+    {
+      "when": "Week 7–10",
+      "what": "CSV and Fortnox export, confirmation emails, billing; tune accuracy on real orders."
+    },
+    {
+      "when": "Week 11–12",
+      "what": "Pilots run live order volume; add WhatsApp if customers ask."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server, database and email (basic stack)",
+      "note": "Small EU cloud server or Vercel/Supabase free tiers + transactional email (report estimate)",
+      "cost": "€25–45 / month"
+    },
+    {
+      "item": "AI API",
+      "note": "AI per order (cents)",
+      "cost": "€10–30 / month"
+    },
+    {
+      "item": "WhatsApp API fees",
+      "note": "When WhatsApp intake is added",
+      "cost": "€0–20 / month"
+    },
+    {
+      "item": "Landing page and validation tools",
+      "note": "Carrd / Typeform / Google Forms for the no-code test",
+      "cost": "€0–20 / month"
+    },
+    {
+      "item": "Running cost with 20–50 customers",
+      "note": "Report estimate, not a price quote",
+      "cost": "€30–80 / month"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €550–800 (report: €250–350 product costs + €300–450 AI coding tools)",
+  "pricing": [
+    {
+      "name": "Standard: €99/mo",
+      "description": "Up to 500 orders a month"
+    },
+    {
+      "name": "Pro: €249/mo",
+      "description": "Up to 2,000 orders a month"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 200,
+      "value": 20,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 99,
+      "max": 249,
+      "value": 149,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "Proton.ai",
+      "what": "AI order and quote entry for distributors (July 2026)",
+      "gap": "Built for larger distributors",
+      "isUs": false
+    },
+    {
+      "name": "Y Meadows, WizCommerce, Moblico, Advantive, Tungsten",
+      "what": "AI order entry",
+      "gap": "Target mid-market and enterprise ERPs (Epicor, P21, NetSuite, SAP)",
+      "isUs": false
+    },
+    {
+      "name": "Paperless Parts",
+      "what": "Quoting for job shops",
+      "gap": "Quote-priced and costly for small shops",
+      "isUs": false
+    },
+    {
+      "name": "QuotedPart",
+      "what": "Smaller job-shop quoting option",
+      "gap": "Job shops only, not wholesale orders",
+      "isUs": false
+    },
+    {
+      "name": "Customer portals / EDI",
+      "what": "Structured ordering",
+      "gap": "Small customers don't adopt them",
+      "isUs": false
+    },
+    {
+      "name": "Us",
+      "what": "Emails, PDFs and WhatsApps → matched draft orders → approve → Fortnox/CSV",
+      "gap": "Self-serve, €99–249/mo, for small-business accounting systems",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Integrations with accounting and ERP systems eat development time",
+      "answer": "One integration only (Fortnox) plus CSV export at first."
+    },
+    {
+      "risk": "Customers expect very high accuracy",
+      "answer": "Always a review screen; measure accuracy on their own past orders before selling."
+    },
+    {
+      "risk": "Mid-market vendors may move down-market",
+      "answer": "Win on self-serve setup, price and small local systems."
+    },
+    {
+      "risk": "The freight segment is heavily funded",
+      "answer": "Keep freight and job-shop quotes as a later segment."
+    }
+  ],
+  "questions": [
+    "How many orders arrive per day, and through which channels?",
+    "Who types them in, and how long does each take?",
+    "How often are there mistakes, and what does one cost?",
+    "Which accounting or ERP system do you use?",
+    "Have you tried a customer portal or EDI, and why did customers not adopt it?"
+  ],
+  "numbers": {
+    "cashMin": 550.0,
+    "cashMax": 800.0,
+    "mvpWeeksMin": 9.0,
+    "mvpWeeksMax": 12.0,
+    "priceLabel": "€99–249/mo",
+    "competition": "Mid-market tools; small systems left out",
+    "competitionLevel": "medium",
+    "whoSells": "Jonatan → Swedish wholesalers; Victor → Romanian/Moldovan wholesalers"
+  },
+  "skills": [
+    "ai",
+    "integrations",
+    "coding",
+    "logistics",
+    "b2b-sales"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 8,
+    "willingnessToPay": 8,
+    "lowCompetition": 5,
+    "easyToBuild": 5,
+    "easyToSell": 6,
+    "skillFit": 9,
+    "globalPotential": 8,
+    "excitement": 6
+  },
+  "notes": "",
+  "interviews": []
+}

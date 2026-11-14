@@ -1,0 +1,331 @@
+{
+  "id": "r-questionnaire-autopilot",
+  "title": "Questionnaire Autopilot: security and NIS2/DORA supplier answers plus a trust page",
+  "color": "#0ca30c",
+  "industry": "Cybersecurity",
+  "status": "idea",
+  "source": "Top 25 SaaS ideas for Victor (research report, Nov 2026)",
+  "rank": 6,
+  "batch": "Top 50 research (Nov 2026)",
+  "tags": [
+    "NIS2 / DORA",
+    "Victor's security skills",
+    "Crowded market"
+  ],
+  "summary": "Answers the security and NIS2/DORA questionnaires that big customers send to small suppliers, from one reusable answer library, and hosts a simple public trust page.",
+  "priceLabel": "$49–299 / month",
+  "hook": "\"At fifty security questionnaires, it's a second job nobody signed up for.\"",
+  "story": "**Jakob is CTO of a 25-person software agency in the Netherlands.** Since NIS2 came into force, his bank and logistics customers send supplier security questionnaires with new clauses in their contracts. Each one is a different Excel file with 100+ questions, and he has no SOC 2 report to point to.\n\nHe spends days on each one, copying old answers and guessing. Full compliance platforms cost **$10k–30k a year**, far too much for his agency. With Questionnaire Autopilot, he builds a **supplier security profile once**, drops each new questionnaire in, gets drafted answers with sources and confidence scores, and sends customers a link to his **trust page**.",
+  "whyNow": "NIS2 had a national law in force in 22 of 27 EU member states by July 2026, and the Commission referred four countries to the EU Court of Justice on 8 July 2026. Article 21(2)(d) makes regulated firms manage their direct suppliers' security through contracts, and under DORA banks and insurers had to file registers of all their IT suppliers around March 2026.",
+  "evidence": [
+    "NIS2 national law in force in 22 of 27 EU member states by July 2026; Ireland, Spain, France and the Netherlands referred to the EU Court of Justice on 8 July 2026 [Cullen International / Fieldfisher]",
+    "The Netherlands reportedly gave about 8,000 organisations five weeks to prepare for NIS2 [ManageEngine]",
+    "Third-party involvement in breaches doubled from 15% to 30% in the 2025 Verizon report [Security Today]",
+    "Conveyor paid plans from about $9.6k/year; SafeBase about $5k–15k+/year; full platforms like Vanta about $10k–30k/year [G2 / Orbiq / UnderDefense]",
+    "Sprinto is free for companies with 20 or fewer employees; ComplyJet starts at $5k/year [Sacra / ComplyJet]"
+  ],
+  "sources": [
+    {
+      "title": "Cullen International: how EU states are transposing NIS2",
+      "url": "https://www.cullen-international.com/news/2026/05/How-are-EU-member-states-transposing-NIS2-.html"
+    },
+    {
+      "title": "Fieldfisher: NIS2 across the EU (June 2026)",
+      "url": "https://res.cloudinary.com/fieldfisher/image/upload/v1783691713/PDFs/NIS2_across_the_EU_JUNE_2026_wokdct.pdf"
+    },
+    {
+      "title": "Computing: NIS2 turns supplier security into a contract negotiation",
+      "url": "https://www.computing.co.uk/opinion/2026/nis2-turns-supplier-security-into-a-contract-negotiation"
+    },
+    {
+      "title": "ManageEngine: Netherlands gave 8,000 organisations five weeks",
+      "url": "https://www.manageengine.com/insights/it-security/netherlands-gave-8000-organizations-five-weeks-prepare-nis2-shorter-window-compliance-constraint"
+    },
+    {
+      "title": "AFM: DORA register of information",
+      "url": "https://www.afm.nl/en/sector/themas/belangrijke-europese-wet--en-regelgeving/dora/informatieregister"
+    },
+    {
+      "title": "Wolfia: answering security questionnaires without a security team",
+      "url": "https://wolfia.com/blog/answer-security-questionnaires-no-security-team"
+    },
+    {
+      "title": "UpGuard: the security questionnaire burden",
+      "url": "https://upguard.com/blog/security-questionnaire-burden"
+    },
+    {
+      "title": "Security Today: Verizon 2025 DBIR",
+      "url": "https://securitytoday.com/Articles/2025/04/28/Verizons-2025-Data-Breach-Investigations-Report.aspx"
+    },
+    {
+      "title": "G2: Conveyor pricing",
+      "url": "https://g2.com/products/conveyor-conveyor/pricing"
+    },
+    {
+      "title": "Orbiq: SafeBase vs Vanta",
+      "url": "https://www.orbiqhq.com/comparisons/safebase-vs-vanta"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "NIS2 pushes duties onto suppliers",
+      "text": "\"NIS2 regulates your clients, not you\", but its supplier clauses are just as binding (Computing). DORA does the same for suppliers to banks and insurers."
+    },
+    {
+      "title": "Small suppliers drown in questionnaires",
+      "text": "\"At fifty security questionnaires, it's a second job nobody signed up for\" (Wolfia); even SOC 2 companies still face formal reviews (SecurityPal)."
+    },
+    {
+      "title": "Tools are priced for funded SaaS",
+      "text": "Questionnaire tools are \"often too expensive for smaller security teams\" (UpGuard); most start at $5k–10k+ a year."
+    },
+    {
+      "title": "A narrow gap remains",
+      "text": "Under $150/month for suppliers without SOC 2, with answers mapped to NIS2 and DORA."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "Small B2B suppliers with 5–100 staff: SaaS companies, agencies, IT service firms, MSPs, and logistics or facility-services suppliers to NIS2-regulated companies."
+    },
+    {
+      "label": "Buyer",
+      "text": "The founder, CTO, head of sales or managing director."
+    },
+    {
+      "label": "Start market",
+      "text": "Netherlands, Belgium, Germany and the Nordics in English; then worldwide for general security questionnaires."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Onboarding wizard",
+      "text": "which tools, policies and controls the company has."
+    },
+    {
+      "title": "NIS2 self-assessment",
+      "text": "40–60 questions mapped to the EU's implementing rules and ISO 27001, with starter policy templates for gaps."
+    },
+    {
+      "title": "Answer library",
+      "text": "upload past questionnaires and policies once."
+    },
+    {
+      "title": "Drop in a new questionnaire",
+      "text": "Excel or Word; AI drafts each answer with a confidence score and source citation."
+    },
+    {
+      "title": "Review and export",
+      "text": "export back in the original format."
+    },
+    {
+      "title": "Public trust page",
+      "text": "a simple page with NDA-protected documents to send to every customer."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Onboarding wizard (tools, policies, controls)",
+      "40–60 question NIS2 self-assessment mapped to implementing rules and ISO 27001",
+      "Starter policy templates",
+      "Answer library from past questionnaires and policies",
+      "Excel/Word questionnaire import with AI drafts, confidence scores and citations",
+      "Export in the original format",
+      "Public trust page with NDA-protected documents"
+    ],
+    "later": [
+      "DORA mappings and custom domain (€149 plan)",
+      "Agency/MSP workspace for 10 clients",
+      "German and Dutch language",
+      "External security scan on the trust page",
+      "CRA mappings (shared with CRA Reporting Desk)"
+    ]
+  },
+  "techStack": [
+    "Python + Django / FastAPI",
+    "PostgreSQL + pgvector (answer library)",
+    "LLM with retrieval and citations (RAG)",
+    "openpyxl / python-docx (import and export)",
+    "Static trust pages with access control",
+    "Stripe billing"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "**Validate, no code.** Jonatan offers \"we fill in your next security questionnaire in 48 hours for €99\" to 50 small SaaS firms and agencies, done by hand with an LLM and Victor's review. In parallel, a Typeform \"NIS2 supplier readiness score\" with a hand-made PDF report. Success = 3+ paid jobs, repeat requests, and 5 people willing to pay €299 for the report."
+    },
+    {
+      "when": "Week 3–5",
+      "what": "Victor builds the answer library, questionnaire import and AI drafting."
+    },
+    {
+      "when": "Week 6–8",
+      "what": "NIS2 self-assessment, policy templates, export, trust page, billing."
+    },
+    {
+      "when": "Week 9–10",
+      "what": "Convert paid hand-done jobs into subscriptions; recruit SOC 2/ISO consultants and MSPs as partners."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server, database and email (basic stack)",
+      "note": "Small EU cloud server or Vercel/Supabase free tiers + transactional email (report estimate)",
+      "cost": "€25–45 / month"
+    },
+    {
+      "item": "AI API",
+      "note": "Grows with questionnaire volume",
+      "cost": "€10–40 / month"
+    },
+    {
+      "item": "Landing page and validation tools",
+      "note": "Carrd / Typeform / Google Forms for the no-code test",
+      "cost": "€0–20 / month"
+    },
+    {
+      "item": "Running cost with 20–50 customers",
+      "note": "Report estimate, not a price quote",
+      "cost": "€40–120 / month"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €500–800 (report: €200–350 product costs + €300–450 AI coding tools)",
+  "pricing": [
+    {
+      "name": "Starter: $49/mo",
+      "description": "One trust page plus 5 questionnaires a month"
+    },
+    {
+      "name": "Pro: $149/mo",
+      "description": "Unlimited questionnaires, NIS2/DORA mappings, custom domain"
+    },
+    {
+      "name": "Agency/MSP: $299/mo",
+      "description": "10 clients; plus a €299 one-off \"NIS2 supplier readiness report\""
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 400,
+      "value": 30,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 49,
+      "max": 299,
+      "value": 99,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "Conveyor",
+      "what": "Questionnaire automation and trust portal",
+      "gap": "Free portal; paid plans from about $9.6k/year",
+      "isUs": false
+    },
+    {
+      "name": "SafeBase",
+      "what": "Trust center",
+      "gap": "About $5k–15k+/year",
+      "isUs": false
+    },
+    {
+      "name": "Vanta (and Trust Center add-on)",
+      "what": "Full compliance platform",
+      "gap": "About $10k–30k/year; Trust Center add-on about $6k",
+      "isUs": false
+    },
+    {
+      "name": "Sprinto",
+      "what": "Compliance automation",
+      "gap": "Free for 20 or fewer employees: a strong low-end competitor",
+      "isUs": false
+    },
+    {
+      "name": "ComplyJet",
+      "what": "Security questionnaire automation",
+      "gap": "Starts at $5k/year",
+      "isUs": false
+    },
+    {
+      "name": "Us",
+      "what": "Reusable supplier security profile + NIS2/DORA-mapped answers + trust page",
+      "gap": "Under $150/mo for suppliers without SOC 2",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Heavy competition including free tiers",
+      "answer": "Stay narrow: small suppliers without SOC 2, NIS2/DORA mapping, low monthly price."
+    },
+    {
+      "risk": "A wrong AI answer can become a contract problem",
+      "answer": "Mandatory human review; every answer shows its source and confidence."
+    },
+    {
+      "risk": "Big compliance platforms bundle this",
+      "answer": "Sell to firms that will never buy a $10k platform."
+    },
+    {
+      "risk": "NIS2 rules vary by country; German markets may need German",
+      "answer": "Start with English-speaking buyers in NL, BE and the Nordics; add languages later."
+    }
+  ],
+  "questions": [
+    "How many security or vendor questionnaires did you receive in the last 12 months, and from whom?",
+    "Who answers them, and how many hours does each take?",
+    "Have you lost or delayed a deal because of a security review or missing SOC 2/ISO?",
+    "Has any customer cited NIS2, DORA or the CRA in a contract or questionnaire to you?",
+    "Would a reusable supplier security profile save you time, and what would it be worth per month?"
+  ],
+  "numbers": {
+    "cashMin": 500.0,
+    "cashMax": 800.0,
+    "mvpWeeksMin": 7.0,
+    "mvpWeeksMax": 8.0,
+    "priceLabel": "$49–299/mo",
+    "competition": "Crowded, incl. free tiers",
+    "competitionLevel": "high",
+    "whoSells": "Jonatan → small SaaS firms and agencies; consultants and MSPs as partners"
+  },
+  "skills": [
+    "security",
+    "ai",
+    "coding",
+    "writing",
+    "b2b-sales"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 7,
+    "willingnessToPay": 7,
+    "lowCompetition": 4,
+    "easyToBuild": 7,
+    "easyToSell": 7,
+    "skillFit": 9,
+    "globalPotential": 9,
+    "excitement": 6
+  },
+  "notes": "",
+  "interviews": []
+}

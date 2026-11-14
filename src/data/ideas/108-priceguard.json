@@ -1,0 +1,312 @@
+{
+  "id": "r-priceguard",
+  "title": "PriceGuard: supplier price-list sync with margin protection",
+  "color": "#e66767",
+  "industry": "E-commerce",
+  "status": "idea",
+  "source": "Top 25 SaaS ideas for Victor (research report, Nov 2026)",
+  "rank": 8,
+  "batch": "Top 50 research (Nov 2026)",
+  "tags": [
+    "WooCommerce gap",
+    "Margin protection",
+    "Free plugin as lead magnet"
+  ],
+  "summary": "Reads messy supplier price lists (Excel, CSV, even PDF), updates the online store's prices automatically and warns before you sell anything below cost.",
+  "priceLabel": "$29–119 / month",
+  "hook": "\"A supplier raised prices in a PDF I didn't open for two weeks. We sold 40 units at a loss.\"",
+  "story": "**Daniel runs a WooCommerce store for electrical supplies with 3,000 products and 12 suppliers.** Every supplier sends price changes in a different format: one Excel with changing column names, one CSV, one PDF. Updating the store takes him a full day each time, so he often falls behind.\n\nWhen a supplier raises prices and he misses it, the store keeps selling at the old price, **sometimes below cost**. Existing plugins only handle clean files or one feed. With PriceGuard, he forwards the supplier email, AI maps the columns once, he sees a preview (\"**12 products now sell below cost**\"), and he clicks apply.",
+  "whyNow": "Several new tools launched in 2026 (Feedstead, FeedForge, Newcraft Feed Sync), a sign of live demand, while WooCommerce options remain limited.",
+  "evidence": [
+    "Feedstead launched a Shopify supplier price review tool in 2026, alongside other new feed-sync tools [CFOtech]",
+    "Store owners repeatedly ask how to update prices from supplier CSV or XML files [Shopify Community]",
+    "FeedForge starts at $9/month but the entry plan is manual only, 1 supplier feed and 500 rows [Shopify App Store]",
+    "EmberPrice is free but has no scheduling or stock updates; Sourcelyx is in beta and CSV-only [WordPress.org]",
+    "Shopify takes 0% of the first $1M of app revenue [Shopify]",
+    "No study measures the money lost to stale prices; that is a gap in the evidence [Report]"
+  ],
+  "sources": [
+    {
+      "title": "CFOtech: Feedstead launches Shopify supplier price review tool",
+      "url": "https://cfotech.co.uk/story/feedstead-launches-shopify-supplier-price-review-tool"
+    },
+    {
+      "title": "Shopify Community: updating prices from a CSV file",
+      "url": "https://community.shopify.com/t/how-can-i-efficiently-update-prices-using-a-csv-file/138448"
+    },
+    {
+      "title": "Shopify App Store: FeedForge",
+      "url": "https://apps.shopify.com/supplier-feed-etl-1"
+    },
+    {
+      "title": "WordPress.org: EmberPrice",
+      "url": "https://wordpress.org/plugins/emberprice/"
+    },
+    {
+      "title": "WordPress.org: Sourcelyx",
+      "url": "https://wordpress.org/plugins/?p=380638"
+    },
+    {
+      "title": "Shopify: app revenue share",
+      "url": "https://shopify.dev/docs/apps/launch/distribution/revenue-share"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "Selling below cost is direct loss",
+      "text": "A missed supplier price rise means every sale loses money until someone notices."
+    },
+    {
+      "title": "The files are messy",
+      "text": "Changing headers, PDFs and other languages break simple import plugins; owners keep asking for help in forums."
+    },
+    {
+      "title": "WooCommerce is underserved",
+      "text": "New 2026 tools focus on Shopify; WooCommerce plugins are free but manual, beta or CSV-only."
+    },
+    {
+      "title": "Cheap to run",
+      "text": "The AI is only needed when a new file layout appears; the mapping is then saved as a template."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "WooCommerce stores (later Shopify and Shopware) with 3–30 suppliers sending price lists: electronics, auto parts, building supplies, B2B distributors, dropshippers."
+    },
+    {
+      "label": "Buyer",
+      "text": "The owner or operations manager."
+    },
+    {
+      "label": "Start market",
+      "text": "Worldwide in English via WordPress.org and search; Jonatan's outreach to distributors and WooCommerce agencies."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Bring in the price file",
+      "text": "upload, forward by email, or fetch from a URL or FTP."
+    },
+    {
+      "title": "AI maps the columns",
+      "text": "AI-assisted mapping of columns and product codes, saved as a template for next time."
+    },
+    {
+      "title": "Apply your rules",
+      "text": "markup rules per supplier or category."
+    },
+    {
+      "title": "Preview the changes",
+      "text": "prices up, down, below margin and missing products, before anything changes."
+    },
+    {
+      "title": "Apply or roll back",
+      "text": "one click, with a full undo."
+    },
+    {
+      "title": "Schedule and digest",
+      "text": "daily automatic runs and an email digest."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "WordPress plugin + cloud backend",
+      "Upload, email-in or URL fetch of price files",
+      "AI-assisted column and product-code mapping saved as a template",
+      "Markup rules",
+      "Preview: up, down, below margin, missing products",
+      "Apply and roll back",
+      "Daily schedule + email digest"
+    ],
+    "later": [
+      "PDF price lists",
+      "FTP pulls and stock updates",
+      "Shopify app (0% revenue share on the first $1M)",
+      "Shopware support",
+      "Agency plan for 10 stores"
+    ]
+  },
+  "techStack": [
+    "WordPress / WooCommerce plugin (PHP)",
+    "Cloud backend (Python or Node)",
+    "PostgreSQL",
+    "LLM for column mapping (only on new layouts)",
+    "Inbound email parsing",
+    "Stripe billing"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "**Validate, no code.** Collect 10 real supplier files from 5 stores (WooCommerce Facebook groups, agency contacts); run them through an LLM mapping by hand; offer a done-for-you sync at $49/month. Target 3 pre-commitments."
+    },
+    {
+      "when": "Week 3–5",
+      "what": "Victor builds the cloud backend, file intake and AI mapping templates."
+    },
+    {
+      "when": "Week 6–8",
+      "what": "WordPress plugin, preview, apply/roll back, schedule and digest; free plugin listing on WordPress.org."
+    },
+    {
+      "when": "Week 9–10",
+      "what": "SEO pages (\"update WooCommerce prices from supplier Excel\") and agency outreach."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server, database and email (basic stack)",
+      "note": "Small EU cloud server or Vercel/Supabase free tiers + transactional email (report estimate)",
+      "cost": "€25–45 / month"
+    },
+    {
+      "item": "AI API",
+      "note": "Only for new file layouts; mapping is then saved",
+      "cost": "€0–10 / month"
+    },
+    {
+      "item": "Landing page and validation tools",
+      "note": "Carrd / Typeform / Google Forms for the no-code test",
+      "cost": "€0–20 / month"
+    },
+    {
+      "item": "Running cost with 20–50 customers",
+      "note": "Report estimate, not a price quote",
+      "cost": "€10–30 / month"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €500–750 (report: €200–300 product costs + €300–450 AI coding tools)",
+  "pricing": [
+    {
+      "name": "Basic: $29/mo",
+      "description": "Few suppliers and products"
+    },
+    {
+      "name": "Growth: $59/mo",
+      "description": "More suppliers, daily schedule"
+    },
+    {
+      "name": "Pro: $119/mo",
+      "description": "Many suppliers and products; agency plan $199 for 10 stores"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 500,
+      "value": 40,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 29,
+      "max": 199,
+      "value": 59,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "FeedForge",
+      "what": "Shopify supplier feed app from $9/month",
+      "gap": "Entry plan is manual only, 1 feed, 500 rows",
+      "isUs": false
+    },
+    {
+      "name": "EmberPrice",
+      "what": "Free WordPress plugin",
+      "gap": "No scheduling or stock updates",
+      "isUs": false
+    },
+    {
+      "name": "Sourcelyx",
+      "what": "WordPress price import plugin",
+      "gap": "Beta and CSV-only",
+      "isUs": false
+    },
+    {
+      "name": "WP All Import",
+      "what": "Do-it-yourself import plugin",
+      "gap": "No AI mapping for messy files, no margin alerts",
+      "isUs": false
+    },
+    {
+      "name": "Feedstead, Newcraft Feed Sync",
+      "what": "New 2026 Shopify tools",
+      "gap": "Shopify-focused; WooCommerce left out",
+      "isUs": false
+    },
+    {
+      "name": "Us",
+      "what": "AI mapping of messy files + \"12 products now sell below cost\" alerts + scheduled pulls",
+      "gap": "$29–119/mo, WooCommerce first",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "WooCommerce users are used to free plugins",
+      "answer": "Free plugin as a lead magnet; charge for the cloud service, scheduling and margin alerts."
+    },
+    {
+      "risk": "Messy-file edge cases eat development time",
+      "answer": "Start with Excel/CSV; add PDF later; keep a human review step."
+    },
+    {
+      "risk": "WP All Import already serves DIY users",
+      "answer": "Target owners who want it automatic and checked for margin, not a DIY tool."
+    }
+  ],
+  "questions": [
+    "How many suppliers send you price changes, and how often?",
+    "Walk me through the last price update: how much time, which tools?",
+    "Have you ever sold below cost because a supplier price changed, and what did it cost?",
+    "What have you tried (WP All Import, Zapier, a virtual assistant), and why did it fall short?",
+    "What would you pay monthly if updates were automatic and checked for margin?"
+  ],
+  "numbers": {
+    "cashMin": 500.0,
+    "cashMax": 750.0,
+    "mvpWeeksMin": 7.0,
+    "mvpWeeksMax": 8.0,
+    "priceLabel": "$29–119/mo",
+    "competition": "Few WooCommerce options",
+    "competitionLevel": "low",
+    "whoSells": "Jonatan → distributors and WooCommerce agencies; free plugin brings inbound"
+  },
+  "skills": [
+    "coding",
+    "ai",
+    "integrations",
+    "e-commerce",
+    "marketing"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 8,
+    "willingnessToPay": 7,
+    "lowCompetition": 7,
+    "easyToBuild": 7,
+    "easyToSell": 6,
+    "skillFit": 8,
+    "globalPotential": 7,
+    "excitement": 6
+  },
+  "notes": "",
+  "interviews": []
+}

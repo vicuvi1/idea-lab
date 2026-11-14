@@ -1,0 +1,327 @@
+{
+  "id": "r-subdocs",
+  "title": "SubDocs: subcontractor and supplier document tracking",
+  "color": "#3987e5",
+  "industry": "Construction / facility services",
+  "status": "idea",
+  "source": "Top 25 SaaS ideas for Victor (research report, Nov 2026)",
+  "rank": 1,
+  "batch": "Top 50 research (Nov 2026)",
+  "tags": [
+    "Top pick",
+    "Jonatan's network",
+    "Document engine",
+    "Free for subcontractors"
+  ],
+  "summary": "AI reads every insurance certificate, tax registration and safety card your subcontractors send, tracks the expiry dates and chases renewals for you. Flat price for the contractor, free for the subcontractors.",
+  "priceLabel": "€49–199 / month",
+  "hook": "\"I only find out a subcontractor's insurance has expired when the client's auditor asks for it.\"",
+  "story": "**Anna is operations manager at a Swedish facility-services firm with 60 staff.** She uses about **80 subcontractors** for cleaning, security and property maintenance. Each one must have valid insurance, F-skatt tax status, ID06 cards and safety training. She tracks all of it in one Excel sheet and her inbox, and every month she spends hours emailing people for new certificates.\n\nThen a large property client asks for **proof that every subcontractor on its sites is insured and registered** before it renews the contract. Anna loses **two full days** building the audit pack by hand, and finds three expired insurance certificates and one missing safety card. With SubDocs, the subcontractors would have got automatic reminders 30, 14 and 0 days before expiry, and the audit pack would be **one click**.",
+  "whyNow": "There is no single new deadline, but the penalties are real and ongoing. In Sweden a missing or wrong construction site staff register costs SEK 12,500 per occasion plus SEK 2,500 per undocumented person (SEK 25,000 for a repeat within a year), and the EU's NIS2 law pushes security and document requirements from large regulated companies down to their direct suppliers through contracts.",
+  "evidence": [
+    "Swedish site staff register (personalliggare) fines: SEK 12,500 per occasion plus SEK 2,500 per undocumented person, and SEK 25,000 for a repeat within a year [FAR Online / Skatteverket]",
+    "ISNetworld costs a small subcontractor about $875 a year, including a $125 setup fee [Capterra]",
+    "Avetta costs suppliers about $799+ a year plus $249 setup (figure published by a competitor) [Billy]",
+    "Avetta reviews mention \"significant supplier pushback… mainly due to membership fees, the administrative burden on suppliers… very slow customer support\" [G2]",
+    "US certificate tools are cheap but built around the US ACORD 25 form: CertCove $99/month Starter, SubDoc from $14/month, SmartCompliance $1,000/year [Capterra / GetApp / Software Advice]"
+  ],
+  "sources": [
+    {
+      "title": "FAR Online: personalliggare rules",
+      "url": "https://www.faronline.se/dokument/rs_personalliggare/"
+    },
+    {
+      "title": "Skatteverket: personalliggare in construction (Q&A)",
+      "url": "https://www.skatteverket.se/foretag/arbetsgivare/personalliggare/personalliggarebyggbranschen/fragorochsvarompersonalliggareibyggbranschen.4.361dc8c15312eff6fd6ba7.html"
+    },
+    {
+      "title": "nisd2.eu: NIS2 supplier contract clauses",
+      "url": "https://nisd2.eu/en/wiki/law-and-consequences/nis2-supplier-contract-clauses"
+    },
+    {
+      "title": "Capterra: ISNetworld vs Blue pricing",
+      "url": "https://www.capterra.com/compare/145737-173498/ISNetworld-vs-Blue-review"
+    },
+    {
+      "title": "Billy: Billy vs ISNetworld vs Avetta",
+      "url": "https://billyforinsurance.com/resources/billy-vs-isnetworld-vs-avetta-subcontractor-prequalification/"
+    },
+    {
+      "title": "G2: Avetta reviews",
+      "url": "https://g2.com/products/avetta-avetta/reviews?page=2"
+    },
+    {
+      "title": "Capterra: CertCove",
+      "url": "https://www.capterra.co.uk/software/1109350/CertCove"
+    },
+    {
+      "title": "GetApp: SubDoc",
+      "url": "https://www.getapp.com/all-software/a/subdoc/"
+    },
+    {
+      "title": "Software Advice: SmartCompliance",
+      "url": "https://www.softwareadvice.com/policy-management/smartcompliance-profile"
+    },
+    {
+      "title": "Bokio: Byggliggaren integration",
+      "url": "https://www.bokio.se/integrationer/byggliggaren/"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "Fines and audits are real",
+      "text": "Swedish site-register fines start at SEK 12,500 per occasion, and big clients increasingly ask for proof of supplier documents (NIS2 pushes this into contracts)."
+    },
+    {
+      "title": "Subcontractors hate the current tools",
+      "text": "Prequalification platforms like ISNetworld and Avetta charge the small subcontractor $800+ a year, and reviews complain about fees and admin. SubDocs is free for them, so they have no reason to refuse."
+    },
+    {
+      "title": "No EU-localised tool",
+      "text": "Cheap US tools are built around the US ACORD 25 insurance form. Bokio's Byggliggaren only handles the site register. Nobody handles F-skatt, ID06, A1 forms and safety training in one place."
+    },
+    {
+      "title": "It sits in Jonatan's industry",
+      "text": "Jonatan knows Swedish facility and construction services and can call buyers this week. It also reuses the document engine for ChaseAI, CredTrack and VisaKit."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "General contractors and facility-management or facility-services firms (cleaning, security, property maintenance) with 10–100 staff that use 10–200 subcontractors."
+    },
+    {
+      "label": "Buyer",
+      "text": "The owner, operations manager or health-and-safety manager: the person who chases documents and answers to auditors."
+    },
+    {
+      "label": "Start market",
+      "text": "Sweden and the UK first (document types differ by country), then other Nordic and EU markets."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Import the subcontractor list",
+      "text": "the firm uploads a CSV of its subcontractors and picks which documents each one needs."
+    },
+    {
+      "title": "Subcontractors upload for free",
+      "text": "each subcontractor gets a magic-link upload page (no login) or forwards documents to an email address."
+    },
+    {
+      "title": "AI reads every document",
+      "text": "OCR + LLM pull out the document type, company, policy number, expiry date and amounts; a person clicks \"confirm\"."
+    },
+    {
+      "title": "Green / amber / red dashboard",
+      "text": "one view per subcontractor shows what is valid, expiring or missing."
+    },
+    {
+      "title": "Automatic chasing",
+      "text": "reminders go out at 30, 14 and 0 days, in the subcontractor's language."
+    },
+    {
+      "title": "One-click audit pack",
+      "text": "a PDF per project or client proves every document, with a full audit log."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Magic-link upload page for subcontractors + email-in address",
+      "OCR + LLM extraction (type, company, policy number, expiry, amounts) with a confirm step",
+      "Green/amber/red dashboard per subcontractor",
+      "Automatic reminders at 30, 14 and 0 days in the subcontractor's language",
+      "CSV import of the subcontractor list",
+      "One-click PDF audit pack per project or client",
+      "Audit log, EU hosting and encryption"
+    ],
+    "later": [
+      "Client audit portal (part of the €199 plan)",
+      "More countries' document types (Norway, Denmark, Germany)",
+      "Integrations with site-register and ID06 providers",
+      "Construction ERP integrations for larger firms",
+      "Swedish interface"
+    ]
+  },
+  "techStack": [
+    "Next.js or Django web app",
+    "PostgreSQL / Supabase (EU region)",
+    "OCR + small LLM for document extraction",
+    "Resend or Postmark (reminders and inbound email)",
+    "Encrypted object storage for documents",
+    "PDF generation for audit packs",
+    "Stripe billing"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "**Validate, no code.** Days 1–3: Jonatan calls 20 Swedish and UK facility and construction firms; a Carrd page offers \"send us your subcontractor list and we return a free compliance status report\". Days 4–10: five concierge audits by hand (ChatGPT + spreadsheet), returning an expiry report and draft reminders. Days 11–14: ask for a €49/month pre-order or a letter of intent. Success = 3+ paid pre-orders."
+    },
+    {
+      "when": "Week 3–5",
+      "what": "Victor builds the upload page, email-in, AI extraction with confirm step and the dashboard."
+    },
+    {
+      "when": "Week 6–8",
+      "what": "Reminders, CSV import, PDF audit pack, audit log and Stripe billing."
+    },
+    {
+      "when": "Week 9–10",
+      "what": "Move the concierge pilots onto the product; ask each for a referral to another firm."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server, database and email (basic stack)",
+      "note": "Small EU cloud server or Vercel/Supabase free tiers + transactional email (report estimate)",
+      "cost": "€25–45 / month"
+    },
+    {
+      "item": "AI API",
+      "note": "Extraction costs a few cents per document (about $0.002 per document with a small model)",
+      "cost": "€5–20 / month"
+    },
+    {
+      "item": "Landing page and validation tools",
+      "note": "Carrd / Typeform / Google Forms for the no-code test",
+      "cost": "€0–20 / month"
+    },
+    {
+      "item": "Running cost with 20–50 customers",
+      "note": "Report estimate, not a price quote",
+      "cost": "€20–60 / month"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €500–750 (report: €200–300 product costs + €300–450 AI coding tools)",
+  "pricing": [
+    {
+      "name": "Starter: €49/mo",
+      "description": "Up to 25 subcontractors; free for subcontractors who upload"
+    },
+    {
+      "name": "Team: €99/mo",
+      "description": "Up to 100 subcontractors"
+    },
+    {
+      "name": "Unlimited: €199/mo",
+      "description": "Unlimited subcontractors plus a client audit portal"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 300,
+      "value": 30,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 49,
+      "max": 199,
+      "value": 89,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "ISNetworld, Avetta",
+      "what": "Enterprise prequalification platforms",
+      "gap": "Charge each small subcontractor about $800–875+ a year; supplier pushback over fees and admin",
+      "isUs": false
+    },
+    {
+      "name": "CertCove, SubDoc, SmartCompliance",
+      "what": "US certificate-of-insurance tracking",
+      "gap": "Built around the US ACORD 25 form; not localised for EU documents",
+      "isUs": false
+    },
+    {
+      "name": "Bokio Byggliggaren",
+      "what": "Swedish site staff register",
+      "gap": "Only handles the site register, not insurance, tax or training documents",
+      "isUs": false
+    },
+    {
+      "name": "Excel + email",
+      "what": "What most small firms do (an inference, not measured)",
+      "gap": "Manual chasing, no reminders, audit packs built by hand",
+      "isUs": false
+    },
+    {
+      "name": "Us",
+      "what": "AI reads any document, tracks expiry and chases subcontractors automatically",
+      "gap": "Flat €49–199/mo, free for subcontractors, EU documents (F-skatt, ID06, A1, safety training)",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Document types differ by country",
+      "answer": "Start with Sweden and the UK only and add countries one by one."
+    },
+    {
+      "risk": "Some firms are happy with Excel",
+      "answer": "Sell the audit pack and the time saved; target firms with 20+ subcontractors or a recent audit problem."
+    },
+    {
+      "risk": "ID documents fall under GDPR",
+      "answer": "EU hosting, encryption, a data processing agreement and clear deletion rules from day 1: a selling point that matches Victor's security skills."
+    },
+    {
+      "risk": "Swedish customers may expect a Swedish interface",
+      "answer": "Keep reminders multilingual from the start; add a Swedish UI once pre-orders prove demand."
+    }
+  ],
+  "questions": [
+    "How many subcontractors or suppliers did you use last year, and how do you track their insurance and certificates today?",
+    "When did an expired document last cause a problem (fine, client audit, claim), and what did it cost?",
+    "Who spends time chasing documents, and how many hours a month?",
+    "What do your clients or main contractors ask you to prove, and how often?",
+    "What have you tried (Excel, Avetta, ID06 tools), and why did you stop or keep it?"
+  ],
+  "numbers": {
+    "cashMin": 500.0,
+    "cashMax": 750.0,
+    "mvpWeeksMin": 6.0,
+    "mvpWeeksMax": 8.0,
+    "priceLabel": "€49–199/mo",
+    "competition": "US tools only; no EU-localised one",
+    "competitionLevel": "low",
+    "whoSells": "Jonatan → Swedish and UK facility and construction firms"
+  },
+  "skills": [
+    "coding",
+    "ai",
+    "security",
+    "construction",
+    "b2b-sales"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 8,
+    "willingnessToPay": 7,
+    "lowCompetition": 7,
+    "easyToBuild": 8,
+    "easyToSell": 9,
+    "skillFit": 9,
+    "globalPotential": 7,
+    "excitement": 6
+  },
+  "notes": "",
+  "interviews": []
+}
