@@ -3,7 +3,9 @@
 A local dashboard for finding, analysing and validating business ideas, and for working out which one fits **you**.
 It runs on your own computer as a **website** (in your browser) or as a **Windows desktop app**. There's no server, no account, and your data stays local.
 
-It comes with 8 analysed B2B SaaS ideas: Security Questionnaire Autopilot, Accountant Document Chaser, Instant Lead Reply, Inbox-to-Quote for Freight, Supplier Price-List Sync, Offboarding Security, Subcontractor Document Tracker and Public Tender Finder.
+📖 **Read the 50 researched business ideas: [IDEAS.md](IDEAS.md)** (full report behind ideas 1–25: [reports/](reports/)).
+
+It comes with 8 original analysed B2B SaaS ideas plus 50 researched ones: Security Questionnaire Autopilot, Accountant Document Chaser, Instant Lead Reply, Inbox-to-Quote for Freight, Supplier Price-List Sync, Offboarding Security, Subcontractor Document Tracker and Public Tender Finder.
 
 ## What's inside
 

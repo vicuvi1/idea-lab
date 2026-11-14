@@ -26,7 +26,7 @@ Key files:
 - ✅ Signing works (new key set from the PC, 14 Nov).
 - ❌ The `RELEASES_TOKEN` can READ `idea-lab-releases` but cannot create releases. Victor must edit the token: Repository permissions → Contents → **Read and write**. Or make a new token and run `gh secret set RELEASES_TOKEN --repo vicuvi1/idea-lab`.
 
-- ⏳ 50 researched ideas are being added by the cloud session. Do not write idea files on the PC; run `git pull` instead.
+- ✅ 50 researched ideas are in `src/data/ideas/101–150` and `IDEAS.md` (pushed 14 Nov). Run `git pull`.
 - Victor's PC has an old v0.1.0 installed, which has no updater. He needs one manual install of a new version.
 
 ## Your tasks, in order

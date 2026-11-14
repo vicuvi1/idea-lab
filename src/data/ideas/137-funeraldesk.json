@@ -1,0 +1,288 @@
+{
+  "id": "r-funeraldesk",
+  "title": "FuneralDesk: family portal, approvals and AI-drafted notices for independent UK funeral directors",
+  "color": "#d55181",
+  "industry": "Funeral services",
+  "status": "idea",
+  "source": "Top 50 research (Nov 2026): reframed from ideas dropped from the Top 25 report, plus new web research",
+  "tags": [
+    "Reframed: funeral-home communication",
+    "Closed community channel",
+    "Thin evidence"
+  ],
+  "summary": "Independent funeral directors spend hours on the phone collecting family details, choices and approvals, then writing notices and service sheets. FuneralDesk gives families a gentle online form and approval page and drafts the obituary, notices and order of service, without replacing the firm's main system.",
+  "priceLabel": "£99–249 / month",
+  "hook": "\"Every family needs the same 40 details from us, at the worst moment of their life, and we take them over five phone calls.\"",
+  "story": "**Margaret runs a family-owned funeral home in Fife** with 7 staff and about **180 funerals a year**. For each one, her team collects the same details over several calls: names, dates, music, readings, flowers, newspaper notice wording, and written approval of the price estimate. Notices and service sheets are typed by hand, and errors in a name or date cause real hurt.\n\nScotland's statutory **Code of Practice for funeral directors** also expects clear prices, written estimates and good records. Margaret's case-management software handles bookings and invoices but not the back-and-forth with families. She wants a calm, simple page for families to fill in at their own pace, one-click approvals, and drafts she only needs to check.",
+  "whyNow": "Scotland's Funeral Director Code of Practice, approved by the Scottish Parliament in January 2024, is statutory, and a licensing scheme and inspection regime are planned. Expectations on written estimates and records are rising across the UK.",
+  "evidence": [
+    "Scotland's Funeral Director Code of Practice was approved by the Scottish Parliament on 31 January 2024 under the Burial and Cremation (Scotland) Act 2016, with a grace period to comply [Scottish Government]",
+    "The code applies to all funeral directors working in Scotland, wherever the business is based, ahead of a planned licensing scheme [Scottish Government impact assessment]",
+    "Funeral software prices range widely: Osiris about $100/month, Halcyon about 295/month, Parting Pro $469/month, and per-funeral pricing from about £5 (aggregator listings) [Software Advice / Capterra]",
+    "The only revenue evidence for a funeral add-on is one unverified anecdote of $29k MRR at $650 per location, sold via association newsletters [Medium via Top 25 report]"
+  ],
+  "sources": [
+    {
+      "title": "Scottish Government: Funeral Director Code of Practice",
+      "url": "https://www.gov.scot/publications/funeral-director-code-practice-2/"
+    },
+    {
+      "title": "Scottish Government: Code of Practice business and regulatory impact assessment",
+      "url": "https://gov.scot/publications/funeral-director-code-practice-business-regulatory-impact-assessment/pages/7"
+    },
+    {
+      "title": "Minister's letter to funeral directors (Feb 2024)",
+      "url": "https://blogs.gov.scot/funeral-industry/wp-content/uploads/sites/54/2024/02/Funeral-Director-Code-of-Practice-Minister-letter-to-funeral-directors-February-2024.pdf"
+    },
+    {
+      "title": "Funeral Notices: Scotland's code paving the way for UK-wide regulation",
+      "url": "https://funeral-notices.co.uk/funeral-news-articles/how-scotlands-code-of-practice-is-paving-the-way-for-ukwide-funeral-regulation"
+    },
+    {
+      "title": "Capterra: Osiris pricing",
+      "url": "https://www.capterra.com/p/124753/Osiris/pricing/"
+    },
+    {
+      "title": "Capterra: Parting Pro",
+      "url": "https://www.capterra.com/p/179534/Parting-Pro/"
+    },
+    {
+      "title": "Medium: vertical SaaS micro-niches (funeral anecdote)",
+      "url": "https://medium.com/@urano10/vertical-saas-micro-niches-beyond-the-obvious-01e0adf16a98"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "Repetitive, emotional admin",
+      "text": "The same details are collected for every funeral, by phone, from grieving families. Mistakes hurt."
+    },
+    {
+      "title": "Rules push for written records",
+      "text": "Scotland's statutory code expects clear estimates and records, and UK-wide regulation is being discussed."
+    },
+    {
+      "title": "Closed, reachable community",
+      "text": "Independent funeral directors are listed in association directories and read association newsletters."
+    },
+    {
+      "title": "Honest weakness",
+      "text": "Evidence of willingness to pay is thin, buyers are phone-first and traditional, and Jonatan has no network here."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "Independent funeral directors with 1–5 branches and 80–800 funerals a year."
+    },
+    {
+      "label": "Buyer",
+      "text": "The owner or senior funeral director."
+    },
+    {
+      "label": "Start market",
+      "text": "Scotland and the rest of the UK, then Ireland and Australia."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Gentle family page",
+      "text": "the funeral director sends one link; family members fill in details, choices and memories at their own pace, from any phone."
+    },
+    {
+      "title": "Estimate and approvals",
+      "text": "the written price estimate and key choices are shown clearly and approved with one tap, with a dated record."
+    },
+    {
+      "title": "AI drafts",
+      "text": "obituary, newspaper and online notices, and the order of service are drafted from the family's answers, for staff to edit."
+    },
+    {
+      "title": "Checklist per funeral",
+      "text": "a simple task list (registrar, crematorium, flowers, music) with who does what."
+    },
+    {
+      "title": "Records",
+      "text": "everything is stored per funeral, ready if a regulator or family asks."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Family intake page with save-and-continue",
+      "Written estimate display and approval with timestamp",
+      "AI-drafted notice and obituary",
+      "Order-of-service template export (PDF)",
+      "Per-funeral checklist",
+      "Simple staff dashboard"
+    ],
+    "later": [
+      "Online payments and deposits",
+      "Integration with UK funeral case-management systems",
+      "Memorial page for sharing",
+      "Irish and Australian versions",
+      "Price-list page that follows UK rules"
+    ]
+  },
+  "techStack": [
+    "Python + Django",
+    "PostgreSQL",
+    "LLM for drafting (careful tone)",
+    "PDF templates",
+    "UK/EU hosting"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "15 phone/video interviews with funeral directors from association directories; test if family page + drafts are worth £99+."
+    },
+    {
+      "when": "Week 3–5",
+      "what": "Family page, approvals, checklist."
+    },
+    {
+      "when": "Week 6–8",
+      "what": "AI drafts, PDF order of service, billing."
+    },
+    {
+      "when": "Week 9–12",
+      "what": "2–3 pilot firms; ask for introductions within their association."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server + database",
+      "note": "Hetzner or Supabase/Vercel free tiers, EU hosting",
+      "cost": "€10–25 / month"
+    },
+    {
+      "item": "AI API (OpenAI / Claude)",
+      "note": "a few drafts per funeral",
+      "cost": "€5–15 / month"
+    },
+    {
+      "item": "Email sending",
+      "note": "Resend / Postmark",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Association event or newsletter ad",
+      "note": "Optional, if pilots go well",
+      "cost": "€0–200 one-off"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €400–750",
+  "pricing": [
+    {
+      "name": "Single branch: £99/mo",
+      "description": "Up to 250 funerals a year, family page, drafts"
+    },
+    {
+      "name": "Multi-branch: £249/mo",
+      "description": "Up to 5 branches, payments, integrations"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 200,
+      "value": 15,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 79,
+      "max": 299,
+      "value": 149,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "Funeral case-management systems (UK and US vendors)",
+      "what": "Bookings, cases, invoices",
+      "gap": "Family communication and drafting are weak or missing; replacing them is a big decision"
+    },
+    {
+      "name": "Website and memorial providers",
+      "what": "Websites, online notices, tribute pages",
+      "gap": "Public-facing, not the private intake and approval flow"
+    },
+    {
+      "name": "Phone, paper and Word",
+      "what": "What most independents use",
+      "gap": "Slow and error-prone"
+    },
+    {
+      "name": "Us",
+      "what": "Family intake + approvals + AI drafts as an add-on",
+      "gap": "No migration, built for small independents",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Very traditional, phone-first buyers",
+      "answer": "Sell through association newsletters and peer referrals; offer to set up the first funerals by hand."
+    },
+    {
+      "risk": "Sensitive tone and data",
+      "answer": "Staff always edit AI drafts; careful wording; strict data handling."
+    },
+    {
+      "risk": "Thin evidence of willingness to pay",
+      "answer": "Do not build until 2 letters of intent at £99+ per month."
+    }
+  ],
+  "questions": [
+    "Walk me through the first 48 hours after a family calls you.",
+    "How many calls and emails does it take to collect all the details for one funeral?",
+    "Who writes notices and orders of service today, and how long does it take?",
+    "What software do you pay for, and what is missing?",
+    "Would you pay £99 a month to save 2–3 hours per funeral?"
+  ],
+  "numbers": {
+    "cashMin": 400.0,
+    "cashMax": 750.0,
+    "mvpWeeksMin": 5.0,
+    "mvpWeeksMax": 7.0,
+    "priceLabel": "£99–249/mo",
+    "competition": "Case systems exist; add-on gap unproven",
+    "competitionLevel": "medium",
+    "whoSells": "Associations and cold calls (no existing network)"
+  },
+  "skills": [
+    "coding",
+    "ai",
+    "writing",
+    "local-sales"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 6,
+    "willingnessToPay": 6,
+    "lowCompetition": 5,
+    "easyToBuild": 7,
+    "easyToSell": 4,
+    "skillFit": 5,
+    "globalPotential": 5,
+    "excitement": 4
+  },
+  "notes": "",
+  "interviews": [],
+  "rank": 37,
+  "batch": "Top 50 research (Nov 2026)"
+}

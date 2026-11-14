@@ -1,0 +1,292 @@
+{
+  "id": "r-eudr-lite",
+  "title": "EUDR Lite: deforestation due-diligence statements for small Nordic importers of wood products, coffee and cocoa",
+  "color": "#0ca30c",
+  "industry": "Import / trade compliance",
+  "status": "idea",
+  "source": "Top 50 research (Nov 2026): reframed from ideas dropped from the Top 25 report, plus new web research",
+  "tags": [
+    "Regulation deadline (30 June 2027)",
+    "Reframed: EUDR",
+    "One-time rush risk"
+  ],
+  "summary": "From 30 June 2027 small EU companies that first import wood products, coffee, cocoa, rubber and similar goods must file due-diligence statements under the EU Deforestation Regulation. EUDR Lite collects supplier location data, checks the risk and prepares the statement for the EU system at a flat, small-firm price.",
+  "priceLabel": "€49–149 / month",
+  "hook": "\"We import teak furniture from three small workshops. Now the EU wants GPS coordinates of the forest. Where do I even start?\"",
+  "story": "**Mats owns a 9-person company in Gothenburg** that imports garden furniture made of tropical wood from **three workshops in Indonesia** and specialty coffee from **two co-operatives in Colombia**. Under the EU Deforestation Regulation he is the \"operator\" who first places these goods on the EU market, so from **30 June 2027** he must file a due-diligence statement with supplier location data and a risk assessment.\n\nHe has read about the rule being delayed and changed twice, and does not know what is still required. Software he found charges **per supplier per month plus a setup fee of thousands of euros**, built for large importers. He needs a simple tool: send each supplier a link, collect locations and documents, see the risk, and file correctly.",
+  "whyNow": "The Commission's simplification review of May 2026 did not reopen the law. Large and medium operators must comply from 30 December 2026, and micro and small operators from 30 June 2027. Small importers who first place goods on the market are now planning for that deadline.",
+  "evidence": [
+    "The Commission published its EUDR simplification review on 4 May 2026 without reopening the legal text; changes go through a delegated act [JD Supra / Arendt]",
+    "Large and medium operators must comply from 30 December 2026, micro and small operators from 30 June 2027 [PwC Belgium]",
+    "The Commission estimates its simplification measures cut annual compliance costs by about 75% [COM(2026) 191]",
+    "Only the operator that first places a product on the market files a statement; micro and small primary operators make a one-off simplified declaration [EY / Linklaters]",
+    "Existing tools: TraceX about €40–50 per supplier per month plus about €5k setup, LiveEO €15 per extra supplier per month, FlyPix €25–62.50/month (Top 25 notes) [Top 25 research notes]"
+  ],
+  "sources": [
+    {
+      "title": "JD Supra: European Commission releases new EUDR measures",
+      "url": "https://www.jdsupra.com/legalnews/european-commission-releases-new-eu-3913581/"
+    },
+    {
+      "title": "Arendt: EUDR simplification review published",
+      "url": "https://www.arendt.com/news-insights/news/eudr-simplification-review-published-what-the-2026-package-means-for-in-scope-companies/"
+    },
+    {
+      "title": "PwC Belgium: the rules are set, now prepare",
+      "url": "https://news.pwc.be/european-commission-delivers-its-simplification-review-the-rules-are-set-now-prepare/"
+    },
+    {
+      "title": "COM(2026) 191: EUDR simplification review",
+      "url": "https://www.cdep.ro/afaceri_europene/CE/2026/COM_2026_191_1_EN_ACT_part1_v2.pdf"
+    },
+    {
+      "title": "EY: EUDR application postponed to 30 December 2026",
+      "url": "https://taxnews.ey.com/news/2026-0237-eu-deforestation-regulation-application-postponed-to-30-december-2026"
+    },
+    {
+      "title": "Linklaters: EU changes to deforestation regulation",
+      "url": "https://sustainablefutures.linklaters.com/post/102ly55/eu-changes-to-deforestation-regulation-reach-the-finish-line"
+    },
+    {
+      "title": "CEPF statement on the EUDR simplification review",
+      "url": "https://www.cepf-eu.org/news-media/statement-eudr-simplification-review-case-further-legislative-action-remains"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "A legal duty with a date",
+      "text": "Small importers who first place covered goods on the EU market must file from 30 June 2027; customs and authorities can block goods."
+    },
+    {
+      "title": "Existing tools are priced for big importers",
+      "text": "Per-supplier monthly fees and setup charges do not fit a firm with 3–20 suppliers."
+    },
+    {
+      "title": "Document work suits AI",
+      "text": "Supplier documents, certificates and location data in many languages and formats can be read and checked by AI."
+    },
+    {
+      "title": "Honest weakness",
+      "text": "The rule has changed twice, the market shrank when traders downstream were exempted, and demand may be a one-time rush."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "Micro and small EU importers that first place wood products, furniture, coffee, cocoa, chocolate, rubber goods or leather on the EU market, with 3–30 suppliers."
+    },
+    {
+      "label": "Buyer",
+      "text": "The owner or purchasing/quality manager."
+    },
+    {
+      "label": "Start market",
+      "text": "Sweden and the Nordics (Jonatan), then the Baltics, Netherlands and Germany."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Am I in scope?",
+      "text": "a short check tells the importer whether they are an operator, which products are covered, and their deadline."
+    },
+    {
+      "title": "Supplier link",
+      "text": "each supplier gets a simple link (in their language) to give plot GPS points or a map pin, or a postal address where the simplified rules allow, plus documents."
+    },
+    {
+      "title": "AI document check",
+      "text": "certificates, harvest permits and invoices are read and matched to products and quantities."
+    },
+    {
+      "title": "Risk checklist",
+      "text": "country risk level, deforestation-date check and missing items are shown in plain language."
+    },
+    {
+      "title": "Statement ready to file",
+      "text": "a draft due-diligence statement with a step-by-step guide for the EU information system, and records kept for five years."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Scope and deadline checker",
+      "Supplier invitation link with map-pin and file upload",
+      "AI extraction from supplier documents",
+      "Country risk and checklist view",
+      "Draft statement and filing guide",
+      "Five-year record archive"
+    ],
+    "later": [
+      "Direct submission to the EU information system via its interface",
+      "Satellite deforestation check from a data partner",
+      "Customs-broker partner plan",
+      "German and Dutch versions",
+      "Combine with SafeListing product-data checks"
+    ]
+  },
+  "techStack": [
+    "Python + Django",
+    "PostgreSQL + PostGIS for locations",
+    "Map picker (Leaflet / OpenStreetMap)",
+    "OCR + LLM for supplier documents",
+    "EU hosting"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "Jonatan calls 30 Nordic importers of furniture, timber and coffee; ask if they know they are operators and what they have done. Goal: 3 paid pre-orders."
+    },
+    {
+      "when": "Week 3–5",
+      "what": "Scope checker, supplier link, map picker, document upload."
+    },
+    {
+      "when": "Week 6–8",
+      "what": "AI extraction, risk checklist, draft statement, billing."
+    },
+    {
+      "when": "Week 9–12",
+      "what": "Pilots file test statements; adjust to the latest EU guidance."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server + database",
+      "note": "Hetzner or Supabase/Vercel free tiers, EU hosting",
+      "cost": "€10–25 / month"
+    },
+    {
+      "item": "AI API (OpenAI / Claude)",
+      "note": "~€0.01 per supplier document",
+      "cost": "€5–20 / month"
+    },
+    {
+      "item": "Email sending",
+      "note": "Resend / Postmark",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €400–650",
+  "pricing": [
+    {
+      "name": "Small: €49/mo",
+      "description": "Up to 10 suppliers, unlimited statements"
+    },
+    {
+      "name": "Plus: €149/mo",
+      "description": "Up to 40 suppliers, several product groups, broker access"
+    },
+    {
+      "name": "Setup help: €300 one-off",
+      "description": "We onboard your suppliers with you"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 300,
+      "value": 20,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 29,
+      "max": 199,
+      "value": 79,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "TraceX, LiveEO, osapiens, IntegrityNext",
+      "what": "EUDR traceability and due-diligence platforms",
+      "gap": "Per-supplier fees, setup charges, built for larger operators"
+    },
+    {
+      "name": "Coolset, FlyPix and other mid-priced tools",
+      "what": "EUDR modules and satellite checks",
+      "gap": "Closer on price; still broader than a 5-supplier importer needs"
+    },
+    {
+      "name": "Consultants and customs brokers",
+      "what": "Do the paperwork by hand",
+      "gap": "Charged per shipment or per hour, no reusable supplier data"
+    },
+    {
+      "name": "Us",
+      "what": "Supplier link + AI document check + statement draft",
+      "gap": "Flat price for importers with 3–30 suppliers",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "The rule changes again",
+      "answer": "Keep the product small and data-focused (supplier locations and documents) so it survives changes; follow EU guidance closely."
+    },
+    {
+      "risk": "One-time rush, then churn",
+      "answer": "Annual plans; recurring value from new shipments, new suppliers and the five-year record archive."
+    },
+    {
+      "risk": "Small, specialist market",
+      "answer": "Partner with customs brokers and importer associations who already serve these firms."
+    },
+    {
+      "risk": "Suppliers do not respond",
+      "answer": "Make the supplier page work on a phone, in their language, with a map pin instead of GPS skills."
+    }
+  ],
+  "questions": [
+    "Which EUDR-covered goods do you import, and from how many suppliers?",
+    "Do you know whether you are the \"operator\" who must file?",
+    "What have you done so far to prepare for June 2027?",
+    "Who helps you today: a consultant, a broker, software? What does it cost?",
+    "Would €49–149 a month for supplier data collection and ready statements be worth it?"
+  ],
+  "numbers": {
+    "cashMin": 400.0,
+    "cashMax": 650.0,
+    "mvpWeeksMin": 6.0,
+    "mvpWeeksMax": 8.0,
+    "priceLabel": "€49–149/mo",
+    "competition": "Enterprise tools; a few mid-priced",
+    "competitionLevel": "medium",
+    "whoSells": "Jonatan → Nordic importers, customs brokers"
+  },
+  "skills": [
+    "coding",
+    "ai",
+    "logistics",
+    "government"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 6,
+    "willingnessToPay": 5,
+    "lowCompetition": 5,
+    "easyToBuild": 6,
+    "easyToSell": 4,
+    "skillFit": 7,
+    "globalPotential": 4,
+    "excitement": 4
+  },
+  "notes": "",
+  "interviews": [],
+  "rank": 38,
+  "batch": "Top 50 research (Nov 2026)"
+}

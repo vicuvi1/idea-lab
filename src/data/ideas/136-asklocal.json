@@ -1,0 +1,287 @@
+{
+  "id": "r-asklocal",
+  "title": "AskLocal: AI-search visibility reports in Swedish, Romanian and German for small SEO agencies",
+  "color": "#c98500",
+  "industry": "Marketing agencies",
+  "status": "idea",
+  "source": "Top 50 research (Nov 2026): reframed from ideas dropped from the Top 25 report, plus new web research",
+  "tags": [
+    "Reframed: AI-search (GEO) audits",
+    "Very crowded",
+    "White-label"
+  ],
+  "summary": "Clients now ask their SEO agency \"do we show up in ChatGPT?\". Most AI-visibility tools track English prompts for big brands. AskLocal tracks real local-language questions for small local and B2B businesses and turns the results into a white-label monthly report the agency can sell.",
+  "priceLabel": "€79–199 / month per agency",
+  "hook": "\"My clients keep asking if they appear in ChatGPT. I have no way to show them, in Swedish, for the questions their customers actually ask.\"",
+  "story": "**Linnea runs a 3-person SEO agency in Örebro** with **25 local clients**: dentists, plumbers, accountants, a furniture shop. Several clients saw Google clicks drop and ask whether ChatGPT and Google's AI answers mention them when someone asks **\"bästa rörmokaren i Örebro\"**.\n\nThe AI-visibility tools she tried are built for big brands, price per prompt, and work best in English. Linnea wants to track **20 local questions per client in Swedish**, see which competitors the AI names instead, get a short to-do list (reviews, structured data, local pages), and send a branded report every month as a paid add-on.",
+  "whyNow": "Clicks from Google fall when AI answers appear, and agencies need a new service to sell. AI referrals are still small, so the honest product is a monitoring-and-advice add-on, not a traffic promise.",
+  "evidence": [
+    "Ahrefs found a 58% drop in top-position click-through rate for keywords that trigger AI Overviews (Dec 2025) [PPC Land]",
+    "A study of 16,661 sites found Google organic clicks down 21.8% year on year in August 2026 [SEOcrawl]",
+    "AI assistants still send only about 1% of traffic across industries, and ChatGPT sends roughly 75–83% of AI referrals [Digitaleer citing Conductor / SEOcrawl]",
+    "83 AI-visibility (GEO) tools were counted in 2026, and Shopify GEO apps start from $9/month [eCommerce Fastlane / Shopify App Store]"
+  ],
+  "sources": [
+    {
+      "title": "PPC Land: wider ChatGPT search access cuts traditional search",
+      "url": "https://ppc.land/wider-chatgpt-search-access-cuts-traditional-search-9-4-study-finds/"
+    },
+    {
+      "title": "SEOcrawl: AI traffic vs Google organic, 16,000+ websites",
+      "url": "https://seocrawl.ai/blog/ai-traffic-vs-organic-search-study"
+    },
+    {
+      "title": "Digitaleer: the zero-click era",
+      "url": "https://www.digitaleer.com/ai-impact-google-search-traffic-2026/"
+    },
+    {
+      "title": "eCommerce Fastlane: AI visibility tools",
+      "url": "https://ecommercefastlane.com/ai-visibility-tools/"
+    },
+    {
+      "title": "Shopify App Store: Citelix",
+      "url": "https://apps.shopify.com/citelix"
+    },
+    {
+      "title": "Shopify App Store: Semly",
+      "url": "https://apps.shopify.com/semly"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "Agencies need something new to sell",
+      "text": "As organic clicks fall, SEO agencies need a service that answers clients' AI questions and justifies retainers."
+    },
+    {
+      "title": "Local language is the narrow gap",
+      "text": "Most tools focus on English prompts and big brands. Small local businesses in Sweden, Romania or Germany are asked about in their own language."
+    },
+    {
+      "title": "Honest weakness",
+      "text": "AI-visibility tools were dropped from the Top 25 because the market is very crowded and measurement is noisy. This version only works as a cheap, local, white-label add-on."
+    },
+    {
+      "title": "Victor's skills fit",
+      "text": "Prompt tracking, parsing answers and writing AI summaries is pure LLM engineering."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "Small SEO and local-marketing agencies (1–20 staff) with local or small B2B clients."
+    },
+    {
+      "label": "Buyer",
+      "text": "The agency owner."
+    },
+    {
+      "label": "Start market",
+      "text": "Sweden and Romania (founders' languages), then Germany, Poland and other non-English markets."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Client setup",
+      "text": "the agency adds a client, its city, services and main competitors; AskLocal suggests 20 typical local questions in the local language."
+    },
+    {
+      "title": "Weekly checks",
+      "text": "AskLocal asks those questions to ChatGPT, Gemini and Perplexity APIs and records which businesses are mentioned and how."
+    },
+    {
+      "title": "Visibility score",
+      "text": "a simple share-of-mentions score per client and competitor, tracked over time."
+    },
+    {
+      "title": "Fix list",
+      "text": "checks the client's website structured data, Google Business Profile basics and review counts, and lists concrete actions."
+    },
+    {
+      "title": "White-label report",
+      "text": "a branded monthly PDF or link in the local language for the agency to send."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Agency workspace with client list",
+      "Local-language question generator",
+      "Weekly prompt runs on 2–3 AI APIs",
+      "Mention extraction and visibility score",
+      "Basic website structured-data check",
+      "White-label monthly report"
+    ],
+    "later": [
+      "Google AI Overviews tracking via a search API",
+      "Competitor comparison pages",
+      "Review-request add-on",
+      "German and Polish",
+      "Agency client portal"
+    ]
+  },
+  "techStack": [
+    "Python",
+    "PostgreSQL",
+    "OpenAI, Gemini and Perplexity APIs",
+    "Schema.org / page crawler",
+    "PDF report generation",
+    "Hetzner hosting"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "Sell 5 one-off €199 AI-visibility audits to Swedish and Romanian agencies, done by hand with scripts."
+    },
+    {
+      "when": "Week 3–5",
+      "what": "Question generator, prompt runner, mention extraction."
+    },
+    {
+      "when": "Week 6–8",
+      "what": "Score, fix list, white-label report, billing."
+    },
+    {
+      "when": "Week 9–12",
+      "what": "Convert audit buyers to monthly plans; measure cost per client."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server + database",
+      "note": "Hetzner or Supabase/Vercel free tiers, EU hosting",
+      "cost": "€10–25 / month"
+    },
+    {
+      "item": "AI API (OpenAI / Claude)",
+      "note": "prompt runs across several AI APIs; grows with clients",
+      "cost": "€30–80 / month"
+    },
+    {
+      "item": "Email sending",
+      "note": "Resend / Postmark",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €500–800",
+  "pricing": [
+    {
+      "name": "Starter: €79/mo",
+      "description": "5 clients, 20 questions each, weekly checks"
+    },
+    {
+      "name": "Agency: €199/mo",
+      "description": "20 clients, white-label, competitor tracking"
+    },
+    {
+      "name": "One-off audit: €199",
+      "description": "Single client snapshot to test demand"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 300,
+      "value": 20,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 49,
+      "max": 299,
+      "value": 129,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "Semrush AI toolkit, Ahrefs, Goodie, Profound",
+      "what": "AI-visibility tracking for brands",
+      "gap": "English-first, priced for larger brands or per prompt"
+    },
+    {
+      "name": "Many cheap new GEO apps (Citelix, Semly and dozens more)",
+      "what": "AI-search checks from $9/month",
+      "gap": "Mostly e-commerce and English; market is crowded"
+    },
+    {
+      "name": "Agencies doing manual checks",
+      "what": "Typing questions into ChatGPT",
+      "gap": "Slow, not tracked over time, no report"
+    },
+    {
+      "name": "Us",
+      "what": "Local-language questions for small local clients, white-label",
+      "gap": "Cheap per agency, in Swedish/Romanian first",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Extremely crowded and fast-moving",
+      "answer": "Validate with paid one-off audits before building; stay local-language and agency-only."
+    },
+    {
+      "risk": "AI answers are noisy and change daily",
+      "answer": "Show trends over several runs, not single answers; be honest in reports."
+    },
+    {
+      "risk": "API costs grow with every client",
+      "answer": "Price per client tier; limit questions; cache runs."
+    },
+    {
+      "risk": "Weak proven willingness to pay",
+      "answer": "Treat as a cheap add-on agencies resell at a markup, not a core service."
+    }
+  ],
+  "questions": [
+    "Do your clients ask about ChatGPT or Google AI answers? How often?",
+    "What do you deliver to them today on this topic?",
+    "Which tools have you tried, and why did or didn't you keep them?",
+    "Would you resell a monthly AI-visibility report under your brand? At what price?",
+    "Which local questions would matter most for your typical client?"
+  ],
+  "numbers": {
+    "cashMin": 500.0,
+    "cashMax": 800.0,
+    "mvpWeeksMin": 5.0,
+    "mvpWeeksMax": 7.0,
+    "priceLabel": "€79–199/mo",
+    "competition": "83+ tools; local-language gap only",
+    "competitionLevel": "high",
+    "whoSells": "Jonatan → Swedish agencies; Victor → Romanian agencies"
+  },
+  "skills": [
+    "ai",
+    "coding",
+    "marketing"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 5,
+    "willingnessToPay": 4,
+    "lowCompetition": 2,
+    "easyToBuild": 7,
+    "easyToSell": 6,
+    "skillFit": 8,
+    "globalPotential": 6,
+    "excitement": 5
+  },
+  "notes": "",
+  "interviews": [],
+  "rank": 36,
+  "batch": "Top 50 research (Nov 2026)"
+}
