@@ -24,7 +24,7 @@ Key files:
 
 - ✅ The app works as a website and builds as a Windows installer.
 - ✅ Signing works (new key set from the PC, 14 Nov).
-- ❌ The `RELEASES_TOKEN` can READ `idea-lab-releases` but cannot create releases. Victor must edit the token: Repository permissions → Contents → **Read and write**. Or make a new token and run `gh secret set RELEASES_TOKEN --repo vicuvi1/idea-lab`.
+- ❌ The `RELEASES_TOKEN` cannot create releases in `idea-lab-releases` (HTTP 403 "Resource not accessible by personal access token"). Fix: edit the token so **Repository access** includes `idea-lab-releases` and **Contents** is **Read and write**, or create a new one and run `gh secret set RELEASES_TOKEN --repo vicuvi1/idea-lab`. The CI first step now really tests this (draft release create + delete).
 
 - ✅ 50 researched ideas are in `src/data/ideas/101–150` and `IDEAS.md` (pushed 14 Nov). Run `git pull`.
 - Victor's PC has an old v0.1.0 installed, which has no updater. He needs one manual install of a new version.

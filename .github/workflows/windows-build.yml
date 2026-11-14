@@ -32,16 +32,19 @@ jobs:
         run: |
           ok=true
           if [ -z "$KEY" ]; then echo "::error::TAURI_SIGNING_PRIVATE_KEY is missing."; ok=false
-          elif ! printf '%s' "$KEY" | tr -d ' \r\n' | base64 -d 2>/dev/null | head -c 40 | grep -q "untrusted comment"; then
+          elif ! { printf '%s' "$KEY" | tr -d ' \r\n' | base64 -d 2>/dev/null | head -c 40 | grep -q "untrusted comment"; } ; then
             echo "::error::TAURI_SIGNING_PRIVATE_KEY is not a valid Tauri key. Paste the full contents of the idea-lab.key file (one long line, no 'github_pat_')."; ok=false
           else echo "TAURI_SIGNING_PRIVATE_KEY: looks valid"; fi
           if [ -z "$TOKEN" ]; then echo "::error::RELEASES_TOKEN is missing."; ok=false
           else
             code=$(curl -s -o /dev/null -w "%{http_code}" -H "Authorization: Bearer $TOKEN" https://api.github.com/repos/vicuvi1/idea-lab-releases)
-            # A release POST with no tag is rejected with 422 when we may write, 403/404 when we may not.
-            write=$(curl -s -o /dev/null -w "%{http_code}" -X POST -H "Authorization: Bearer $TOKEN" -H "Accept: application/vnd.github+json" https://api.github.com/repos/vicuvi1/idea-lab-releases/releases -d '{}')
+            # Real write test: create a draft release, then delete it. (A public repo is readable by any token, so reading proves nothing.)
+            resp=$(curl -s -w "\n%{http_code}" -X POST -H "Authorization: Bearer $TOKEN" -H "Accept: application/vnd.github+json" https://api.github.com/repos/vicuvi1/idea-lab-releases/releases -d '{"tag_name":"ci-permission-check","name":"permission check","draft":true}')
+            write=$(echo "$resp" | tail -1)
+            rid=$(echo "$resp" | head -n -1 | grep -o '"id": *[0-9]*' | head -1 | grep -o '[0-9]*' || true)
+            if [ -n "$rid" ]; then curl -s -o /dev/null -X DELETE -H "Authorization: Bearer $TOKEN" https://api.github.com/repos/vicuvi1/idea-lab-releases/releases/$rid || true; fi
             if [ "$code" != "200" ]; then echo "::error::RELEASES_TOKEN can't access vicuvi1/idea-lab-releases (HTTP $code). Create a new fine-grained token for that repo with Contents: Read and write."; ok=false
-            elif [ "$write" != "422" ]; then echo "::error::RELEASES_TOKEN can read but NOT create releases in vicuvi1/idea-lab-releases (HTTP $write). Edit the token: Repository permissions → Contents → Read and write."; ok=false
+            elif [ "$write" != "201" ]; then echo "::error::RELEASES_TOKEN can read but NOT create releases in vicuvi1/idea-lab-releases (HTTP $write). Edit the token: Repository access must include idea-lab-releases, and Repository permissions → Contents → Read and write."; ok=false
             else echo "RELEASES_TOKEN: can write to idea-lab-releases"; fi
           fi
           $ok
