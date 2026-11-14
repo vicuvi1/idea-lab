@@ -1,0 +1,310 @@
+{
+  "id": "r-allergensync",
+  "title": "AllergenSync: allergen records that follow supplier changes, for restaurants",
+  "color": "#e66767",
+  "industry": "Hospitality",
+  "status": "idea",
+  "source": "Top 50 research (Nov 2026): new markets batch",
+  "tags": [
+    "Food safety",
+    "AI document reading",
+    "Easy demo"
+  ],
+  "summary": "Restaurants must give correct information on the 14 major allergens, and the UK food regulator now recommends written allergen information for all loose food. The weak point is supplier substitutions. AllergenSync reads supplier spec sheets and invoices, keeps each dish's allergen matrix up to date and warns the kitchen when a substitute changes an allergen.",
+  "priceLabel": "€29–99 / month per site",
+  "hook": "\"The wholesaler sent a different brand of pesto. Nobody checked the label. It had cashews.\"",
+  "story": "**Tom runs two neighbourhood restaurants in Bristol with a menu that changes every season.** His allergen matrix is a laminated A4 sheet made last spring. Since then the wholesaler has **swapped five products** when items were out of stock, and the kitchen has changed three recipes. Nobody updated the sheet, because finding the spec sheet for each product takes an evening.\n\nOne Friday a server tells a guest with a nut allergy that the pesto pasta is safe. The substitute pesto contains **cashew nuts**. The guest notices a reaction early and nobody is badly hurt, but Tom gets a visit from the council's food officer and realises his records would not survive a serious case. He needs something that notices product changes for him, not another spreadsheet.",
+  "whyNow": "The FSA published best-practice guidance in March 2025 saying written allergen information should always be available for non-prepacked food. FSA incidents rose 14% in 2025/26, with allergen incidents rising fastest. AI can now read supplier spec sheets and invoice lines cheaply, which makes automatic change detection possible.",
+  "evidence": [
+    "FSA guidance (March 2025): written allergen information should always be available for non-prepacked food, plus a conversation with the customer [FSA]",
+    "FSA incidents rose from 1,825 to 2,073 in 2025/26 (+14%); allergen incidents rose faster than any other category [Food Management Today]",
+    "The FSA handled 242 allergen-related incidents and issued 58 allergen alerts in the 2025 period [Food Manufacture]",
+    "A consultancy analysis says 597 of 1,036 UK food alerts in 2016–2021 (57.6%) were about allergens; primary source not confirmed [Human Focus]",
+    "Kafoodle starts around £20/month per feature; its restaurant bundle is listed from £60/month plus setup [Software Advice / FitGap]"
+  ],
+  "sources": [
+    {
+      "title": "FSA: updated industry guidance on allergen information (out of home)",
+      "url": "https://www.food.gov.uk/news-alerts/news/updated-industry-guidance-issued-for-food-allergen-information-in-the-out-of-home-sector"
+    },
+    {
+      "title": "GOV.UK: allergen information for non-prepacked foods, best practice",
+      "url": "https://www.gov.uk/government/publications/allergen-information-for-non-prepacked-foods-best-practice/allergen-information-for-non-prepacked-foods-best-practice"
+    },
+    {
+      "title": "Food Management Today: FSA incidents up 14%",
+      "url": "https://foodmanagement.today/?p=61478"
+    },
+    {
+      "title": "Food Manufacture: allergen errors most common cause of UK food recalls",
+      "url": "https://www.foodmanufacture.co.uk/Article/2025/08/26/allergen-errors-most-common-cause-of-uk-food-recalls-report-finds"
+    },
+    {
+      "title": "Human Focus: supplier change control failures during substitutions",
+      "url": "https://humanfocus.co.uk/blog/supplier-change-control-failures-during-food-substitutions/"
+    },
+    {
+      "title": "CIEH: top 5 allergen mistakes small food businesses make",
+      "url": "https://www.cieh.org/training-and-courses/resources/food-safety/top-5-allergen-mistakes-small-food-businesses-make/"
+    },
+    {
+      "title": "Software Advice: Kafoodle pricing",
+      "url": "https://www.softwareadvice.com/nutrition-analysis/kafoodle-kitchen-profile/"
+    },
+    {
+      "title": "FitGap: Kafoodle",
+      "url": "https://us.fitgap.com/products/022849/kafoodle"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "The stakes are life and death",
+      "text": "Allergen mistakes can kill, and owners know the famous UK cases. Allergen incidents are the fastest-growing type of FSA incident."
+    },
+    {
+      "title": "Substitutions break the paperwork",
+      "text": "Most allergen sheets are correct on the day they are made. They go wrong when a supplier swaps a product or the chef changes a recipe, and nobody updates the sheet."
+    },
+    {
+      "title": "The regulator raised expectations",
+      "text": "The FSA now recommends written allergen information for all loose food. Councils check allergen controls during hygiene inspections."
+    },
+    {
+      "title": "Existing tools are built around recipes, not change",
+      "text": "Recipe and nutrition tools ask the chef to keep everything updated by hand. Few watch incoming invoices and spec sheets for changes."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "independent restaurants, cafés, pubs with food, small hotel kitchens and caterers with 1–10 sites."
+    },
+    {
+      "label": "Buyer",
+      "text": "owner, head chef or operations manager of a small group."
+    },
+    {
+      "label": "Start market",
+      "text": "UK and Ireland in English (same 14 allergens as EU law), then the Nordics and the rest of the EU."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Import the menu",
+      "text": "upload the current menu and recipes (photo, PDF or spreadsheet); AI drafts the ingredient list for each dish."
+    },
+    {
+      "title": "Match the products",
+      "text": "upload supplier spec sheets or product photos; AI reads the allergens and \"may contain\" lines and links each product to dishes."
+    },
+    {
+      "title": "Watch for changes",
+      "text": "forward supplier invoices and delivery notes; when a product code or brand changes, AllergenSync asks for the new spec sheet and recalculates."
+    },
+    {
+      "title": "Warn the team",
+      "text": "if a dish's allergens change, the chef gets an alert and must approve before the matrix updates."
+    },
+    {
+      "title": "Publish",
+      "text": "printable allergen matrix, staff tablet view and a QR menu page for guests, all with a change history for inspections."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Menu and recipe import with AI ingredient draft",
+      "Supplier spec sheet reading (14 allergens + may contain)",
+      "Allergen matrix per dish",
+      "Invoice forwarding and product change detection",
+      "Chef approval of changes",
+      "Printable matrix and QR guest page"
+    ],
+    "later": [
+      "Integrations with wholesalers' product data",
+      "POS menu sync",
+      "Staff allergen training quiz and records",
+      "Multi-site templates",
+      "Nordic and EU languages"
+    ]
+  },
+  "techStack": [
+    "Next.js or Django",
+    "PostgreSQL (Supabase, EU)",
+    "LLM + OCR for spec sheets and invoices",
+    "Inbound email parsing (Postmark)",
+    "PDF generation",
+    "Stripe billing"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "**Validate, no code.** Visit 15 restaurants. Build 3 allergen matrices by hand with Claude from their real spec sheets and invoices."
+    },
+    {
+      "when": "Week 3–5",
+      "what": "Menu import, spec sheet reading, matrix and approval flow."
+    },
+    {
+      "when": "Week 6–7",
+      "what": "Invoice forwarding, change detection, printable matrix and QR page."
+    },
+    {
+      "when": "Week 8",
+      "what": "5 pilot sites live; first invoices."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server + database",
+      "note": "EU hosting (Hetzner / Supabase)",
+      "cost": "€10–25 / month"
+    },
+    {
+      "item": "AI + OCR API",
+      "note": "Spec sheets and invoices",
+      "cost": "€15–40 / month"
+    },
+    {
+      "item": "Email / SMS sending",
+      "note": "Resend / Postmark low tiers",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Landing page",
+      "note": "Built by us",
+      "cost": "€0"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €450–750",
+  "pricing": [
+    {
+      "name": "Single site: €29/mo",
+      "description": "1 menu, matrix, QR page"
+    },
+    {
+      "name": "Watch: €59/mo",
+      "description": "Invoice change detection and alerts"
+    },
+    {
+      "name": "Group: €99/mo",
+      "description": "Up to 5 sites, shared recipes"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 500,
+      "value": 60,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 19,
+      "max": 149,
+      "value": 49,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": {
+      "min": 1,
+      "max": 10,
+      "value": 1,
+      "label": "Sites per customer"
+    }
+  },
+  "competitors": [
+    {
+      "name": "Kafoodle",
+      "what": "Recipe, allergen and nutrition management",
+      "gap": "Charged per feature; chef must keep data current by hand",
+      "isUs": false
+    },
+    {
+      "name": "Nutritics",
+      "what": "Nutrition and allergen analysis for food businesses",
+      "gap": "Strong for labelling and larger caterers; heavier than a small restaurant needs",
+      "isUs": false
+    },
+    {
+      "name": "Paper / Excel matrix",
+      "what": "The default in most independents",
+      "gap": "Goes out of date at the first supplier substitution",
+      "isUs": false
+    },
+    {
+      "name": "Us",
+      "what": "Spec sheets + invoices → live allergen matrix",
+      "gap": "Notices supplier changes automatically; €29–99/mo",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Liability if AI reads a label wrong",
+      "answer": "AI drafts, the chef approves; every allergen links to the source document; terms make the business responsible for final checks."
+    },
+    {
+      "risk": "Restaurants hate admin and churn fast",
+      "answer": "Make invoice forwarding the only habit; price low; sell to small groups where one manager covers many sites."
+    },
+    {
+      "risk": "Crowded recipe-software market",
+      "answer": "Do not compete on costing or nutrition; own the \"supplier change\" problem and integrate later."
+    },
+    {
+      "risk": "Spec sheets are hard to get",
+      "answer": "Accept product photos of the label as a fallback; build a shared product library across customers over time."
+    }
+  ],
+  "questions": [
+    "When did you last update your allergen matrix, and who did it?",
+    "How often does your supplier send a substitute product?",
+    "How do you find out what is in a substitute today?",
+    "Has an allergen question or incident ever worried you, or come up in an inspection?",
+    "Would €29–59 a month for automatic change alerts be worth it?"
+  ],
+  "numbers": {
+    "cashMin": 450.0,
+    "cashMax": 750.0,
+    "mvpWeeksMin": 6.0,
+    "mvpWeeksMax": 8.0,
+    "priceLabel": "€29–99/mo per site",
+    "competition": "Recipe tools exist; change tracking is the gap",
+    "competitionLevel": "medium",
+    "whoSells": "Jonatan → restaurant owners and small groups"
+  },
+  "skills": [
+    "coding",
+    "ai",
+    "local-sales",
+    "b2b-sales"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 7,
+    "willingnessToPay": 5,
+    "lowCompetition": 4,
+    "easyToBuild": 7,
+    "easyToSell": 7,
+    "skillFit": 7,
+    "globalPotential": 6,
+    "excitement": 6
+  },
+  "notes": "",
+  "interviews": [],
+  "rank": 40,
+  "batch": "Top 50 research (Nov 2026)"
+}

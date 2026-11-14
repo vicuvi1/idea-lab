@@ -1,0 +1,301 @@
+{
+  "id": "r-redwork",
+  "title": "RedWork: follow-up on declined repair work for independent garages",
+  "color": "#c98500",
+  "industry": "Automotive",
+  "status": "idea",
+  "source": "Top 50 research (Nov 2026): new markets batch",
+  "tags": [
+    "Revenue recovery",
+    "Easy demo",
+    "Global market"
+  ],
+  "summary": "Garages find urgent (\"red\") and advisory (\"amber\") faults during inspections, but most drivers leave without approving all of it. RedWork sends timed, personal follow-ups with the photos and video from the inspection, offers a booking slot and tracks how much declined work comes back.",
+  "priceLabel": "€49–149 / month",
+  "hook": "\"We told him the brake pads were down to 2 mm. He said next month. We never heard from him again.\"",
+  "story": "**Mehmet runs an independent garage with 4 bays and 6 technicians.** Every day his team does health checks and finds red and amber items: worn tyres, brake pads, leaking shock absorbers. Most customers say \"not today\". The work is written in the job card and then forgotten. His garage software can send a yearly MOT reminder, but nothing for **declined work**.\n\nHe tried calling customers back, but nobody has time on a busy day. A simple system that sends the right message at the right time (pay-day, two weeks later, before winter) with the **photo of the worn part** and a link to book could bring back a few jobs a week. At an average of **£250 per job**, that pays for the tool many times over.",
+  "whyNow": "Drivers are under cost pressure: a 2026 analysis found that in 70% of health checks with red items, drivers did not approve all urgent work, mostly because of cost. Garages already take photos and videos in digital health checks, and WhatsApp/SMS messaging plus AI-written messages make personal follow-up cheap.",
+  "evidence": [
+    "In 70% of vehicle health checks with red items, drivers did not approve all urgent work; 46% said they could not afford it (vendor data) [Bumper / AutoBI]",
+    "47% of affected drivers did not approve advisory (amber) items (vendor data) [Bumper / AutoBI]",
+    "UK franchised dealers left an estimated £480 million of red work unsold in 2016, about £99,200 per dealer [AM Online]",
+    "A dealer case study reported an 86% rise in amber work approved after automated follow-up (vendor case study) [CitNOW]",
+    "UK garage management tools with digital inspections cost about £25–149 a month, e.g. £149/month flat for EZ Garage and Garage Desk [GetApp / GarageWire]"
+  ],
+  "sources": [
+    {
+      "title": "Bumper: drivers leave workshops with urgent repairs incomplete",
+      "url": "https://www.bumper.co/blog/drivers-leave-workshops-with-urgent-repairs-incomplete"
+    },
+    {
+      "title": "AM Online: dealers missing out on £99,200 in lost sales",
+      "url": "https://am-online.com/news/dealer-news/2017/06/28/dealers-missing-out-on-an-average-of-99-200-in-lost-sales-data-reveals"
+    },
+    {
+      "title": "AM Online: dealers lose revenue with poor VHC management",
+      "url": "https://am-online.com/news/aftersales/2018/12/17/dealers-lose-revenue-with-poor-vehicle-health-check-management"
+    },
+    {
+      "title": "CitNOW: Robinsons ŠKODA case study",
+      "url": "https://citnow.com/app/uploads/2019/05/©CitNOW-CaseStudy_Robinsons-ŠKODA.pdf"
+    },
+    {
+      "title": "GetApp: EZ Garage",
+      "url": "https://www.getapp.com/all-software/a/ez-garage/"
+    },
+    {
+      "title": "GetApp: Garage Desk",
+      "url": "https://www.getapp.com/all-software/a/garage-desk/"
+    },
+    {
+      "title": "GarageWire: new garage management system at £25 a month",
+      "url": "https://garagewire.co.uk/news/video-new-garage-management-system-set-to-disrupt-the-market/"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "Money already found, then lost",
+      "text": "The garage has done the inspection and found the fault. The only missing step is asking again at a better time."
+    },
+    {
+      "title": "Most declined work is about cash flow",
+      "text": "Drivers say \"not today\" because of money, not because they disagree. A reminder after pay-day or with a split-payment option often works."
+    },
+    {
+      "title": "Garage tools focus on the job, not the follow-up",
+      "text": "Garage software handles bookings, invoices and MOT reminders. Declined-work follow-up is usually a report nobody reads."
+    },
+    {
+      "title": "Easy to prove ROI",
+      "text": "Every recovered job is visible in pounds or euros, which makes the sale simple for Jonatan."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "independent garages and small chains (2–15 technicians), tyre and service centres."
+    },
+    {
+      "label": "Buyer",
+      "text": "garage owner or service manager."
+    },
+    {
+      "label": "Start market",
+      "text": "UK (red/amber health-check culture), then Ireland, Nordics, Australia and the rest of the EU."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Capture declined items",
+      "text": "import declined lines from the garage software (CSV, email report or API) or let the technician tap them in the app with a photo."
+    },
+    {
+      "title": "Plan the follow-up",
+      "text": "rules choose the timing: red items after 3–7 days, amber items before the season or the next service."
+    },
+    {
+      "title": "Personal messages",
+      "text": "AI writes a short, friendly SMS/WhatsApp message in the garage's voice, with the photo or video and a booking link."
+    },
+    {
+      "title": "Easy booking",
+      "text": "the driver picks a slot; the garage gets the job with the original inspection notes."
+    },
+    {
+      "title": "Recovery dashboard",
+      "text": "shows declined value, recovered jobs and money earned each month."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Declined-item import (CSV / email report)",
+      "Quick mobile entry with photo",
+      "Follow-up rules and schedule",
+      "AI-written SMS/WhatsApp messages",
+      "Booking link with slots",
+      "Recovery dashboard"
+    ],
+    "later": [
+      "API integrations with popular garage software",
+      "Pay-later / split payment partner",
+      "Seasonal campaigns (winter tyres)",
+      "Google review requests after the job",
+      "Multi-site reports"
+    ]
+  },
+  "techStack": [
+    "Next.js",
+    "PostgreSQL (Supabase)",
+    "Twilio / WhatsApp Business API",
+    "LLM for message drafting",
+    "Simple booking calendar",
+    "Stripe billing"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "**Validate, no code.** Jonatan visits 15 garages and asks for last month's declined-work list; we send follow-ups by hand for 2 garages."
+    },
+    {
+      "when": "Week 3–5",
+      "what": "Import, rules, message drafting and sending."
+    },
+    {
+      "when": "Week 6–7",
+      "what": "Booking link, dashboard, mobile entry."
+    },
+    {
+      "when": "Week 8",
+      "what": "Show recovered revenue to the pilots; convert to paid."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server + database",
+      "note": "EU hosting (Hetzner / Supabase)",
+      "cost": "€10–25 / month"
+    },
+    {
+      "item": "SMS / WhatsApp + AI",
+      "note": "Messages billed per use, passed on",
+      "cost": "€20–60 / month"
+    },
+    {
+      "item": "Email / SMS sending",
+      "note": "Resend / Postmark low tiers",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Landing page",
+      "note": "Built by us",
+      "cost": "€0"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €450–800",
+  "pricing": [
+    {
+      "name": "Basic: €49/mo",
+      "description": "Up to 150 follow-ups a month"
+    },
+    {
+      "name": "Busy: €99/mo",
+      "description": "Up to 500 follow-ups, booking link, dashboard"
+    },
+    {
+      "name": "Group: €149/mo",
+      "description": "Several sites, integrations"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 600,
+      "value": 60,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 39,
+      "max": 199,
+      "value": 89,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "Garage management systems (Garage Desk, EZ Garage and others)",
+      "what": "Jobs, invoices, digital inspections, MOT reminders",
+      "gap": "Declined work is stored but rarely chased in a smart way",
+      "isUs": false
+    },
+    {
+      "name": "Bumper",
+      "what": "Pay-later finance for repairs, with workshop tools",
+      "gap": "Finance-led; garages may want follow-up without finance",
+      "isUs": false
+    },
+    {
+      "name": "CitNOW, autoVHC",
+      "what": "Video and health checks for dealers",
+      "gap": "Dealer-focused and priced for franchised networks",
+      "isUs": false
+    },
+    {
+      "name": "Us",
+      "what": "Declined item → timed personal follow-up → booking",
+      "gap": "Simple add-on for independents, works next to any garage software",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Garage software adds the same feature",
+      "answer": "Be the specialist that works with any system; partner with GMS vendors as an add-on."
+    },
+    {
+      "risk": "Messages feel like spam",
+      "answer": "Limit to 2–3 messages per item, use the garage's name and real photos, easy opt-out (GDPR/PECR)."
+    },
+    {
+      "risk": "Getting data out of old systems",
+      "answer": "Start with CSV/email reports; mobile entry as fallback."
+    },
+    {
+      "risk": "Most evidence is from dealers and vendors",
+      "answer": "Measure recovery in the 2 hand-run pilots before building."
+    }
+  ],
+  "questions": [
+    "How much red and amber work did customers decline last month?",
+    "What happens to declined work today?",
+    "Does your garage software send any follow-up for it?",
+    "If we brought back 3–5 jobs a week, what would that be worth to you?",
+    "Would you pay €49–99 a month for that, next to your current software?"
+  ],
+  "numbers": {
+    "cashMin": 450.0,
+    "cashMax": 800.0,
+    "mvpWeeksMin": 6.0,
+    "mvpWeeksMax": 8.0,
+    "priceLabel": "€49–149/mo",
+    "competition": "GMS reminders and dealer tools",
+    "competitionLevel": "medium",
+    "whoSells": "Jonatan → independent garage owners"
+  },
+  "skills": [
+    "coding",
+    "ai",
+    "integrations",
+    "local-sales"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 6,
+    "willingnessToPay": 6,
+    "lowCompetition": 4,
+    "easyToBuild": 6,
+    "easyToSell": 7,
+    "skillFit": 6,
+    "globalPotential": 7,
+    "excitement": 6
+  },
+  "notes": "",
+  "interviews": [],
+  "rank": 44,
+  "batch": "Top 50 research (Nov 2026)"
+}

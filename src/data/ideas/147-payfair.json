@@ -1,0 +1,307 @@
+{
+  "id": "r-payfair",
+  "title": "PayFair: EU pay-transparency kit for companies with 20–250 staff",
+  "color": "#9085e9",
+  "industry": "HR / Recruiting",
+  "status": "idea",
+  "source": "Top 50 research (Nov 2026): new markets batch",
+  "tags": [
+    "Regulation (delayed)",
+    "EU-wide",
+    "Cheap alternative"
+  ],
+  "summary": "The EU Pay Transparency Directive gives every worker the right to ask about pay levels, bans questions about salary history and requires pay ranges for candidates. Big compensation tools cost thousands a year. PayFair helps small employers set job levels and pay ranges, answer pay-information requests on time and keep job ads compliant.",
+  "priceLabel": "€49–199 / month",
+  "hook": "\"An employee asked for the average pay of her role by gender. We have 40 staff and no HR system. What are we supposed to send?\"",
+  "story": "**Marta is the office manager of a 45-person engineering firm in Warsaw.** Poland's first pay-transparency rules took effect in December 2025: candidates must be told the pay or pay range, job adverts must be gender-neutral, and the firm can no longer ask about past salaries. When the full directive is transposed, any employee can ask for **average pay levels by gender for their category of work**, with a deadline to answer.\n\nThe firm has never defined job levels. Salaries were set one by one. A compensation platform quoted **several thousand euros a year**, far too much. Marta needs a simple way to group roles, set ranges, check job ads and produce an answer to a pay request in an afternoon.",
+  "whyNow": "The transposition deadline was 7 June 2026. Only a few member states had fully transposed by then, but Poland, Belgium, Czechia and Malta have partial rules in force and others are drafting. Rules on candidates and the right to information apply to employers of all sizes, while big tools are priced for companies with 250+ staff.",
+  "evidence": [
+    "Only four member states (Italy, Slovakia, Lithuania, Malta) had fully transposed the directive by late June 2026; Sweden sought a postponement [WageIndicator / King & Spalding]",
+    "Poland's recruitment rules took effect on 24 December 2025: pay information for candidates, gender-neutral adverts and no questions on past earnings [Lewis Silkin / RSM Poland]",
+    "Employers must answer pay-information requests within two months under the directive; Poland gives 30 days [Trusaic]",
+    "Ravio's pricing page gives £5,400 a year as an example for a 250-person company [Ravio]",
+    "Lattice charges $6 per user for compensation with a $4,000 annual minimum [FirstHR]"
+  ],
+  "sources": [
+    {
+      "title": "WageIndicator: just four member states have transposed (June 2026)",
+      "url": "https://wageindicator.org/ai/work/collective-bargaining-agreement/updates/2026/eu-sources-just-four-member-states-have-transposed-the-pay-transparency-directive-june-30-2026/"
+    },
+    {
+      "title": "King & Spalding: the EU Pay Transparency Directive, where do we stand",
+      "url": "https://www.kslaw.com/insights/articles/the-eu-pay-transparency-directive-where-do-we-stand"
+    },
+    {
+      "title": "Lewis Silkin: Poland moves ahead with pay transparency",
+      "url": "https://www.lewissilkin.com/insights/2025/12/19/poland-moves-ahead-with-pay-transparency"
+    },
+    {
+      "title": "RSM Poland: employers' obligations under the Pay Transparency Directive",
+      "url": "https://www.rsm.global/poland/en/insights/hr-payroll/employers-obligations-under-pay-transparency-directive"
+    },
+    {
+      "title": "Trusaic: Article 7 right to information, response deadlines",
+      "url": "https://trusaic.com/blog/article-7-right-to-information-response-deadlines-and-annual-worker-notification-requirements/"
+    },
+    {
+      "title": "Ravio pricing",
+      "url": "https://ravio.com/pricing"
+    },
+    {
+      "title": "FirstHR: compensation management tools compared",
+      "url": "https://firsthr.app/compare/payroll/compensation-management-tools"
+    },
+    {
+      "title": "Lewis Silkin: EU pay transparency, 2026 employer compliance",
+      "url": "https://www.lewissilkin.com/en/insights/2026/07/01/eu-pay-transparency-directive-2026-employer-compliance"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "Small employers are in scope too",
+      "text": "Pay-gap reports start with 100+ staff, but candidate pay information, the salary-history ban and the right to information apply to all employers."
+    },
+    {
+      "title": "Most SMEs have no pay structure",
+      "text": "Without job levels, an employer cannot answer \"what is the average pay for my category of work?\" in a defensible way."
+    },
+    {
+      "title": "Existing tools are priced for mid-size firms",
+      "text": "Compensation platforms cost thousands a year and assume an HR team."
+    },
+    {
+      "title": "Recruiting agencies need it too",
+      "text": "Agencies write job ads for many clients across countries and need a quick compliance check."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "employers with 20–250 staff in EU countries that have transposed (Poland, Belgium, Czechia, Malta, Italy, Slovakia, Lithuania first), plus small recruiting agencies."
+    },
+    {
+      "label": "Buyer",
+      "text": "CEO, CFO, office manager or the single HR person."
+    },
+    {
+      "label": "Start market",
+      "text": "Poland and other early countries in English, with local-language document outputs; more countries as laws pass."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Import salaries",
+      "text": "upload a payroll export (CSV); names can be replaced by IDs."
+    },
+    {
+      "title": "Group roles",
+      "text": "AI suggests categories of \"work of equal value\" from job titles and short descriptions, using skills, effort, responsibility and working conditions; the owner adjusts."
+    },
+    {
+      "title": "Set ranges",
+      "text": "PayFair suggests a pay range per level and flags people outside it and gender gaps per category."
+    },
+    {
+      "title": "Answer requests",
+      "text": "when an employee asks, PayFair produces the answer letter with the right averages and tracks the deadline."
+    },
+    {
+      "title": "Check job ads",
+      "text": "paste a job advert to check pay range, neutral wording and banned questions for that country."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Payroll CSV import with pseudonymisation",
+      "AI-assisted job grouping",
+      "Pay ranges and outlier/gap view",
+      "Pay-information request letters with deadline tracking",
+      "Job-ad checker for 2–3 countries",
+      "Annual employee notice template"
+    ],
+    "later": [
+      "Gender pay-gap report for 100+ employers",
+      "Integrations with HR/payroll systems",
+      "Market salary benchmarks",
+      "Recruiting agency multi-client mode",
+      "More countries"
+    ]
+  },
+  "techStack": [
+    "Django or Next.js",
+    "PostgreSQL (EU)",
+    "LLM for job grouping and ad checks",
+    "Pandas for pay statistics",
+    "PDF / DOCX letter generation",
+    "Stripe billing"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "**Validate, no code.** Interview 15 SMEs and 5 recruiters in Poland and one more early country; build one pay structure by hand."
+    },
+    {
+      "when": "Week 3–5",
+      "what": "Import, job grouping, ranges and gap view."
+    },
+    {
+      "when": "Week 6–8",
+      "what": "Request letters, job-ad checker, country rule packs."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server + database",
+      "note": "EU hosting (Hetzner / Supabase)",
+      "cost": "€10–25 / month"
+    },
+    {
+      "item": "AI API",
+      "note": "Job grouping and ad checks",
+      "cost": "€10–30 / month"
+    },
+    {
+      "item": "Email / SMS sending",
+      "note": "Resend / Postmark low tiers",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Landing page",
+      "note": "Built by us",
+      "cost": "€0"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €450–750",
+  "pricing": [
+    {
+      "name": "Small: €49/mo",
+      "description": "Up to 50 staff, ranges, requests, ad checker"
+    },
+    {
+      "name": "Medium: €119/mo",
+      "description": "Up to 150 staff, gap view, 3 users"
+    },
+    {
+      "name": "Agency: €199/mo",
+      "description": "Recruiting agencies, unlimited job-ad checks for clients"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 400,
+      "value": 40,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 39,
+      "max": 249,
+      "value": 99,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "Ravio",
+      "what": "Compensation benchmarking and pay equity",
+      "gap": "About £5,400/year for 250 staff; built for scale-ups",
+      "isUs": false
+    },
+    {
+      "name": "Figures, PayAnalytics, Syndio, Trusaic",
+      "what": "Pay transparency and pay equity software",
+      "gap": "Mid-size and enterprise focus, quote-based",
+      "isUs": false
+    },
+    {
+      "name": "HR systems (Personio, HiBob, Lattice)",
+      "what": "HR suites adding comp modules",
+      "gap": "Need the full HR suite; minimum contracts",
+      "isUs": false
+    },
+    {
+      "name": "Employment lawyers",
+      "what": "Advice per case",
+      "gap": "Expensive for every request",
+      "isUs": false
+    },
+    {
+      "name": "Us",
+      "what": "Job levels + ranges + request letters + ad checks",
+      "gap": "€49–199/mo, built for 20–250 staff",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Countries keep delaying",
+      "answer": "Start only where rules are in force (Poland first); the earlier Top 25 report dropped this idea for this reason, so validate demand before building."
+    },
+    {
+      "risk": "Legal accuracy per country",
+      "answer": "Partner with one employment law firm per country for rule packs; clear disclaimers."
+    },
+    {
+      "risk": "HR suites add the same features",
+      "answer": "Target firms without an HR suite and recruiting agencies."
+    },
+    {
+      "risk": "Salary data is sensitive",
+      "answer": "Pseudonymise on upload, EU hosting, strict access roles."
+    }
+  ],
+  "questions": [
+    "Do you have defined job levels and pay ranges today?",
+    "Have employees or candidates asked about pay ranges since the new rules?",
+    "Who would answer a pay-information request, and how?",
+    "Have you looked at any pay-transparency tool? What did it cost?",
+    "Would €49–119 a month for a simple kit be worth it?"
+  ],
+  "numbers": {
+    "cashMin": 450.0,
+    "cashMax": 750.0,
+    "mvpWeeksMin": 7.0,
+    "mvpWeeksMax": 8.0,
+    "priceLabel": "€49–199/mo",
+    "competition": "Funded comp tools; SME gap but timing risk",
+    "competitionLevel": "medium",
+    "whoSells": "Jonatan → SME owners and recruiting agencies"
+  },
+  "skills": [
+    "coding",
+    "ai",
+    "b2b-sales",
+    "finance"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 6,
+    "willingnessToPay": 6,
+    "lowCompetition": 4,
+    "easyToBuild": 6,
+    "easyToSell": 5,
+    "skillFit": 6,
+    "globalPotential": 7,
+    "excitement": 5
+  },
+  "notes": "",
+  "interviews": [],
+  "rank": 47,
+  "batch": "Top 50 research (Nov 2026)"
+}

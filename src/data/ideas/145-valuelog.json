@@ -1,0 +1,312 @@
+{
+  "id": "r-valuelog",
+  "title": "ValueLog: social value tracking and reports for small public-sector suppliers",
+  "color": "#d55181",
+  "industry": "Public sector",
+  "status": "idea",
+  "source": "Top 50 research (Nov 2026): new markets batch",
+  "tags": [
+    "Jonatan's network",
+    "Public contracts",
+    "UK first"
+  ],
+  "summary": "UK public contracts now weigh \"social value\" (local jobs, apprentices, volunteering, carbon) and ask suppliers to report against promised KPIs. Small facility, cleaning and construction suppliers track this in spreadsheets. ValueLog collects the evidence from staff and records, and produces the quarterly report each council wants.",
+  "priceLabel": "£49–199 / month",
+  "hook": "\"We promised the council 2 apprentices and 200 volunteering hours. Now they want quarterly evidence in their portal and I have no idea where it is.\"",
+  "story": "**David runs a cleaning and facilities company with 60 staff** that holds contracts with two councils and an NHS trust. To win them, his bid writer promised social value: **local hires, an apprentice, school visits and volunteering hours**, plus carbon reduction. Each buyer now asks for quarterly evidence, but in **different formats and portals**.\n\nHis office manager spends two days each quarter chasing supervisors for photos, timesheets and names, then filling in three different templates. If the numbers are low, the KPI may be published under the new procurement rules, and it could hurt the next bid. He needs one place where staff log activities as they happen and reports come out ready.",
+  "whyNow": "The Procurement Act 2023 went live in February 2025, with more transparency on contract KPIs. In 2026 the government consulted on further reforms that put more weight on skills and jobs. SMEs say social value is an admin burden, and the number of buyer reporting platforms keeps growing.",
+  "evidence": [
+    "76% of respondents to techUK's 2023 SME survey said addressing social value is an administrative burden [techUK]",
+    "Under the Procurement Act, social value KPIs can be published, exposing shortfalls; some organisations hold back from publishing while they test what they can deliver [Social Value Portal]",
+    "Local authorities and suppliers say a growing number of reporting platforms makes consistent social value data harder [Socitm]",
+    "Social Value Portal does not publish supplier pricing; its Social Value Academy training costs £375 one-off [G2 / FitGap]",
+    "A buyer-side platform on G-Cloud charges public buyers £8,000 a year for up to 75 contracts, with free supplier access [GOV.UK Digital Marketplace]"
+  ],
+  "sources": [
+    {
+      "title": "techUK: SME survey on social value",
+      "url": "https://www.techuk.org/asset/58658E42%2DD32A%2D4665%2DB138841545CD1EF2"
+    },
+    {
+      "title": "Social Value Portal: one year on, how the Procurement Act changed social value",
+      "url": "https://www.socialvalueportal.com/news-and-insights/one-year-on-how-has-the-procurement-act-2023-changed-social-value-delivery"
+    },
+    {
+      "title": "Lancashire County Council: social value under the Procurement Act 2023",
+      "url": "https://www.lancashire.gov.uk/business/social-value/articles/social-value-under-the-procurement-act-2023"
+    },
+    {
+      "title": "Socitm: procurement downloads (social value roundtables)",
+      "url": "https://socitm.net/blog/downloads/procurement/"
+    },
+    {
+      "title": "GOV.UK: Public Procurement, growing British industry, jobs and skills (response)",
+      "url": "https://www.gov.uk/government/consultations/public-procurement-growing-british-industry-jobs-and-skills-consultation-on-further-reforms-to-public-procurement/outcome/public-procurement-growing-british-industry-jobs-and-skills-government-response-to-consultation-html"
+    },
+    {
+      "title": "G2: Social Value Portal pricing",
+      "url": "https://www.g2.com/products/social-value-portal/pricing"
+    },
+    {
+      "title": "FitGap: Social Value Portal",
+      "url": "https://us.fitgap.com/products/012831/social-value-portal"
+    },
+    {
+      "title": "Procurement Magazine: Procurement Act comes into force",
+      "url": "https://procurementmag.com/operations/procurement-act-comes-into-force"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "It decides contracts",
+      "text": "Social value is a scored part of public tenders, and promises made in the bid must be delivered and reported."
+    },
+    {
+      "title": "Reporting is fragmented",
+      "text": "Each council or trust may use a different portal or template. Suppliers with several contracts report the same work several times."
+    },
+    {
+      "title": "Platforms are built for buyers",
+      "text": "Most social value platforms are bought by councils to measure suppliers. Few help the small supplier collect its own evidence."
+    },
+    {
+      "title": "Jonatan knows these suppliers",
+      "text": "Facility, cleaning and construction services are big public-sector suppliers and exactly Jonatan's field."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "UK SMEs (10–250 staff) holding public contracts: facility services, cleaning, security, construction, maintenance, catering, IT services."
+    },
+    {
+      "label": "Buyer",
+      "text": "managing director, bid manager or office manager."
+    },
+    {
+      "label": "Start market",
+      "text": "UK; later Ireland and EU countries where green and social criteria in public procurement are growing."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Load the promises",
+      "text": "upload the bid answers and contract KPIs; AI turns them into a list of measurable targets per contract."
+    },
+    {
+      "title": "Log as it happens",
+      "text": "supervisors log activities from their phone (apprentice started, school visit, volunteering hours) with photos and names."
+    },
+    {
+      "title": "Pull in data",
+      "text": "import payroll postcodes for local-hire rates, training records and fuel/energy data for carbon."
+    },
+    {
+      "title": "Track progress",
+      "text": "a dashboard shows each KPI against target, with warnings before the quarter ends."
+    },
+    {
+      "title": "Report in their format",
+      "text": "export each buyer's template or TOMs-style report, plus case studies written by AI from logged activities, ready for the next bid."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Contracts and KPI targets (AI from bid text)",
+      "Mobile activity logging with photos",
+      "CSV import for staff postcodes and training",
+      "KPI dashboard and quarter-end warnings",
+      "Excel/PDF report export",
+      "AI case-study writer"
+    ],
+    "later": [
+      "Carbon reduction plan module",
+      "Templates for the most common buyer portals",
+      "Bid library: reuse evidence in new tenders",
+      "Subcontractor data collection",
+      "Ireland and EU frameworks"
+    ]
+  },
+  "techStack": [
+    "Next.js",
+    "PostgreSQL (Supabase)",
+    "Mobile-friendly PWA for logging",
+    "LLM for KPI extraction and case studies",
+    "openpyxl for buyer templates",
+    "Stripe billing"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "**Validate, no code.** Jonatan interviews 15 facility and construction suppliers with public contracts; collect 5 real reporting templates."
+    },
+    {
+      "when": "Week 3–5",
+      "what": "Contracts, KPI extraction, mobile logging."
+    },
+    {
+      "when": "Week 6–7",
+      "what": "Dashboard, imports, report export and case-study writer."
+    },
+    {
+      "when": "Week 8",
+      "what": "3 suppliers produce a real quarterly report in ValueLog."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server + database",
+      "note": "EU hosting (Hetzner / Supabase)",
+      "cost": "€10–25 / month"
+    },
+    {
+      "item": "AI API",
+      "note": "KPI extraction and case studies",
+      "cost": "€10–30 / month"
+    },
+    {
+      "item": "Email / SMS sending",
+      "note": "Resend / Postmark low tiers",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Landing page",
+      "note": "Built by us",
+      "cost": "€0"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €450–750",
+  "pricing": [
+    {
+      "name": "One contract: £49/mo",
+      "description": "1 contract, mobile logging, reports"
+    },
+    {
+      "name": "Supplier: £119/mo",
+      "description": "Up to 5 contracts, imports, case studies"
+    },
+    {
+      "name": "Bid-ready: £199/mo",
+      "description": "Unlimited contracts, bid evidence library"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 400,
+      "value": 35,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 39,
+      "max": 249,
+      "value": 109,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "Social Value Portal (TOMs)",
+      "what": "Measurement framework and platform",
+      "gap": "Often buyer-led; supplier membership pricing not published",
+      "isUs": false
+    },
+    {
+      "name": "whatimpact, Thrive, Loop",
+      "what": "Buyer-side social value platforms",
+      "gap": "Councils pay; suppliers still collect evidence by hand",
+      "isUs": false
+    },
+    {
+      "name": "Bid writers and consultants",
+      "what": "Write social value answers",
+      "gap": "Help win, not deliver and report",
+      "isUs": false
+    },
+    {
+      "name": "Spreadsheets",
+      "what": "Most SMEs today",
+      "gap": "Two days per quarter, lost evidence",
+      "isUs": false
+    },
+    {
+      "name": "Us",
+      "what": "Supplier-side evidence logging and reports",
+      "gap": "Built for SMEs with several contracts, £49–199/mo",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Buyers force their own portals",
+      "answer": "Export in each portal's format; the value is collecting evidence once."
+    },
+    {
+      "risk": "UK-only demand",
+      "answer": "UK has thousands of SME public suppliers; EU green procurement is a later market."
+    },
+    {
+      "risk": "Low urgency until reporting time",
+      "answer": "Sell before quarter-end and during bids; show the bid-library benefit."
+    },
+    {
+      "risk": "Rules keep changing",
+      "answer": "Keep KPI types flexible; AI maps any bid text to targets."
+    }
+  ],
+  "questions": [
+    "How many public contracts with social value KPIs do you hold?",
+    "How do you collect the evidence each quarter, and how long does it take?",
+    "How many different reporting formats or portals do you use?",
+    "Has missing evidence ever hurt a contract review or a new bid?",
+    "Would £49–119 a month for one place to log and report be worth it?"
+  ],
+  "numbers": {
+    "cashMin": 450.0,
+    "cashMax": 750.0,
+    "mvpWeeksMin": 6.0,
+    "mvpWeeksMax": 8.0,
+    "priceLabel": "£49–199/mo",
+    "competition": "Buyer-side platforms; supplier side gap",
+    "competitionLevel": "medium",
+    "whoSells": "Jonatan → facility and construction suppliers"
+  },
+  "skills": [
+    "coding",
+    "ai",
+    "government",
+    "construction",
+    "b2b-sales"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 6,
+    "willingnessToPay": 6,
+    "lowCompetition": 5,
+    "easyToBuild": 7,
+    "easyToSell": 7,
+    "skillFit": 7,
+    "globalPotential": 3,
+    "excitement": 6
+  },
+  "notes": "",
+  "interviews": [],
+  "rank": 45,
+  "batch": "Top 50 research (Nov 2026)"
+}

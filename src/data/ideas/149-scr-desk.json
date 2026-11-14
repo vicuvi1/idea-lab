@@ -1,0 +1,309 @@
+{
+  "id": "r-scr-desk",
+  "title": "SCR Desk: single central record and safer-recruitment checks for small independent schools",
+  "color": "#3987e5",
+  "industry": "Education",
+  "status": "idea",
+  "source": "Top 50 research (Nov 2026): new markets batch",
+  "tags": [
+    "Inspection pressure",
+    "Document engine",
+    "UK only"
+  ],
+  "summary": "Every school in England must keep a Single Central Record (SCR) of safeguarding checks on staff, volunteers and, in independent schools, the proprietor body. Inspectors check it early, and errors are a common avoidable finding. SCR Desk collects the evidence, checks each entry and chases missing references and DBS checks.",
+  "priceLabel": "£39–149 / month",
+  "hook": "\"The inspector opened our SCR in the first hour. Two references were missing dates and a governor's check wasn't recorded. That set the tone for two days.\"",
+  "story": "**Helen is the bursar of a 180-pupil independent prep school.** She keeps the Single Central Record in a large spreadsheet: identity, right to work, DBS, barred list, prohibition checks, overseas checks, qualifications and **section 128 checks for governors and managers**. Supply staff, coaches and peripatetic music teachers come and go every term.\n\nBefore the last inspection she spent **three evenings** checking every row against the paper files and found gaps: a reference with no date, a DBS update check not recorded. She wants a tool that stores the evidence with each check, shows red flags instantly and chases referees and staff automatically.",
+  "whyNow": "Keeping Children Safe in Education is updated every September and inspectors (Ofsted and ISI) look at the SCR early in every inspection. Councils now sell \"SCR health checks\" to schools, which shows the need. AI can read DBS certificates, references and ID documents to fill entries and spot missing fields.",
+  "evidence": [
+    "The SCR is described as one of the first things inspectors review and one of the most common sources of avoidable findings [MHR]",
+    "Independent schools must also record section 128 checks for management and checks on all members of the proprietor body [High Speed Training]",
+    "There is no set format; the SCR can be paper or electronic, so many schools use spreadsheets [High Speed Training]",
+    "Councils such as Worcestershire sell SCR health checks to schools [Worcestershire County Council]",
+    "SCR modules exist inside larger HR/MIS products (MHR, Access, iSAMS, Veracross) without public prices [vendor pages]",
+    "No published count of SCR failures was found; this must be validated with bursars [own research]"
+  ],
+  "sources": [
+    {
+      "title": "MHR: the Single Central Record, how to get it right",
+      "url": "https://mhrglobal.com/uk/en/knowledge-hub/hr/single-central-record-how-to-get-it-right-blog"
+    },
+    {
+      "title": "High Speed Training: Single Central Record, KCSIE guidance",
+      "url": "https://www.highspeedtraining.co.uk/hub/single-central-record/"
+    },
+    {
+      "title": "Worcestershire County Council: SCR health check",
+      "url": "https://www.worcestershire.gov.uk/worcestershire-education-and-early-years-services/safeguarding-support-teachers-and-education-professionals/single-central-record-health-check"
+    },
+    {
+      "title": "Devon: safeguarding one-minute guide, single central record",
+      "url": "https://www.devon.gov.uk/support-schools-settings/safeguarding/guidance-policy-and-tools-2/safeguarding-one-minute-guides/safeguarding-no-2-single-central-record"
+    },
+    {
+      "title": "Buckinghamshire SchoolsWeb: single central record guide",
+      "url": "https://schoolsweb.buckinghamshire.gov.uk/hr-zone/dbs-and-safeguarding/single-central-record-guide"
+    },
+    {
+      "title": "The Access Group: SCR and HR software for schools",
+      "url": "https://theaccessgroup.com/en-gb/hr/sectors/education/what-is-the-single-central-record-and-how-does-hr-software-help-schools-academies-and-mats"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "Inspectors look first",
+      "text": "A weak SCR damages the whole safeguarding judgement, which is the most sensitive part of any school inspection."
+    },
+    {
+      "title": "People change every term",
+      "text": "Supply staff, coaches, volunteers and contractors make the record go out of date quickly."
+    },
+    {
+      "title": "Small schools have one person",
+      "text": "In a small independent school, the bursar or office manager does HR, finance and the SCR."
+    },
+    {
+      "title": "Big HR suites are too much",
+      "text": "SCR modules usually come inside full HR or MIS systems that small schools don't want to switch."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "small independent schools, nurseries, special schools and tutoring/education providers in England (later Wales, Scotland and British international schools abroad)."
+    },
+    {
+      "label": "Buyer",
+      "text": "bursar, head or designated safeguarding lead."
+    },
+    {
+      "label": "Start market",
+      "text": "independent schools in England, then British international schools worldwide (they follow similar standards)."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Import the current SCR",
+      "text": "upload the spreadsheet; SCR Desk maps columns and flags empty or invalid fields."
+    },
+    {
+      "title": "Attach evidence",
+      "text": "upload DBS certificates, IDs and references; AI fills dates and numbers and links the document."
+    },
+    {
+      "title": "Check rules",
+      "text": "required checks by role (teacher, volunteer, governor, contractor) with red/amber/green status."
+    },
+    {
+      "title": "Chase",
+      "text": "automatic emails to referees and new staff for missing documents."
+    },
+    {
+      "title": "Inspection view",
+      "text": "a clean SCR export and an audit trail of who checked what and when."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "SCR spreadsheet import and mapping",
+      "Role-based check rules",
+      "Evidence upload with AI field extraction",
+      "RAG status dashboard",
+      "Referee and staff chase emails",
+      "Inspection-ready export"
+    ],
+    "later": [
+      "DBS update service checks",
+      "Safer recruitment workflow (online searches, interview notes)",
+      "Training records (safeguarding, Prevent)",
+      "MIS integrations",
+      "International schools version"
+    ]
+  },
+  "techStack": [
+    "Next.js or Django",
+    "PostgreSQL with encryption (UK/EU)",
+    "OCR + LLM for documents",
+    "Postmark for chase emails",
+    "Role-based access",
+    "Stripe billing"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "**Validate, no code.** Interview 12 bursars; audit one anonymised SCR by hand."
+    },
+    {
+      "when": "Week 3–5",
+      "what": "Import, rules, evidence upload and extraction."
+    },
+    {
+      "when": "Week 6–7",
+      "what": "Chase emails, dashboard, export, security review."
+    },
+    {
+      "when": "Week 8",
+      "what": "3 pilot schools before their next inspection window."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server + database",
+      "note": "EU hosting (Hetzner / Supabase)",
+      "cost": "€10–25 / month"
+    },
+    {
+      "item": "AI + OCR API",
+      "note": "Document reading",
+      "cost": "€10–30 / month"
+    },
+    {
+      "item": "Encrypted storage",
+      "note": "Sensitive staff documents",
+      "cost": "€5–15 / month"
+    },
+    {
+      "item": "Email / SMS sending",
+      "note": "Resend / Postmark low tiers",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Landing page",
+      "note": "Built by us",
+      "cost": "€0"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €450–800",
+  "pricing": [
+    {
+      "name": "Small school: £39/mo",
+      "description": "Up to 60 people on the SCR"
+    },
+    {
+      "name": "School: £79/mo",
+      "description": "Up to 200 people, chase emails"
+    },
+    {
+      "name": "Group: £149/mo",
+      "description": "Several schools or nurseries"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 400,
+      "value": 40,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 29,
+      "max": 199,
+      "value": 69,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "MIS/HR suites (Access, MHR, iSAMS, Veracross)",
+      "what": "Full school HR and MIS with SCR modules",
+      "gap": "Require the whole suite; heavy for small schools",
+      "isUs": false
+    },
+    {
+      "name": "Specialist SCR trackers",
+      "what": "Online SCR tools for schools",
+      "gap": "Several exist; mostly form-based with little document reading",
+      "isUs": false
+    },
+    {
+      "name": "Council SCR health checks",
+      "what": "One-off audits",
+      "gap": "A snapshot, not a live record",
+      "isUs": false
+    },
+    {
+      "name": "Spreadsheets",
+      "what": "Most small schools",
+      "gap": "Errors and missing evidence",
+      "isUs": false
+    },
+    {
+      "name": "Us",
+      "what": "Import → evidence → rules → chase → export",
+      "gap": "AI fills entries from documents; small-school price",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Several SCR tools already exist",
+      "answer": "Win on AI document reading and price; validate switching willingness early."
+    },
+    {
+      "risk": "Very sensitive data about staff",
+      "answer": "UK/EU hosting, encryption, strict roles, DPA; Victor's security skills are a selling point."
+    },
+    {
+      "risk": "Schools buy slowly",
+      "answer": "Sell to bursar networks before inspection windows and in summer planning."
+    },
+    {
+      "risk": "UK-only",
+      "answer": "British international schools abroad are a second market."
+    }
+  ],
+  "questions": [
+    "How do you keep your SCR today, and who maintains it?",
+    "How long did you spend checking it before your last inspection?",
+    "What gaps or comments did inspectors raise?",
+    "How do you chase references and DBS checks for new staff?",
+    "Would £39–79 a month for a checked, evidence-backed SCR be worth it?"
+  ],
+  "numbers": {
+    "cashMin": 450.0,
+    "cashMax": 800.0,
+    "mvpWeeksMin": 6.0,
+    "mvpWeeksMax": 8.0,
+    "priceLabel": "£39–149/mo",
+    "competition": "MIS suites and existing SCR trackers",
+    "competitionLevel": "medium",
+    "whoSells": "Jonatan → bursars of small independent schools"
+  },
+  "skills": [
+    "coding",
+    "ai",
+    "security",
+    "b2b-sales"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 7,
+    "willingnessToPay": 6,
+    "lowCompetition": 4,
+    "easyToBuild": 8,
+    "easyToSell": 5,
+    "skillFit": 6,
+    "globalPotential": 3,
+    "excitement": 5
+  },
+  "notes": "",
+  "interviews": [],
+  "rank": 49,
+  "batch": "Top 50 research (Nov 2026)"
+}

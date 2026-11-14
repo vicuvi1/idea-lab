@@ -1,0 +1,320 @@
+{
+  "id": "r-vetclear",
+  "title": "VetClear: CMA price-list, estimate and prescription compliance for independent vets",
+  "color": "#d95926",
+  "industry": "Veterinary",
+  "status": "idea",
+  "source": "Top 50 research (Nov 2026): new markets batch",
+  "tags": [
+    "Regulation deadline",
+    "UK only",
+    "Independents vs big groups"
+  ],
+  "summary": "After its market investigation, the UK competition authority (CMA) requires vet practices to publish price lists, give written estimates for bigger treatments and tell owners they can get a written prescription. Independent practices have no compliance team. VetClear builds the price page, estimate templates and client notices, and checks that the practice stays compliant.",
+  "priceLabel": "£49–149 / month",
+  "hook": "\"The corporate groups have whole teams on the CMA rules. It's me and my practice manager, after evening surgery.\"",
+  "story": "**Priya owns an independent small-animal practice with 3 vets and 6 nurses.** The CMA's final report means she must publish a **standard price list** on her website, give a **written estimate for treatment of £500 or more** and update the client in writing if the cost will go over by more than 20%. Her team must also tell clients they can get a **written prescription** and buy medicines elsewhere.\n\nHer practice software can print an invoice, but not a CMA-style price list or an estimate that tracks the 20% rule. She downloads guidance, makes a Word template and hopes the nurses use it. She would pay a monthly fee for one place that keeps her published prices, estimates and notices right, and shows her what is missing before a complaint does.",
+  "whyNow": "The CMA published its final report on 24 March 2026, with remedies phased in through an Order and an RCVS undertaking; final orders and guidance were due in autumn 2026, with smaller businesses given extra time. Independents must be ready in 2026–2027 without a compliance team.",
+  "evidence": [
+    "CMA final report on vet services for household pets published in March 2026; remedies implemented through an Order on vet businesses and an RCVS undertaking [GOV.UK]",
+    "Practices must publish a price list covering consultations, vaccinations, written prescription fees and common procedures [Whito / Pharmacy2U]",
+    "Written estimate and itemised bill for treatment expected to cost £500 or more incl. VAT; written update if likely to exceed the estimate by more than 20% [CMA remedies coverage: Improve International / Price Bailey]",
+    "Prescription fee cap: the provisional decision proposed £16; later coverage cites £21 for the first item; check the final Order [Bird & Bird / Money to the Masses]",
+    "Over 60% of practices are owned by six large groups, so independents compete with companies that have compliance teams (industry commentary) [Agilio]",
+    "Smaller businesses get longer to comply than large groups [BVA]"
+  ],
+  "sources": [
+    {
+      "title": "GOV.UK: CMA concludes market investigation with major reforms to veterinary sector",
+      "url": "https://www.gov.uk/government/news/cma-concludes-market-investigation-with-major-reforms-to-veterinary-sector"
+    },
+    {
+      "title": "GOV.UK: what veterinary businesses and vets need to do after the CMA final report",
+      "url": "https://www.gov.uk/guidance/what-veterinary-businesses-and-vets-need-to-do-following-the-cmas-final-vets-report"
+    },
+    {
+      "title": "BVA: CMA investigation hub",
+      "url": "https://www.bva.co.uk/cma"
+    },
+    {
+      "title": "Whito: CMA vet remedies, what practices must publish",
+      "url": "https://whito.co.uk/vets/guides/cma-vet-remedies-what-practices-must-publish/"
+    },
+    {
+      "title": "Pharmacy2U: the final reforms from the CMA vet investigation",
+      "url": "https://www.pharmacy2u.co.uk/health-hub/pet-health/the-final-reforms-from-the-cma-veterinary-market-investigation"
+    },
+    {
+      "title": "Agilio: CMA final decision for vets",
+      "url": "https://agiliosoftware.com/veterinary/insights/cma-final-decision/"
+    },
+    {
+      "title": "Bird & Bird: CMA provisional decision on vets",
+      "url": "https://cm.twobirds.com/en/insights/2025/uk/no-more-paws-for-concern-cmas-provisional-decision-prescribes-major-reforms-for-uk-veterinary-sector"
+    },
+    {
+      "title": "Money to the Masses: vet prescription fees capped",
+      "url": "https://moneytothemasses.com/news/vet-prescription-fees-to-be-capped-at-21-as-part-of-new-crackdown"
+    },
+    {
+      "title": "Improve International: CMA publishes final ruling",
+      "url": "https://improveinternational.com/uk/news/cma-publishes-final-ruling"
+    },
+    {
+      "title": "Price Bailey: how vet practices can prepare for the CMA reforms",
+      "url": "https://www.pricebailey.co.uk/blog/cma-reforms-veterinary-practices/"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "A legal order with a date",
+      "text": "The remedies are not best practice; they are an Order from the competition authority plus RCVS professional rules. Every practice is in scope."
+    },
+    {
+      "title": "Independents are under-resourced",
+      "text": "Six large groups own most practices and have legal and compliance teams. Independents have an owner and a practice manager."
+    },
+    {
+      "title": "Practice software lags",
+      "text": "Practice management systems will add features over time, but price pages, estimate thresholds and client notices are needed now."
+    },
+    {
+      "title": "Simple to build",
+      "text": "Price list builder, estimate templates with a 20% tracker, notices and a checklist: forms and documents, not deep integrations."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "independent vet practices in the UK (1–5 sites), small-animal and mixed."
+    },
+    {
+      "label": "Buyer",
+      "text": "practice owner or practice manager."
+    },
+    {
+      "label": "Start market",
+      "text": "UK only (the rules are UK-specific); later, pricing transparency tools for vets in other countries if regulators follow."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Price list builder",
+      "text": "the practice enters or imports prices; VetClear produces a public price page in the required categories and a version for the RCVS comparison listing."
+    },
+    {
+      "title": "Estimate templates",
+      "text": "itemised written estimates for treatments of £500+, with aftercare lines and a 20% overrun alert that prompts a written update."
+    },
+    {
+      "title": "Client notices",
+      "text": "ready text for prescription rights, ownership disclosure and fees, for the website, reception and emails."
+    },
+    {
+      "title": "Compliance checklist",
+      "text": "a live checklist of each CMA duty with deadlines for small businesses, and a monthly reminder to review prices."
+    },
+    {
+      "title": "Evidence pack",
+      "text": "a dated history of published prices and estimates, ready if a client complains."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Practice profile and price import (CSV)",
+      "Public price page (embeddable)",
+      "Written estimate builder with 20% overrun alert",
+      "Notice templates",
+      "CMA duty checklist with deadlines",
+      "PDF evidence pack"
+    ],
+    "later": [
+      "Integration with common practice management systems",
+      "AI price-list import from old PDFs",
+      "Client-facing estimate e-sign",
+      "Benchmarks vs local practices",
+      "Multi-site groups"
+    ]
+  },
+  "techStack": [
+    "Next.js",
+    "PostgreSQL (Supabase, EU/UK)",
+    "Embeddable price widget",
+    "PDF generation",
+    "LLM for importing old price lists",
+    "Stripe billing"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "**Validate, no code.** Call 25 independent practices. Build one price page and estimate template by hand for 3 of them."
+    },
+    {
+      "when": "Week 3–5",
+      "what": "Price builder, public page and notices."
+    },
+    {
+      "when": "Week 6–7",
+      "what": "Estimate builder, overrun alert, checklist and evidence pack."
+    },
+    {
+      "when": "Week 8",
+      "what": "5 pilot practices live; charge from month 2."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server + database",
+      "note": "EU hosting (Hetzner / Supabase)",
+      "cost": "€10–25 / month"
+    },
+    {
+      "item": "AI API",
+      "note": "Importing old price lists only",
+      "cost": "€5–15 / month"
+    },
+    {
+      "item": "Email / SMS sending",
+      "note": "Resend / Postmark low tiers",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Landing page",
+      "note": "Built by us",
+      "cost": "€0"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €400–700",
+  "pricing": [
+    {
+      "name": "Essentials: £49/mo",
+      "description": "Price page, notices, checklist"
+    },
+    {
+      "name": "Practice: £99/mo",
+      "description": "Plus estimates, overrun alerts, evidence pack"
+    },
+    {
+      "name": "Multi-site: £149/mo",
+      "description": "Up to 5 sites"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 400,
+      "value": 50,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 39,
+      "max": 199,
+      "value": 89,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "Practice management systems (ezyVet, Provet Cloud, RxWorks)",
+      "what": "Clinical and billing software",
+      "gap": "Will add features slowly; not built around CMA duties",
+      "isUs": false
+    },
+    {
+      "name": "Agilio",
+      "what": "Compliance and insight software for vets",
+      "gap": "Broader compliance suite, aimed at bigger groups",
+      "isUs": false
+    },
+    {
+      "name": "Whito and web agencies",
+      "what": "Help publish price pages",
+      "gap": "Website-only; no estimates or checklist",
+      "isUs": false
+    },
+    {
+      "name": "Consultants / BVA guidance",
+      "what": "Advice and templates",
+      "gap": "One-off; nothing keeps the practice compliant month to month",
+      "isUs": false
+    },
+    {
+      "name": "Us",
+      "what": "Price page + estimates + notices + checklist",
+      "gap": "Made for independents, ready now, £49–149/mo",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Final rules change",
+      "answer": "Keep rules in a config file; validate with 5 practices before building; follow BVA and RCVS updates."
+    },
+    {
+      "risk": "Practice software adds the same features",
+      "answer": "Move fast in 2026–2027; later integrate with those systems instead of competing."
+    },
+    {
+      "risk": "UK-only, smaller market",
+      "answer": "Price for a quick, compact win; the document engine reuses elsewhere."
+    },
+    {
+      "risk": "Vets are hard to reach by phone",
+      "answer": "Use practice-manager groups, independent vet associations and VDS/SPVS events."
+    }
+  ],
+  "questions": [
+    "What have you done so far for the CMA price list and estimate rules?",
+    "Can your practice software produce a price list and £500 estimates the way the CMA wants?",
+    "Who will keep the published prices up to date?",
+    "Have clients already asked about written prescriptions or prices online?",
+    "Would £49–99 a month for a done-for-you compliance kit make sense?"
+  ],
+  "numbers": {
+    "cashMin": 400.0,
+    "cashMax": 700.0,
+    "mvpWeeksMin": 5.0,
+    "mvpWeeksMax": 7.0,
+    "priceLabel": "£49–149/mo",
+    "competition": "PMS vendors and agencies; no focused tool",
+    "competitionLevel": "medium",
+    "whoSells": "Jonatan → independent vet practice owners and managers"
+  },
+  "skills": [
+    "coding",
+    "healthcare",
+    "writing",
+    "b2b-sales"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 7,
+    "willingnessToPay": 6,
+    "lowCompetition": 6,
+    "easyToBuild": 8,
+    "easyToSell": 6,
+    "skillFit": 6,
+    "globalPotential": 3,
+    "excitement": 6
+  },
+  "notes": "",
+  "interviews": [],
+  "rank": 42,
+  "batch": "Top 50 research (Nov 2026)"
+}

@@ -1,0 +1,304 @@
+{
+  "id": "r-specreply",
+  "title": "SpecReply: AI fills retailer spec sheets and supplier questionnaires for small food producers",
+  "color": "#3987e5",
+  "industry": "Food production",
+  "status": "idea",
+  "source": "Top 50 research (Nov 2026): new markets batch",
+  "tags": [
+    "AI document engine",
+    "Global market",
+    "Low competition at the small end"
+  ],
+  "summary": "Small food and drink producers who sell to retailers, wholesalers and caterers must fill in long product specification sheets and supplier approval questionnaires, each in a different format. SpecReply stores the producer's product and site data once and fills each new form with AI.",
+  "priceLabel": "€49–149 / month",
+  "hook": "\"Every new stockist sends their own 12-page spec form. It's the same questions in a different order, and it takes me two days.\"",
+  "story": "**Anna makes artisan sauces and chutneys with 9 staff.** A regional supermarket chain wants to list four of her products. Before the first order, their buyer sends a **supplier approval questionnaire**, a spec sheet template for each product (ingredients, allergens, nutrition, shelf life, packaging, origin) and a request for her SALSA certificate and HACCP summary.\n\nAnna has all the answers somewhere: in her labels, recipe files and last audit. But each form uses its own layout, so she spends **two full days** copying and checking. A month later a farm-shop wholesaler and a café chain send their own versions. She would pay a monthly fee to answer each one in an hour and keep every answer the same.",
+  "whyNow": "Retail and foodservice buyers keep tightening supplier checks after allergen and labelling problems; the FSA's 2025–26 retail survey again found undeclared allergens. AI can now read old forms and labels and fill new templates in Excel, Word or PDF. The same engine as security questionnaires works here, for a buyer that big spec platforms ignore.",
+  "evidence": [
+    "A comparative review counted 103 clauses in SALSA and 158 in BRCGS START!, the two UK schemes built for small food businesses [IJMAR]",
+    "In that review, supplier approval was among the \"clauses of concern\" small manufacturers found difficult [IJMAR]",
+    "IFST/SALSA guidance gives an example questionnaire for approving raw material and packaging suppliers, so every link in the chain sends one [IFST]",
+    "The FSA's 2025–26 Retail Surveillance Survey tested 845 products and found labelling problems including undeclared allergens [Food Safety Magazine]",
+    "Specification platforms such as Specright publish no prices and offer no free trial, a sign they target larger firms [Software Advice]",
+    "No survey of hours spent on spec forms was found; this must be validated in interviews [own research]"
+  ],
+  "sources": [
+    {
+      "title": "IJMAR: SALSA vs BRCGS START! comparative review",
+      "url": "https://ijmar.org/v1n1/14-003.html"
+    },
+    {
+      "title": "IFST: supplier assurance (SALSA guidance)",
+      "url": "https://www.ifst.org/sites/default/files/1.6.1%20Supplier%20Assurance%20Issue%205.pdf"
+    },
+    {
+      "title": "BRCGS: 5 questions when choosing an assurance programme",
+      "url": "https://www.BRCGS.com/media/jqvmoxkn/5-questions-to-consider-when-choosing-an-assurance-programme-2024.pdf"
+    },
+    {
+      "title": "Food Safety Magazine: FSA retail survey finds persisting compliance issues",
+      "url": "https://www.food-safety.com/articles/11616-uk-fsa-finds-persisting-compliance-issues-in-targeted-survey-of-retail-foods"
+    },
+    {
+      "title": "IFSQN forum: supplier approval requirements to create a response",
+      "url": "https://www.ifsqn.com/forum/index.php/topic/44765-supplier-approval-requirements-to-create-response/?ampmode=1"
+    },
+    {
+      "title": "Software Advice: Specright profile",
+      "url": "https://www.softwareadvice.com/manufacturing/specright-profile/"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "Every new customer brings a new form",
+      "text": "Retailers, wholesalers, caterers and distributors each have their own spec template and supplier questionnaire. Many questions repeat, but the format never matches."
+    },
+    {
+      "title": "It sits right before revenue",
+      "text": "The listing or first order waits until the forms are done, so the pain is tied to money, like security questionnaires in software sales."
+    },
+    {
+      "title": "Small producers have no spec system",
+      "text": "Big manufacturers use spec platforms; a 5–30 person producer uses Word, Excel and email."
+    },
+    {
+      "title": "Reuses a proven engine",
+      "text": "Upload old answers, build a knowledge base, fill a new form with sources and confidence. Victor could share this engine with Questionnaire Autopilot."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "small food and drink producers (5–50 staff) selling to retailers, wholesalers or foodservice: sauces, bakery, dairy, drinks, snacks, meat."
+    },
+    {
+      "label": "Buyer",
+      "text": "founder or technical/quality manager."
+    },
+    {
+      "label": "Start market",
+      "text": "UK and Ireland (SALSA, BRCGS), then the Nordics and other EU countries in English; later the US and Australia."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Build the product library",
+      "text": "upload labels, recipes, old spec sheets, certificates and the HACCP summary; AI creates one structured record per product and one for the site."
+    },
+    {
+      "title": "Drop in a new form",
+      "text": "upload the customer's spec sheet or questionnaire (Excel, Word or PDF)."
+    },
+    {
+      "title": "AI fills it",
+      "text": "each field is filled from the library, with the source and a confidence colour; missing data is listed."
+    },
+    {
+      "title": "Review and export",
+      "text": "the quality manager checks yellow and red fields and exports the form in its original format."
+    },
+    {
+      "title": "Stay consistent",
+      "text": "when a recipe or certificate changes, SpecReply shows which customers got the old answer and need an update."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Product and site library from uploaded documents",
+      "Form import (Excel, Word, PDF)",
+      "AI field filling with sources",
+      "Review screen",
+      "Export in original format",
+      "Certificate expiry reminders"
+    ],
+    "later": [
+      "Change alerts to customers who received old data",
+      "Shared portal for buyers",
+      "Nutrition calculation",
+      "EU languages",
+      "Integration with labelling tools"
+    ]
+  },
+  "techStack": [
+    "Python + Django",
+    "PostgreSQL + pgvector",
+    "LLM for extraction and filling",
+    "openpyxl / python-docx / PDF form filling",
+    "EU hosting",
+    "Stripe billing"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "**Validate, no code.** Interview 12 producers at trade shows and LinkedIn. Fill 3 real forms by hand with Claude and time it."
+    },
+    {
+      "when": "Week 3–5",
+      "what": "Library, form import and AI filling for Excel and Word."
+    },
+    {
+      "when": "Week 6–7",
+      "what": "Review screen, export, PDF forms and certificate reminders."
+    },
+    {
+      "when": "Week 8",
+      "what": "4 pilot producers answer real customer forms in the product."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server + database",
+      "note": "EU hosting (Hetzner / Supabase)",
+      "cost": "€10–25 / month"
+    },
+    {
+      "item": "AI API",
+      "note": "~€0.30–1 per form",
+      "cost": "€20–50 / month"
+    },
+    {
+      "item": "Email / SMS sending",
+      "note": "Resend / Postmark low tiers",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Landing page",
+      "note": "Built by us",
+      "cost": "€0"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €450–800",
+  "pricing": [
+    {
+      "name": "Starter: €49/mo",
+      "description": "Up to 15 products, 3 forms a month"
+    },
+    {
+      "name": "Growth: €99/mo",
+      "description": "Up to 75 products, unlimited forms"
+    },
+    {
+      "name": "Pro: €149/mo",
+      "description": "Unlimited products, change alerts, 5 users"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 400,
+      "value": 40,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 29,
+      "max": 199,
+      "value": 89,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "Specright, Trace One",
+      "what": "Enterprise specification management",
+      "gap": "Built for big brands and retailers; quote-only pricing",
+      "isUs": false
+    },
+    {
+      "name": "Foodservice product data hubs (e.g. Erudus)",
+      "what": "Product data shared with wholesalers",
+      "gap": "One format for one channel; not custom questionnaires",
+      "isUs": false
+    },
+    {
+      "name": "Nutrition/label tools",
+      "what": "Recipes, nutrition, labels",
+      "gap": "Do not fill other companies' forms",
+      "isUs": false
+    },
+    {
+      "name": "Word + Excel + email",
+      "what": "Today's default",
+      "gap": "Two days per customer, inconsistent answers",
+      "isUs": false
+    },
+    {
+      "name": "Us",
+      "what": "Library once → AI fills any form",
+      "gap": "Small-producer price, any format, keeps answers consistent",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Not enough forms per producer",
+      "answer": "Ask how many new customer forms they got in 12 months; target producers growing into retail and foodservice."
+    },
+    {
+      "risk": "Wrong data on a spec sheet",
+      "answer": "Every answer shows its source and needs human approval; we never sign on their behalf."
+    },
+    {
+      "risk": "Producers are hard to reach",
+      "answer": "Use trade shows, food-producer associations and food consultants as resellers."
+    },
+    {
+      "risk": "Questionnaire tools expand into food",
+      "answer": "Food-specific fields (allergens, nutrition, shelf life) and low price are hard for general tools to match."
+    }
+  ],
+  "questions": [
+    "How many new customers sent you a spec sheet or supplier questionnaire in the last 12 months?",
+    "How long did the last one take, and who did it?",
+    "Have you ever sent two customers different answers by mistake?",
+    "Where does your product data live today?",
+    "Would €49–99 a month be worth it if each form took an hour?"
+  ],
+  "numbers": {
+    "cashMin": 450.0,
+    "cashMax": 800.0,
+    "mvpWeeksMin": 6.0,
+    "mvpWeeksMax": 8.0,
+    "priceLabel": "€49–149/mo",
+    "competition": "Enterprise spec tools only",
+    "competitionLevel": "low",
+    "whoSells": "Jonatan → food producer founders and quality managers"
+  },
+  "skills": [
+    "ai",
+    "coding",
+    "b2b-sales",
+    "integrations"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 5,
+    "willingnessToPay": 6,
+    "lowCompetition": 6,
+    "easyToBuild": 7,
+    "easyToSell": 5,
+    "skillFit": 7,
+    "globalPotential": 7,
+    "excitement": 6
+  },
+  "notes": "",
+  "interviews": [],
+  "rank": 41,
+  "batch": "Top 50 research (Nov 2026)"
+}

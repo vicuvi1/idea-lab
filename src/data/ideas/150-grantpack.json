@@ -1,0 +1,302 @@
+{
+  "id": "r-grantpack",
+  "title": "GrantPack: grant, grid-application and handover paperwork for one- to five-person heat-pump and solar installers",
+  "color": "#d95926",
+  "industry": "Energy / installers",
+  "status": "idea",
+  "source": "Top 50 research (Nov 2026): new markets batch",
+  "tags": [
+    "Grant paperwork",
+    "Crowded market",
+    "UK first"
+  ],
+  "summary": "Small UK heat-pump and solar installers carry the paperwork for the Boiler Upgrade Scheme grant, grid (DNO) applications and MCS certification for every job. Full installer CRMs cost hundreds of pounds a month. GrantPack is a light tool that turns survey notes and photos into the grant claim, the G98/G99 application and the customer handover pack.",
+  "priceLabel": "£39–129 / month",
+  "hook": "\"I'm an installer, not an admin. Every heat pump means a grant claim, an MCS pack and sometimes a G99 that bounces back for one missing drawing.\"",
+  "story": "**Gareth is a heat-pump installer with one apprentice and a part-time admin.** For each job he must show the **£7,500 grant deducted on the quote**, raise the Boiler Upgrade Scheme voucher, collect the customer's confirmation, complete MCS commissioning records and give a handover pack. If the job includes a battery or bigger inverter, he may also need a **G99 grid application**, which only starts the 45-working-day clock once it is complete.\n\nHe looked at installer CRMs, but the full platforms cost **£199 a month and more** and want to run his whole business. He only wants the paperwork done right first time from his survey notes and photos.",
+  "whyNow": "Ofgem reworked the Boiler Upgrade Scheme on 28 April 2026 and updated installer guidance again in October 2026 (V5.2). MCS is moving installers to its redeveloped scheme through 2026–2027. Heat-pump installs fell 22% in H1 2026, so small installers are watching every cost and hour.",
+  "evidence": [
+    "The BUS is installer-led: the installer handles the grant paperwork and carries the cash-flow gap until redemption [Gas Engineer Software / Reonic]",
+    "The scheme was reworked on 28 April 2026; installers must show the grant deducted upfront on the quote [autarc]",
+    "Ofgem published a V5.2 summary of updates to BUS installer guidance in October 2026 [Ofgem]",
+    "G99: the 45-working-day DNO clock only starts once the application is complete; missing data is a common cause of delay [Payaca / Reonic]",
+    "20,895 retrofit heat-pump installs in H1 2026, down 22% on H1 2025 [Payaca]",
+    "Payaca Growth costs £1,199/month; autarc starts at £199/month for 2 users (per Payaca's comparison) [Payaca]"
+  ],
+  "sources": [
+    {
+      "title": "Ofgem: summary of updates to BUS guidance for installers V5.2",
+      "url": "https://www.ofgem.gov.uk/sites/default/files/2026-11/Summary%20of%20Updates%20to%20BUS%20Guidance%20for%20Installers%20V5.2-20261030160729.pdf"
+    },
+    {
+      "title": "autarc: Boiler Upgrade Scheme 2026 changes for installers",
+      "url": "https://www.autarc.energy/gb/knowledge/boiler-upgrade-scheme-2026-installers"
+    },
+    {
+      "title": "Gas Engineer Software: how to process a BUS installation (2026)",
+      "url": "https://gasengineersoftware.co.uk/blog/how-to-process-boiler-upgrade-scheme-installation/"
+    },
+    {
+      "title": "Payaca: Warm Homes Plan delivery constraint",
+      "url": "https://payaca.com/blog/warm-homes-plan-delivery-constraint"
+    },
+    {
+      "title": "Reonic: G99 application and DNO approval guide",
+      "url": "https://reonic.com/en-gb/blog/g99-application-dno-approval-guide"
+    },
+    {
+      "title": "Payaca: DNO further information required",
+      "url": "https://payaca.com/uk/blog/dno-further-information-required"
+    },
+    {
+      "title": "Payaca vs autarc comparison",
+      "url": "https://payaca.com/uk/compare/autarc"
+    },
+    {
+      "title": "Spruce: MCS redeveloped, what installers need to do",
+      "url": "https://www.spruce.eco/insights/mcs-redeveloped-what-installers-need-to-know-and-do-spruce"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "Paperwork on every job",
+      "text": "Grant claim, MCS records, handover pack and often a grid application: each job carries several documents with strict rules."
+    },
+    {
+      "title": "Rules keep changing",
+      "text": "BUS guidance changed several times in 2026 and MCS is being redeveloped, so small firms struggle to keep up."
+    },
+    {
+      "title": "Mistakes cost cash",
+      "text": "A rejected grant or incomplete G99 delays payment or switch-on, and the installer carries the cost."
+    },
+    {
+      "title": "But the market is crowded",
+      "text": "Payaca, autarc, Reonic, Zigaflow and others already sell installer software with these features."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "MCS-certified heat-pump, solar and battery installers with 1–5 staff, and plumbers adding heat pumps."
+    },
+    {
+      "label": "Buyer",
+      "text": "owner-installer or office admin."
+    },
+    {
+      "label": "Start market",
+      "text": "UK; later Ireland (SEAI grants) and other EU grant schemes."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Survey to job",
+      "text": "upload survey notes, photos and product choices; AI fills the job record."
+    },
+    {
+      "title": "Grant claim",
+      "text": "checks eligibility rules and drafts the BUS quote wording and voucher data."
+    },
+    {
+      "title": "Grid check",
+      "text": "decides G98 vs G99 from export capacity and drafts the application with the required data and drawings list."
+    },
+    {
+      "title": "Handover pack",
+      "text": "commissioning records, warranties and customer documents in one PDF."
+    },
+    {
+      "title": "Rule updates",
+      "text": "we track Ofgem, MCS and DNO changes and update checklists."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Job record from survey notes and photos",
+      "BUS eligibility checklist and quote wording",
+      "G98/G99 decision and application draft",
+      "Handover pack PDF",
+      "Rule-change checklist updates",
+      "Simple job list"
+    ],
+    "later": [
+      "Direct DNO portal submission",
+      "Heat-loss calculation import",
+      "Ireland SEAI grants",
+      "Payments and deposits",
+      "Accounting integrations"
+    ]
+  },
+  "techStack": [
+    "Next.js",
+    "PostgreSQL (Supabase)",
+    "LLM + vision for survey notes and photos",
+    "PDF generation",
+    "Rules engine in config",
+    "Stripe billing"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "**Validate, no code.** Interview 15 small installers; do 3 jobs' paperwork by hand with Claude."
+    },
+    {
+      "when": "Week 3–5",
+      "what": "Job record, BUS checklist, handover pack."
+    },
+    {
+      "when": "Week 6–8",
+      "what": "G98/G99 drafting, rule updates, pilot with 3 installers."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server + database",
+      "note": "EU hosting (Hetzner / Supabase)",
+      "cost": "€10–25 / month"
+    },
+    {
+      "item": "AI API",
+      "note": "Survey notes, photos and drafting",
+      "cost": "€15–40 / month"
+    },
+    {
+      "item": "Email / SMS sending",
+      "note": "Resend / Postmark low tiers",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Landing page",
+      "note": "Built by us",
+      "cost": "€0"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €450–800",
+  "pricing": [
+    {
+      "name": "Solo: £39/mo",
+      "description": "Up to 8 jobs a month"
+    },
+    {
+      "name": "Team: £79/mo",
+      "description": "Up to 25 jobs, grid applications"
+    },
+    {
+      "name": "Busy: £129/mo",
+      "description": "Unlimited jobs, 5 users"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 300,
+      "value": 30,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 29,
+      "max": 199,
+      "value": 69,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "Payaca",
+      "what": "Full installer platform",
+      "gap": "Growth plan £1,199/month; built for established businesses",
+      "isUs": false
+    },
+    {
+      "name": "autarc",
+      "what": "Heat-pump and solar installer software",
+      "gap": "From £199/month for 2 users (per Payaca); still a full CRM",
+      "isUs": false
+    },
+    {
+      "name": "Reonic, Zigaflow, Gas Engineer Software",
+      "what": "Installer CRMs with grant and MCS features",
+      "gap": "Feature-rich; less focused on the 1–5 person firm",
+      "isUs": false
+    },
+    {
+      "name": "Us",
+      "what": "Paperwork only: grant, grid, handover",
+      "gap": "Cheaper and lighter, but must beat well-funded tools",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Crowded, funded competition",
+      "answer": "Only pursue if interviews show small installers refuse full CRMs; otherwise drop the idea."
+    },
+    {
+      "risk": "Fewer installs in 2026",
+      "answer": "Fewer jobs means price sensitivity; keep the price per job low."
+    },
+    {
+      "risk": "Rules change often",
+      "answer": "Rules in config; a monthly rule-update routine."
+    },
+    {
+      "risk": "UK-only at first",
+      "answer": "Ireland and EU grant schemes are later options."
+    }
+  ],
+  "questions": [
+    "How many BUS jobs did you do last quarter, and how long does the paperwork take per job?",
+    "Have you had a grant claim or G99 application rejected or delayed? Why?",
+    "What software do you use today, and what does it cost?",
+    "Would you use a paperwork-only tool next to your current tools?",
+    "Would £39–79 a month be worth it?"
+  ],
+  "numbers": {
+    "cashMin": 450.0,
+    "cashMax": 800.0,
+    "mvpWeeksMin": 7.0,
+    "mvpWeeksMax": 8.0,
+    "priceLabel": "£39–129/mo",
+    "competition": "Many funded installer platforms",
+    "competitionLevel": "high",
+    "whoSells": "Jonatan → small heat-pump and solar installers"
+  },
+  "skills": [
+    "coding",
+    "ai",
+    "construction",
+    "b2b-sales"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 7,
+    "willingnessToPay": 6,
+    "lowCompetition": 2,
+    "easyToBuild": 6,
+    "easyToSell": 5,
+    "skillFit": 6,
+    "globalPotential": 3,
+    "excitement": 5
+  },
+  "notes": "",
+  "interviews": [],
+  "rank": 50,
+  "batch": "Top 50 research (Nov 2026)"
+}

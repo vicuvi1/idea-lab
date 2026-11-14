@@ -1,0 +1,311 @@
+{
+  "id": "r-logwatch",
+  "title": "LogWatch: patient-record access log reviews for small Swedish clinics",
+  "color": "#9085e9",
+  "industry": "Healthcare",
+  "status": "idea",
+  "source": "Top 50 research (Nov 2026): new markets batch",
+  "tags": [
+    "Fits Victor's security skills",
+    "Jonatan's home market",
+    "Low competition"
+  ],
+  "summary": "Swedish care providers must check regularly who opened which patient record. Small private clinics (physio, dental, psychology, rehab) often do it by hand or not at all. LogWatch imports the access log from the journal system, flags suspicious look-ups and keeps the proof the regulator asks for.",
+  "priceLabel": "€79–249 / month",
+  "hook": "\"We know we should check the logs every month. Honestly, nobody has time, and the export is 40,000 rows.\"",
+  "story": "**Karin runs a private physiotherapy and rehab clinic in Gothenburg with 14 staff.** The Patient Data Act and Socialstyrelsen's rules say she must do **systematic log follow-up**: check that staff only open the records of patients they actually treat. Her journal system can export an access log, but it is a **huge Excel file** with user IDs, patient numbers and timestamps. Twice a year her quality manager picks a few rows at random, writes \"no problems found\" and saves a Word file.\n\nThen a patient complains that a receptionist read her record after a dispute between them. Karin has to show the regulator (IMY) her **written routine, her checks and her results**, and she realises the checks never looked for this kind of access at all. She would happily pay a small monthly fee for a tool that runs the checks every month, shows only the few cases that need a human look and writes the report for her.",
+  "whyNow": "Socialstyrelsen's rules on access control and log follow-up (HSLF-FS 2016:40) were amended by HSLF-FS 2025:57, in force from 1 February 2026. IMY has already fined care providers millions of kronor for weak access control and log follow-up, and Sweden's new cybersecurity law (NIS2) has raised security attention in healthcare.",
+  "evidence": [
+    "IMY's review of journal systems led to a 30 million SEK fine against Capio S:t Göran (2020) for inadequate access control [Legiscope / IMY]",
+    "MedHelp was fined 12 million SEK in 2021, Region Dalarna 200,000 SEK in 2023, and a small private specialist clinic 20,000 SEK for exposed patient data [IMY / Läkartidningen]",
+    "HSLF-FS 2016:40 (systematic log checks) was amended by HSLF-FS 2025:57, with the latest version from 1 February 2026 [Legiscope]",
+    "IMY publishes a checklist for systematic log follow-up based on the Patient Data Act (2008:355) and Socialstyrelsen's rules [IMY]",
+    "Big regions use LogPoint or Inera's extended log service; the City of Gothenburg uses an Excel-based random sampling tool, which shows how manual this still is [Region Jämtland Härjedalen / Inera / Göteborgs stad]"
+  ],
+  "sources": [
+    {
+      "title": "IMY: systematic follow-ups of logs",
+      "url": "https://www.imy.se/en/verksamhet/data-protection/data-protection-within-different-areas/vard/systematic-follow-ups-of-logs"
+    },
+    {
+      "title": "Legiscope: GDPR in healthcare (IMY fines)",
+      "url": "https://www.legiscope.com/blog/gdpr-halso-sjukvard.html"
+    },
+    {
+      "title": "Legiscope: routine for patient record log checks",
+      "url": "https://www.legiscope.com/blog/patientjournal-loggkontroll-rutin.html"
+    },
+    {
+      "title": "IMY decision: Capio S:t Görans sjukhus (DI-2019-3846)",
+      "url": "https://www.imy.se/globalassets/dokument/beslut/beslut-tillsyn-capio-st-gorans-sjukhus-di-2019-3846.pdf"
+    },
+    {
+      "title": "IMY decision: MedHelp (2021)",
+      "url": "https://www.imy.se/globalassets/dokument/beslut/2021/2021-06-07-beslut-medhelp.pdf"
+    },
+    {
+      "title": "IMY decision: Region Dalarna (2023)",
+      "url": "https://www.datainspektionen.se/globalassets/dokument/beslut/2023/beslut-tillsyn-region-dalarna.pdf"
+    },
+    {
+      "title": "Inera: extended log service, description and terms",
+      "url": "https://www.inera.se/globalassets/inera/media/dokument/kontakta-oss/avtal/btv/sakerhetstjanster---utokad-loggtjanst---beskrivning-och-tjanstespecifika-villkor.pdf"
+    },
+    {
+      "title": "Läkartidningen: MedHelp to pay 12 million",
+      "url": "https://lakartidningen.se/nyheter/medhelp-ska-betala-12-miljoner-efter-1177-lackan/"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "It is a legal duty",
+      "text": "Every care provider that keeps digital patient records must check access logs systematically and document it. Private clinics are care providers too, so the duty is theirs, not the software vendor's."
+    },
+    {
+      "title": "Fines are public and large",
+      "text": "IMY has fined both regions and private companies, from 20,000 SEK for a small clinic up to 30 million SEK for a hospital. Clinic owners read about these cases in Läkartidningen."
+    },
+    {
+      "title": "Small clinics have no tools",
+      "text": "Regions use SIEM tools like LogPoint or Inera's log service. A 10-person physio or dental clinic has a raw export and Excel, so the check is often a random sample or skipped."
+    },
+    {
+      "title": "Victor's core skill",
+      "text": "This is security log analysis: anomaly rules, data protection and audit reports. It fits Victor better than almost any other idea in this batch."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "private care providers in Sweden with 5–100 staff: physiotherapy, dental, psychology, rehab, occupational health, private specialist clinics."
+    },
+    {
+      "label": "Buyer",
+      "text": "clinic owner or the person responsible for quality and data protection (often the operations manager)."
+    },
+    {
+      "label": "Start market",
+      "text": "Sweden (Jonatan sells in Swedish, the product UI starts in Swedish and English). Later Norway and Finland, which have similar rules on patient-record logging (to be checked)."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Upload or connect",
+      "text": "the clinic uploads the monthly access-log export from its journal system (CSV/Excel), or we pull it automatically where the system has an API."
+    },
+    {
+      "title": "Pseudonymise first",
+      "text": "personal identity numbers are hashed in the browser before upload, so we never store real patient IDs."
+    },
+    {
+      "title": "Run risk rules",
+      "text": "flag look-ups of colleagues' records, patients with the same surname or address as the user, protected identities, access outside working hours and records with no booked visit."
+    },
+    {
+      "title": "Human review",
+      "text": "the quality manager sees only the 5–20 flagged cases, marks each as OK or \"investigate\" and writes a short note."
+    },
+    {
+      "title": "Report and routine",
+      "text": "LogWatch writes the monthly log-review report and keeps a ready routine document that matches IMY's checklist, ready to show in an inspection."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Clinic workspace and login with 2FA",
+      "CSV/Excel log import with column mapping",
+      "In-browser pseudonymisation of personal numbers",
+      "6–8 risk rules with clear explanations",
+      "Review screen (OK / investigate + note)",
+      "Monthly PDF report and routine template"
+    ],
+    "later": [
+      "Direct API connection to the most common journal systems",
+      "Staff roster import to match working hours",
+      "Email reminders when the monthly check is due",
+      "Norway and Finland rule packs",
+      "Access-rights review (who should have access to what)"
+    ]
+  },
+  "techStack": [
+    "Python + FastAPI or Django",
+    "PostgreSQL in Sweden/EU (Hetzner or Swedish host)",
+    "Browser-side hashing (Web Crypto) for patient IDs",
+    "Pandas / DuckDB for log analysis",
+    "Small LLM step only for writing report text",
+    "Stripe billing"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "**Validate, no code.** Jonatan calls 20 private clinics. Victor reviews 3 real (pseudonymised) log exports by hand with a script and shows the findings."
+    },
+    {
+      "when": "Week 3–5",
+      "what": "Import, column mapping, pseudonymisation and the first risk rules for the 2 journal systems the pilot clinics use."
+    },
+    {
+      "when": "Week 6–7",
+      "what": "Review screen, PDF report, routine template, 2FA and data processing agreement."
+    },
+    {
+      "when": "Week 8",
+      "what": "3 pilot clinics run a real monthly review; ask them to pay from month 2."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server + database",
+      "note": "EU hosting (Hetzner / Supabase)",
+      "cost": "€10–25 / month"
+    },
+    {
+      "item": "AI API",
+      "note": "Only for report wording; analysis is rule-based",
+      "cost": "€5–20 / month"
+    },
+    {
+      "item": "Email / SMS sending",
+      "note": "Resend / Postmark low tiers",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Landing page",
+      "note": "Built by us",
+      "cost": "€0"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €450–750",
+  "pricing": [
+    {
+      "name": "Small: €79/mo",
+      "description": "Up to 15 staff, monthly review, report and routine template"
+    },
+    {
+      "name": "Clinic: €149/mo",
+      "description": "Up to 50 staff, 2 sites, roster matching"
+    },
+    {
+      "name": "Group: €249/mo",
+      "description": "Several clinics, one dashboard, API connection"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 300,
+      "value": 40,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 49,
+      "max": 299,
+      "value": 129,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "Inera extended log service",
+      "what": "Log follow-up service for organisations connected to Inera",
+      "gap": "Built for regions and municipalities, not a 10-person private clinic",
+      "isUs": false
+    },
+    {
+      "name": "LogPoint and other SIEM tools",
+      "what": "Enterprise log analysis",
+      "gap": "Expensive, needs IT staff, no ready routine for patient-record law",
+      "isUs": false
+    },
+    {
+      "name": "Journal system log views",
+      "what": "Raw lists of who opened which record",
+      "gap": "No risk flags and no report; someone still has to read thousands of rows",
+      "isUs": false
+    },
+    {
+      "name": "Excel random sampling",
+      "what": "What many organisations do today",
+      "gap": "Misses the risky cases and takes hours",
+      "isUs": false
+    },
+    {
+      "name": "Us",
+      "what": "Upload log → risk flags → review → report",
+      "gap": "Built for small private clinics, €79–249/mo, 30 minutes a month",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Every journal system exports logs differently",
+      "answer": "Start with the 2–3 systems the first 10 customers use; column mapping handles small differences."
+    },
+    {
+      "risk": "Patient data is very sensitive",
+      "answer": "Hash personal numbers in the browser, host in Sweden/EU, sign a data processing agreement and keep logs only as long as the clinic needs."
+    },
+    {
+      "risk": "Small market",
+      "answer": "Sweden has many private care providers (count to be checked); expand to Norway and Finland once the rule engine works."
+    },
+    {
+      "risk": "Clinics only act after a complaint",
+      "answer": "Sell with IMY fine cases and a free one-off log check that usually finds something."
+    }
+  ],
+  "questions": [
+    "How do you do log follow-up today, and how often?",
+    "Who does it, and how many hours does it take each time?",
+    "Can your journal system export an access log? Can you show us one (pseudonymised)?",
+    "Have you ever had a complaint or incident about someone reading a record they should not?",
+    "If a tool did the monthly check and wrote the report for €79–149, would you buy it?"
+  ],
+  "numbers": {
+    "cashMin": 450.0,
+    "cashMax": 750.0,
+    "mvpWeeksMin": 7.0,
+    "mvpWeeksMax": 8.0,
+    "priceLabel": "€79–249/mo",
+    "competition": "Enterprise tools only; small clinics use Excel",
+    "competitionLevel": "low",
+    "whoSells": "Jonatan → private clinic owners in Sweden"
+  },
+  "skills": [
+    "security",
+    "coding",
+    "healthcare",
+    "b2b-sales"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 6,
+    "willingnessToPay": 6,
+    "lowCompetition": 7,
+    "easyToBuild": 6,
+    "easyToSell": 6,
+    "skillFit": 9,
+    "globalPotential": 4,
+    "excitement": 7
+  },
+  "notes": "",
+  "interviews": [],
+  "rank": 39,
+  "batch": "Top 50 research (Nov 2026)"
+}

@@ -1,0 +1,306 @@
+{
+  "id": "r-registerready",
+  "title": "RegisterReady: landlord database registration and certificate tracking for small letting agents",
+  "color": "#e66767",
+  "industry": "Real estate",
+  "status": "idea",
+  "source": "Top 50 research (Nov 2026): new markets batch",
+  "tags": [
+    "Regulation deadline",
+    "Document engine",
+    "UK only"
+  ],
+  "summary": "England's new landlord database (\"Register your rental property\") opens region by region from 15 December 2026, and every rented home must be registered by November 2027 with safety information. Small letting agents and landlords with a few properties must collect and keep this data current. RegisterReady reads certificates, finds gaps and reminds before anything expires.",
+  "priceLabel": "£29–149 / month",
+  "hook": "\"We manage 180 properties for 90 landlords. Half the gas certificates are in someone's email. Now every one has to go on a government register.\"",
+  "story": "**Lucy runs a small letting agency in Birmingham** that manages **180 homes for 90 landlords**. The West Midlands is the first region where the new database opens, on 15 December 2026, and existing landlords there have **three months** to register. Each entry needs landlord and property details plus safety information: the **gas safety certificate, electrical report (EICR) and EPC**.\n\nHer CRM holds the tenancy data, but certificates sit in emails and shared folders, and some landlords handle their own gas checks. Giving false information or letting entries lapse can lead to Rent Repayment Orders. She needs a tool that reads every certificate, shows what is missing or expiring and prepares the data for each registration.",
+  "whyNow": "The PRS database launches on 15 December 2026 in the West Midlands and rolls out across England over 12 months; all private rented properties must be registered by 14 November 2027, with an annual fee. Tenancy reforms under the Renters' Rights Act already started on 1 May 2026, and councils have stronger enforcement powers.",
+  "evidence": [
+    "The database (\"Register your rental property\") starts on 15 December 2026 in the West Midlands, then other regions over 12 months [HCR Law / Bevan Brittan]",
+    "Landlords generally get three months after their region opens; all properties must be registered by 14 November 2027 [Bevan Brittan]",
+    "Registration will be mandatory with an annual fee still to be confirmed, and will include gas, electrical and EPC information [JLL]",
+    "False or misleading information, or failing to keep entries active, can lead to a Rent Repayment Order [Womble Bond Dickinson]",
+    "Gas safety checks are needed every 12 months and EICRs every five years [council guidance, e.g. Derby City Council]"
+  ],
+  "sources": [
+    {
+      "title": "HCR Law: PRS database to go live from 15 December 2026",
+      "url": "https://www.hcrlaw.com/news-and-insights/renters-rights-act-2025-private-rented-sector-database-to-go-live-from-15-december-2026/"
+    },
+    {
+      "title": "Bevan Brittan: RRA phase 2, register your rental property service",
+      "url": "https://www.bevanbrittan.com/insights/articles/2026/rra-phase-2-register-your-rental-property-service-and-update-on-rent-increase-challenges/"
+    },
+    {
+      "title": "JLL: Renters' Rights Act guide",
+      "url": "https://www.jll.com/en-uk/guides/renters-rights-act"
+    },
+    {
+      "title": "Womble Bond Dickinson: PRS database briefing",
+      "url": "https://www.womblebonddickinson.com/uk/node/21358"
+    },
+    {
+      "title": "Goodlord: the government confirms Register your rental property service",
+      "url": "https://blog.goodlord.co/the-government-confirms-register-your-rental-property-service-what-landlords-and-letting-agents-need-to-know"
+    },
+    {
+      "title": "Derby City Council: Renters' Rights Act 2025",
+      "url": "https://www.derby.gov.uk/media/derbycitycouncil/content/documents/housing/renters-rights-act2025.pdf"
+    },
+    {
+      "title": "August: PRS database partnership",
+      "url": "https://www.augustapp.com/partnerships/private-rented-sector-database"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "Hard deadline, every property",
+      "text": "Every private rented home in England must be on the register by November 2027, region by region from December 2026."
+    },
+    {
+      "title": "Data is scattered",
+      "text": "Certificates live in emails, landlord folders and contractor portals. Agents must collect them for hundreds of homes in three months."
+    },
+    {
+      "title": "Penalties hit agents' clients",
+      "text": "Wrong or lapsed entries can lead to Rent Repayment Orders, so landlords will expect agents to get it right."
+    },
+    {
+      "title": "Reuses the document engine",
+      "text": "Reading certificates and tracking expiry is the same engine as SubDocs and CredTrack, pointed at a new deadline."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "small letting agents (50–1,000 managed homes) and portfolio landlords with 5–50 properties in England."
+    },
+    {
+      "label": "Buyer",
+      "text": "agency owner, lettings manager or the landlord."
+    },
+    {
+      "label": "Start market",
+      "text": "West Midlands first (opens first), then each region as it opens; Wales and Scotland have their own registers (later)."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Bulk upload",
+      "text": "drop in folders or forward emails with certificates; AI reads property address, type, engineer, date and expiry."
+    },
+    {
+      "title": "Match to properties",
+      "text": "certificates are matched to the property list from the CRM export."
+    },
+    {
+      "title": "Gap report",
+      "text": "shows which homes miss a gas certificate, EICR or EPC, or have one expiring soon."
+    },
+    {
+      "title": "Chase",
+      "text": "sends landlords and contractors a link to upload what is missing."
+    },
+    {
+      "title": "Registration pack",
+      "text": "prepares the data for each property's registration and reminds when entries need updating."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Property list import (CSV)",
+      "Bulk certificate upload and email forwarding",
+      "AI extraction of certificate data",
+      "Gap and expiry dashboard",
+      "Chase links for landlords and contractors",
+      "Registration data export per property"
+    ],
+    "later": [
+      "Integrations with letting CRMs",
+      "Direct submission if the government offers an API",
+      "Deposit and right-to-rent documents",
+      "Decent Homes / Awaab's Law evidence",
+      "Wales and Scotland registers"
+    ]
+  },
+  "techStack": [
+    "Next.js or Django",
+    "PostgreSQL (Supabase, UK/EU)",
+    "OCR + LLM for certificates",
+    "Inbound email (Postmark)",
+    "S3-compatible storage",
+    "Stripe billing"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "**Validate, no code.** Call 20 West Midlands agents; process one agent's certificate folder by hand with Claude."
+    },
+    {
+      "when": "Week 3–5",
+      "what": "Import, certificate reading, matching, dashboard."
+    },
+    {
+      "when": "Week 6–7",
+      "what": "Chase links, registration export, reminders."
+    },
+    {
+      "when": "Week 8",
+      "what": "3 pilot agencies prepare real registrations."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server + database",
+      "note": "EU hosting (Hetzner / Supabase)",
+      "cost": "€10–25 / month"
+    },
+    {
+      "item": "AI + OCR API",
+      "note": "Certificate reading",
+      "cost": "€15–40 / month"
+    },
+    {
+      "item": "File storage",
+      "note": "Certificates",
+      "cost": "€5–10 / month"
+    },
+    {
+      "item": "Email / SMS sending",
+      "note": "Resend / Postmark low tiers",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Landing page",
+      "note": "Built by us",
+      "cost": "€0"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €450–800",
+  "pricing": [
+    {
+      "name": "Landlord: £29/mo",
+      "description": "Up to 20 properties"
+    },
+    {
+      "name": "Agency: £79/mo",
+      "description": "Up to 300 properties, chase links"
+    },
+    {
+      "name": "Agency Plus: £149/mo",
+      "description": "Up to 1,000 properties, multiple users"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 500,
+      "value": 50,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 19,
+      "max": 199,
+      "value": 69,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "Letting CRMs (Alto, Reapit, Goodlord)",
+      "what": "Agency software with compliance features",
+      "gap": "Will add database features; certificates often still outside the system",
+      "isUs": false
+    },
+    {
+      "name": "Landlord apps (Landlord Vision, Hammock, Arthur, August)",
+      "what": "Property management for landlords",
+      "gap": "Crowded; general tools, not built around bulk registration",
+      "isUs": false
+    },
+    {
+      "name": "Spreadsheets and admin staff",
+      "what": "Today's default",
+      "gap": "Slow for hundreds of homes in a 3-month window",
+      "isUs": false
+    },
+    {
+      "name": "Us",
+      "what": "Read certificates → gaps → chase → registration pack",
+      "gap": "Narrow focus on the register deadline, works next to any CRM",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Crowded proptech market",
+      "answer": "Stay narrow (registration and certificates) and sell region by region as each opens."
+    },
+    {
+      "risk": "Government service may be simple enough",
+      "answer": "Value is collecting and checking certificates, not typing into the form."
+    },
+    {
+      "risk": "CRMs add the feature",
+      "answer": "Target agents on older CRMs and landlords without one; integrate later."
+    },
+    {
+      "risk": "UK-only, deadline then slower",
+      "answer": "After registration, keep customers with expiry tracking and new duties (Decent Homes)."
+    }
+  ],
+  "questions": [
+    "How many properties do you manage, and where are their certificates stored?",
+    "How will you prepare for the landlord database in your region?",
+    "How many certificates are missing or expired right now?",
+    "Does your CRM help with this? What does it cost?",
+    "Would £79 a month for this until registration and after be worth it?"
+  ],
+  "numbers": {
+    "cashMin": 450.0,
+    "cashMax": 800.0,
+    "mvpWeeksMin": 6.0,
+    "mvpWeeksMax": 8.0,
+    "priceLabel": "£29–149/mo",
+    "competition": "Crowded proptech; narrow deadline angle",
+    "competitionLevel": "high",
+    "whoSells": "Jonatan → letting agents in each region as it opens"
+  },
+  "skills": [
+    "coding",
+    "ai",
+    "integrations",
+    "b2b-sales"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 7,
+    "willingnessToPay": 6,
+    "lowCompetition": 4,
+    "easyToBuild": 7,
+    "easyToSell": 6,
+    "skillFit": 6,
+    "globalPotential": 3,
+    "excitement": 5
+  },
+  "notes": "",
+  "interviews": [],
+  "rank": 48,
+  "batch": "Top 50 research (Nov 2026)"
+}

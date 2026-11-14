@@ -1,0 +1,307 @@
+{
+  "id": "r-agentaml",
+  "title": "AgentAML: anti-money-laundering files for small estate agencies before the EU rules of July 2027",
+  "color": "#199e70",
+  "industry": "Real estate",
+  "status": "idea",
+  "source": "Top 50 research (Nov 2026): new markets batch",
+  "tags": [
+    "Regulation deadline",
+    "Fits Victor's security skills",
+    "EU-wide"
+  ],
+  "summary": "From 10 July 2027 the EU Anti-Money Laundering Regulation applies directly to estate and letting agents in every member state. Small agencies must keep a written risk assessment, policies, customer checks and records. AgentAML gives them a simple file per deal, ID and ownership checks, and a ready policy pack.",
+  "priceLabel": "€59–199 / month",
+  "hook": "\"We are three brokers. We know we must do KYC, but our money-laundering routine is a Word file from 2019.\"",
+  "story": "**Erik owns a 5-person estate agency in Uppsala.** Swedish brokers already fall under money-laundering rules, and the supervisor (FMI) has just raised the sector's risk level to **high** after finding large knowledge gaps in agencies. Erik's routine is an old Word document, and buyer checks are a photo of an ID card in the deal folder.\n\nWhen the EU regulation applies in **July 2027**, he must show a documented risk assessment, a named AML officer, customer due diligence on **both sides of each deal** (in many countries), checks of beneficial owners when a company buys, and refresh dates for each customer. He wants a tool that makes each deal's AML file as easy as the contract.",
+  "whyNow": "The EU AML Regulation (AMLR) applies from 10 July 2027 with one rulebook for all member states, and AMLA is consulting on detailed technical standards in 2026. Supervisors are already tightening: in the UK, HMRC fined 170 estate agency businesses in six months of 2025, and Sweden's FMI raised the sector's risk rating to high.",
+  "evidence": [
+    "The AMLR starts to apply to estate agents on 10 July 2027 [Schoenherr / Mondaq]",
+    "Letting intermediaries are covered for rents of at least €10,000 a month; sales agents with no minimum [AML Watcher]",
+    "Obliged estate agents will need to appoint AML officers and put risk assessments and CDD policies in writing [KPMG Germany]",
+    "Sweden's FMI thematic review found large knowledge gaps in broker firms; the sector risk was raised from \"significant\" to \"high\" [FMI / Fastighetsmäklarförbundet]",
+    "HMRC fined 170 UK estate agency businesses £835,842 between April and September 2025 [Property Industry Eye]",
+    "HMRC proposed raising the annual AML supervision fee from £300 to £400 per branch [The Negotiator]"
+  ],
+  "sources": [
+    {
+      "title": "Mondaq / Schoenherr: EU money laundering rules are changing, ready for 10 July 2027?",
+      "url": "https://www.mondaq.com/eu-money-laundering-rules-are-changing-is-your-business-ready-for-10-july-2027/1841768"
+    },
+    {
+      "title": "AML Watcher: who does AMLR apply to",
+      "url": "https://amlwatcher.com/blog/who-does-amlr-apply-to-a-sector-by-sector-guide/"
+    },
+    {
+      "title": "KPMG Germany: money laundering prevention in the real estate sector",
+      "url": "https://kpmg.com/de/en/insights/corporate-governance-and-compliance/money-laundering-prevention-in-the-real-estate-sector.html"
+    },
+    {
+      "title": "FMI: thematic review of broker firms' anti-money-laundering work",
+      "url": "https://fmi.se/media/vb3logmb/rapport-tematillsyn-maklarforetags-arbete-mot-penningtvatt.pdf"
+    },
+    {
+      "title": "Fastighetsmäklarförbundet: FMI ends thematic review",
+      "url": "https://www.mynewsdesk.com/se/fastighetsmaklarforbundet/latest_news/tag/fmi"
+    },
+    {
+      "title": "Property Industry Eye: HMRC fines 170 agents over money laundering breaches",
+      "url": "https://bebeez.eu/2026/01/29/eye-news-update-hmrc-fines-170-agents-over-money-laundering-breaches/"
+    },
+    {
+      "title": "The Negotiator: estate agents facing rise in AML fees",
+      "url": "https://thenegotiator.co.uk/news/regulation-law-news/estate-agents-facing-substantial-rise-in-aml-fees/"
+    },
+    {
+      "title": "Ecovis: get ready for the EU AML Regulation",
+      "url": "https://global.ecovis.com/?p=19986"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "One rulebook, every EU country",
+      "text": "Until now each country wrote its own law. From July 2027 the regulation applies directly, which makes one product possible across the EU."
+    },
+    {
+      "title": "Supervisors are already fining",
+      "text": "UK agents are the most-fined AML sector at HMRC, and Sweden's FMI has started issuing sanctions and revoking broker registrations."
+    },
+    {
+      "title": "Small agencies do it on paper",
+      "text": "Bank-grade AML tools are too big. Small agencies need a file per deal, ID checks and a policy they can understand."
+    },
+    {
+      "title": "Fits Victor",
+      "text": "ID verification, beneficial-owner lookups, risk scoring and secure records are security and data work."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "estate and letting agencies with 1–30 agents."
+    },
+    {
+      "label": "Buyer",
+      "text": "agency owner or the named AML officer."
+    },
+    {
+      "label": "Start market",
+      "text": "Sweden (Jonatan's network, sector already under pressure), then Baltics, Romania and other EU markets in English; UK later (crowded with ID-check vendors)."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Policy pack",
+      "text": "a guided interview creates the agency-wide risk assessment, AML policy and officer appointment in plain language, ready for the supervisor."
+    },
+    {
+      "title": "File per deal",
+      "text": "each sale or letting gets an AML file: parties, roles, source of funds questions and risk level."
+    },
+    {
+      "title": "Customer checks",
+      "text": "send the buyer or seller a link for ID verification (via an EU eID/ID provider), PEP and sanctions screening, and company owner lookup."
+    },
+    {
+      "title": "Risk and refresh",
+      "text": "rules set the risk level, ask for extra checks when needed and schedule refresh dates."
+    },
+    {
+      "title": "Report and audit",
+      "text": "red-flag notes, a suspicious-activity checklist and a full audit trail exportable for inspections."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Policy and risk assessment generator",
+      "Deal files with parties and roles",
+      "Customer link for ID verification (one provider)",
+      "PEP / sanctions screening via API",
+      "Risk rules and refresh reminders",
+      "Audit export (PDF)"
+    ],
+    "later": [
+      "Beneficial-owner registry lookups per country",
+      "Integration with agency CRMs",
+      "Staff AML training records",
+      "More countries and languages",
+      "Source-of-funds document reading with AI"
+    ]
+  },
+  "techStack": [
+    "Django or Next.js",
+    "PostgreSQL with encryption at rest (EU)",
+    "ID verification API (e.g. BankID/eID or document check provider)",
+    "Sanctions/PEP screening API",
+    "LLM for policy drafting",
+    "Stripe billing"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "**Validate, no code.** Jonatan interviews 15 Swedish agencies; Victor reads FMI guidance and the AMLR text and drafts the policy interview."
+    },
+    {
+      "when": "Week 3–5",
+      "what": "Policy generator, deal files, risk rules."
+    },
+    {
+      "when": "Week 6–8",
+      "what": "ID verification and screening integrations, audit export, security review."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server + database",
+      "note": "EU hosting (Hetzner / Supabase)",
+      "cost": "€10–25 / month"
+    },
+    {
+      "item": "ID + screening APIs",
+      "note": "Pay per check, passed on to customers",
+      "cost": "€20–60 / month"
+    },
+    {
+      "item": "AI API",
+      "note": "Policy drafting",
+      "cost": "€5–15 / month"
+    },
+    {
+      "item": "Email / SMS sending",
+      "note": "Resend / Postmark low tiers",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Landing page",
+      "note": "Built by us",
+      "cost": "€0"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €500–800",
+  "pricing": [
+    {
+      "name": "Solo: €59/mo",
+      "description": "1–3 agents, policy pack, 10 deal files a month"
+    },
+    {
+      "name": "Agency: €129/mo",
+      "description": "Up to 15 agents, unlimited files"
+    },
+    {
+      "name": "Group: €199/mo",
+      "description": "Several offices; ID checks billed per use"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 400,
+      "value": 40,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 49,
+      "max": 249,
+      "value": 109,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "Thirdfort, Credas, SmartSearch",
+      "what": "UK ID and AML checks for property",
+      "gap": "UK-focused, per-check pricing; not an EU-wide policy and file tool",
+      "isUs": false
+    },
+    {
+      "name": "Bank-grade AML suites (e.g. Trapets)",
+      "what": "Transaction monitoring and KYC",
+      "gap": "Built for financial firms, too heavy for a 5-person agency",
+      "isUs": false
+    },
+    {
+      "name": "Lawyers and consultants",
+      "what": "Write policies",
+      "gap": "One-off document; no deal files or reminders",
+      "isUs": false
+    },
+    {
+      "name": "Us",
+      "what": "Policy pack + deal files + checks",
+      "gap": "Small-agency price, built for the July 2027 EU rulebook",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "National details still differ",
+      "answer": "Start in one country, keep country rules in config, follow AMLA standards as they are finalised."
+    },
+    {
+      "risk": "Trust: AML is serious",
+      "answer": "Partner with a compliance lawyer for templates; clear disclaimers; strong security."
+    },
+    {
+      "risk": "Agency CRMs add AML modules",
+      "answer": "Integrate rather than compete; focus on agencies whose CRM lacks it."
+    },
+    {
+      "risk": "Language barrier outside Sweden",
+      "answer": "Launch in English and Swedish; add languages via AI translation reviewed by local partners."
+    }
+  ],
+  "questions": [
+    "How do you document AML checks for each deal today?",
+    "When did you last update your risk assessment and policy?",
+    "Has the supervisor ever asked to see your AML routine?",
+    "How do you check buyers who are companies or foreign nationals?",
+    "Would €59–129 a month for a ready policy and deal files be worth it?"
+  ],
+  "numbers": {
+    "cashMin": 500.0,
+    "cashMax": 800.0,
+    "mvpWeeksMin": 7.0,
+    "mvpWeeksMax": 8.0,
+    "priceLabel": "€59–199/mo",
+    "competition": "UK ID-check vendors; EU small-agency gap",
+    "competitionLevel": "medium",
+    "whoSells": "Jonatan → estate agency owners in Sweden, then EU"
+  },
+  "skills": [
+    "security",
+    "coding",
+    "integrations",
+    "b2b-sales"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 6,
+    "willingnessToPay": 6,
+    "lowCompetition": 5,
+    "easyToBuild": 6,
+    "easyToSell": 5,
+    "skillFit": 8,
+    "globalPotential": 6,
+    "excitement": 6
+  },
+  "notes": "",
+  "interviews": [],
+  "rank": 43,
+  "batch": "Top 50 research (Nov 2026)"
+}

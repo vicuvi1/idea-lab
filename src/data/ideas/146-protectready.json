@@ -1,0 +1,322 @@
+{
+  "id": "r-protectready",
+  "title": "ProtectReady: Martyn's Law procedures and training records for standard-tier venues",
+  "color": "#0ca30c",
+  "industry": "Events & venues",
+  "status": "idea",
+  "source": "Top 50 research (Nov 2026): new markets batch",
+  "tags": [
+    "Regulation deadline",
+    "Security fit",
+    "UK only"
+  ],
+  "summary": "The UK's Martyn's Law (Terrorism (Protection of Premises) Act 2025) is expected to apply from spring 2027 to venues and events for 200+ people. Standard-tier venues must notify the regulator and have public protection procedures that staff know. ProtectReady writes the procedures from a short interview, trains staff with short lessons and keeps the records.",
+  "priceLabel": "£19–99 / month",
+  "hook": "\"We run a 350-capacity music venue with casual staff who change every month. How do I prove they all know what to do if something happens?\"",
+  "story": "**Sam manages a 350-capacity music venue and bar in Leeds.** Under Martyn's Law, his venue falls into the **standard tier**. Before the law switches on, he must notify the regulator (the SIA) and have **public protection procedures**: how to evacuate, invacuate, lock down and tell people what is happening, and staff must know them.\n\nHis team is 25 people, mostly part-time students who change every term. A one-off training session will be out of date by the summer. He wants a simple plan for his building, a 10-minute phone lesson for each new starter, and a record that shows who has done it, in case the SIA asks.",
+  "whyNow": "The Act received Royal Assent in April 2025 with at least a 24-month implementation period, so duties are expected to apply from spring 2027. The Home Office published statutory guidance on 15 April 2026 and the SIA consulted on its own guidance until June 2026, so venues are preparing now.",
+  "evidence": [
+    "The 2024 Home Office impact assessment counted about 178,900 sites in scope [GOV.UK impact assessment]",
+    "Standard tier covers premises for 200–799 people; enhanced tier 800+ [Home Office myth-buster]",
+    "Estimated cost of about £330 a year for a standard-tier premises (mostly staff time) and £5,210 for enhanced tier [Home Office myth-buster]",
+    "Statutory guidance published 15 April 2026; SIA consultation on its guidance open until 12 June 2026 [Bevan Brittan / Keoghs]",
+    "Duties expected to come into force from early April 2027 [Travers Smith]"
+  ],
+  "sources": [
+    {
+      "title": "GOV.UK: Terrorism (Protection of Premises) Bill impact assessment",
+      "url": "https://gov.uk/government/publications/terrorism-protection-of-premises-bill-2024-impact-assessment/terrorism-protection-of-premises-bill-impact-assessment-accessible"
+    },
+    {
+      "title": "ProtectUK: Home Office Martyn's Law myth buster (2026)",
+      "url": "https://www.protectuk.police.uk/sites/default/files/2026-04/46.39_HO_Martyns%20Law_Myth_buster_Final_WEB.pdf"
+    },
+    {
+      "title": "Travers Smith: Martyn's Law, prepare now for spring 2027",
+      "url": "https://www.traverssmith.com/knowledge/knowledge-container/martyns-law-prepare-now-for-implementation-in-spring-2027/"
+    },
+    {
+      "title": "Bevan Brittan: Martyn's Law statutory guidance published",
+      "url": "https://www.bevanbrittan.com/insights/articles/2026/martyn-s-law-awaited-statutory-guidance-now-published/"
+    },
+    {
+      "title": "Keoghs: Martyn's Law government guidance published",
+      "url": "https://keoghs.co.uk/keoghs-insight/martyns-law-government-guidance-published"
+    },
+    {
+      "title": "G-Cloud: SIM Martyn's Law Manager",
+      "url": "https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/342763487779972"
+    },
+    {
+      "title": "D4H: supporting Martyn's Law compliance",
+      "url": "https://d4h.com:443/blog/how-d4h-supports-compliance-with-martyns-law"
+    },
+    {
+      "title": "St John Ambulance: Martyn's Law checklist",
+      "url": "https://prd-cms.sja.org.uk/globalassets/checklists/martyns-law-checklist.pdf"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "Huge number of venues",
+      "text": "Pubs, music venues, churches, community halls, gyms, shops, schools and visitor attractions above 200 capacity are in scope."
+    },
+    {
+      "title": "Staff turnover breaks training",
+      "text": "Hospitality and events rely on casual staff. Procedures only work if every new starter learns them, and that needs records."
+    },
+    {
+      "title": "Documentation is what inspectors see",
+      "text": "Guides warn that informal, undocumented training may not count in an inspection."
+    },
+    {
+      "title": "Security fits Victor",
+      "text": "Threat procedures, training and audit trails are close to Victor's cybersecurity work."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "standard-tier venues (200–799 capacity) and multi-site operators: pub groups, music venues, leisure centres, places of worship, visitor attractions; later small event organisers."
+    },
+    {
+      "label": "Buyer",
+      "text": "venue manager, operations manager or owner of a small group."
+    },
+    {
+      "label": "Start market",
+      "text": "England, Wales, Scotland and Northern Ireland (the Act covers the whole UK)."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Venue interview",
+      "text": "a 15-minute guided interview about exits, capacity, staff roles and layout."
+    },
+    {
+      "title": "Procedures drafted",
+      "text": "AI drafts evacuation, invacuation, lockdown and communication procedures in plain language, following the statutory guidance."
+    },
+    {
+      "title": "Staff micro-lessons",
+      "text": "each staff member gets a 10-minute phone lesson and quiz, sent automatically to new starters."
+    },
+    {
+      "title": "Records and reminders",
+      "text": "who is trained, refresh dates, drills done and procedure reviews, all with timestamps."
+    },
+    {
+      "title": "SIA-ready pack",
+      "text": "one-click PDF with notification details, procedures and training records."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Venue profile interview",
+      "AI-drafted procedures with review",
+      "Staff invite link and micro-lessons",
+      "Quiz and training records",
+      "Drill log and refresh reminders",
+      "PDF compliance pack"
+    ],
+    "later": [
+      "Enhanced-tier plan module",
+      "Event (temporary site) version",
+      "Multi-site dashboard for groups",
+      "Rota integration for new starters",
+      "Welsh and other languages"
+    ]
+  },
+  "techStack": [
+    "Next.js PWA",
+    "PostgreSQL (Supabase)",
+    "LLM for procedure drafting",
+    "SMS/WhatsApp for staff invites",
+    "PDF generation",
+    "Stripe billing"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "**Validate, no code.** Interview 20 venue managers; write 3 procedure packs by hand with Claude from the statutory guidance."
+    },
+    {
+      "when": "Week 3–5",
+      "what": "Interview flow, procedure drafting, staff lessons."
+    },
+    {
+      "when": "Week 6–7",
+      "what": "Records, reminders, PDF pack."
+    },
+    {
+      "when": "Week 8",
+      "what": "Pilot with 5 venues and one small pub group."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server + database",
+      "note": "EU hosting (Hetzner / Supabase)",
+      "cost": "€10–25 / month"
+    },
+    {
+      "item": "AI API",
+      "note": "Procedure drafting",
+      "cost": "€5–20 / month"
+    },
+    {
+      "item": "SMS",
+      "note": "Staff invites",
+      "cost": "€5–15 / month"
+    },
+    {
+      "item": "Email / SMS sending",
+      "note": "Resend / Postmark low tiers",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Landing page",
+      "note": "Built by us",
+      "cost": "€0"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €400–700",
+  "pricing": [
+    {
+      "name": "Venue: £19/mo",
+      "description": "1 site, procedures, up to 30 staff"
+    },
+    {
+      "name": "Busy venue: £39/mo",
+      "description": "Up to 100 staff, drill log"
+    },
+    {
+      "name": "Group: £99/mo",
+      "description": "Up to 10 sites, dashboard"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 800,
+      "value": 80,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 15,
+      "max": 149,
+      "value": 39,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": {
+      "min": 1,
+      "max": 20,
+      "value": 1,
+      "label": "Sites per customer"
+    }
+  },
+  "competitors": [
+    {
+      "name": "SIM Martyn's Law Manager",
+      "what": "Compliance tool listed on G-Cloud",
+      "gap": "Aimed at public bodies and larger venues",
+      "isUs": false
+    },
+    {
+      "name": "D4H, Noggin, Vatix",
+      "what": "Crisis and risk management platforms",
+      "gap": "Enterprise tools; heavy for a 300-capacity pub",
+      "isUs": false
+    },
+    {
+      "name": "Free ProtectUK / SIA guidance and checklists",
+      "what": "Official templates",
+      "gap": "Free, but no staff training records or reminders",
+      "isUs": false
+    },
+    {
+      "name": "Security consultants and training firms",
+      "what": "One-off plans and courses",
+      "gap": "Out of date when staff change",
+      "isUs": false
+    },
+    {
+      "name": "Us",
+      "what": "Interview → procedures → staff lessons → records",
+      "gap": "Cheap, built for casual staff turnover",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Low willingness to pay for the standard tier",
+      "answer": "Government estimates only £330/year of cost; price low and sell to groups with many sites."
+    },
+    {
+      "risk": "Free official templates",
+      "answer": "Our value is training records and new-starter automation, not the template."
+    },
+    {
+      "risk": "Date slips",
+      "answer": "Guidance is final; the date is set by regulations, expected spring 2027."
+    },
+    {
+      "risk": "UK-only",
+      "answer": "Fast, focused win; training-record engine reuses for other safety duties."
+    }
+  ],
+  "questions": [
+    "What capacity is your venue, and do you know which tier you are in?",
+    "What have you done so far to prepare for Martyn's Law?",
+    "How do you train new staff on emergencies today, and how do you record it?",
+    "How many sites and staff do you manage?",
+    "Would £19–39 a month per site for procedures plus training records be worth it?"
+  ],
+  "numbers": {
+    "cashMin": 400.0,
+    "cashMax": 700.0,
+    "mvpWeeksMin": 5.0,
+    "mvpWeeksMax": 7.0,
+    "priceLabel": "£19–99/mo",
+    "competition": "Enterprise tools and free templates",
+    "competitionLevel": "medium",
+    "whoSells": "Jonatan → venue managers and pub groups"
+  },
+  "skills": [
+    "security",
+    "coding",
+    "ai",
+    "writing",
+    "local-sales"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 6,
+    "willingnessToPay": 5,
+    "lowCompetition": 5,
+    "easyToBuild": 8,
+    "easyToSell": 6,
+    "skillFit": 7,
+    "globalPotential": 3,
+    "excitement": 6
+  },
+  "notes": "",
+  "interviews": [],
+  "rank": 46,
+  "batch": "Top 50 research (Nov 2026)"
+}
