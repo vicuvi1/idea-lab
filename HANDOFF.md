@@ -23,8 +23,9 @@ Key files:
 ## Current status (13 Nov 2026)
 
 - ✅ The app works as a website and builds as a Windows installer.
-- ✅ The `RELEASES_TOKEN` secret is set and can write to `idea-lab-releases`.
-- ❌ **The `TAURI_SIGNING_PRIVATE_KEY` secret holds an invalid value**, so signed releases (and auto-update) fail.
+- ✅ Signing works (new key set from the PC, 14 Nov).
+- ❌ The `RELEASES_TOKEN` can READ `idea-lab-releases` but cannot create releases. Victor must edit the token: Repository permissions → Contents → **Read and write**. Or make a new token and run `gh secret set RELEASES_TOKEN --repo vicuvi1/idea-lab`.
+
 - ⏳ The 25 researched ideas are not loaded into the app yet.
 - Victor's PC has an old v0.1.0 installed, which has no updater. He needs one manual install of a new version.
 
