@@ -18,7 +18,7 @@ Key files:
 - `src-tauri/tauri.conf.json`: holds the updater `pubkey` and the endpoint `https://github.com/vicuvi1/idea-lab-releases/releases/latest/download/latest.json`.
 - `.github/workflows/windows-build.yml`: every push to `main` builds version `0.2.<run number>`, signs it and publishes it to `idea-lab-releases`. A first step checks the secrets. If signing fails, it still publishes an unsigned installer as a fallback. Add `[skip ci]` to a commit message to skip the build.
 - `research_notes/Top 25 SaaS ideas for Victor/*.md`: six research note files covering about 49 candidate ideas, with sources.
-- `reports/Top 25 SaaS ideas for Victor.md`: the final ranked report of 25 ideas. It may still be arriving; run `git pull`.
+- `reports/Top 25 SaaS ideas for Victor.md`: the final ranked report of 25 ideas (about 17k words, with scores, evidence and sources).
 
 ## Current status (13 Nov 2026)
 
