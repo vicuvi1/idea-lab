@@ -1,0 +1,321 @@
+{
+  "id": "r-payguard",
+  "title": "PayGuard: fake-invoice and payment-fraud protection for small firms",
+  "color": "#d95926",
+  "industry": "Cybersecurity",
+  "status": "idea",
+  "source": "Top 50 research (Nov 2026): reframed from ideas dropped from the Top 25 report, plus new web research",
+  "tags": [
+    "Reframed: DMARC + phishing",
+    "Sold via accountants and MSPs",
+    "Victor's security skills"
+  ],
+  "summary": "Small firms lose money when criminals send fake invoices or ask them to \"update our bank details\". PayGuard locks down the firm's email domain, watches for lookalike domains of the firm and its main suppliers, and warns when an incoming invoice has new bank details.",
+  "priceLabel": "€49–199 / month",
+  "hook": "\"The email came from our regular supplier's address, the invoice looked normal, and we paid €38,000 to a new account. The supplier never sent it.\"",
+  "story": "**Anna is finance manager at a 45-person installation company in Gothenburg.** She pays about **120 supplier invoices a month**. One Friday an email arrives from what looks like the steel supplier: \"Our bank has changed, please use the new account on the attached invoice.\" The domain is **one letter different** from the real one. Nobody notices, and **€38,000** goes to the criminals.\n\nAfter the loss, the company's accountant tells Anna three things: their own domain has **no DMARC protection**, so criminals can also send emails that look like they come from her firm; nobody checks if supplier bank details have changed; and lookalike domains are registered every day. Big-company tools for this are sold with a sales call and custom prices. Anna wants something that costs less than one month of coffee and just warns her.",
+  "whyNow": "Business email compromise is still one of the most expensive cybercrimes, and AI makes fake emails better written in every language. Banks in the euro area must check payee names since 9 October 2025; non-euro EU countries such as Sweden and Romania follow on 9 July 2027, so the product must be positioned as the extra layer that bank checks miss (lookalike domains, own-domain spoofing, changed details on the invoice itself).",
+  "evidence": [
+    "Business email compromise losses were about $2.77 billion in 2024 across 21,442 complaints, the second-biggest loss category [FBI IC3 2024 via CyberScoop]",
+    "UK invoice and mandate scam losses fell to £41.3m in 2025, the lowest since 2020, after banks introduced name checks; business APP fraud losses were £75.6m [UK Finance Annual Fraud Report 2026 via Today's Conveyancer / Payment Expert]",
+    "DMARC adoption reached 52.1% of domains, but more than half of those sit at p=none, which does not block spoofing [dmarcreport summary of EasyDMARC 2026 report]",
+    "Eftsure, a leading supplier-payment verification tool, has only custom pricing; a small-business reviewer called it \"somewhat steep and difficult for our small company to handle\" [G2]",
+    "Euro-area banks must verify payee names from 9 October 2025, non-euro EU countries from 9 July 2027 [ECB / Taylor Wessing]"
+  ],
+  "sources": [
+    {
+      "title": "CyberScoop: FBI IC3 2024 report key statistics",
+      "url": "https://cyberscoop.com/fbi-ic3-cybercrime-report-2024-key-statistics-trends/"
+    },
+    {
+      "title": "Nacha: almost $8.5B lost to BEC in three years (IC3)",
+      "url": "https://www.nacha.org/news/fbis-ic3-finds-almost-85-billion-lost-business-email-compromise-last-three-years"
+    },
+    {
+      "title": "Today's Conveyancer: invoice and mandate scams fall",
+      "url": "https://todaysconveyancer.co.uk/invoice-and-mandate-scams-fall-but-fraud-remains-a-major-threat/"
+    },
+    {
+      "title": "Payment Expert: UK Finance Fraud Report 2026",
+      "url": "https://paymentexpert.com/2026/06/15/uk-finance-fraud-report-2026/"
+    },
+    {
+      "title": "dmarcreport: DMARC for small business 2026",
+      "url": "https://dmarcreport.com/blog/dmarc-for-small-business-why-smbs-need-dmarc-2026/"
+    },
+    {
+      "title": "G2: Eftsure pricing",
+      "url": "https://www.g2.com/products/eftsure/pricing"
+    },
+    {
+      "title": "ECB: Instant Payments Regulation timeline",
+      "url": "https://www.ecb.europa.eu/paym/retail/instant_payments/html/instant_payments_regulation.da.html"
+    },
+    {
+      "title": "Taylor Wessing: Instant Payments Regulation",
+      "url": "https://taylorwessing.com/en/insights-and-events/insights/2025/10/instant-payments-regulation"
+    },
+    {
+      "title": "TrustRadius: EasyDMARC vs Valimail pricing",
+      "url": "https://www.trustradius.com/compare-products/easydmarc-vs-valimail"
+    },
+    {
+      "title": "Coalition 2026 Cyber Claims Report",
+      "url": "https://www.coalitioninc.com/announcements/2026-cyber-claims-report"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "The loss is direct money",
+      "text": "One fake invoice can cost more than ten years of the subscription. Finance managers understand this in one sentence, without any technical talk."
+    },
+    {
+      "title": "DMARC alone is a commodity, the bundle is not",
+      "text": "Pure DMARC tools cost free to about $36 a month and were dropped from the Top 25 for that reason. Combining own-domain protection, supplier lookalike watch and invoice bank-detail checks in one cheap tool is rare for small firms."
+    },
+    {
+      "title": "Big tools ignore small payers",
+      "text": "Eftsure and Trustpair target mid-size and large finance teams with sales-led, custom pricing. A firm paying 50–300 invoices a month has nothing in between."
+    },
+    {
+      "title": "A channel already exists",
+      "text": "Accounting firms and MSPs see clients get hit and want something to recommend. One partner can bring 10–50 client firms."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "Firms with 10–150 staff that pay many supplier invoices by bank transfer: installers, construction and facility-service firms, wholesalers, agencies."
+    },
+    {
+      "label": "Buyer",
+      "text": "The finance manager, CFO or owner. Through partners: the accounting firm or MSP that serves them."
+    },
+    {
+      "label": "Start market",
+      "text": "Sweden and the Nordics (Jonatan's network, bank name checks only from July 2027), then UK and English-speaking EU firms."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Domain check in 2 minutes",
+      "text": "enter the company domain; PayGuard reads SPF, DKIM and DMARC records and shows in plain words whether criminals can send email as you."
+    },
+    {
+      "title": "Guided DMARC to \"reject\"",
+      "text": "PayGuard receives DMARC reports, lists every service that sends email for you (Fortnox, Microsoft 365, newsletter tool) and gives the exact DNS record to fix each one, step by step until spoofing is blocked."
+    },
+    {
+      "title": "Lookalike watch",
+      "text": "the firm adds its own domain and its 20–50 most important suppliers. PayGuard watches new domain registrations and certificate logs for lookalikes (one letter changed, other ending) and alerts the same day."
+    },
+    {
+      "title": "Invoice bank-detail check",
+      "text": "invoices are forwarded to a PayGuard address or read from the accounts-payable mailbox. AI pulls out the IBAN, Bankgiro or sort code and compares it with what that supplier used before."
+    },
+    {
+      "title": "Stop-and-call alert",
+      "text": "if bank details changed or the sender domain is a lookalike, finance gets a red alert with a call-back checklist (\"call the supplier on the number you already have\"), and the result is logged."
+    },
+    {
+      "title": "Monthly proof report",
+      "text": "a one-page PDF for the owner, insurer or accountant: domain status, lookalikes found, invoices checked, alerts handled."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Free domain email-security check (lead magnet)",
+      "DMARC report inbox and sender list with fix instructions",
+      "Lookalike-domain watch for own domain + 20 suppliers",
+      "Invoice forwarding address with AI extraction of bank details",
+      "Supplier bank-detail history and change alerts",
+      "Email alerts and a simple dashboard",
+      "Monthly PDF report"
+    ],
+    "later": [
+      "Direct Microsoft 365 / Google mailbox connection for accounts payable",
+      "Fortnox / Visma / Xero supplier-register sync",
+      "White-label partner portal for accounting firms and MSPs",
+      "Swedish and Romanian interface",
+      "Short staff training on fake-invoice tricks"
+    ]
+  },
+  "techStack": [
+    "Python (FastAPI or Django)",
+    "PostgreSQL",
+    "DNS and certificate-transparency checks (certstream, dnspython)",
+    "LLM + PDF text extraction for invoices",
+    "Next.js or simple server-rendered pages",
+    "Hetzner EU hosting"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "**Sell first.** Victor builds the free domain checker in a weekend. Jonatan runs it on 50 Swedish installers and facility firms and calls the owners with the result. Goal: 3 paid pilots at €49."
+    },
+    {
+      "when": "Week 3–5",
+      "what": "DMARC report processing, sender list with fix guides, lookalike-domain watch."
+    },
+    {
+      "when": "Week 6–8",
+      "what": "Invoice forwarding, bank-detail extraction and change alerts, monthly report, Stripe."
+    },
+    {
+      "when": "Week 9–12",
+      "what": "First accounting-firm partner with 5–10 client firms; measure alerts and false alarms."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server + database",
+      "note": "Hetzner or Supabase/Vercel free tiers, EU hosting",
+      "cost": "€10–25 / month"
+    },
+    {
+      "item": "AI API (OpenAI / Claude)",
+      "note": "~€0.002–0.01 per invoice",
+      "cost": "€10–30 / month"
+    },
+    {
+      "item": "Email sending",
+      "note": "Resend / Postmark",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Domain and threat data",
+      "note": "Free certificate-transparency feeds first; paid WHOIS/new-domain feed later",
+      "cost": "€0–30 / month"
+    },
+    {
+      "item": "Lead list / cold email tool",
+      "note": "Short trial for Jonatan's outreach",
+      "cost": "€30–50 / month"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €500–800",
+  "pricing": [
+    {
+      "name": "Starter: €49/mo",
+      "description": "1 domain, 20 suppliers watched, 150 invoices checked per month"
+    },
+    {
+      "name": "Business: €129/mo",
+      "description": "3 domains, 100 suppliers, unlimited invoices, mailbox connection"
+    },
+    {
+      "name": "Partner: €199/mo",
+      "description": "For accounting firms and MSPs: 10 client firms, white-label reports"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 500,
+      "value": 30,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 29,
+      "max": 299,
+      "value": 89,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "Eftsure, Trustpair",
+      "what": "Supplier bank-account verification and payment controls",
+      "gap": "Custom, sales-led pricing aimed at mid-size and large finance teams"
+    },
+    {
+      "name": "EasyDMARC, PowerDMARC, Valimail",
+      "what": "DMARC monitoring and enforcement",
+      "gap": "Only protects your own domain; does not check invoices or supplier lookalikes"
+    },
+    {
+      "name": "Bank name checks (Verification/Confirmation of Payee)",
+      "what": "Bank warns if the account name does not match",
+      "gap": "Free and growing, but does not catch lookalike domains, spoofing of your own domain, or accounts opened in a matching name"
+    },
+    {
+      "name": "Us",
+      "what": "Domain protection + supplier lookalike watch + invoice bank-detail check",
+      "gap": "One cheap tool for firms paying 50–500 invoices a month, sold through accountants",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Bank name checks make the problem smaller",
+      "answer": "Be honest: sell PayGuard as the layer before payment (domain spoofing, lookalikes, changed details), and validate in Sweden before July 2027 and in the UK, where banks already check names."
+    },
+    {
+      "risk": "False alarms annoy finance teams",
+      "answer": "Only alert on real changes compared with the supplier's history; let users mark known changes; measure false-alarm rate in pilots."
+    },
+    {
+      "risk": "Trust: a young vendor reading invoices",
+      "answer": "Start with forwarding (no mailbox access), EU hosting, delete invoice files after extraction, public security page."
+    },
+    {
+      "risk": "Accounting software adds this feature",
+      "answer": "Lookalike-domain and DMARC parts are outside accounting tools; partner with accountants instead of competing with their software."
+    }
+  ],
+  "questions": [
+    "Has your firm, or a client, ever received a fake invoice or a \"new bank details\" email? What happened?",
+    "How do you check today that a supplier's bank account is really theirs?",
+    "How many supplier invoices do you pay per month, and who approves them?",
+    "Do you know if your own email domain is protected against spoofing? Who set it up?",
+    "Would you pay €49–129 a month for warnings before a fake invoice is paid? Who would decide?"
+  ],
+  "numbers": {
+    "cashMin": 500.0,
+    "cashMax": 800.0,
+    "mvpWeeksMin": 6.0,
+    "mvpWeeksMax": 8.0,
+    "priceLabel": "€49–199/mo",
+    "competition": "Enterprise tools above, commodity DMARC below",
+    "competitionLevel": "medium",
+    "whoSells": "Jonatan → finance managers, accounting firms"
+  },
+  "skills": [
+    "security",
+    "coding",
+    "ai",
+    "b2b-sales",
+    "finance"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 7,
+    "willingnessToPay": 5,
+    "lowCompetition": 6,
+    "easyToBuild": 6,
+    "easyToSell": 7,
+    "skillFit": 9,
+    "globalPotential": 7,
+    "excitement": 7
+  },
+  "notes": "",
+  "interviews": [],
+  "rank": 26,
+  "batch": "Top 50 research (Nov 2026)"
+}

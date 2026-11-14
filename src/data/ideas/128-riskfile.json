@@ -1,0 +1,302 @@
+{
+  "id": "r-riskfile",
+  "title": "RiskFile: AML risk assessments and audit-ready files for small UK law firms",
+  "color": "#c98500",
+  "industry": "Legal",
+  "status": "idea",
+  "source": "Top 50 research (Nov 2026): reframed from ideas dropped from the Top 25 report, plus new web research",
+  "tags": [
+    "Reframed: law-firm intake",
+    "Regulator fines",
+    "UK first"
+  ],
+  "summary": "UK regulators are fining small law firms for missing or weak anti-money-laundering risk assessments. RiskFile drafts the firm-wide risk assessment, guides a short client and matter risk assessment for every new matter, and keeps everything in a file ready for an SRA review.",
+  "priceLabel": "£79–199 / month",
+  "hook": "\"We do ID checks on every client. But when the SRA asked for our firm-wide risk assessment, we sent a template we downloaded in 2018.\"",
+  "story": "**David is managing partner of a 6-solicitor firm in Leeds** doing conveyancing, wills and small business work. The firm uses an online ID-check tool for every client, so he thought AML was handled. Then the regulator sent a **desk-based review** letter asking for the firm-wide risk assessment, three recent client and matter risk assessments, and evidence of staff training.\n\nThe risk assessment was a **2018 template** never updated, and the matter assessments were ticks in a case-management field with no reasons. Firms like his have been fined **from about £2,000 up to the £25,000 maximum** for exactly this. David spends two weekends rewriting documents with a consultant at £150 an hour, and still is not sure every new matter will be done properly from now on.",
+  "whyNow": "The SRA has said it will \"ratchet up\" AML enforcement after a wave of fines in 2025, many of them for missing or inadequate firm-wide risk assessments. ID-check tools solve identity, not the written risk assessments the regulator now asks to see.",
+  "evidence": [
+    "The SRA issued about £575,000 of AML fines in six months and said it would \"ratchet up\" its enforcement [Legal Futures]",
+    "Small firms were fined roughly £2,000–7,000 for missing or inadequate firm-wide risk assessments, and several firms got the £25,000 maximum for traditional firms [Legal Futures / Solicitor News]",
+    "UK law firms were hit with record AML fines in 2025 [FinTech Global]",
+    "ID checks are already sold per check: Thirdfort lists about £15 per biometric ID check; Amiqus reportedly has a £500/month minimum (competitor-published figure) [Thirdfort / FigsFlow]",
+    "71–75% of solo and small-firm lawyers use AI, mostly generic tools [Clio 2026 Solo and Small Legal Trends Report]"
+  ],
+  "sources": [
+    {
+      "title": "Legal Futures: SRA to ratchet up AML blitz after £575,000 of fines",
+      "url": "https://www.legalfutures.co.uk/latest-news/sra-to-ratchet-up-aml-blitz-after-575000-of-fines-in-six-months"
+    },
+    {
+      "title": "Legal Futures: risk assessment failures land more firms with AML fines",
+      "url": "https://www.legalfutures.co.uk/latest-news/risk-assessment-failures-land-more-firms-with-aml-fines"
+    },
+    {
+      "title": "Solicitor News: SRA fines RMZ Law Offices for AML failures",
+      "url": "https://solicitornews.co.uk/sra-fines-rmz-law-offices-aml-failures/"
+    },
+    {
+      "title": "FinTech Global: UK law firms hit with record AML fines in 2025",
+      "url": "https://fintech.global/2025/10/02/uk-law-firms-hit-with-record-aml-fines-in-2025/"
+    },
+    {
+      "title": "Thirdfort pricing for law firms",
+      "url": "https://www.thirdfort.com/pricing/industry/law-firms/"
+    },
+    {
+      "title": "FigsFlow: AML check cost calculator (competitor-published)",
+      "url": "https://figsflow.com/uk/tools/aml-check-cost-calculator/"
+    },
+    {
+      "title": "Clio 2026 Solo and Small Legal Trends Report",
+      "url": "https://www.clio.com/wp-content/uploads/2026/04/2026-Solo-and-Small-Legal-Trends-Report.pdf"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "Fines are public and frequent",
+      "text": "The SRA publishes every fine with the firm's name, so small firms see their peers punished for paperwork, not for laundering."
+    },
+    {
+      "title": "ID tools leave a gap",
+      "text": "Thirdfort, Amiqus and others check identity and source of funds. The written firm-wide assessment, matter-level reasoning and yearly review are still Word documents."
+    },
+    {
+      "title": "A narrower, safer version of law-firm intake",
+      "text": "General AI intake for law firms was dropped from the Top 25 because Clio competes. AML files are a specific, regulator-driven job that Clio's intake does not solve."
+    },
+    {
+      "title": "Clear buyer with a register",
+      "text": "Every regulated firm is listed on the SRA register, so Jonatan can build lead lists in English from public data."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "Small law firms (1–25 fee earners) in England and Wales, especially conveyancing, private client and small commercial practices."
+    },
+    {
+      "label": "Buyer",
+      "text": "The managing partner or the Money Laundering Compliance Officer (MLCO)."
+    },
+    {
+      "label": "Start market",
+      "text": "UK (SRA-regulated firms), later Irish solicitors and UK accountants supervised for AML."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Firm profile interview",
+      "text": "a 20-minute guided questionnaire about practice areas, client types, countries, payment methods and delivery channels."
+    },
+    {
+      "title": "Draft firm-wide risk assessment",
+      "text": "AI drafts the assessment from the answers, mapped to the regulator's guidance and the national risk assessment, with a clear list of controls. The MLCO edits and signs."
+    },
+    {
+      "title": "Matter risk check in 3 minutes",
+      "text": "for each new matter, a short form produces a risk score with written reasons and the checks required (simplified, standard or enhanced due diligence)."
+    },
+    {
+      "title": "Attach evidence",
+      "text": "upload or forward the ID-check report, source-of-funds documents and notes; everything is stored per matter."
+    },
+    {
+      "title": "Yearly review and training log",
+      "text": "reminders to review the firm assessment, track staff AML training and keep a dated history."
+    },
+    {
+      "title": "Audit pack",
+      "text": "one click exports the firm assessment, a sample of matter files and the training log for an SRA review."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Firm profile questionnaire",
+      "AI-drafted firm-wide risk assessment (DOCX export)",
+      "Client and matter risk assessment form with written reasons",
+      "Evidence upload per matter",
+      "Review and training reminders",
+      "Audit pack PDF export"
+    ],
+    "later": [
+      "Clio / LEAP / Actionstep integration",
+      "Import of Thirdfort or Amiqus reports",
+      "Policy, controls and procedures templates",
+      "Irish and accountant versions",
+      "Partner channel through compliance consultants"
+    ]
+  },
+  "techStack": [
+    "Python + Django",
+    "PostgreSQL",
+    "LLM with guidance documents as reference (RAG)",
+    "python-docx for document export",
+    "UK/EU hosting",
+    "Stripe"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "Jonatan contacts 60 small firms from the SRA register and recent fine notices. Offer a free \"AML file health check\" done by hand with templates and Claude. Goal: 3 firms agree to pay £79."
+    },
+    {
+      "when": "Week 3–5",
+      "what": "Firm questionnaire, AI draft of firm-wide assessment, DOCX export."
+    },
+    {
+      "when": "Week 6–8",
+      "what": "Matter risk form, evidence storage, reminders, audit pack, payments."
+    },
+    {
+      "when": "Week 9–12",
+      "what": "Ask a compliance consultant to review templates; first 5–10 paying firms."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server + database",
+      "note": "Hetzner or Supabase/Vercel free tiers, EU hosting",
+      "cost": "€10–25 / month"
+    },
+    {
+      "item": "AI API (OpenAI / Claude)",
+      "note": "drafting assessments, a few cents each",
+      "cost": "€10–30 / month"
+    },
+    {
+      "item": "Email sending",
+      "note": "Resend / Postmark",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Compliance consultant review",
+      "note": "One-off check of templates by a UK AML specialist",
+      "cost": "€150–300 one-off"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €550–800",
+  "pricing": [
+    {
+      "name": "Solo: £79/mo",
+      "description": "Up to 5 fee earners, firm assessment, unlimited matter checks"
+    },
+    {
+      "name": "Firm: £149/mo",
+      "description": "Up to 25 fee earners, training log, audit pack, integrations"
+    },
+    {
+      "name": "Fix-it-now: £300 one-off",
+      "description": "We draft and review the firm-wide risk assessment with you"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 400,
+      "value": 25,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 49,
+      "max": 299,
+      "value": 129,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "Thirdfort, Amiqus, Credas, SmartSearch",
+      "what": "ID verification, source-of-funds checks, screening",
+      "gap": "Strong at checks; the written firm-wide and matter risk reasoning still lives in Word"
+    },
+    {
+      "name": "Legl, case-management add-ons",
+      "what": "Client onboarding and payments for law firms",
+      "gap": "Broader platforms with higher prices and sales-led onboarding"
+    },
+    {
+      "name": "AML consultants and templates",
+      "what": "Write the documents by hand",
+      "gap": "£100+/hour and a one-off document that is never updated"
+    },
+    {
+      "name": "Us",
+      "what": "AI-drafted firm assessment, 3-minute matter checks, audit pack",
+      "gap": "Cheap, self-serve and focused on what the SRA fines for",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Lawyers are conservative buyers",
+      "answer": "Lead with fear of the published fines and a free health check; get one known AML consultant as adviser or reseller."
+    },
+    {
+      "risk": "Wrong AI wording in a regulated document",
+      "answer": "AI drafts, the MLCO approves and signs; templates reviewed by a UK specialist; no legal advice to clients."
+    },
+    {
+      "risk": "ID-check vendors add this feature",
+      "answer": "Integrate with them instead of competing on checks; stay focused on the written assessments."
+    },
+    {
+      "risk": "UK-only market and English nuance",
+      "answer": "Jonatan sells in English; later expand to Irish solicitors and UK accountants with the same engine."
+    }
+  ],
+  "questions": [
+    "When did you last update your firm-wide AML risk assessment, and who wrote it?",
+    "How do you record a client and matter risk assessment today?",
+    "Have you had an SRA AML review or desk-based request? What did they ask for?",
+    "What do you pay for ID checks and AML help today?",
+    "Would £79–149 a month for an always-ready AML file be worth it? Who decides?"
+  ],
+  "numbers": {
+    "cashMin": 550.0,
+    "cashMax": 800.0,
+    "mvpWeeksMin": 6.0,
+    "mvpWeeksMax": 8.0,
+    "priceLabel": "£79–149/mo",
+    "competition": "ID-check tools crowded; written-assessment gap",
+    "competitionLevel": "medium",
+    "whoSells": "Jonatan → managing partners, MLCOs (UK)"
+  },
+  "skills": [
+    "coding",
+    "ai",
+    "writing",
+    "b2b-sales"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 8,
+    "willingnessToPay": 7,
+    "lowCompetition": 5,
+    "easyToBuild": 7,
+    "easyToSell": 5,
+    "skillFit": 7,
+    "globalPotential": 5,
+    "excitement": 5
+  },
+  "notes": "",
+  "interviews": [],
+  "rank": 28,
+  "batch": "Top 50 research (Nov 2026)"
+}

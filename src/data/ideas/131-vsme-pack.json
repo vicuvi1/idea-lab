@@ -1,0 +1,292 @@
+{
+  "id": "r-vsme-pack",
+  "title": "VSME Pack: answer big customers' sustainability questions for small construction and facility suppliers",
+  "color": "#9085e9",
+  "industry": "Construction",
+  "status": "idea",
+  "source": "Top 50 research (Nov 2026): reframed from ideas dropped from the Top 25 report, plus new web research",
+  "tags": [
+    "EU rule change",
+    "Jonatan's network",
+    "Reframed: CSRD value-chain requests"
+  ],
+  "summary": "Big construction companies and property owners keep sending their small suppliers long sustainability questionnaires. Since the EU now says these requests should stay within the simple VSME standard, VSME Pack helps a small supplier fill in one VSME report from bills and records, and share it with every customer.",
+  "priceLabel": "€39–99 / month",
+  "hook": "\"Three customers sent three different climate questionnaires this spring. I'm a painter with 18 staff, not a sustainability department.\"",
+  "story": "**Sara runs an 18-person painting and surface-treatment firm near Malmö.** Her biggest customers, a national construction group and two property companies, each sent a **sustainability questionnaire**: energy use, fuel, waste, accidents, gender balance, policies. One was **90 questions** in a supplier portal. Without answers she risks falling down the supplier list.\n\nShe has the raw data, spread over electricity bills, fuel cards, waste invoices and payroll reports, but no time to turn it into a report. A consultant quoted **€3,000**. She has heard that the EU now says customers should only ask small firms for the simple VSME report, but she does not know how to make one.",
+  "whyNow": "The European Commission recommended the VSME standard for SMEs in July 2025 and asked large companies to limit supplier requests to it. The Omnibus I package lets suppliers under 1,000 employees refuse requests beyond the VSME level, and a delegated act turning VSME into the official value-chain cap was drafted in July 2026. Small suppliers now have one standard format they can prepare once.",
+  "evidence": [
+    "The Commission adopted Recommendation (EU) 2025/1710 on voluntary sustainability reporting for SMEs (VSME) on 30 July 2025 and asked companies to limit value-chain requests to VSME information [Linklaters / Regulation Tomorrow]",
+    "Under the Omnibus I deal, suppliers with fewer than 1,000 employees can refuse sustainability-data requests beyond the VSME standard [A&O Shearman]",
+    "A draft delegated act dated 3 July 2026 (C(2026) 5011) sets out the voluntary standard that will act as the value-chain cap [draft act published by Diritto Bancario]",
+    "Platforms such as osapiens, Coolset and others already offer VSME modules, mostly as part of larger ESG suites (prices not checked) [osapiens]"
+  ],
+  "sources": [
+    {
+      "title": "Linklaters: Commission adopts VSME recommendation",
+      "url": "https://sustainablefutures.linklaters.com/post/102kyuo/european-commission-adopts-recommendation-on-voluntary-sustainability-reporting-f"
+    },
+    {
+      "title": "Regulation Tomorrow: Commission adopts recommendation on voluntary sustainability reporting",
+      "url": "https://www.regulationtomorrow.com/2025/07/commission-adopts-recommendation-on-voluntary-sustainability-reporting/"
+    },
+    {
+      "title": "A&O Shearman: CSRD / CS3D Omnibus agreement",
+      "url": "https://www.aoshearman.com/en/insights/agreement-on-the-csrd-cs3d-omnibus-package-key-changes-and-implications"
+    },
+    {
+      "title": "Draft delegated act C(2026) 5011 (Diritto Bancario)",
+      "url": "https://www.dirittobancario.it/wp-content/uploads/2026/07/European-Commission-delegated-act-2026-5011.pdf"
+    },
+    {
+      "title": "osapiens: VSME standard for SMEs",
+      "url": "https://osapiens.com/en/regulations/vsme-voluntary-sustainability-reporting-standard-for-smes"
+    },
+    {
+      "title": "CIF Ireland: VSME, a lighter reporting route for SMEs",
+      "url": "https://cif.ie/2025/09/24/vsme-european-commission-recommends-a-lighter-reporting-route-for-smes/"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "Requests are real and repeated",
+      "text": "Large construction groups and property owners must report on their value chain, so they ask every subcontractor and supplier. Each asks in a different format."
+    },
+    {
+      "title": "The rules now favour one simple format",
+      "text": "With VSME as the recommended and soon official cap, a small supplier can prepare one report and send it to everyone."
+    },
+    {
+      "title": "The data already exists",
+      "text": "Energy, fuel, waste and staff figures sit in bills and payroll exports. AI can read them, which suits Victor's document skills."
+    },
+    {
+      "title": "Fits Jonatan's world",
+      "text": "Construction and facility subcontractors are the suppliers being asked. Same buyers as SubDocs and ExtraWork."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "Construction subcontractors, facility-service and cleaning firms, transport firms and small manufacturers with 10–250 staff that supply large EU companies."
+    },
+    {
+      "label": "Buyer",
+      "text": "The owner, CFO or quality/environment coordinator."
+    },
+    {
+      "label": "Start market",
+      "text": "Sweden and the Nordics, then any EU supplier asked for sustainability data (report in English plus local languages)."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Short interview",
+      "text": "the firm answers basic questions (sites, vehicles, staff, policies) in 15 minutes."
+    },
+    {
+      "title": "Upload bills",
+      "text": "electricity, heating, fuel-card and waste invoices and a payroll summary are uploaded or forwarded by email."
+    },
+    {
+      "title": "AI fills the VSME Basic module",
+      "text": "energy use, estimated emissions, waste, workforce and safety numbers are calculated from the documents, each linked to its source."
+    },
+    {
+      "title": "Review and sign",
+      "text": "the owner checks the numbers and fills the gaps the AI marks."
+    },
+    {
+      "title": "Share once",
+      "text": "export the VSME report as PDF/Excel and a share link for customers; map it into common customer questionnaires."
+    },
+    {
+      "title": "Yearly update",
+      "text": "next year only new bills are needed, and the report shows progress."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Company interview for the VSME Basic module",
+      "Bill upload with AI extraction (energy, fuel, waste)",
+      "Emission estimates with standard factors",
+      "Review screen with source for every number",
+      "VSME PDF/Excel export and share link",
+      "Reminders for missing data"
+    ],
+    "later": [
+      "VSME Comprehensive module",
+      "Mapping answers into customer supplier portals and questionnaires",
+      "Fortnox / Visma data import",
+      "Swedish, Finnish and German versions",
+      "Partner plan for trade associations"
+    ]
+  },
+  "techStack": [
+    "Python + Django",
+    "PostgreSQL",
+    "OCR + LLM extraction from invoices",
+    "Emission-factor tables",
+    "PDF and Excel export",
+    "EU hosting"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "Jonatan asks 20 subcontractors if they received sustainability questionnaires; collect 5 real ones. Prepare 2 VSME reports by hand with Claude."
+    },
+    {
+      "when": "Week 3–5",
+      "what": "Interview flow, bill upload, extraction, emission calculation."
+    },
+    {
+      "when": "Week 6–8",
+      "what": "Review screen, VSME export, share link, payments."
+    },
+    {
+      "when": "Week 9–12",
+      "what": "First paying suppliers; approach a trade association as a channel."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server + database",
+      "note": "Hetzner or Supabase/Vercel free tiers, EU hosting",
+      "cost": "€10–25 / month"
+    },
+    {
+      "item": "AI API (OpenAI / Claude)",
+      "note": "~€0.01 per bill",
+      "cost": "€10–25 / month"
+    },
+    {
+      "item": "Email sending",
+      "note": "Resend / Postmark",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €400–650",
+  "pricing": [
+    {
+      "name": "Basic: €39/mo (or €390/yr)",
+      "description": "VSME Basic report, unlimited sharing, yearly update"
+    },
+    {
+      "name": "Plus: €99/mo",
+      "description": "Comprehensive module, questionnaire mapping, 3 users"
+    },
+    {
+      "name": "Done-with-you: €400 one-off",
+      "description": "We prepare the first report together with the firm"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 500,
+      "value": 30,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 19,
+      "max": 199,
+      "value": 59,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "EcoVadis and customer supplier portals",
+      "what": "Supplier sustainability ratings and questionnaires",
+      "gap": "The supplier still has to gather and type the data; ratings can cost the supplier money"
+    },
+    {
+      "name": "ESG platforms (osapiens, Coolset, Plan A, Greenly)",
+      "what": "Carbon accounting and reporting, some with VSME modules",
+      "gap": "Broad suites aimed at bigger companies; prices not checked"
+    },
+    {
+      "name": "Consultants",
+      "what": "Write the report",
+      "gap": "Thousands of euros and repeated every year"
+    },
+    {
+      "name": "Us",
+      "what": "Bills in, VSME report out, shared with every customer",
+      "gap": "Cheap, made for 10–250 person subcontractors, sold through Jonatan's network",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Big customers keep sending their own questionnaires",
+      "answer": "Map VSME answers into the most common questionnaires; the share link plus the legal cap gives the supplier a reason to say no to extra questions."
+    },
+    {
+      "risk": "Rules change again",
+      "answer": "VSME is now the reference; keep the product simple so changes are small."
+    },
+    {
+      "risk": "Low willingness to pay",
+      "answer": "Sell on avoided consultant fees and keeping big customers; offer yearly plans."
+    },
+    {
+      "risk": "ESG suites add cheap VSME tiers",
+      "answer": "Win on bill extraction, local language and the subcontractor channel."
+    }
+  ],
+  "questions": [
+    "Have customers asked you for sustainability or climate data in the last 12 months? How many?",
+    "Who answered, and how many hours did it take?",
+    "Did any customer say it affects whether you stay on their supplier list?",
+    "Where do your energy, fuel and waste numbers live today?",
+    "Would €39 a month (or €390 a year) for one report you can send everyone be worth it?"
+  ],
+  "numbers": {
+    "cashMin": 400.0,
+    "cashMax": 650.0,
+    "mvpWeeksMin": 6.0,
+    "mvpWeeksMax": 8.0,
+    "priceLabel": "€39–99/mo",
+    "competition": "ESG suites above, consultants beside",
+    "competitionLevel": "medium",
+    "whoSells": "Jonatan → subcontractors, facility firms"
+  },
+  "skills": [
+    "coding",
+    "ai",
+    "construction",
+    "b2b-sales"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 6,
+    "willingnessToPay": 5,
+    "lowCompetition": 4,
+    "easyToBuild": 7,
+    "easyToSell": 7,
+    "skillFit": 6,
+    "globalPotential": 7,
+    "excitement": 5
+  },
+  "notes": "",
+  "interviews": [],
+  "rank": 31,
+  "batch": "Top 50 research (Nov 2026)"
+}

@@ -1,0 +1,301 @@
+{
+  "id": "r-flowwatch",
+  "title": "FlowWatch: monitoring and client reports for automation agencies (n8n, Make, Zapier)",
+  "color": "#199e70",
+  "industry": "IT services / automation agencies",
+  "status": "idea",
+  "source": "Top 50 research (Nov 2026): reframed from ideas dropped from the Top 25 report, plus new web research",
+  "tags": [
+    "Reframed: uptime/cron monitoring",
+    "Fast-growing niche",
+    "Global market"
+  ],
+  "summary": "Agencies that build n8n, Make and Zapier automations for clients often learn about broken workflows from an angry client. FlowWatch watches every client's workflows in one place, catches errors and workflows that silently stopped running, and sends a monthly white-label report that justifies the maintenance fee.",
+  "priceLabel": "€49–249 / month",
+  "hook": "\"Our client's lead-routing flow had been dead for 11 days. No error, it just stopped firing. They found out before we did.\"",
+  "story": "**Mihai runs a 4-person automation agency in Bucharest** that builds n8n and Make workflows for **23 clients** in the UK and Germany: lead routing, invoice syncing, AI email sorting. Each client pays a **€300–800 monthly maintenance retainer**. Every client has its own n8n instance or Make account, so there are 23 dashboards to check.\n\nLast month a client's API token expired and a workflow simply **stopped triggering**. n8n's error workflow never fired, because nothing ran. The client lost **11 days of leads** and asked what the retainer was for. Mihai wants one screen for all clients, an alert when something fails *or goes quiet*, and a monthly report that shows the client \"1,840 runs, 3 failures, all fixed within 2 hours\".",
+  "whyNow": "Workflow automation is booming: n8n raised $180M at a $2.5B valuation in October 2025, and a whole new type of small \"AI automation agency\" sells builds plus monthly retainers. These agencies need proof of their maintenance work, and built-in error alerts miss workflows that stop running.",
+  "evidence": [
+    "n8n raised a $180M Series C at a $2.5B valuation in October 2025, bringing total funding to about $240M [n8n blog / Crowdfund Insider]",
+    "Error-trigger alerts miss workflows that stop running, so agencies combine error alerts with missed-execution checks [Osher Digital on Cronly]",
+    "Small monitoring tools for n8n agencies are appearing (n8ops, Cronly, FlowGuard, Flowmetr, community dashboards like Pulse) but are early-stage [Product Hunt / n8n community / G2]",
+    "A boring monitoring product can work for a tiny team: Healthchecks.io, run by one part-time developer, reached $14,043 MRR with 652 customers [MicroGaps via Top 25 report]"
+  ],
+  "sources": [
+    {
+      "title": "n8n blog: Series C",
+      "url": "https://blog.n8n.io/series-c/"
+    },
+    {
+      "title": "Crowdfund Insider: n8n secures $180M Series C",
+      "url": "https://www.crowdfundinsider.com/2025/10/254411-berlin-automation-ai-startup-n8n-secures-180m-in-series-c-funding/"
+    },
+    {
+      "title": "Osher Digital: Cronly n8n monitoring",
+      "url": "https://osher.com.au/tools/cronly/"
+    },
+    {
+      "title": "n8n community: Pulse monitoring dashboard",
+      "url": "https://community.n8n.io/t/built-pulse-a-real-time-monitoring-dashboard-for-n8n-workflows-with-ai-powered-error-explanations/300894"
+    },
+    {
+      "title": "Product Hunt: n8ops",
+      "url": "https://www.producthunt.com/products/n8ops"
+    },
+    {
+      "title": "G2: Flowmetr",
+      "url": "https://www.g2.com/products/flowmetr/discuss"
+    },
+    {
+      "title": "n8n template: monitor workflow errors via API",
+      "url": "https://n8n.io/workflows/14964-monitor-workflow-errors-with-n8n-api-log-to-google-sheets-and-alert-via-slack/"
+    },
+    {
+      "title": "MicroGaps: boring micro-SaaS ideas (Healthchecks.io)",
+      "url": "https://www.microgaps.com/blog/boring-micro-saas-ideas-that-make-money"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "Silent failures cost clients money",
+      "text": "A workflow that stops running produces no error. Leads, invoices or orders just stop moving, and the agency looks careless."
+    },
+    {
+      "title": "Retainers need proof",
+      "text": "Agencies sell monthly maintenance. A report that shows runs, failures and fix times makes the retainer easy to renew and raise."
+    },
+    {
+      "title": "Many instances, no single view",
+      "text": "Each client has a separate n8n instance or Make/Zapier account. Checking them one by one does not scale past 10 clients."
+    },
+    {
+      "title": "Fits Victor perfectly",
+      "text": "APIs, monitoring, AI error explanations: pure developer work, and the buyers are technical people who buy online."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "Automation and AI agencies and freelancers with 5–100 clients on n8n, Make or Zapier."
+    },
+    {
+      "label": "Buyer",
+      "text": "The agency owner or lead automation engineer."
+    },
+    {
+      "label": "Start market",
+      "text": "Global in English, starting with n8n agencies (community forum, YouTube creators, agency directories on n8n and Make partner pages)."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Connect client accounts",
+      "text": "the agency adds each client's n8n instance (API key) or Make/Zapier account; FlowWatch lists all active workflows."
+    },
+    {
+      "title": "Learn the normal rhythm",
+      "text": "FlowWatch learns how often each workflow usually runs (every 5 minutes, daily at 08:00, about 40 times a day)."
+    },
+    {
+      "title": "Alert on errors and silence",
+      "text": "it alerts in Slack, email or Telegram when a run fails, when a workflow has not run for longer than usual, or when run counts drop suddenly."
+    },
+    {
+      "title": "AI explains the error",
+      "text": "the error message is translated into a short likely cause (\"Google token expired\", \"rate limit\") and a suggested fix."
+    },
+    {
+      "title": "Incident log",
+      "text": "every alert becomes an incident with who fixed it and how long it took."
+    },
+    {
+      "title": "Monthly client report",
+      "text": "a white-label PDF or link per client: runs, uptime, incidents and fix times, hours saved."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Agency workspace with client folders",
+      "n8n API connection (self-hosted and cloud)",
+      "Error alerts and missed-run detection",
+      "Slack / email / Telegram notifications",
+      "Incident log with fix notes",
+      "White-label monthly PDF report"
+    ],
+    "later": [
+      "Make and Zapier connections",
+      "AI error explanation and fix suggestions",
+      "Workflow backup and version history",
+      "Client-facing status link",
+      "Billing hours to retainers"
+    ]
+  },
+  "techStack": [
+    "TypeScript (Node.js) backend",
+    "PostgreSQL",
+    "Scheduled pollers (BullMQ / cron)",
+    "n8n REST API, Make API",
+    "LLM for error explanations",
+    "React dashboard",
+    "Hetzner hosting"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "Talk to 15 n8n agencies (n8n forum, LinkedIn). Offer a free \"workflow health audit\" of one client instance using a script."
+    },
+    {
+      "when": "Week 3–5",
+      "what": "n8n connector, run history, missed-run detection, alerts."
+    },
+    {
+      "when": "Week 6–8",
+      "what": "Incident log, white-label report, Stripe; 5 design-partner agencies."
+    },
+    {
+      "when": "Week 9–12",
+      "what": "Make connector, AI error explanations, launch in n8n community."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server + database",
+      "note": "Hetzner or Supabase/Vercel free tiers, EU hosting",
+      "cost": "€10–25 / month"
+    },
+    {
+      "item": "AI API (OpenAI / Claude)",
+      "note": "only for error explanations",
+      "cost": "€5–20 / month"
+    },
+    {
+      "item": "Email sending",
+      "note": "Resend / Postmark",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €400–650",
+  "pricing": [
+    {
+      "name": "Solo: €49/mo",
+      "description": "Up to 10 client instances, alerts, incident log"
+    },
+    {
+      "name": "Agency: €129/mo",
+      "description": "Up to 40 clients, white-label reports, team members"
+    },
+    {
+      "name": "Scale: €249/mo",
+      "description": "Unlimited clients, Make + Zapier, backups"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 500,
+      "value": 40,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 29,
+      "max": 299,
+      "value": 99,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "n8n / Make built-in error alerts",
+      "what": "Error workflow or email when a run fails",
+      "gap": "Per instance, misses workflows that stop running, no client report"
+    },
+    {
+      "name": "Healthchecks.io, Cronitor, Better Stack",
+      "what": "General cron and uptime monitoring",
+      "gap": "Need manual pings in every workflow; not built for agencies or client reporting"
+    },
+    {
+      "name": "n8ops, Cronly, FlowGuard, Flowmetr",
+      "what": "New small n8n monitoring tools",
+      "gap": "Early-stage; mostly n8n only; competition is real and must be watched"
+    },
+    {
+      "name": "Us",
+      "what": "One view for all clients across n8n and Make, silence detection, white-label reports",
+      "gap": "Built around the agency's retainer, not just alerts",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "n8n or Make build this in",
+      "answer": "Platforms serve single accounts; the cross-client agency view and reports are the product. Support several platforms to reduce dependence."
+    },
+    {
+      "risk": "Several small competitors already exist",
+      "answer": "Win on Make + n8n together, silence detection quality and the client report; talk to agencies before building to find what they miss."
+    },
+    {
+      "risk": "Agencies are small and churn",
+      "answer": "Price per agency, push annual plans, and make the client report part of their retainer so cancelling hurts them."
+    },
+    {
+      "risk": "API keys to client systems are sensitive",
+      "answer": "Read-only keys where possible, encrypted storage, EU hosting, clear security page."
+    }
+  ],
+  "questions": [
+    "How many client automations do you maintain, and on which platforms?",
+    "How did you find out about the last broken workflow: alert, or the client?",
+    "Do you charge a monthly maintenance fee? How do you show clients what you did?",
+    "What do you use today to monitor runs across clients?",
+    "Would €49–129 a month for one dashboard plus client reports be worth it? What must it do?"
+  ],
+  "numbers": {
+    "cashMin": 400.0,
+    "cashMax": 650.0,
+    "mvpWeeksMin": 5.0,
+    "mvpWeeksMax": 7.0,
+    "priceLabel": "€49–249/mo",
+    "competition": "Several tiny new tools; no leader yet",
+    "competitionLevel": "medium",
+    "whoSells": "Victor → agencies online; Jonatan → agency owners on LinkedIn"
+  },
+  "skills": [
+    "coding",
+    "integrations",
+    "ai",
+    "marketing"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 6,
+    "willingnessToPay": 6,
+    "lowCompetition": 4,
+    "easyToBuild": 7,
+    "easyToSell": 5,
+    "skillFit": 9,
+    "globalPotential": 9,
+    "excitement": 7
+  },
+  "notes": "",
+  "interviews": [],
+  "rank": 27,
+  "batch": "Top 50 research (Nov 2026)"
+}

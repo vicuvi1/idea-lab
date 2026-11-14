@@ -1,0 +1,283 @@
+{
+  "id": "r-renewkit",
+  "title": "RenewKit: renewals, payments and a public member register for small trade associations",
+  "color": "#199e70",
+  "industry": "Associations / trade bodies",
+  "status": "idea",
+  "source": "Top 50 research (Nov 2026): reframed from ideas dropped from the Top 25 report, plus new web research",
+  "tags": [
+    "Reframed: association dues",
+    "Low price category",
+    "Global market"
+  ],
+  "summary": "Small trade associations and professional bodies spend weeks every year chasing renewals by email and spreadsheet. RenewKit sends renewal reminders with payment links, keeps the public \"find a member\" register up to date automatically, and wins back lapsed members, without moving the association to a big membership system.",
+  "priceLabel": "€49–149 / month",
+  "hook": "\"Renewal season is three months of me sending the same email to 600 members and checking bank statements by hand.\"",
+  "story": "**Karin is the only staff member of a national association of 640 certified installers.** Members pay **€350 a year** and, in return, appear in the association's public \"find a certified installer\" list, which brings them customers. Renewals run from a spreadsheet, a bank account and a mail-merge.\n\nEvery spring Karin spends about **three months** chasing late payers, updating the website list by hand, and answering \"did you get my payment?\" emails. Some members who never paid still appear on the website; some who paid are missing. A full membership system like Wild Apricot would mean moving the website and everything else, and its prices keep rising. She wants renewals and the register to run themselves.",
+  "whyNow": "Membership software prices are rising and ownership is consolidating (Wild Apricot is now part of Momentive Software), which pushes small bodies to look for lighter options. Payment links and AI-written reminders make a \"renewals only\" tool simple to build.",
+  "evidence": [
+    "Wild Apricot's entry plan is reported at $66/month for 100 contacts, up from $60 in April 2026; users report earlier price rises of 20% (2021) and 25% (2023) [CostBench / Hackceleration]",
+    "Momentive Software acquired Personify, Wild Apricot's owner, on 6 January 2026 (reported by a competitor) [Raklet]",
+    "In the Top 25 research, association renewals scored 44/70 at best, with crowded incumbents and volunteer buyers who churn when officers change [Top 25 research notes]",
+    "Many small software categories for clubs and schools start around $15/month, which shows low willingness to pay at the bottom of the market [TutorBird via Top 25 report]"
+  ],
+  "sources": [
+    {
+      "title": "CostBench: WildApricot plans and pricing",
+      "url": "https://www.costbench.com/software/board-management/wildapricot/"
+    },
+    {
+      "title": "CostBench: WildApricot price history",
+      "url": "https://costbench.com/software/board-management/wildapricot/price-history/"
+    },
+    {
+      "title": "Hackceleration: best membership management software 2026",
+      "url": "https://hackceleration.com/labs/best/membership-management-software"
+    },
+    {
+      "title": "Raklet: switching association management software",
+      "url": "https://www.raklet.com/blog/switching-association-management-software/"
+    },
+    {
+      "title": "Capterra: Wild Apricot pricing",
+      "url": "https://www.capterra.com/p/76116/Wild-Apricot/pricing/"
+    },
+    {
+      "title": "TutorBird (low category price example)",
+      "url": "https://www.tutorbird.com/?p=75253"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "Renewal season is real work",
+      "text": "Small associations with one staff member or volunteers spend weeks chasing payments every year."
+    },
+    {
+      "title": "The register is the strongest hook",
+      "text": "For trade bodies, being listed as a member brings customers. Linking the public list to payment makes members pay on time."
+    },
+    {
+      "title": "No migration needed",
+      "text": "RenewKit plugs into the existing website and spreadsheet instead of replacing everything, which lowers the fear of switching."
+    },
+    {
+      "title": "Honest weakness",
+      "text": "Buyers are price-sensitive and often volunteers; this is a modest business, not a big one."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "Trade associations, professional bodies and chambers with 100–3,000 business or professional members and 0–3 staff."
+    },
+    {
+      "label": "Buyer",
+      "text": "The executive director, secretary or treasurer."
+    },
+    {
+      "label": "Start market",
+      "text": "UK, Ireland, Nordics and other English-speaking associations found through public directories."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Import members",
+      "text": "upload the member spreadsheet; set membership types, prices and renewal dates."
+    },
+    {
+      "title": "Automatic renewals",
+      "text": "reminders with a personal payment link (card, SEPA, invoice) go out before and after the due date; AI writes friendly reminder texts."
+    },
+    {
+      "title": "Live member register",
+      "text": "an embeddable \"find a member\" list for the website that shows only paid-up members, with their certificates and regions."
+    },
+    {
+      "title": "Lapsed-member win-back",
+      "text": "members who do not renew get a short sequence and the association sees revenue at risk."
+    },
+    {
+      "title": "Self-service",
+      "text": "members update their details and download receipts and membership certificates."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Member import from CSV / Google Sheets",
+      "Membership types and renewal dates",
+      "Stripe payment links and invoice option",
+      "Reminder sequences with AI-drafted text",
+      "Embeddable public member register",
+      "Revenue-at-risk dashboard"
+    ],
+    "later": [
+      "Membership certificates with QR verification",
+      "Member CPD / training hours log",
+      "Newsletter digest writer",
+      "SEPA direct debit",
+      "Accounting exports (Xero, Fortnox)"
+    ]
+  },
+  "techStack": [
+    "Python + Django or Next.js",
+    "PostgreSQL",
+    "Stripe Billing and payment links",
+    "Embeddable JavaScript widget",
+    "LLM for reminder text",
+    "EU hosting"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "Jonatan emails 300 small associations from public directories offering a free \"renewal audit\" (lapsed members, revenue at risk). Goal: 10 calls, 3 pilots."
+    },
+    {
+      "when": "Week 3–5",
+      "what": "Import, membership types, payment links, reminders."
+    },
+    {
+      "when": "Week 6–8",
+      "what": "Public register widget, dashboard, self-service, billing."
+    },
+    {
+      "when": "Week 9–12",
+      "what": "Run one real renewal season with pilots; measure on-time payment rate."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server + database",
+      "note": "Hetzner or Supabase/Vercel free tiers, EU hosting",
+      "cost": "€10–25 / month"
+    },
+    {
+      "item": "AI API (OpenAI / Claude)",
+      "note": "reminder texts only",
+      "cost": "€0–10 / month"
+    },
+    {
+      "item": "Email sending",
+      "note": "Resend / Postmark",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €400–600",
+  "pricing": [
+    {
+      "name": "Small: €49/mo",
+      "description": "Up to 300 members, reminders, register"
+    },
+    {
+      "name": "Medium: €89/mo",
+      "description": "Up to 1,500 members, win-back, certificates"
+    },
+    {
+      "name": "Large: €149/mo",
+      "description": "Up to 3,000 members, SEPA, accounting exports"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 300,
+      "value": 25,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 29,
+      "max": 199,
+      "value": 79,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "Wild Apricot, Glue Up, Raklet",
+      "what": "Full membership management systems",
+      "gap": "Require moving website and data; rising prices"
+    },
+    {
+      "name": "MemberPress, Memberful, Join It",
+      "what": "Paid memberships for websites and creators",
+      "gap": "Built for content memberships, not trade-body registers"
+    },
+    {
+      "name": "Spreadsheets + mail merge",
+      "what": "What most small bodies use",
+      "gap": "Weeks of manual chasing; register out of date"
+    },
+    {
+      "name": "Us",
+      "what": "Renewals + payment links + live member register",
+      "gap": "Plugs into the existing website, no migration",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Low willingness to pay",
+      "answer": "Target trade bodies with paid certifications and public registers, where members pay €200+ a year."
+    },
+    {
+      "risk": "Volunteer officers change and churn",
+      "answer": "Annual plans, and make RenewKit hold the member history so a new treasurer inherits it."
+    },
+    {
+      "risk": "Crowded category",
+      "answer": "Stay narrow: renewals and register only; integrate with what they have."
+    }
+  ],
+  "questions": [
+    "How do members renew today, and who chases late payers?",
+    "What share of members did not renew last year?",
+    "Do members get listed publicly? How do you keep that list up to date?",
+    "What tools do you use and what do they cost?",
+    "Would you pay €49–89 a month if renewals and the register ran themselves?"
+  ],
+  "numbers": {
+    "cashMin": 400.0,
+    "cashMax": 600.0,
+    "mvpWeeksMin": 5.0,
+    "mvpWeeksMax": 7.0,
+    "priceLabel": "€49–149/mo",
+    "competition": "Mature membership systems",
+    "competitionLevel": "high",
+    "whoSells": "Jonatan → association directors (cold email)"
+  },
+  "skills": [
+    "coding",
+    "integrations",
+    "b2b-sales"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 5,
+    "willingnessToPay": 5,
+    "lowCompetition": 4,
+    "easyToBuild": 8,
+    "easyToSell": 6,
+    "skillFit": 4,
+    "globalPotential": 7,
+    "excitement": 4
+  },
+  "notes": "",
+  "interviews": [],
+  "rank": 35,
+  "batch": "Top 50 research (Nov 2026)"
+}

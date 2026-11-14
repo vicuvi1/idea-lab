@@ -1,0 +1,303 @@
+{
+  "id": "r-shopaccess",
+  "title": "ShopAccess: accessibility checks and warning-letter defence for German-speaking online shops",
+  "color": "#d95926",
+  "industry": "E-commerce",
+  "status": "idea",
+  "source": "Top 50 research (Nov 2026): reframed from ideas dropped from the Top 25 report, plus new web research",
+  "tags": [
+    "Regulation deadline passed",
+    "Reframed: EAA monitoring",
+    "DACH first"
+  ],
+  "summary": "Since June 2025 German online shops must be accessible under the BFSG law, and warning letters and market checks have started. ShopAccess tests the real checkout path every week, suggests code fixes, writes the accessibility statement and keeps a record that the shop is working on it.",
+  "priceLabel": "€29–99 / month",
+  "hook": "\"We got a lawyer's warning letter about accessibility, a deadline of 10 days and a bill for almost €2,000. We didn't even know where to start.\"",
+  "story": "**Thomas sells outdoor gear through a Shopware shop near Leipzig** with 11 staff and about **€3M in yearly sales**. In spring a lawyer's **warning letter** (Abmahnung) arrives: the shop's checkout cannot be used with a keyboard, product images have no text descriptions and there is no accessibility statement. He has **two weeks** to sign a cease-and-desist and pay the lawyer's fees.\n\nHis web agency offers a full audit for several thousand euros. An overlay widget salesperson promises \"compliance in one line of code\", but Thomas has read that overlays do not fix the real problems. He wants a weekly check of his actual checkout, clear fixes his agency can apply, a proper statement, and proof that he is improving.",
+  "whyNow": "The German Accessibility Strengthening Act (BFSG), which implements the European Accessibility Act, applies to online shops since 28 June 2025. Warning letters started in summer 2025, and the national market-surveillance body began active checks in 2026.",
+  "evidence": [
+    "The BFSG accessibility duties for online retail started on 28 June 2025 [FashionUnited]",
+    "Fines of up to €100,000 are possible, and warning letters give short deadlines of about 5–14 days [Händlerbund]",
+    "Reported warning-letter costs range from about €1,784 plus a €490 analysis to €3,500–20,000 (vendor blogs, figures vary) [Xictron / Pragma-Code]",
+    "The national market-surveillance body (MLBF) reportedly moved into active checks with its own spot tests in 2026 [Xictron]",
+    "Almost all German online shops were found not to be accessible [Computerwoche]"
+  ],
+  "sources": [
+    {
+      "title": "FashionUnited: new accessibility duties for online retail from 28 June",
+      "url": "https://fashionunited.de/nachrichten/einzelhandel/barrierefreiheit-neue-pflichten-fur-onlinehandel-ab-28-juni/2025062562198"
+    },
+    {
+      "title": "Händlerbund: BFSG warning letter, what to do",
+      "url": "https://www.haendlerbund.de/de/leistungen/rechtssicherheit/hilfe-bei-abmahnung/abmahnung-bfsg"
+    },
+    {
+      "title": "Händlerbund: what happens if accessibility rules are not met",
+      "url": "https://ohn.haendlerbund.de/recht/politik-gesetze/was-droht-barrierefreiheitsanforderungen-nicht-umgesetzt"
+    },
+    {
+      "title": "Xictron: BFSG authority scans 2026",
+      "url": "https://www.xictron.com/de/blog/bfsg-behoerden-scan-2026/"
+    },
+    {
+      "title": "Pragma-Code: second warning-letter wave 2026",
+      "url": "https://www.pragma-code.de/blog-abmahnwelle-barrierefreiheit-2026"
+    },
+    {
+      "title": "Computerwoche: almost all German online shops not accessible",
+      "url": "https://www.computerwoche.de/article/3619735/fast-alle-deutschen-online-shops-nicht-barrierefrei.html"
+    },
+    {
+      "title": "IT-Recht Kanzlei: FAQ on accessibility for online shops",
+      "url": "https://www.it-recht-kanzlei.de/faq-barrierefreiheit-online-shops-bfsg.html"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "Legal pressure with a price",
+      "text": "Warning letters cost money within days, and fines can be much higher. Shop owners feel this as a direct threat."
+    },
+    {
+      "title": "Overlays are distrusted",
+      "text": "Many owners have heard that one-line overlay widgets do not fix real problems, so they look for honest testing and fixes."
+    },
+    {
+      "title": "Different from AgencyPulse",
+      "text": "AgencyPulse (Top 25) sells accessibility as one module of agency reports. ShopAccess sells directly to merchants, tests the checkout path in depth and adds the legal paperwork."
+    },
+    {
+      "title": "Victor's skills fit",
+      "text": "Headless-browser testing, axe-core rules and AI code suggestions are developer work."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "Online shops in Germany and Austria above the micro-enterprise threshold (10+ staff or over €2M turnover) on Shopware, WooCommerce, JTL or Shopify."
+    },
+    {
+      "label": "Buyer",
+      "text": "The shop owner or e-commerce manager; agencies as resellers."
+    },
+    {
+      "label": "Start market",
+      "text": "Germany first (biggest warning-letter risk), then Austria and other EU countries with active enforcement such as Sweden."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Scripted checkout test",
+      "text": "a headless browser walks the real path: home, search, product, cart, checkout form, with keyboard only, and records every barrier."
+    },
+    {
+      "title": "Plain-language results",
+      "text": "issues are grouped by page and severity, with screenshots and what a disabled customer experiences."
+    },
+    {
+      "title": "AI fix suggestions",
+      "text": "for each issue, a concrete code or setting fix for Shopware/WooCommerce themes, plus bulk AI alt text for product images."
+    },
+    {
+      "title": "Accessibility statement",
+      "text": "generates and updates the required statement (Barrierefreiheitserklärung) in German and English."
+    },
+    {
+      "title": "Progress record and letter kit",
+      "text": "a dated log of tests and fixes, plus a checklist and partner-lawyer contact for answering a warning letter."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Playwright + axe-core crawler with scripted checkout path",
+      "Keyboard-only and contrast checks",
+      "Issue list with screenshots and severity",
+      "AI fix suggestions for Shopware and WooCommerce",
+      "Accessibility statement generator (German/English)",
+      "Weekly re-test and progress log"
+    ],
+    "later": [
+      "Bulk AI alt-text writer as a plugin",
+      "Agency white-label plan",
+      "Manual expert review add-on",
+      "Austria and Sweden versions",
+      "Product-data (PDF manuals) accessibility checks"
+    ]
+  },
+  "techStack": [
+    "Node.js + Playwright",
+    "axe-core",
+    "PostgreSQL",
+    "LLM for fix suggestions and alt text",
+    "Shopware and WooCommerce plugins",
+    "EU hosting"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "Scan 30 German shops' checkouts with a script; email each a free 1-page report in German; count replies. Find one German-speaking partner (agency or lawyer)."
+    },
+    {
+      "when": "Week 3–5",
+      "what": "Crawler with checkout script, issue list, screenshots."
+    },
+    {
+      "when": "Week 6–8",
+      "what": "AI fixes, statement generator, weekly re-test, billing."
+    },
+    {
+      "when": "Week 9–12",
+      "what": "Launch through Shopware/WooCommerce agencies and merchant forums."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server + database",
+      "note": "Hetzner or Supabase/Vercel free tiers, EU hosting",
+      "cost": "€10–25 / month"
+    },
+    {
+      "item": "AI API (OpenAI / Claude)",
+      "note": "fix suggestions and alt text",
+      "cost": "€10–30 / month"
+    },
+    {
+      "item": "Email sending",
+      "note": "Resend / Postmark",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Headless browser compute",
+      "note": "Weekly scans; main running cost",
+      "cost": "€10–30 / month"
+    },
+    {
+      "item": "German translation/review",
+      "note": "Native check of statement templates",
+      "cost": "€100–200 one-off"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €550–800",
+  "pricing": [
+    {
+      "name": "Shop: €29/mo",
+      "description": "1 shop, weekly checkout test, statement, progress log"
+    },
+    {
+      "name": "Shop Plus: €79/mo",
+      "description": "Daily tests, AI fixes, alt-text writer, letter kit"
+    },
+    {
+      "name": "Agency: €199/mo",
+      "description": "10 shops, white-label reports"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 500,
+      "value": 30,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 19,
+      "max": 199,
+      "value": 49,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "accessiBe and other overlays",
+      "what": "Widget that claims to fix accessibility automatically",
+      "gap": "Widely criticised; does not fix the underlying code"
+    },
+    {
+      "name": "Eye-Able, TestParty, Level Access, Deque",
+      "what": "Testing and enterprise accessibility platforms",
+      "gap": "Enterprise focus or broad tools; checkout-specific, shop-system fixes are thinner"
+    },
+    {
+      "name": "Agencies and audit consultants",
+      "what": "Manual audits",
+      "gap": "Thousands of euros, one-off, no ongoing record"
+    },
+    {
+      "name": "Us",
+      "what": "Weekly checkout testing + shop-system fixes + statement + legal record",
+      "gap": "Honest (no overlay), cheap, built for German shop owners",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Automated tests catch only part of the problems",
+      "answer": "Never promise \"compliance\"; promise testing, fixes and a record of effort; offer a manual review add-on through partners."
+    },
+    {
+      "risk": "German market, English-speaking founders",
+      "answer": "German interface and templates from day 1; sell through German agencies and merchant associations; Jonatan handles English-speaking partners."
+    },
+    {
+      "risk": "Crowded, VC-funded competitors",
+      "answer": "Stay narrow: checkout path, Shopware/WooCommerce fixes, warning-letter kit."
+    },
+    {
+      "risk": "B2B-only shops may not be covered",
+      "answer": "Target consumer-facing shops; screen out B2B-only shops in onboarding."
+    }
+  ],
+  "questions": [
+    "Have you received an accessibility warning letter, or heard of one from a peer?",
+    "Who is responsible for accessibility in your shop today?",
+    "Have you tried an overlay or an audit? What happened?",
+    "What would make you trust an automated report?",
+    "Would €29–79 a month for weekly checks, fixes and a statement be worth it?"
+  ],
+  "numbers": {
+    "cashMin": 550.0,
+    "cashMax": 800.0,
+    "mvpWeeksMin": 6.0,
+    "mvpWeeksMax": 8.0,
+    "priceLabel": "€29–199/mo",
+    "competition": "Overlays and enterprise tools; many new entrants",
+    "competitionLevel": "high",
+    "whoSells": "German agencies and merchant associations; self-serve"
+  },
+  "skills": [
+    "coding",
+    "ai",
+    "e-commerce",
+    "writing"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 7,
+    "willingnessToPay": 5,
+    "lowCompetition": 3,
+    "easyToBuild": 6,
+    "easyToSell": 4,
+    "skillFit": 8,
+    "globalPotential": 6,
+    "excitement": 5
+  },
+  "notes": "",
+  "interviews": [],
+  "rank": 34,
+  "batch": "Top 50 research (Nov 2026)"
+}

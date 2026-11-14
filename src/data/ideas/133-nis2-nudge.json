@@ -1,0 +1,299 @@
+{
+  "id": "r-nis2-nudge",
+  "title": "NIS2 Nudge: local-language phishing drills and training records that MSPs sell to small clients",
+  "color": "#3987e5",
+  "industry": "Cybersecurity",
+  "status": "idea",
+  "source": "Top 50 research (Nov 2026): reframed from ideas dropped from the Top 25 report, plus new web research",
+  "tags": [
+    "Reframed: phishing simulation",
+    "NIS2 training duty",
+    "MSP channel"
+  ],
+  "summary": "Small firms with fewer than 25 staff are priced out of big security-awareness tools, and many staff prefer training in Swedish or Romanian. NIS2 Nudge lets an MSP run monthly fake-phishing tests and 2-minute lessons in the local language and keeps the training records customers and regulators ask for.",
+  "priceLabel": "$2–3 / user / month (via MSP)",
+  "hook": "\"Our customer's NIS2 supplier form asks for proof of staff security training. We have 14 people and no training at all.\"",
+  "story": "**Ioana runs a 14-person logistics firm in Cluj** that supplies a large German retailer. The retailer's new **supplier security questionnaire** asks: \"Do all staff receive regular security awareness training? Provide evidence.\" Her MSP looks at KnowBe4, but most offers require **25 seats** and the content is in English.\n\nMeanwhile her accountant almost paid a fake invoice that came in perfect Romanian, written by AI. Ioana wants something simple: a fake phishing email once a month, a 2-minute lesson for whoever clicks, in Romanian, and a PDF that proves it was done. Her MSP wants to resell it to all **30 of its clients** under its own name.",
+  "whyNow": "NIS2 requires covered companies to train staff in basic cyber hygiene, and Sweden's Cybersecurity Act (cybersäkerhetslagen) came into force on 15 January 2026. These companies push the same expectation onto suppliers. At the same time AI lets criminals write convincing phishing in every language.",
+  "evidence": [
+    "Sweden's Cybersecurity Act, implementing NIS2, came into force on 15 January 2026 and covers more organisations than the old NIS law [Transportstyrelsen]",
+    "The Swedish civil-defence agency (MCF) has prepared regulations on security measures and training under the new law [MCF impact assessment]",
+    "KnowBe4 costs about $1.63–3.75 per user per month, and most sources cite a 25-seat minimum [CostBench]",
+    "Business email compromise claims rose about 30% in the second half of 2025 [Risk & Insurance]",
+    "Coalition warns that AI phishing kits make micro businesses worth attacking [Insurance Business UK]"
+  ],
+  "sources": [
+    {
+      "title": "Transportstyrelsen: Nu träder cybersäkerhetslagen i kraft",
+      "url": "https://www.transportstyrelsen.se/sv/om-oss/det-har-ar-transportstyrelsen/krisberedskap-och-sakerhet/cybersakerhet-nis2/aktuellt-inom-nis/nu-trader-cybersakerhetslagen-i-kraft/"
+    },
+    {
+      "title": "MCF: impact assessment, regulations on security measures and training",
+      "url": "https://www.mcf.se/contentassets/2f9334a18345476ebbd422be1f9d1218/mcf-2026-04554-konsekvensutredning-foreskrifter-sakerhetsatgarder-och-utbildning.pdf"
+    },
+    {
+      "title": "CostBench: KnowBe4 pricing",
+      "url": "https://www.costbench.com/software/soc2-compliance/knowbe4/"
+    },
+    {
+      "title": "Hackceleration: KnowBe4 alternatives",
+      "url": "https://hackceleration.com/labs/switch/knowbe4"
+    },
+    {
+      "title": "Risk & Insurance: BEC claims jump 30%",
+      "url": "https://riskandinsurance.com/business-email-compromise-claims-jump-30-as-a-i-reshapes-cyber-risk/"
+    },
+    {
+      "title": "Insurance Business UK: AI phishing kits target micro businesses",
+      "url": "https://www.insurancebusinessmag.com/uk/news/cyber/ai-phishing-kits-are-making-micro-businesses-worth-attacking-coalition-warns-593811.aspx"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "Training evidence is now asked for",
+      "text": "NIS2 entities and their supplier questionnaires ask for proof of staff training, not just a yes."
+    },
+    {
+      "title": "Tiny firms are priced out",
+      "text": "Seat minimums and English-only content leave 5–25 person firms without a good option."
+    },
+    {
+      "title": "Local language matters",
+      "text": "AI-written phishing now arrives in fluent Swedish and Romanian; training should look the same."
+    },
+    {
+      "title": "Honest weakness",
+      "text": "Phishing simulation is crowded and Microsoft bundles a tool in E5. This only works as a cheap, local-language MSP add-on."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "Firms with 5–50 staff, especially suppliers to NIS2-covered companies."
+    },
+    {
+      "label": "Buyer",
+      "text": "The MSP (reseller) or the owner of the firm."
+    },
+    {
+      "label": "Start market",
+      "text": "Sweden and Romania/Moldova (founders' languages), then other non-English EU markets through MSPs."
+    }
+  ],
+  "solution": [
+    {
+      "title": "MSP adds a client",
+      "text": "imports staff from Microsoft 365 or a CSV, picks language and branding."
+    },
+    {
+      "title": "Monthly drill",
+      "text": "AI writes a realistic, local phishing email based on common local scams (fake invoices, parcel notices, bank messages) from a safe library."
+    },
+    {
+      "title": "2-minute lesson",
+      "text": "whoever clicks sees a short lesson explaining the warning signs they missed."
+    },
+    {
+      "title": "Short monthly course",
+      "text": "everyone gets one micro-lesson per month with a 3-question quiz."
+    },
+    {
+      "title": "Evidence report",
+      "text": "a PDF per client: who was trained, click rates over time, ready for NIS2 supplier questionnaires and insurers."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "MSP workspace with client branding",
+      "Staff import from Microsoft 365 or CSV",
+      "Phishing template library in Swedish, Romanian and English",
+      "Campaign scheduler and click tracking",
+      "2-minute lessons and quizzes",
+      "Training evidence PDF"
+    ],
+    "later": [
+      "Report-phish button for Outlook",
+      "German, Finnish, Polish content",
+      "Management training module for NIS2 boards",
+      "Link to Questionnaire Autopilot answers",
+      "Direct sales to small firms"
+    ]
+  },
+  "techStack": [
+    "Python + Django (or GoPhish as a base)",
+    "PostgreSQL",
+    "Dedicated sending domains with allow-listing guides",
+    "LLM for template variations",
+    "Microsoft Graph for user import",
+    "EU hosting"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "Run 3 consented manual tests with GoPhish for small firms in Sweden and Romania; ask 10 MSPs if they would resell."
+    },
+    {
+      "when": "Week 3–5",
+      "what": "Campaigns, templates, tracking, lessons."
+    },
+    {
+      "when": "Week 6–8",
+      "what": "MSP workspace, branding, evidence PDF, billing."
+    },
+    {
+      "when": "Week 9–12",
+      "what": "3 MSP resellers live with 10+ clients each."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server + database",
+      "note": "Hetzner or Supabase/Vercel free tiers, EU hosting",
+      "cost": "€10–25 / month"
+    },
+    {
+      "item": "AI API (OpenAI / Claude)",
+      "note": "template variations only",
+      "cost": "€5–15 / month"
+    },
+    {
+      "item": "Email sending",
+      "note": "Resend / Postmark",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Sending domains and email service",
+      "note": "Separate domains for simulations",
+      "cost": "€10–30 / month"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €450–700",
+  "pricing": [
+    {
+      "name": "MSP: $2/user/mo",
+      "description": "No minimum per client, white-label, all languages"
+    },
+    {
+      "name": "Direct: $3/user/mo (min $29)",
+      "description": "For firms without an MSP"
+    },
+    {
+      "name": "Setup pack: $199 one-off",
+      "description": "We run the first drill and training for a client"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 300,
+      "value": 20,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 20,
+      "max": 300,
+      "value": 80,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": {
+      "min": 5,
+      "max": 100,
+      "value": 30,
+      "label": "Clients per MSP"
+    }
+  },
+  "competitors": [
+    {
+      "name": "KnowBe4",
+      "what": "Market-leading training and phishing simulation",
+      "gap": "Seat minimums and longer contracts for tiny firms"
+    },
+    {
+      "name": "Hoxhunt, Usecure, Riot, local players",
+      "what": "Training platforms, some MSP-friendly and with Nordic languages",
+      "gap": "Strong competition; Romanian content and micro-firm pricing are thinner"
+    },
+    {
+      "name": "Microsoft Attack Simulation Training",
+      "what": "Built into Microsoft 365 E5",
+      "gap": "Most small firms are on Business plans without it"
+    },
+    {
+      "name": "Us",
+      "what": "Local-language drills + micro-lessons + evidence PDF, resold by MSPs",
+      "gap": "No minimum, Romanian/Swedish first, built for NIS2 supplier evidence",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Very crowded market",
+      "answer": "Do not compete head-on; sell only through MSPs in markets where local content and no minimums matter."
+    },
+    {
+      "risk": "Emails blocked by spam filters",
+      "answer": "Provide clear allow-listing guides for Microsoft 365 and Google; test early."
+    },
+    {
+      "risk": "Abuse for real phishing",
+      "answer": "Verify domain ownership before campaigns, only send to imported staff of verified domains, log everything."
+    },
+    {
+      "risk": "Low price per user",
+      "answer": "Make the MSP the customer so one sale brings many clients."
+    }
+  ],
+  "questions": [
+    "Do any of your clients' customers or insurers ask for staff training evidence?",
+    "Which training tool do you offer today, and why don't small clients buy it?",
+    "In which language do your clients' staff prefer training?",
+    "Has a client fallen for a phishing or fake-invoice email in the last year?",
+    "Would you resell a $2/user tool with no minimum under your own brand?"
+  ],
+  "numbers": {
+    "cashMin": 450.0,
+    "cashMax": 700.0,
+    "mvpWeeksMin": 6.0,
+    "mvpWeeksMax": 8.0,
+    "priceLabel": "$2–3/user/mo",
+    "competition": "Crowded; gap is local language + no minimum",
+    "competitionLevel": "high",
+    "whoSells": "Jonatan → MSPs in Sweden; Victor → Romanian MSPs"
+  },
+  "skills": [
+    "security",
+    "coding",
+    "ai",
+    "b2b-sales"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 5,
+    "willingnessToPay": 5,
+    "lowCompetition": 2,
+    "easyToBuild": 7,
+    "easyToSell": 6,
+    "skillFit": 8,
+    "globalPotential": 6,
+    "excitement": 5
+  },
+  "notes": "",
+  "interviews": [],
+  "rank": 33,
+  "batch": "Top 50 research (Nov 2026)"
+}

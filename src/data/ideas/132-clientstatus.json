@@ -1,0 +1,288 @@
+{
+  "id": "r-clientstatus",
+  "title": "ClientStatus: \"is it down?\" status pages and staff alerts that MSPs give their clients",
+  "color": "#e66767",
+  "industry": "IT services / MSP",
+  "status": "idea",
+  "source": "Top 50 research (Nov 2026): reframed from ideas dropped from the Top 25 report, plus new web research",
+  "tags": [
+    "Reframed: status pages",
+    "MSP channel",
+    "Quick to build"
+  ],
+  "summary": "When Microsoft 365, the internet line or an accounting app goes down, every employee at an MSP's client opens a ticket. ClientStatus gives each client a branded status page that pulls Microsoft 365 health, vendor status feeds and the MSP's own alerts, and pushes one message to all staff.",
+  "priceLabel": "$49–199 / month",
+  "hook": "\"Outlook went down for two hours and we got 140 tickets that all said the same thing.\"",
+  "story": "**Erik runs a 9-person MSP in Uppsala** with **38 small business clients**. When Microsoft has an Outlook outage or a client's internet provider fails, phones ring nonstop. Every employee at every client asks \"is it just me?\". His technicians spend the outage answering calls instead of fixing anything.\n\nHe tried a generic status page tool, but it is built for software companies announcing their own outages. Erik needs one page **per client**, showing the services *that client* uses (Microsoft 365, their Fortnox or Visma, their line-of-business app, their office internet), filled in automatically, and a button to text and Teams-message all staff: \"Known issue, we are on it, next update 14:00.\" Later the incident list goes into his quarterly client review.",
+  "whyNow": "Small businesses depend on more cloud services than ever, and MSPs are under pressure to show value and cut ticket volume. Microsoft exposes service health through its Graph API, and many vendors publish status feeds, so an automatic per-client page is now easy to build.",
+  "evidence": [
+    "Atlassian Statuspage has no free tier and starts at about $29/month; Instatus has a free plan and Pro at $20/month; Better Stack white-label pages cost $208–250/month (vendor-authored comparisons) [openstatus / WizStatus / Better Stack]",
+    "StatusGator, which aggregates vendor status pages, has a free plan with 3 monitors and paid tiers reported at $79, $149 and $299 per month (competitor comparison) [Pulsetic]",
+    "MSPs report manual, fragmented client reporting [Sophos via Top 25 notes]",
+    "Status pages and dunning were judged \"red oceans\" for newcomers unless aimed at a sharp sub-niche such as white-label pages for MSPs [Top 25 research notes]"
+  ],
+  "sources": [
+    {
+      "title": "openstatus: how it compares to other status page tools",
+      "url": "https://www.openstatus.dev/guides/how-openstatus-compares-to-other-status-page-tools"
+    },
+    {
+      "title": "WizStatus: status page tools comparison",
+      "url": "https://wizstatus.com/blog/status-page-tools-comparison"
+    },
+    {
+      "title": "Better Stack vs Statuspage",
+      "url": "https://betterstack.com/community/comparisons/better-stack-vs-statuspage/"
+    },
+    {
+      "title": "Pulsetic: StatusGator alternative (pricing comparison)",
+      "url": "https://pulsetic.com/statusgator-alternative/"
+    },
+    {
+      "title": "StatusGator blog: how much does a status page cost",
+      "url": "https://statusgator.com/blog/how-much-does-a-status-page-cost/"
+    },
+    {
+      "title": "Sophos: evolution of the MSP cybersecurity value proposition",
+      "url": "https://www.sophos.com/de-de/blog/the-evolution-of-the-msp-cybersecurity-value-proposition"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "Outages create ticket storms",
+      "text": "One cloud outage turns into dozens of identical calls per client. Every avoided call saves technician time."
+    },
+    {
+      "title": "Existing tools face the wrong way",
+      "text": "Status page tools are built for software vendors talking to their users. MSPs need one page per client, filled from other vendors' status."
+    },
+    {
+      "title": "Visible value for the MSP",
+      "text": "A branded page and proactive messages make the MSP look professional and feed the quarterly review."
+    },
+    {
+      "title": "Cheap and quick to build",
+      "text": "Mostly polling public feeds and Microsoft's service-health API; a working MVP in about 5 weeks."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "MSPs with 10–200 small business clients."
+    },
+    {
+      "label": "Buyer",
+      "text": "The MSP owner or service desk manager."
+    },
+    {
+      "label": "Start market",
+      "text": "Global in English: UK, Nordics, Australia and US MSP communities; same buyer as InsureReady and QBR Autopilot."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Add a client",
+      "text": "pick the services that client uses from a list (Microsoft 365, Google Workspace, Fortnox, Xero, Zoom, their ISP) and connect their Microsoft tenant read-only."
+    },
+    {
+      "title": "Automatic page",
+      "text": "a branded page per client shows green/yellow/red for each service, filled from vendor status feeds and Microsoft service health."
+    },
+    {
+      "title": "MSP's own alerts",
+      "text": "the MSP's monitoring tool can post incidents (\"office internet down\") through a webhook or email."
+    },
+    {
+      "title": "One-click broadcast",
+      "text": "send a message to all client staff by email, SMS or Teams, with scheduled updates."
+    },
+    {
+      "title": "Incident history",
+      "text": "a log per client, exported into quarterly reviews."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Multi-client MSP workspace with branding",
+      "Service catalogue with vendor status feeds",
+      "Microsoft 365 service health connection",
+      "Per-client public status page",
+      "Email broadcast to client staff lists",
+      "Incident history export"
+    ],
+    "later": [
+      "SMS and Teams broadcasts",
+      "RMM / PSA webhooks (NinjaOne, HaloPSA, ConnectWise)",
+      "Ticket deflection banner in the client portal",
+      "QBR Autopilot integration",
+      "Uptime checks for client websites"
+    ]
+  },
+  "techStack": [
+    "TypeScript (Next.js)",
+    "PostgreSQL",
+    "Pollers for status feeds (RSS/JSON)",
+    "Microsoft Graph service communications API",
+    "Resend / Twilio",
+    "Vercel or Hetzner"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "Jonatan interviews 15 MSPs about the last big outage and ticket counts. Build a static demo page for one MSP."
+    },
+    {
+      "when": "Week 3–4",
+      "what": "Service catalogue, feed pollers, per-client pages, branding."
+    },
+    {
+      "when": "Week 5–6",
+      "what": "Microsoft service health, broadcasts, incident log, Stripe."
+    },
+    {
+      "when": "Week 7–10",
+      "what": "5 pilot MSPs; measure tickets during the next outage."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server + database",
+      "note": "Hetzner or Supabase/Vercel free tiers, EU hosting",
+      "cost": "€10–25 / month"
+    },
+    {
+      "item": "AI API (OpenAI / Claude)",
+      "note": "not needed in MVP (optional incident summaries)",
+      "cost": "€0–10 / month"
+    },
+    {
+      "item": "Email sending",
+      "note": "Resend / Postmark",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "SMS (later)",
+      "note": "Only if MSPs want SMS broadcasts",
+      "cost": "€0–30 / month"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €400–600",
+  "pricing": [
+    {
+      "name": "Starter: $49/mo",
+      "description": "Up to 15 client pages, email broadcasts"
+    },
+    {
+      "name": "Pro: $99/mo",
+      "description": "Up to 50 clients, Microsoft 365 health, SMS/Teams"
+    },
+    {
+      "name": "Unlimited: $199/mo",
+      "description": "Unlimited clients, custom domain, PSA integrations"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 400,
+      "value": 30,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 29,
+      "max": 249,
+      "value": 89,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "Atlassian Statuspage, Instatus, Better Stack",
+      "what": "Status pages for software companies",
+      "gap": "One page about your own service; white-label is expensive or manual"
+    },
+    {
+      "name": "StatusGator",
+      "what": "Aggregates vendor status pages, has a public page",
+      "gap": "Strongest rival; built for IT teams, not one branded page and broadcast list per MSP client"
+    },
+    {
+      "name": "PSA/RMM tools",
+      "what": "Ticketing and monitoring",
+      "gap": "Internal; clients do not see a simple public status"
+    },
+    {
+      "name": "Us",
+      "what": "Per-client branded status pages filled from vendor feeds, plus staff broadcasts",
+      "gap": "Built for MSPs, priced per MSP not per page",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Weak pain: \"nice to have\"",
+      "answer": "Validate with ticket counts during real outages; sell only if MSPs can show saved hours."
+    },
+    {
+      "risk": "StatusGator adds MSP features",
+      "answer": "Stay focused on per-client branding, broadcasts and QBR export; bundle with other MSP modules."
+    },
+    {
+      "risk": "Low price ceiling",
+      "answer": "Treat it as a cheap entry product into the MSP bundle (InsureReady, QBR Autopilot), not a standalone big business."
+    }
+  ],
+  "questions": [
+    "During the last Microsoft or internet outage, how many tickets and calls did you get?",
+    "How do you tell clients' staff about known issues today?",
+    "Do you use a status page now? Why or why not?",
+    "Which services do most of your clients depend on?",
+    "Would $49–99 a month for branded client status pages be worth it?"
+  ],
+  "numbers": {
+    "cashMin": 400.0,
+    "cashMax": 600.0,
+    "mvpWeeksMin": 5.0,
+    "mvpWeeksMax": 6.0,
+    "priceLabel": "$49–199/mo",
+    "competition": "Many status tools; MSP angle thin",
+    "competitionLevel": "high",
+    "whoSells": "Jonatan → MSP owners"
+  },
+  "skills": [
+    "coding",
+    "integrations",
+    "b2b-sales"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 5,
+    "willingnessToPay": 4,
+    "lowCompetition": 4,
+    "easyToBuild": 8,
+    "easyToSell": 6,
+    "skillFit": 7,
+    "globalPotential": 8,
+    "excitement": 5
+  },
+  "notes": "",
+  "interviews": [],
+  "rank": 32,
+  "batch": "Top 50 research (Nov 2026)"
+}

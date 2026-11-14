@@ -1,0 +1,298 @@
+{
+  "id": "r-retrywoo",
+  "title": "RetryWoo: failed-payment recovery for WooCommerce subscription stores",
+  "color": "#d55181",
+  "industry": "E-commerce",
+  "status": "idea",
+  "source": "Top 50 research (Nov 2026): reframed from ideas dropped from the Top 25 report, plus new web research",
+  "tags": [
+    "Reframed: dunning",
+    "WordPress plugin channel",
+    "Global market"
+  ],
+  "summary": "Subscription stores lose customers when cards expire or payments fail. RetryWoo is a WooCommerce plugin plus cloud service that retries payments at smart times, warns customers before cards expire, and sends one-click card-update links by email and SMS.",
+  "priceLabel": "$29–149 / month",
+  "hook": "\"Every month about 60 coffee subscriptions just stop because a card failed. Most of those people never meant to cancel.\"",
+  "story": "**Lena runs a coffee subscription shop on WooCommerce** with about **1,400 active subscribers** paying €19 a month. Every month around **5% of renewals fail**: expired cards, bank declines, insufficient funds. WooCommerce sends one generic email and retries a few times on a fixed schedule.\n\nShe sees the subscription count drop but doesn't know that **most of those customers never chose to leave**. Tools like Churnkey or Baremetrics Recover are built for software companies on Stripe Billing and cost more than she wants to pay. She wants a plugin that installs in ten minutes and shows: \"this month we saved 41 subscriptions, worth €779 a month\".",
+  "whyNow": "Involuntary churn from failed payments is a well-documented, measurable loss, and the known recovery tools focus on Stripe-billed SaaS. WooCommerce subscription stores (coffee, pet food, beauty, courses, memberships) are a big, under-served group that buys through the WordPress plugin directory.",
+  "evidence": [
+    "About 22% of SaaS churn is involuntary (study of 5.4M failed payments); Recurly puts it at 20–26% of B2B SaaS churn [Churnkey]",
+    "Failed payments cost about 9% of recurring revenue a year (attributed to Stripe, secondary source) [Lago]",
+    "Baremetrics Recover's add-on price rose from $158 to $208 a month in 2025 [PricingSaaS]",
+    "Churn Buster keeps pricing behind a sales call; a third-party tracker lists $149/month, unverified [Churn Buster / Toolradar]",
+    "Many indie dunning tools exist for Stripe SaaS (e.g. WorkAid Dunning), which shows demand but also crowding [Indie Hackers]"
+  ],
+  "sources": [
+    {
+      "title": "Churnkey: reduce involuntary churn",
+      "url": "https://churnkey.co/guides/reduce-involuntary-churn"
+    },
+    {
+      "title": "Churnkey: involuntary churn benchmarks",
+      "url": "https://churnkey.co/blog/involuntary-churn-benchmarks"
+    },
+    {
+      "title": "Lago: dunning management",
+      "url": "https://getlago.com/blog/dunning-management"
+    },
+    {
+      "title": "PricingSaaS: Baremetrics pricing change Q2 2025",
+      "url": "https://pricingsaas.com/companies/baremetrics/diffs/2025Q2"
+    },
+    {
+      "title": "Churn Buster pricing",
+      "url": "https://churnbuster.io/pricing"
+    },
+    {
+      "title": "Toolradar: Churn Buster",
+      "url": "https://toolradar.com/tools/churn-buster"
+    },
+    {
+      "title": "Indie Hackers: WorkAid Dunning",
+      "url": "https://www.indiehackers.com/product/workaid-dunning"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "Money lost every month",
+      "text": "Each failed renewal is a customer who usually wanted to stay. The loss shows up directly in the store's revenue."
+    },
+    {
+      "title": "Easy to prove value",
+      "text": "The product can show exactly how many subscriptions and how much revenue it saved, which makes the price easy to justify."
+    },
+    {
+      "title": "Dunning is crowded, WooCommerce less so",
+      "text": "Most recovery tools are built around Stripe Billing for SaaS. WooCommerce subscription stores use different plugins and payment gateways."
+    },
+    {
+      "title": "A real channel",
+      "text": "The WordPress plugin directory and WooCommerce marketplace bring buyers without cold calls."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "WooCommerce stores with 200–10,000 active subscriptions: coffee, food boxes, pet supplies, beauty, memberships and courses."
+    },
+    {
+      "label": "Buyer",
+      "text": "The store owner or e-commerce manager."
+    },
+    {
+      "label": "Start market",
+      "text": "Global in English through the WordPress plugin directory, WooCommerce agencies and subscription-commerce communities."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Install the plugin",
+      "text": "connects to WooCommerce Subscriptions and the store's payment gateway (Stripe, PayPal, Mollie) and reads failed renewals."
+    },
+    {
+      "title": "Smart retries",
+      "text": "retries at better times (after payday, different time of day, by decline reason) instead of a fixed schedule."
+    },
+    {
+      "title": "Pre-expiry warnings",
+      "text": "emails and SMS customers whose card expires next month, with a one-click update link (no login needed)."
+    },
+    {
+      "title": "Friendly recovery messages",
+      "text": "AI writes short messages in the store's tone and language, sent by email and SMS over 2–3 weeks."
+    },
+    {
+      "title": "Recovery dashboard",
+      "text": "shows failed, recovered and lost subscriptions and the monthly revenue saved."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "WooCommerce plugin reading failed renewals",
+      "Retry rules by decline reason",
+      "Card-update magic link page",
+      "Email sequences with AI-written templates",
+      "Pre-expiry card warnings",
+      "Recovered-revenue dashboard"
+    ],
+    "later": [
+      "SMS and WhatsApp messages",
+      "Pause or downgrade offers instead of cancelling",
+      "Mollie and other EU gateways",
+      "Agency plan for many stores",
+      "Shopify subscription apps"
+    ]
+  },
+  "techStack": [
+    "PHP WordPress/WooCommerce plugin",
+    "Cloud service in Node.js or Python",
+    "PostgreSQL",
+    "Stripe / PayPal APIs",
+    "LLM for message templates",
+    "Freemius or own licensing"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "Find 30 WooCommerce subscription stores; ask for their monthly failed-payment numbers; offer a free \"lost revenue report\"."
+    },
+    {
+      "when": "Week 3–5",
+      "what": "Plugin, failed-renewal sync, retry rules, card-update page."
+    },
+    {
+      "when": "Week 6–8",
+      "what": "Email sequences, pre-expiry warnings, dashboard, billing; 5 beta stores."
+    },
+    {
+      "when": "Week 9–12",
+      "what": "WordPress.org free version listing, SMS add-on, case study with real recovered revenue."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server + database",
+      "note": "Hetzner or Supabase/Vercel free tiers, EU hosting",
+      "cost": "€10–25 / month"
+    },
+    {
+      "item": "AI API (OpenAI / Claude)",
+      "note": "message templates only",
+      "cost": "€5–15 / month"
+    },
+    {
+      "item": "Email sending",
+      "note": "Resend / Postmark",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Test store and plugin licences",
+      "note": "WooCommerce Subscriptions licence for testing",
+      "cost": "€0–250 / year"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €450–750",
+  "pricing": [
+    {
+      "name": "Starter: $29/mo",
+      "description": "Up to 300 active subscriptions, email recovery"
+    },
+    {
+      "name": "Growth: $79/mo",
+      "description": "Up to 2,000 subscriptions, SMS, pre-expiry warnings"
+    },
+    {
+      "name": "Pro: $149/mo",
+      "description": "Up to 10,000 subscriptions, several stores, pause offers"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 800,
+      "value": 50,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 19,
+      "max": 199,
+      "value": 59,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "WooCommerce Subscriptions built-in retries",
+      "what": "Basic fixed retry schedule and emails",
+      "gap": "No smart timing, no pre-expiry warnings, little reporting"
+    },
+    {
+      "name": "Churnkey, Baremetrics Recover, Churn Buster",
+      "what": "Payment recovery and cancel flows",
+      "gap": "Built mainly for Stripe-billed SaaS; higher or sales-led pricing"
+    },
+    {
+      "name": "Indie Stripe dunning tools",
+      "what": "Cheap email recovery for Stripe",
+      "gap": "Stripe Billing only, not WooCommerce subscriptions"
+    },
+    {
+      "name": "Us",
+      "what": "WooCommerce-native recovery with smart retries and card-update links",
+      "gap": "Installs in minutes, priced for small stores, shows saved revenue",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "WooCommerce or payment gateways improve built-in retries",
+      "answer": "Focus on pre-expiry warnings, messaging and reporting, which gateways do not do well."
+    },
+    {
+      "risk": "Small stores, low prices",
+      "answer": "Price by active subscriptions so larger stores pay more; aim for stores with 500+ subscribers."
+    },
+    {
+      "risk": "Jonatan cannot easily sell it",
+      "answer": "This is a plugin-directory and content play; Jonatan can help by contacting WooCommerce agencies as resellers."
+    },
+    {
+      "risk": "Payment-data security",
+      "answer": "Never store card data; use the gateway's hosted card-update pages."
+    }
+  ],
+  "questions": [
+    "How many subscription renewals fail each month, and what happens next?",
+    "Which subscription plugin and payment gateway do you use?",
+    "Do you know how many failed customers come back on their own?",
+    "Have you tried any recovery tool? Why did you stop or not start?",
+    "If a plugin showed it saved you €500+ a month, what would you pay for it?"
+  ],
+  "numbers": {
+    "cashMin": 450.0,
+    "cashMax": 750.0,
+    "mvpWeeksMin": 6.0,
+    "mvpWeeksMax": 8.0,
+    "priceLabel": "$29–149/mo",
+    "competition": "Crowded for Stripe SaaS, thin for WooCommerce",
+    "competitionLevel": "medium",
+    "whoSells": "Victor → plugin directory and content; Jonatan → Woo agencies"
+  },
+  "skills": [
+    "coding",
+    "integrations",
+    "e-commerce",
+    "marketing"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 7,
+    "willingnessToPay": 6,
+    "lowCompetition": 4,
+    "easyToBuild": 7,
+    "easyToSell": 4,
+    "skillFit": 6,
+    "globalPotential": 9,
+    "excitement": 5
+  },
+  "notes": "",
+  "interviews": [],
+  "rank": 29,
+  "batch": "Top 50 research (Nov 2026)"
+}

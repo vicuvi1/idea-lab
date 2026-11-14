@@ -1,0 +1,297 @@
+{
+  "id": "r-faultdesk",
+  "title": "FaultDesk: AI fault-report desk for facility-service firms that look after housing co-ops (Sweden first)",
+  "color": "#0ca30c",
+  "industry": "Facility services",
+  "status": "idea",
+  "source": "Top 50 research (Nov 2026): reframed from ideas dropped from the Top 25 report, plus new web research",
+  "tags": [
+    "Reframed: property-maintenance triage",
+    "Jonatan's network",
+    "Sweden first"
+  ],
+  "summary": "Facility-service firms that maintain Swedish housing co-ops (BRF) get fault reports from residents by phone, email and apps. FaultDesk sorts each report by urgency, asks for photos, checks if the repair is the resident's or the co-op's responsibility, and creates the work order.",
+  "priceLabel": "€99–349 / month",
+  "hook": "\"Half the calls are about things the resident must fix themselves. But we only find out after we have sent a technician.\"",
+  "story": "**Johan owns a 25-person property-care firm (fastighetsskötsel) in Stockholm** that looks after **80 housing co-ops with about 3,500 flats**. Fault reports arrive everywhere: phone calls, emails, the co-op board's app, notes in the stairwell. Two office staff type them into the work-order system.\n\nMany reports are about things the **resident must pay for under the co-op's responsibility list** (a dripping tap inside the flat, a broken dishwasher). Technicians drive out, then the co-op refuses to pay. Real emergencies, like a water leak at night, get mixed with \"the light in the laundry room is broken\". Johan wants every report sorted, completed with a photo and checked against the co-op's rules **before** a technician is sent.",
+  "whyNow": "About one in five Swedish households lives in a co-op flat, and co-op boards push their facility firms for faster answers and monthly reporting. AI can now read a resident's message and the co-op's own responsibility list in Swedish, which was not practical two years ago.",
+  "evidence": [
+    "21% of Swedish households live in co-op (bostadsrätt) flats, about 1 million households, at the end of 2025 [SCB, Hushållens boende 2025]",
+    "German startup Lette claims more than 60% of service and maintenance requests can be handled automatically (vendor claim) [Startbase]",
+    "Capital in property-maintenance AI is concentrated in big US players such as EliseAI (reported $4B valuation), which do not serve small Nordic facility firms [CRE Daily via Top 25 report]",
+    "Swedish co-op apps such as Boappa and Ourliving let residents send fault reports to the board, but do not triage them or check responsibility [Boappa guide / App Store]"
+  ],
+  "sources": [
+    {
+      "title": "SCB: Hushållens boende 2025",
+      "url": "https://www.scb.se/hitta-statistik/statistik-efter-amne/boende-bebyggelse-och-mark/bostader-och-boende/hushallens-boende/pong/statistiknyhet/hushallens-boende-2025/"
+    },
+    {
+      "title": "Startbase: Lette funding news (AI property management, German)",
+      "url": "https://www.startbase.com/news/lette-erhaelt-65-millionen-dollar-fuer-ki-gestuetzte-immobilienverwaltung/"
+    },
+    {
+      "title": "CRE Daily: EliseAI valuation",
+      "url": "https://www.credaily.com/?p=223339"
+    },
+    {
+      "title": "Boappa: digital start-up guide for boards",
+      "url": "https://boappa.se/documents/boappa_digital_uppstartsguide_styrelsen.pdf"
+    },
+    {
+      "title": "App Store: Ourliving",
+      "url": "https://apps.apple.com/se/app/ourliving/id1322951169?l=en-GB"
+    },
+    {
+      "title": "Ekonomifokus: bostadsrättsförening (technical management incl. fault reports)",
+      "url": "https://www.ekonomifokus.se/bostad/bostadsrattsforening"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "Wasted technician trips cost money",
+      "text": "Every trip to fix something the resident must pay for, or that needed a different trade, costs the firm time and creates billing fights with the co-op."
+    },
+    {
+      "title": "Jonatan knows this buyer",
+      "text": "Facility and property-care firms are his industry. He can reach owners by phone in Swedish and English."
+    },
+    {
+      "title": "Narrower and safer than general maintenance AI",
+      "text": "General property-maintenance triage was dropped from the Top 25 because funded US startups compete. Swedish co-ops, their responsibility lists and small facility firms are a niche they ignore."
+    },
+    {
+      "title": "Same buyer as SubDocs and CleanProof",
+      "text": "A facility firm using FaultDesk is a natural customer for the top-ranked document and inspection ideas."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "Facility-service and property-care firms with 5–100 staff that maintain housing co-ops and small rental buildings."
+    },
+    {
+      "label": "Buyer",
+      "text": "The owner or operations manager of the facility firm."
+    },
+    {
+      "label": "Start market",
+      "text": "Stockholm, Gothenburg and Malmö, then Norway and Finland (similar co-op models)."
+    }
+  ],
+  "solution": [
+    {
+      "title": "One inbox for all reports",
+      "text": "a web form and QR code for each building, an email address and an SMS number feed one queue."
+    },
+    {
+      "title": "AI triage",
+      "text": "each report is sorted into trade (plumbing, electrical, locks, laundry), urgency (emergency, this week, planned) and building."
+    },
+    {
+      "title": "Asks for what is missing",
+      "text": "the resident gets an automatic reply asking for a photo, flat number or access time."
+    },
+    {
+      "title": "Responsibility check",
+      "text": "FaultDesk compares the fault with the co-op's own responsibility list (ansvarsfördelning) and marks it \"co-op pays\", \"resident pays\" or \"check\"."
+    },
+    {
+      "title": "Work order and updates",
+      "text": "a ready work order goes to the firm's system or technician app; residents get status messages."
+    },
+    {
+      "title": "Monthly board report",
+      "text": "each co-op board gets a short report: faults, response times, costs, recurring problems."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Building QR codes and web fault form",
+      "Email and SMS intake",
+      "AI triage by trade, urgency and building",
+      "Upload of each co-op's responsibility list and automatic check",
+      "Work-order board with status updates to residents",
+      "Monthly PDF report per co-op"
+    ],
+    "later": [
+      "Integration with work-order systems used by Swedish facility firms",
+      "Night-time emergency forwarding",
+      "Boappa / co-op app connection",
+      "Norwegian and Finnish",
+      "Link to CleanProof inspections"
+    ]
+  },
+  "techStack": [
+    "Python + Django",
+    "PostgreSQL",
+    "LLM for Swedish text triage and rule checking",
+    "Twilio or 46elks for SMS",
+    "Simple mobile web app for technicians",
+    "EU hosting"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "Jonatan calls 20 property-care firms. For 2 firms, run one shared inbox by hand with ChatGPT for a week and count wasted trips."
+    },
+    {
+      "when": "Week 3–5",
+      "what": "Intake form, email/SMS, AI triage, responsibility check."
+    },
+    {
+      "when": "Week 6–8",
+      "what": "Work-order board, resident updates, board report, payments."
+    },
+    {
+      "when": "Week 9–12",
+      "what": "First 3 paying firms; measure wasted trips saved."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server + database",
+      "note": "Hetzner or Supabase/Vercel free tiers, EU hosting",
+      "cost": "€10–25 / month"
+    },
+    {
+      "item": "AI API (OpenAI / Claude)",
+      "note": "~€0.005 per report",
+      "cost": "€10–25 / month"
+    },
+    {
+      "item": "Email sending",
+      "note": "Resend / Postmark",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "SMS",
+      "note": "46elks or Twilio, resident updates",
+      "cost": "€10–40 / month"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €450–750",
+  "pricing": [
+    {
+      "name": "Small: €99/mo",
+      "description": "Up to 1,000 flats, web/email intake, triage, reports"
+    },
+    {
+      "name": "Medium: €199/mo",
+      "description": "Up to 4,000 flats, SMS, responsibility checks"
+    },
+    {
+      "name": "Large: €349/mo",
+      "description": "Unlimited flats, integrations, night emergency routing"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 300,
+      "value": 20,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 49,
+      "max": 399,
+      "value": 179,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "Boappa, Ourliving and other co-op apps",
+      "what": "Board communication and fault reporting to the board",
+      "gap": "Built for boards, not for the facility firm doing the work; no triage or responsibility check"
+    },
+    {
+      "name": "Swedish property systems (e.g. Vitec, Momentum)",
+      "what": "Full property management for landlords",
+      "gap": "Large systems sold to property owners; too big for a 25-person care firm"
+    },
+    {
+      "name": "EliseAI, Lette and other funded startups",
+      "what": "AI for property managers",
+      "gap": "Focus on US and German landlords, not Swedish co-ops and their facility firms"
+    },
+    {
+      "name": "Us",
+      "what": "AI triage + co-op responsibility check + work order for facility firms",
+      "gap": "Swedish, small-firm pricing, sold by someone from the industry",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Emergencies handled wrongly",
+      "answer": "Anything that might be urgent (water, gas, smoke, locked out) always goes to a human phone number at once; AI never closes emergencies."
+    },
+    {
+      "risk": "Small, local market",
+      "answer": "Accept a Nordic-first market, then expand with the same engine to cleaning and facility firms elsewhere."
+    },
+    {
+      "risk": "Firms already use a work-order system",
+      "answer": "Act as the intake layer and push orders into their system instead of replacing it."
+    },
+    {
+      "risk": "Overlap with AfterHours (phone answering)",
+      "answer": "FaultDesk handles written reports and rules; phone answering can be a later add-on, not the core."
+    }
+  ],
+  "questions": [
+    "How many fault reports do you get per week, and through which channels?",
+    "How often does a technician go out for something the resident should pay for?",
+    "How do you know each co-op's responsibility rules today?",
+    "What system do you use for work orders, and who types reports into it?",
+    "Would €99–199 a month be worth it if it cut wasted trips and typing? Who decides?"
+  ],
+  "numbers": {
+    "cashMin": 450.0,
+    "cashMax": 750.0,
+    "mvpWeeksMin": 6.0,
+    "mvpWeeksMax": 8.0,
+    "priceLabel": "€99–349/mo",
+    "competition": "Co-op apps and big systems, no triage for facility firms",
+    "competitionLevel": "medium",
+    "whoSells": "Jonatan → facility and property-care firms"
+  },
+  "skills": [
+    "coding",
+    "ai",
+    "local-sales",
+    "construction"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 6,
+    "willingnessToPay": 6,
+    "lowCompetition": 5,
+    "easyToBuild": 6,
+    "easyToSell": 8,
+    "skillFit": 6,
+    "globalPotential": 5,
+    "excitement": 6
+  },
+  "notes": "",
+  "interviews": [],
+  "rank": 30,
+  "batch": "Top 50 research (Nov 2026)"
+}
