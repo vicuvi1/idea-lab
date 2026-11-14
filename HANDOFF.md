@@ -26,7 +26,7 @@ Key files:
 - ✅ Signing works (new key set from the PC, 14 Nov).
 - ❌ The `RELEASES_TOKEN` can READ `idea-lab-releases` but cannot create releases. Victor must edit the token: Repository permissions → Contents → **Read and write**. Or make a new token and run `gh secret set RELEASES_TOKEN --repo vicuvi1/idea-lab`.
 
-- ⏳ The 25 researched ideas are not loaded into the app yet.
+- ⏳ 50 researched ideas are being added by the cloud session. Do not write idea files on the PC; run `git pull` instead.
 - Victor's PC has an old v0.1.0 installed, which has no updater. He needs one manual install of a new version.
 
 ## Your tasks, in order
@@ -64,23 +64,8 @@ gh run watch --repo vicuvi1/idea-lab
 ```
 The step "Check secrets are set and look right" must print `looks valid` and `can write`. The release must appear at https://github.com/vicuvi1/idea-lab-releases/releases/latest with an `.exe`, a `.msi` and **`latest.json`**.
 
-### 3. Load the 25 researched ideas into the app
-- Read `reports/Top 25 SaaS ideas for Victor.md`, and the notes in `research_notes/…` for details.
-- For each of the 25 ideas, create `src/data/ideas/1NN-<slug>.json` (101–125, so the research ideas sort after the original 8).
-- Use `src/data/ideas/01-security-questionnaire-autopilot.json` as the template, and fill **every** field of the `Idea` type in `src/types.ts`:
-  - **Basics:** `title`, `summary`, `hook`, `industry`, `tags`, `priceLabel`
-  - **Story and problem:** `story` (a short realistic customer story, using `**bold**`), `whyReal`, `whoPays`
-  - **Product:** `solution` steps, `mvp.must`/`mvp.later`, `techStack`, `timeline`
-  - **Money:** `costs`, `costTotal3Months`, `pricing`, `calculator` (realistic sliders)
-  - **Market and validation:** `competitors` (include an `"Us"` row with `isUs: true`), `risks`, `questions` (the 5 interview questions)
-  - **Numbers:** `numbers` (`cashMin`/`cashMax` in €, `mvpWeeksMin`/`mvpWeeksMax`, `competitionLevel` `low|medium|high`, `whoSells`)
-  - **Scoring:** `skills` (from `SKILLS` in `src/lib/criteria.ts` where possible), `recurring: true`, and `scores` (the report's 0–10 scores mapped to `pain`, `willingnessToPay`, `lowCompetition`, `easyToBuild`, `easyToSell`, `skillFit`, `globalPotential`, plus `excitement`, default 6)
-  - **Defaults:** `status: "idea"`, `notes: ""`, `interviews: []`
-  - **Research extras:** `rank` (1–25 from the report), `batch: "Research Nov 2026"`, `whyNow`, `evidence` (3–6 bullet strings with numbers), `sources` (the real URLs cited in the report and notes for that idea)
-  - **Colour:** cycle through `IDEA_COLORS` from `src/lib/criteria.ts`
-- Use only facts from the report and notes; don't invent statistics. Keep the reader in mind: English is his second language, so use plain words.
-- Check: `npx tsc -b && npm run build`, then `npm run dev` and look at the Library ("Research Nov 2026" filter), a few idea pages, Compare and Fit for Me.
-- Commit and push to `main` (without `[skip ci]`) so the build publishes a new version that includes the ideas.
+### 3. ~~Load the researched ideas~~: SKIP, the cloud session is doing this
+The cloud Claude session is writing **50** researched ideas (`src/data/ideas/101-…` to `150-…`) plus `IDEAS.md` and will push them to `main`. **Do not create idea files yourself** (it would conflict). Just run `git pull` when Victor says they're pushed.
 
 ### 4. Install on Victor's PC (one time)
 - Download the newest `Idea.Lab_<version>_x64-setup.exe` from https://github.com/vicuvi1/idea-lab-releases/releases/latest and run it.
