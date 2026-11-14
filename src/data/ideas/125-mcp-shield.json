@@ -1,0 +1,294 @@
+{
+  "id": "r-mcp-shield",
+  "title": "MCP Shield: security scanner for AI-agent tool connections",
+  "color": "#3987e5",
+  "industry": "Cybersecurity",
+  "status": "idea",
+  "source": "Top 25 SaaS ideas for Victor (research report, Nov 2026)",
+  "tags": [
+    "Fits Victor's security path",
+    "Open-source core",
+    "Hard to sell"
+  ],
+  "summary": "A free command-line scanner, with a paid team dashboard, that checks the MCP servers developers plug into AI coding agents for poisoned tool descriptions, too-broad permissions and leaked secrets.",
+  "priceLabel": "Free CLI; $8 / dev / month",
+  "hook": "\"Our developers installed a dozen MCP servers into their AI agents last month. I have no idea what those tools can do.\"",
+  "story": "**Lukas is head of engineering at an 80-person software company.** His developers use Claude Code and Cursor, and each one has plugged in several MCP servers: database tools, GitHub, Slack, random open-source tools found online.\n\nThe security team asks: **which tools have access to what?** Could a tool description contain hidden instructions? Are API keys sitting in plain-text config files? The enterprise MCP gateways on the market are heavy to deploy. Lukas wants a **simple scanner** his developers can run, and one dashboard that shows the risks across the team.",
+  "whyNow": "Investors are pouring money into the space: Runlayer launched with an $11M seed in November 2025 and Obot raised a $35M seed. The OWASP Top 10 for LLM applications lists prompt injection and \"excessive agency\" among the main risks. MCP (the Model Context Protocol) is now the standard way to connect tools to AI assistants such as Claude Code or Cursor.",
+  "evidence": [
+    "Runlayer launched with an $11M seed in November 2025 [TechCrunch]",
+    "Obot AI raised a $35M seed for an enterprise MCP gateway [VCA Online]",
+    "Archestra raised $3.3M (Aug 2025) to secure enterprise use of MCP servers [SiliconANGLE]",
+    "Helmet Security emerged from stealth with $9M in funding [SecurityWeek]",
+    "OWASP Top 10 for LLM applications lists prompt injection and excessive agency among main risks [OWASP]",
+    "Pain evidence is indirect: investor money and the OWASP list, not customer surveys [Top 25 report]"
+  ],
+  "sources": [
+    {
+      "title": "TechCrunch: Runlayer launches with $11M",
+      "url": "https://techcrunch.com/2025/11/17/mcp-ai-agent-security-startup-runlayer-launches-with-8-unicorns-11m-from-khoslas-keith-rabois-and-felicis"
+    },
+    {
+      "title": "VCA Online: Obot AI secures $35M seed",
+      "url": "https://www.vcaonline.com/news/2025092308/obot-ai-secures-35m-seed-to-build-enterprise-mcp-gateway/"
+    },
+    {
+      "title": "SiliconANGLE: Archestra raises $3.3M",
+      "url": "https://siliconangle.com/2025/08/14/archestra-raises-3-3m-secure-enterprise-use-ai-agents-mcp-servers/"
+    },
+    {
+      "title": "SecurityWeek: Helmet Security emerges with $9M",
+      "url": "https://www.securityweek.com/helmet-security-emerges-from-stealth-mode-with-9-million-in-funding/amp/"
+    },
+    {
+      "title": "OWASP Top 10 for LLM applications",
+      "url": "https://genai.owasp.org/llm-top-10/"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "AI agents now have real tools",
+      "text": "Developers connect databases, code repos and chat tools to AI agents through MCP servers, often without review."
+    },
+    {
+      "title": "Known risk categories",
+      "text": "OWASP lists prompt injection and excessive agency among the top LLM risks; poisoned tool descriptions are one way in."
+    },
+    {
+      "title": "Investors see the market",
+      "text": "Runlayer, Obot, Archestra and Helmet raised money, but they target enterprise gateways."
+    },
+    {
+      "title": "Best fit for Victor",
+      "text": "Pure security research and coding; Victor's own write-ups can build credibility."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "Engineering leads and security-minded CTOs at software companies with 10–200 people whose developers use AI coding agents."
+    },
+    {
+      "label": "Buyer",
+      "text": "The engineering lead or CTO."
+    },
+    {
+      "label": "Start market",
+      "text": "Global, through GitHub, Hacker News and security communities."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Run the free CLI",
+      "text": "it reads MCP configs from Claude Desktop, Claude Code, Cursor, VS Code and Windsurf."
+    },
+    {
+      "title": "Find risks",
+      "text": "static rules plus an AI review of tool descriptions flag poisoning, broad permissions and leaked secrets."
+    },
+    {
+      "title": "Fit into CI",
+      "text": "SARIF output for GitHub code scanning."
+    },
+    {
+      "title": "Team dashboard",
+      "text": "reports per developer combined in one view (paid)."
+    },
+    {
+      "title": "Policy",
+      "text": "an allowlist policy file of approved MCP servers."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "CLI that reads MCP configs from Claude Desktop, Claude Code, Cursor, VS Code and Windsurf",
+      "Static rules for secrets and broad permissions",
+      "AI review of tool descriptions for poisoning",
+      "SARIF output for GitHub code scanning",
+      "Small team dashboard combining reports per developer",
+      "Allowlist policy file"
+    ],
+    "later": [
+      "Public registry of scanned MCP servers with risk scores",
+      "Runtime monitoring of tool calls",
+      "SSO and audit logs for the dashboard",
+      "IDE extension"
+    ]
+  },
+  "techStack": [
+    "Go or TypeScript CLI (open source)",
+    "LLM for tool-description review",
+    "SARIF output",
+    "Next.js dashboard",
+    "PostgreSQL",
+    "GitHub Actions integration"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "**Validate (light code).** Write a small script to scan 100 public MCP servers; publish the findings as a write-up; measure GitHub stars and inbound interest; ask 10 engineering leads whether they would pay for team visibility."
+    },
+    {
+      "when": "Week 3–5",
+      "what": "Victor turns the script into the open-source CLI with rules, AI review and SARIF output."
+    },
+    {
+      "when": "Week 6–7",
+      "what": "Team dashboard and allowlist policy file."
+    },
+    {
+      "when": "Week 8",
+      "what": "Launch on Hacker News and r/netsec; offer the team plan to interested leads."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server + database",
+      "note": "Small dashboard; CLI runs on developers' machines",
+      "cost": "€0–20 / month"
+    },
+    {
+      "item": "AI API",
+      "note": "Tool-description reviews",
+      "cost": "€5–10 / month"
+    },
+    {
+      "item": "Email sending",
+      "note": "Resend / Postmark free or low tiers",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Landing page",
+      "note": "No-code builder or built by us",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €400–650 (report estimate €100–200 for hosting, AI and validation, plus €300–450 for AI coding tools)",
+  "pricing": [
+    {
+      "name": "Open source CLI: free",
+      "description": "Local scans, SARIF output"
+    },
+    {
+      "name": "Team: $8 / developer / month",
+      "description": "Dashboard, policy file, combined reports"
+    },
+    {
+      "name": "Company: $299/mo",
+      "description": "Up to 50 developers"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 300,
+      "value": 15,
+      "label": "Paying teams"
+    },
+    "price": {
+      "min": 4,
+      "max": 15,
+      "value": 8,
+      "label": "Average price per developer per month ($)"
+    },
+    "multiplier": {
+      "min": 5,
+      "max": 200,
+      "value": 25,
+      "label": "Developers per team"
+    }
+  },
+  "competitors": [
+    {
+      "name": "Runlayer",
+      "what": "MCP gateway with threat detection, $11M seed",
+      "gap": "Enterprise, gateway-heavy"
+    },
+    {
+      "name": "Obot, Archestra, Helmet",
+      "what": "Enterprise MCP gateways and security",
+      "gap": "Need infrastructure; enterprise sales"
+    },
+    {
+      "name": "Operant, Natoma, Cloudflare AI Gateway",
+      "what": "Runtime and gateway security",
+      "gap": "Not developer-first scanning"
+    },
+    {
+      "name": "Us",
+      "what": "Free CLI + cheap team dashboard",
+      "gap": "Zero-infrastructure, developer-first scanning",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Very fast-moving, crowded field",
+      "answer": "Ship fast, open source the core and build reputation through research write-ups."
+    },
+    {
+      "risk": "AI-tool vendors build this in",
+      "answer": "Stay cross-tool (Claude, Cursor, VS Code, Windsurf) and neutral."
+    },
+    {
+      "risk": "Developer tools are hard to monetise",
+      "answer": "Charge for the team view and policy, not the scanner."
+    },
+    {
+      "risk": "Jonatan cannot sell it",
+      "answer": "Victor owns distribution through content, GitHub and conference talks."
+    }
+  ],
+  "questions": [
+    "How many MCP servers do your developers use, and do you know which ones?",
+    "Do you have a policy on what tools AI agents may access?",
+    "Has your security team asked about AI coding agents yet?",
+    "Would you prefer a gateway or a scanner?",
+    "Who would own the budget?"
+  ],
+  "numbers": {
+    "cashMin": 400,
+    "cashMax": 650,
+    "mvpWeeksMin": 6,
+    "mvpWeeksMax": 8,
+    "priceLabel": "Free CLI; $8 / dev / month",
+    "competition": "Funded enterprise gateways; dev-first gap",
+    "competitionLevel": "high",
+    "whoSells": "Victor → engineering leads (GitHub, Hacker News, security talks)"
+  },
+  "skills": [
+    "security",
+    "coding",
+    "ai"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 6,
+    "willingnessToPay": 4,
+    "lowCompetition": 4,
+    "easyToBuild": 7,
+    "easyToSell": 2,
+    "skillFit": 10,
+    "globalPotential": 9,
+    "excitement": 6
+  },
+  "notes": "",
+  "interviews": [],
+  "rank": 25,
+  "batch": "Top 50 research (Nov 2026)"
+}

@@ -1,0 +1,318 @@
+{
+  "id": "r-ai-use-guard",
+  "title": "AI Use Guard: shadow-AI visibility and AI-policy records for small firms",
+  "color": "#e66767",
+  "industry": "Cybersecurity",
+  "status": "idea",
+  "source": "Top 25 SaaS ideas for Victor (research report, Nov 2026)",
+  "tags": [
+    "MSP channel",
+    "Fits Victor's security path",
+    "EU AI Act opener"
+  ],
+  "summary": "Shows which AI tools a company's staff use, warns before someone pastes client data into them, and records AI-policy and training sign-offs. Sold per user, mainly through MSPs.",
+  "priceLabel": "$2–4 / user / month",
+  "hook": "\"I have no idea which AI tools my staff use, or what client data they paste into them.\"",
+  "story": "**Maria is managing partner of a 35-person accounting firm in Stockholm.** Her staff use ChatGPT, Copilot and a few AI note-takers. Nobody approved them, and nobody knows what client data goes in. Last month a large client asked in a supplier questionnaire: **\"How do you control the use of AI tools with our data?\"** Maria had no answer.\n\nHer IT provider (an MSP) cannot help either: it has **no list of AI tools** in her company. Big-company AI security products are quote-only and made for enterprises. Maria wants a simple view of what is used, a warning before client data is pasted, and a record that everyone signed the AI policy.",
+  "whyNow": "The EU AI Act's Article 4 \"AI literacy\" duty has applied since 2 February 2025. The Digital Omnibus, in force since 27 July 2026, softened it to \"take measures to support AI literacy\", so it is a duty of effort: a conversation opener, not a hard mandate. Meanwhile staff adopt AI faster than firms can control it.",
+  "evidence": [
+    "A Pax8 survey of 1,150 SMB leaders (US, UK, Germany, Sweden) found shadow AI in 35% of AI-using firms, and nearly half got a bigger AI bill than expected [The Next Web]",
+    "81% of US SMBs use AI but only 69% have a policy [tech.co]",
+    "In large firms, 57% of employees entered confidential information into AI tools and only 24% had mandatory training [Dataconomy]",
+    "Only 51.9% of MSPs keep a full inventory of AI tools in client environments [Channel Insider]",
+    "Caveat: many shadow-AI percentages cannot be traced to an original study [ainora.lt]"
+  ],
+  "sources": [
+    {
+      "title": "euaiact.com: Digital Omnibus on AI",
+      "url": "https://www.euaiact.com/digital-omnibus-ai"
+    },
+    {
+      "title": "Lewis Silkin: Digital Omnibus on AI enters into force",
+      "url": "https://www.lewissilkin.com/insights/2026/07/27/the-digital-omnibus-on-ai-enters-into-force-today-102nedo"
+    },
+    {
+      "title": "The Next Web: Pax8 shadow AI survey",
+      "url": "https://thenextweb.com/news/shadow-ai-small-businesses-pax8-survey"
+    },
+    {
+      "title": "tech.co: small businesses adopting AI faster than they can control it",
+      "url": "https://tech.co/news/small-businesses-are-developing-ai-faster-than-they-can-control"
+    },
+    {
+      "title": "Dataconomy: 57% of employees expose sensitive data to GenAI",
+      "url": "https://dataconomy.com/2025/02/28/57-percent-of-employees-expose-sensitive-data-to-genai/"
+    },
+    {
+      "title": "Channel Insider: N-able AI security and MSPs",
+      "url": "https://www.channelinsider.com/security/managed-services/n-able-ai-security-alert-fatigue-msps/"
+    },
+    {
+      "title": "ainora.lt: what employees paste into shadow AI (caveat on statistics)",
+      "url": "https://ainora.lt/blog/shadow-ai-what-employees-paste"
+    },
+    {
+      "title": "Nand Research: SentinelOne to acquire Prompt Security",
+      "url": "https://nand-research.com/research-note-sentinelone-to-acquire-prompt-security/"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "Staff use AI without asking",
+      "text": "Surveys find shadow AI in about a third of AI-using small firms, and many firms have no written AI policy."
+    },
+    {
+      "title": "Clients start asking",
+      "text": "Supplier questionnaires and NIS2 supplier checks now ask how firms handle data in AI tools."
+    },
+    {
+      "title": "MSPs have no visibility",
+      "text": "Only about half of MSPs keep a full inventory of AI tools in client environments, so they need a product to offer."
+    },
+    {
+      "title": "Enterprise tools left the small market",
+      "text": "SentinelOne bought Prompt Security and Check Point bought Lakera; the rest are quote-based. Small firms have no cheap option."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "Small and mid-sized firms (20–250 staff) in professional services: accounting, law, agencies, recruiting."
+    },
+    {
+      "label": "Buyer",
+      "text": "The owner or COO, or the MSP that resells it to its clients."
+    },
+    {
+      "label": "Start market",
+      "text": "MSPs in the EU and English-speaking markets, plus direct sales to EU accounting and law firms."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Deploy the extension",
+      "text": "a Chrome/Edge extension is pushed to all staff through Intune or Google admin."
+    },
+    {
+      "title": "See AI use",
+      "text": "it detects visits to 200+ AI websites and shows a dashboard per client company."
+    },
+    {
+      "title": "Warn before leaks",
+      "text": "local pattern-matching spots personal data, IBANs, card numbers and API keys and shows a warning banner (warn, not block, at first)."
+    },
+    {
+      "title": "Check connected AI apps",
+      "text": "a scan of which AI apps users connected to Microsoft 365."
+    },
+    {
+      "title": "Policy and training records",
+      "text": "an AI-policy generator with employee sign-off, plus 5 short training modules with a completion log."
+    },
+    {
+      "title": "Monthly PDF",
+      "text": "a report the MSP can use in client reviews."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Chrome/Edge extension deployable through Intune or Google admin",
+      "Detection of 200+ AI websites",
+      "Local pattern-matching for personal data, IBANs, card numbers and API keys, with a warning banner",
+      "Dashboard per client company",
+      "Scan of AI apps connected to Microsoft 365",
+      "AI-policy generator with employee acknowledgement and 5 training modules with completion log",
+      "Monthly PDF report for MSP client reviews"
+    ],
+    "later": [
+      "Blocking mode and allow-lists per company",
+      "Google Workspace connected-apps scan",
+      "Bundle with InsureReady, Leaver and QBR Autopilot as one MSP product",
+      "Firefox and Safari support",
+      "PSA integration for MSP billing"
+    ]
+  },
+  "techStack": [
+    "Chrome/Edge extension (Manifest V3)",
+    "Next.js dashboard",
+    "PostgreSQL (Supabase, EU)",
+    "Microsoft Graph API (read-only)",
+    "Local regex/pattern detection in the browser",
+    "PDF generation"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "**Validate, no code.** Publish a free \"AI usage policy + shadow-AI checklist\" lead magnet. Jonatan offers 20 MSPs a free 14-day hand-run pilot on one client. Pre-sell a $490/year founding plan to 5 firms. Target: 3 pilots and 1 paid commitment."
+    },
+    {
+      "when": "Week 3–5",
+      "what": "Victor builds the extension (AI site detection, data-pattern warnings) and the per-client dashboard."
+    },
+    {
+      "when": "Week 6–7",
+      "what": "Microsoft 365 connected-apps scan, policy generator, training log, monthly PDF."
+    },
+    {
+      "when": "Week 8",
+      "what": "Deploy at pilot MSPs' clients and convert pilots to paid."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server + database",
+      "note": "EU hosting; the extension does most work on the user's computer",
+      "cost": "€10–25 / month"
+    },
+    {
+      "item": "AI API",
+      "note": "Policy generator and report text",
+      "cost": "€5–15 / month"
+    },
+    {
+      "item": "Chrome Web Store developer fee",
+      "note": "One-time",
+      "cost": "≈ €5 one-off"
+    },
+    {
+      "item": "Email sending",
+      "note": "Resend / Postmark free or low tiers",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Landing page",
+      "note": "No-code builder or built by us",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €500–750 (report estimate €200–300 for hosting, AI and validation, plus €300–450 for AI coding tools)",
+  "pricing": [
+    {
+      "name": "MSP wholesale: $2–3 / user / month",
+      "description": "10-user minimum per client, multi-client dashboard"
+    },
+    {
+      "name": "Direct: $3–4 / user / month",
+      "description": "Minimum $49/month"
+    },
+    {
+      "name": "Founding plan: $490 / year",
+      "description": "Early adopters during validation"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 300,
+      "value": 20,
+      "label": "Paying client companies"
+    },
+    "price": {
+      "min": 2,
+      "max": 6,
+      "value": 3,
+      "label": "Average price per user per month ($)"
+    },
+    "multiplier": {
+      "min": 10,
+      "max": 250,
+      "value": 40,
+      "label": "Users per client company"
+    }
+  },
+  "competitors": [
+    {
+      "name": "Prompt Security (now SentinelOne), Lakera (now Check Point)",
+      "what": "Enterprise AI security",
+      "gap": "Bought by large vendors; enterprise sales"
+    },
+    {
+      "name": "Harmonic, LayerX, Nightfall",
+      "what": "AI data-loss prevention",
+      "gap": "Quote-based, not MSP-friendly"
+    },
+    {
+      "name": "Microsoft / Google native controls",
+      "what": "Built-in data-loss features",
+      "gap": "Need premium licences and expert setup"
+    },
+    {
+      "name": "Us",
+      "what": "Browser extension + AI policy + training log, multi-client",
+      "gap": "Cheap, per user, built for MSPs and small firms",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Microsoft and Google add native AI data-loss controls",
+      "answer": "Stay cross-platform and focus on the policy/training records and MSP multi-client view."
+    },
+    {
+      "risk": "Employee-monitoring rules and works councils in the EU",
+      "answer": "Warn, do not record content; process data locally; give a clear privacy notice."
+    },
+    {
+      "risk": "Extension deployment friction",
+      "answer": "Sell through MSPs who already push software via Intune or Google admin."
+    },
+    {
+      "risk": "Article 4 was softened",
+      "answer": "Lead with client questionnaires and data-leak risk, not with the law."
+    }
+  ],
+  "questions": [
+    "Which AI tools do your (or your clients') staff use for work, and how do you know?",
+    "Do you have a written AI usage policy, and is it followed?",
+    "Has a client asked how you handle their data in AI tools?",
+    "Have you sold any AI-related service yet, and at what price?",
+    "Would you deploy a browser extension to all staff, and what would you pay per user?"
+  ],
+  "numbers": {
+    "cashMin": 500,
+    "cashMax": 750,
+    "mvpWeeksMin": 7,
+    "mvpWeeksMax": 8,
+    "priceLabel": "$2–4 / user / month",
+    "competition": "Enterprise consolidated; SMB/MSP gap",
+    "competitionLevel": "medium",
+    "whoSells": "Jonatan → MSPs (resell to their clients)"
+  },
+  "skills": [
+    "security",
+    "coding",
+    "ai",
+    "integrations",
+    "b2b-sales"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 7,
+    "willingnessToPay": 5,
+    "lowCompetition": 5,
+    "easyToBuild": 6,
+    "easyToSell": 6,
+    "skillFit": 10,
+    "globalPotential": 8,
+    "excitement": 6
+  },
+  "notes": "",
+  "interviews": [],
+  "rank": 16,
+  "batch": "Top 50 research (Nov 2026)"
+}

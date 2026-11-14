@@ -1,0 +1,282 @@
+{
+  "id": "r-leaver",
+  "title": "Leaver: offboarding and access clean-up for small companies",
+  "color": "#0ca30c",
+  "industry": "Cybersecurity",
+  "status": "idea",
+  "source": "Top 25 SaaS ideas for Victor (research report, Nov 2026)",
+  "tags": [
+    "Microsoft/Google connector",
+    "MSP bundle",
+    "Global market"
+  ],
+  "summary": "When someone leaves a small company, one click removes their access to Google Workspace or Microsoft 365 and connected apps, and keeps proof that it was done.",
+  "priceLabel": "$2 / user / month (min $39)",
+  "hook": "\"Three months after she left, we found out our old sales manager could still log into the CRM.\"",
+  "story": "**Sofia is office manager at a 60-person design firm with no IT department.** When someone leaves, she disables their email, but nobody knows which other apps they used: Dropbox, a CRM, design tools, apps connected with \"Sign in with Google\".\n\nLast quarter a client's security questionnaire asked: **\"Can you show evidence that leavers lose access within 24 hours?\"** Sofia could not. Later she found a former employee **still had access to a shared drive**. She wants a checklist that runs itself and a log that proves it.",
+  "whyNow": "Insurers, auditors and customers increasingly ask for offboarding evidence as part of security checks (an inference from the insurance and questionnaire trends). There is no specific deadline.",
+  "evidence": [
+    "48% of former employees still had app access months after leaving (CloudEagle 2026 report, 1,000 enterprise CIOs and CISOs; vendor source) [CloudEagle]",
+    "A Sagiss survey, cited second-hand, found 82% of workers at firms under 250 staff had lingering access [Efficiently Connected / Infonaligy]",
+    "Torii, Zluri, BetterCloud and CloudEagle are enterprise-oriented; their prices were not found [Top 25 report]"
+  ],
+  "sources": [
+    {
+      "title": "CloudEagle: 48% of former employees still have SaaS access",
+      "url": "https://www.cloudeagle.ai/newsroom/48-of-former-employees-still-have-saas-access-months-after-leaving-cloudeagles-own-iga-report"
+    },
+    {
+      "title": "Efficiently Connected (Sagiss survey coverage)",
+      "url": "https://www.efficientlyconnected.com/?p=9885"
+    },
+    {
+      "title": "Infonaligy: employee offboarding security gaps in SMBs",
+      "url": "https://www.infonaligy.com/blog/employee-offboarding-security-gaps-smb"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "Lingering access is common",
+      "text": "Vendor and secondary surveys say a large share of former employees keep app access for months."
+    },
+    {
+      "title": "Small firms have no IT person",
+      "text": "An office manager or HR lead does offboarding by memory, and connected apps are invisible to them."
+    },
+    {
+      "title": "Evidence is now asked for",
+      "text": "Security questionnaires and cyber insurers increasingly ask for proof of offboarding (inference from trends)."
+    },
+    {
+      "title": "Fits the MSP bundle",
+      "text": "Shares the Microsoft/Google connector and MSP buyer with InsureReady, AI Use Guard and QBR Autopilot."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "Companies with 20–250 staff and no dedicated IT person, plus MSPs."
+    },
+    {
+      "label": "Buyer",
+      "text": "The office manager, HR/operations lead or MSP."
+    },
+    {
+      "label": "Start market",
+      "text": "Global in English, through MSPs and office-manager/HR communities."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Connect",
+      "text": "a read-first connection to Google Workspace or Microsoft 365."
+    },
+    {
+      "title": "See connected apps",
+      "text": "a list of third-party apps each user has connected through login grants."
+    },
+    {
+      "title": "One-click leaver flow",
+      "text": "suspend the account, transfer Drive and mail, revoke tokens, remove from groups."
+    },
+    {
+      "title": "Manual checklist",
+      "text": "for apps without an API, a checklist with owners and due dates."
+    },
+    {
+      "title": "Proof and savings",
+      "text": "an audit-log export as evidence, plus a report of wasted licences."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Google Workspace and Microsoft 365 connector",
+      "List of third-party apps each user has connected",
+      "One-click leaver flow (suspend, transfer Drive and mail, revoke tokens, remove from groups)",
+      "Manual checklist for other apps",
+      "Wasted-licence report",
+      "Audit-log export"
+    ],
+    "later": [
+      "Onboarding flow (joiner checklist)",
+      "Direct integrations with common SaaS apps",
+      "MSP multi-tenant dashboard",
+      "HR system trigger (leaver date starts the flow)",
+      "Bundle with InsureReady and AI Use Guard"
+    ]
+  },
+  "techStack": [
+    "Next.js",
+    "Google Admin SDK + Microsoft Graph API",
+    "PostgreSQL (EU hosting)",
+    "Background jobs (queue)",
+    "PDF / CSV audit export",
+    "Stripe billing"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "**Validate, no code.** Offer a free \"zombie access audit\" to 10 small companies using manual admin exports; count lingering accounts and app grants; ask whether owners would pay to fix and monitor them."
+    },
+    {
+      "when": "Week 3–4",
+      "what": "Victor builds the Google and Microsoft connectors and the connected-apps list. Start the Google security review early."
+    },
+    {
+      "when": "Week 5–6",
+      "what": "One-click leaver flow, manual checklist, audit log."
+    },
+    {
+      "when": "Week 7–8",
+      "what": "Wasted-licence report; convert audit companies and pitch to MSPs."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server + database",
+      "note": "EU hosting",
+      "cost": "€10–25 / month"
+    },
+    {
+      "item": "Microsoft test tenant",
+      "note": "For development and demos",
+      "cost": "€0–20 / month"
+    },
+    {
+      "item": "Google security review for sensitive permissions",
+      "note": "May take time and money; not researched",
+      "cost": "Unknown"
+    },
+    {
+      "item": "Email sending",
+      "note": "Resend / Postmark free or low tiers",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Landing page",
+      "note": "No-code builder or built by us",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €500–850 (report estimate €200–400 for hosting, AI and validation, plus €300–450 for AI coding tools)",
+  "pricing": [
+    {
+      "name": "Per user: $2 / user / month",
+      "description": "Minimum $39/month per company"
+    },
+    {
+      "name": "MSP: volume pricing",
+      "description": "Multi-client dashboard, bundled with other MSP modules"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 300,
+      "value": 20,
+      "label": "Paying companies"
+    },
+    "price": {
+      "min": 1,
+      "max": 5,
+      "value": 2,
+      "label": "Average price per user per month ($)"
+    },
+    "multiplier": {
+      "min": 20,
+      "max": 250,
+      "value": 50,
+      "label": "Users per company"
+    }
+  },
+  "competitors": [
+    {
+      "name": "Torii, Zluri, BetterCloud, CloudEagle",
+      "what": "SaaS management and identity governance",
+      "gap": "Enterprise-oriented; prices not public"
+    },
+    {
+      "name": "MSP tools",
+      "what": "Many competing tools in the MSP world",
+      "gap": "Often part of larger, pricier suites"
+    },
+    {
+      "name": "Manual checklists",
+      "what": "What most small firms do",
+      "gap": "No visibility of connected apps, no proof"
+    },
+    {
+      "name": "Us",
+      "what": "Connected-app discovery, leaver checklist, evidence log",
+      "gap": "$2/user, set up in minutes",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Google and Microsoft permission reviews",
+      "answer": "Start reviews early; launch with Microsoft first if Google is slow."
+    },
+    {
+      "risk": "Many competing tools in the MSP world",
+      "answer": "Bundle with InsureReady and AI Use Guard as one MSP product."
+    },
+    {
+      "risk": "Lower urgency than legally forced needs",
+      "answer": "Lead with the free zombie-access audit to show real risk."
+    }
+  ],
+  "questions": [
+    "What happens, step by step, when someone leaves?",
+    "Have you later found ex-staff who still had access, and what happened?",
+    "How many software apps do you think you use, and who owns the list?",
+    "Has an auditor, customer or insurer asked you for offboarding evidence?",
+    "What would you pay per employee per month never to worry about this?"
+  ],
+  "numbers": {
+    "cashMin": 500,
+    "cashMax": 850,
+    "mvpWeeksMin": 7,
+    "mvpWeeksMax": 8,
+    "priceLabel": "$2 / user / month (min $39)",
+    "competition": "Enterprise tools; small-firm gap",
+    "competitionLevel": "medium",
+    "whoSells": "Jonatan → MSPs and office managers"
+  },
+  "skills": [
+    "security",
+    "coding",
+    "integrations",
+    "b2b-sales"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 6,
+    "willingnessToPay": 5,
+    "lowCompetition": 5,
+    "easyToBuild": 6,
+    "easyToSell": 6,
+    "skillFit": 8,
+    "globalPotential": 9,
+    "excitement": 6
+  },
+  "notes": "",
+  "interviews": [],
+  "rank": 22,
+  "batch": "Top 50 research (Nov 2026)"
+}

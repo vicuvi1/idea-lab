@@ -1,0 +1,308 @@
+{
+  "id": "r-safelisting",
+  "title": "SafeListing: AI fills EU product-safety and packaging data from supplier documents",
+  "color": "#199e70",
+  "industry": "E-commerce",
+  "status": "idea",
+  "source": "Top 25 SaaS ideas for Victor (research report, Nov 2026)",
+  "tags": [
+    "Regulation deadline",
+    "Document engine",
+    "Pairs with PriceGuard"
+  ],
+  "summary": "AI pulls EU product-safety (GPSR) and packaging data out of supplier PDFs, translates the warnings and fills the store and marketplace fields sellers are legally required to show. Existing plugins only add empty fields.",
+  "priceLabel": "$19–199 / month",
+  "hook": "\"I have 2,000 products and the law says each one needs manufacturer details and warnings in the buyer's language. The data is buried in supplier PDFs.\"",
+  "story": "**Jan runs a WooCommerce shop in the Netherlands selling toys and home goods** from a dozen suppliers. Since December 2024 the GPSR rules say every listing must show **manufacturer details, an EU responsible person and safety warnings** in the buyer's language. He installed a free plugin, but it only added **empty fields** to 2,000 products.\n\nThe real data is in supplier PDFs and safety sheets, in English, German and Chinese. On top of that, from August 2026 he must **register for packaging fees** in each country he ships to. Jan needs a tool that reads the supplier documents, fills the fields, translates the warnings and tracks his registrations.",
+  "whyNow": "The EU General Product Safety Regulation (GPSR) has applied since 13 December 2024 and requires manufacturer details, an EU responsible person and warnings in the buyer's language on listings. The Packaging Regulation (PPWR) has applied since 12 August 2026, so online sellers must register and pay packaging fees in each country they ship to; a vendor cites German deadlines of 12 September and 12 November 2026.",
+  "evidence": [
+    "GPSR has applied since 13 December 2024 and requires manufacturer details, an EU responsible person and buyer-language warnings on listings [PriceProof]",
+    "Shopify does not provide a responsible person, so liability stays with the merchant [Meetanshi]",
+    "PPWR has applied since 12 August 2026: online sellers must register and pay packaging fees in each country they ship to [Taxually]",
+    "Amazon published a paper in March 2026 on how fragmented EPR packaging registrations are [Amazon]",
+    "Enforcement intensity is uncertain: marketplaces reportedly not yet required to check packaging registration numbers, no mass delisting [expan.do]",
+    "About 20 Shopify GPSR apps (most with no reviews) and at least 10 WooCommerce GPSR plugins, many free [Shopify App Store / WordPress.org]"
+  ],
+  "sources": [
+    {
+      "title": "PriceProof GPSR (Shopify App Store)",
+      "url": "https://apps.shopify.com/priceproof-gpsr"
+    },
+    {
+      "title": "Meetanshi: EU GPSR for Shopify",
+      "url": "https://meetanshi.com/blog/eu-gpsr-for-shopify/"
+    },
+    {
+      "title": "Taxually: PPWR for online sellers",
+      "url": "https://www.taxually.com/blog/ppwr-eu-packaging-regulation-online-sellers"
+    },
+    {
+      "title": "Printify: Germany EPR registration",
+      "url": "https://printify.com/blog/germany-epr-registration/"
+    },
+    {
+      "title": "Amazon: fragmentation in EPR packaging registration (March 2026)",
+      "url": "https://assets.aboutamazon.com/4a/4f/533903e94ec3befeb991ab514a03/fragmentation-in-epr-packaging-registration-and-opportunities-to-harmonize-march-2026.pdf"
+    },
+    {
+      "title": "expan.do: PPWR marketplace enforcement",
+      "url": "https://www.expan.do/post/ppwr-marketplaces-authorised-representative-enforcement"
+    },
+    {
+      "title": "Shopify App Store: Safix",
+      "url": "https://apps.shopify.com/safix"
+    },
+    {
+      "title": "WordPress.org: GPSR Check plugin",
+      "url": "https://wordpress.org/plugins/eubs-gpsr-check/?output_format=md"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "A clear legal duty",
+      "text": "GPSR (since December 2024) and PPWR (since August 2026) put concrete data and registration duties on online sellers into the EU."
+    },
+    {
+      "title": "The data is the hard part",
+      "text": "Existing plugins add empty fields. The work is finding manufacturer and safety data in supplier documents and translating warnings."
+    },
+    {
+      "title": "Registrations are fragmented",
+      "text": "Even Amazon wrote a paper about how fragmented packaging registrations are across EU countries."
+    },
+    {
+      "title": "Fits Victor's document AI",
+      "text": "It reuses the document-extraction engine and pairs naturally with PriceGuard, since the same suppliers send price lists and safety data."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "EU and non-EU merchants selling into the EU on WooCommerce, Shopware or PrestaShop with hundreds of products or more, and the agencies that run their stores."
+    },
+    {
+      "label": "Buyer",
+      "text": "The owner or e-commerce manager."
+    },
+    {
+      "label": "Start market",
+      "text": "WooCommerce and Shopware stores in Germany, the Netherlands and Sweden, plus their agencies."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Scan the catalogue",
+      "text": "a WooCommerce plugin finds every product with missing GPSR fields."
+    },
+    {
+      "title": "Upload supplier documents",
+      "text": "AI extracts manufacturer, responsible person and warnings, with a confidence score."
+    },
+    {
+      "title": "Human review",
+      "text": "a review queue lets the merchant approve or fix each extraction."
+    },
+    {
+      "title": "Translate and publish",
+      "text": "warnings are translated and shown in a product-page safety block."
+    },
+    {
+      "title": "Packaging tracker",
+      "text": "a simple per-country packaging-registration checklist."
+    },
+    {
+      "title": "Export",
+      "text": "CSV export, later feeds for Google, eMAG and Allegro."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "WooCommerce plugin plus cloud service",
+      "Bulk scan of the catalogue for missing GPSR fields",
+      "Supplier-document upload with AI extraction and confidence score",
+      "Human review queue",
+      "Translation of warnings",
+      "Product-page safety block and CSV export",
+      "Simple packaging-registration checklist per country"
+    ],
+    "later": [
+      "Shopware and PrestaShop apps",
+      "Marketplace feeds (Google, eMAG, Allegro)",
+      "Translation into all EU languages",
+      "Bundle with PriceGuard",
+      "Agency plan for many stores"
+    ]
+  },
+  "techStack": [
+    "WordPress/WooCommerce plugin (PHP)",
+    "Python or Node.js cloud service",
+    "OCR + LLM extraction with confidence scores",
+    "Translation via LLM",
+    "PostgreSQL",
+    "Stripe billing with AI credits"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "**Validate, no code.** Post in WooCommerce and Shopware groups offering a free \"GPSR gap scan\" of up to 1,000 products; measure sign-ups. Run AI extraction by hand on three merchants' supplier PDFs. Ask for $49/month to keep it updated."
+    },
+    {
+      "when": "Week 3–5",
+      "what": "Victor builds the plugin, catalogue scan and supplier-document extraction."
+    },
+    {
+      "when": "Week 6–7",
+      "what": "Review queue, translation, safety block, CSV export, packaging checklist."
+    },
+    {
+      "when": "Week 8",
+      "what": "Publish a free plugin on WordPress.org with paid AI credits; convert gap-scan users."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server + database",
+      "note": "Small VPS or free tiers",
+      "cost": "€5–20 / month"
+    },
+    {
+      "item": "AI API (document + image)",
+      "note": "Main running cost; bill extra credits above plan limits",
+      "cost": "€15–30 / month"
+    },
+    {
+      "item": "Email sending",
+      "note": "Resend / Postmark free or low tiers",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Landing page",
+      "note": "No-code builder or built by us",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €500–750 (report estimate €200–300 for hosting, AI and validation, plus €300–450 for AI coding tools)",
+  "pricing": [
+    {
+      "name": "Small: $19/mo",
+      "description": "Small catalogues"
+    },
+    {
+      "name": "Growth: $49/mo",
+      "description": "Hundreds of products, translations"
+    },
+    {
+      "name": "Pro: $99/mo, Agency: $199/mo",
+      "description": "Large catalogues; many stores for agencies"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 500,
+      "value": 40,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 19,
+      "max": 199,
+      "value": 49,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "Shopify GPSR apps (about 20, e.g. Safix, PriceProof)",
+      "what": "Add GPSR fields to listings",
+      "gap": "Mostly empty fields; most have no reviews"
+    },
+    {
+      "name": "WooCommerce GPSR plugins (10+, many free)",
+      "what": "Add fields and display blocks",
+      "gap": "Do not gather the data"
+    },
+    {
+      "name": "Compliance consultants / EPR services",
+      "what": "Registration services",
+      "gap": "Not linked to the product catalogue"
+    },
+    {
+      "name": "Us",
+      "what": "AI extraction from supplier documents, translation, packaging tracker, feeds",
+      "gap": "Gathers the data, not just the fields",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Saturated, often free competition",
+      "answer": "Free plugin as the entry, charge for AI extraction credits."
+    },
+    {
+      "risk": "Buyers fear legal liability",
+      "answer": "State clearly it is not legal advice; human review before publishing."
+    },
+    {
+      "risk": "Urgency fades if enforcement stays weak",
+      "answer": "Combine with PriceGuard so value does not depend only on enforcement."
+    },
+    {
+      "risk": "Packaging rules still changing",
+      "answer": "Keep the packaging part a simple, editable checklist."
+    }
+  ],
+  "questions": [
+    "How did you handle GPSR in December 2024, and what is still missing?",
+    "Where does your manufacturer and safety data come from today?",
+    "Have you been delisted or warned by a marketplace?",
+    "Are you registered for packaging fees in every country you ship to?",
+    "What would you pay never to fill these fields by hand again?"
+  ],
+  "numbers": {
+    "cashMin": 500,
+    "cashMax": 750,
+    "mvpWeeksMin": 7,
+    "mvpWeeksMax": 8,
+    "priceLabel": "$19–199 / month",
+    "competition": "Many free field plugins; data-gathering gap",
+    "competitionLevel": "high",
+    "whoSells": "WordPress.org / Shopware Store + Jonatan → e-commerce agencies (DE, NL, SE)"
+  },
+  "skills": [
+    "coding",
+    "ai",
+    "e-commerce",
+    "integrations"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 7,
+    "willingnessToPay": 6,
+    "lowCompetition": 4,
+    "easyToBuild": 6,
+    "easyToSell": 6,
+    "skillFit": 9,
+    "globalPotential": 7,
+    "excitement": 6
+  },
+  "notes": "",
+  "interviews": [],
+  "rank": 19,
+  "batch": "Top 50 research (Nov 2026)"
+}

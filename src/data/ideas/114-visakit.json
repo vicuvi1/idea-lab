@@ -1,0 +1,308 @@
+{
+  "id": "r-visakit",
+  "title": "VisaKit: document kit for immigration advisers outside the US",
+  "color": "#0ca30c",
+  "industry": "Legal / immigration services",
+  "status": "idea",
+  "source": "Top 25 SaaS ideas for Victor (research report, Nov 2026)",
+  "tags": [
+    "Document engine",
+    "Non-US gap",
+    "Moldova/Romania beachhead"
+  ],
+  "summary": "Case checklists, client document collection in the client's own language, and passport-data extraction for small immigration consultancies in the UK, Canada and the EU. Funded immigration software is built for the US system, so advisers elsewhere use generic tools.",
+  "priceLabel": "€49–149 / month",
+  "hook": "\"Every client sends me photos of passports and bank statements on WhatsApp, and half of them are expired or not translated.\"",
+  "story": "**Elena runs a three-person agency in Chișinău** that helps Moldovans get Romanian citizenship. At any time she has **dozens of active files**. Each one needs birth certificates, old Soviet-era documents, translations and apostilles. Clients send everything by **WhatsApp photo**, often blurry, sometimes the wrong document.\n\nHer assistant spends whole afternoons checking which papers are missing, which translation is not certified, and which passport will expire before the appointment. Then she **types the same passport data by hand** into government forms. When one file is sent back because a document was missing, the client blames the agency, and the case loses months.",
+  "whyNow": "Funded immigration software (LegistAI, eazyPetition, ParaLeagle) is built for the US USCIS system, so advisers in the UK, Canada and the EU are left with generic tools. AI can now read passports and ID documents, including the machine-readable zone, cheaply. There is no regulatory deadline.",
+  "evidence": [
+    "eazyPetition offers US petitions at $100 flat per case, showing funded tools focus on the US system [Sherbrooke Record]",
+    "LegistAI tracks USCIS (US) cases, not UK, Canadian or EU case types [Software Advice]",
+    "Prolexis Essentials costs $79/month for 1 user and 25 active cases [Capterra UK]",
+    "Visalaw.ai Pro costs $160–180/month (2025 pricing) [Visalaw.ai]",
+    "Pain evidence is indirect: document collection is the top pain in similar professional services; no survey of immigration consultants was found [Top 25 report]"
+  ],
+  "sources": [
+    {
+      "title": "Software Advice: LegistAI",
+      "url": "https://www.softwareadvice.com/product/537667-LegistAI/"
+    },
+    {
+      "title": "Sherbrooke Record: immigration startup cuts legal fees to under $100 with AI",
+      "url": "https://business.sherbrookerecord.com/sherbrookerecord/article/accwirecq-2025-7-22-immigration-startup-cuts-legal-fees-from-5000-to-under-100-with-ai-platform"
+    },
+    {
+      "title": "Capterra UK: Prolexis",
+      "url": "https://www.capterra.co.uk/software/1092764/Prolexis"
+    },
+    {
+      "title": "Visalaw.ai pricing guide 2025",
+      "url": "https://intercom.help/visalawai/en/articles/11869943-pricing-guide-2025"
+    },
+    {
+      "title": "Capterra: ParaLeagle (US employment visas)",
+      "url": "https://www.capterra.com/p/10040218/ParaLeagle/"
+    },
+    {
+      "title": "Docketwise pricing note (blog)",
+      "url": "https://sagnikbhattacharya.com/blog/immigration-docketwise-pricing-ai-writing-assistant"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "Immigration files are full of documents",
+      "text": "Passports, bank statements, birth certificates, translations and apostilles. Each one can be missing, expired or not translated, and one missing paper can delay a case for months."
+    },
+    {
+      "title": "The good software is built for the US",
+      "text": "LegistAI, eazyPetition and ParaLeagle all focus on US visas. UK Skilled Worker, Canada Express Entry or Romanian citizenship files need different checklists."
+    },
+    {
+      "title": "Clients use WhatsApp, not portals",
+      "text": "Clients send photos from their phone in many languages. A simple upload link in Romanian, Russian or Ukrainian fits how they really work."
+    },
+    {
+      "title": "Victor knows the local market",
+      "text": "Romanian-citizenship agencies serving Moldovans are a beachhead Victor understands, and he can sell to them in Romanian as well as English."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "Small immigration consultancies and solo advisers: UK advisers regulated by the OISC/IAA, Canadian RCICs, and EU work-permit, relocation and citizenship agencies."
+    },
+    {
+      "label": "Buyer",
+      "text": "The owner of the consultancy."
+    },
+    {
+      "label": "Start market",
+      "text": "Romanian-citizenship agencies serving Moldovans (English and Romanian), then UK and Canadian advisers found through public registers."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Pick a case type",
+      "text": "the adviser chooses a template, for example UK Skilled Worker, Canada Express Entry or Romanian citizenship under Article 11, and edits the checklist."
+    },
+    {
+      "title": "Send the client a link",
+      "text": "the client gets an upload link in English, Romanian, Russian or Ukrainian. No login, works on a phone."
+    },
+    {
+      "title": "AI reads the documents",
+      "text": "it recognises each document, pulls passport and ID data from the machine-readable zone and checks expiry dates."
+    },
+    {
+      "title": "Warnings",
+      "text": "expired, missing or untranslated documents are flagged, so the adviser sees at a glance what is still needed."
+    },
+    {
+      "title": "Timeline and reminders",
+      "text": "each case has deadlines and automatic reminders to the client."
+    },
+    {
+      "title": "Export",
+      "text": "a JSON, CSV or PDF summary the adviser can copy into government portals instead of re-typing."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Case types with editable requirement checklists",
+      "Client upload links in English, Romanian, Russian and Ukrainian",
+      "AI extraction of passport and ID data, including the machine-readable zone",
+      "Expiry checks and warnings for expired or untranslated documents",
+      "Case timeline and deadline reminders",
+      "Data export (JSON, CSV or PDF summary) for government portals"
+    ],
+    "later": [
+      "WhatsApp intake of documents",
+      "Translation and apostille tracking with translator hand-off",
+      "More case-type templates per country",
+      "Team members and client status page",
+      "Invoicing per case"
+    ]
+  },
+  "techStack": [
+    "Next.js or Django",
+    "PostgreSQL (Supabase) with EU hosting",
+    "OCR + LLM for document reading (MRZ parsing)",
+    "Encrypted file storage (S3-compatible, EU)",
+    "Resend for emails",
+    "Stripe billing"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "**Validate, no code.** Interview 10 consultancies. Run 2 live cases by hand with Google Drive and a ChatGPT checklist. Measure hours saved and willingness to pay."
+    },
+    {
+      "when": "Week 3–5",
+      "what": "Victor builds case types, checklists, multilingual upload links and passport/ID extraction (reusing the document engine from SubDocs/ChaseAI if built)."
+    },
+    {
+      "when": "Week 6–7",
+      "what": "Warnings, reminders, timeline and export; security basics (encryption, EU hosting, data processing agreement)."
+    },
+    {
+      "when": "Week 8",
+      "what": "Move the 2 hand-run pilot firms onto the product and ask for payment."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server + database",
+      "note": "EU hosting (Hetzner / Supabase)",
+      "cost": "€10–25 / month"
+    },
+    {
+      "item": "AI + OCR API",
+      "note": "Document and passport reading",
+      "cost": "€10–40 / month"
+    },
+    {
+      "item": "Encrypted file storage",
+      "note": "Very sensitive personal data",
+      "cost": "€5–15 / month"
+    },
+    {
+      "item": "Email sending",
+      "note": "Resend / Postmark free or low tiers",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Landing page",
+      "note": "No-code builder or built by us",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €500–750 (report estimate €200–300 for hosting, AI and validation, plus €300–450 for AI coding tools)",
+  "pricing": [
+    {
+      "name": "Solo: €49/mo",
+      "description": "Up to about 10 active cases, 1 user"
+    },
+    {
+      "name": "Agency: €149/mo",
+      "description": "More active cases, team members, all case templates"
+    },
+    {
+      "name": "Per case: €5–10 / active case / month",
+      "description": "Alternative for agencies with changing volume"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 300,
+      "value": 25,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 29,
+      "max": 249,
+      "value": 89,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "Prolexis",
+      "what": "Immigration case management, Essentials $79/month (1 user, 25 active cases)",
+      "gap": "Not focused on multilingual client intake or non-US document checks"
+    },
+    {
+      "name": "Visalaw.ai",
+      "what": "AI for immigration lawyers, Pro $160–180/month (2025)",
+      "gap": "Built around the US system"
+    },
+    {
+      "name": "Docketwise, LegistAI, ParaLeagle",
+      "what": "US immigration case software",
+      "gap": "USCIS-centric; price per user (Docketwise figures not found)"
+    },
+    {
+      "name": "Google Drive + WhatsApp",
+      "what": "What most small advisers use today",
+      "gap": "No checklists, no expiry checks, lots of re-typing"
+    },
+    {
+      "name": "Us",
+      "what": "Non-US case checklists, multilingual upload links, passport extraction",
+      "gap": "€49–149/month, built for UK, Canada and EU files",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Seen as giving immigration advice",
+      "answer": "The tool only organises documents for licensed advisers. It never tells a client what to apply for."
+    },
+    {
+      "risk": "Requirements change often",
+      "answer": "Checklists are editable by the adviser; we provide templates, not legal truth."
+    },
+    {
+      "risk": "Extremely sensitive personal data",
+      "answer": "EU hosting, encryption, short retention, a data processing agreement and Victor's security skills shown on a public security page."
+    },
+    {
+      "risk": "Fragmented market, harder lead lists",
+      "answer": "Use public adviser registers (OISC, RCIC), Google Maps searches and Victor's local contacts."
+    }
+  ],
+  "questions": [
+    "How many active cases do you handle, and what share of your team's time goes to collecting and checking documents?",
+    "What are the most common reasons a file is delayed or refused because of paperwork?",
+    "How do clients send you documents today (WhatsApp, email, Drive)?",
+    "Which government portals or forms do you re-type data into, and how long does that take per case?",
+    "What software have you tried, and why did you stop, or why have you never bought any?"
+  ],
+  "numbers": {
+    "cashMin": 500,
+    "cashMax": 750,
+    "mvpWeeksMin": 7,
+    "mvpWeeksMax": 8,
+    "priceLabel": "€49–149 / month",
+    "competition": "US tools only; non-US gap",
+    "competitionLevel": "low",
+    "whoSells": "Victor (Moldova/Romania) + Jonatan → immigration advisers"
+  },
+  "skills": [
+    "coding",
+    "ai",
+    "security",
+    "local-sales"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 8,
+    "willingnessToPay": 7,
+    "lowCompetition": 7,
+    "easyToBuild": 7,
+    "easyToSell": 5,
+    "skillFit": 8,
+    "globalPotential": 6,
+    "excitement": 6
+  },
+  "notes": "",
+  "interviews": [],
+  "rank": 14,
+  "batch": "Top 50 research (Nov 2026)"
+}

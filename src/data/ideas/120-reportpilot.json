@@ -1,0 +1,281 @@
+{
+  "id": "r-reportpilot",
+  "title": "ReportPilot: AI-written client report commentary for marketing agencies",
+  "color": "#c98500",
+  "industry": "Marketing agencies",
+  "status": "idea",
+  "source": "Top 25 SaaS ideas for Victor (research report, Nov 2026)",
+  "tags": [
+    "Report writer engine",
+    "Flat pricing",
+    "Easy to sell"
+  ],
+  "summary": "Pulls each client's numbers from Google Analytics, Search Console and Google Ads and writes the monthly \"what happened and what we do next\" commentary in the agency's own voice, for a flat price.",
+  "priceLabel": "$49–199 / month",
+  "hook": "\"The dashboard builds itself. Writing why the numbers changed for 25 clients takes me two days every month.\"",
+  "story": "**Tom runs a five-person SEO and Google Ads agency with 25 clients.** At the start of every month, his team exports dashboards and then writes a short explanation for each client: why traffic dropped, why cost per lead rose, what they will do next.\n\nTom pays for a reporting tool, but it moved to **per-client pricing**, so his bill grows with every new client. And it still does not write the part clients actually read: **the explanation**. Tom wants the commentary drafted in his agency's voice, ready to approve, at a flat price.",
+  "whyNow": "The market leader AgencyAnalytics moved to per-client pricing of about $20 per client per month (billed annually), and reviewers say per-client pricing \"adds up fast\". Sources disagree on the exact current plans. AI can now explain metric changes in plain language.",
+  "evidence": [
+    "AgencyAnalytics moved to per-client pricing of about $20 per client per month, billed annually [Coupler.io]",
+    "Reviewers say per-client pricing \"adds up fast\"; sources disagree on exact plans [Swydo]",
+    "Older AgencyAnalytics tiered plans are still cited at $79 (Freelancer) and $400–548/month for mid-size agencies [Reporting Ninja]",
+    "No survey of hours spent writing reports was found; commentary as the main time sink is an inference to test [Top 25 report]"
+  ],
+  "sources": [
+    {
+      "title": "Coupler.io: AgencyAnalytics pricing",
+      "url": "https://blog.coupler.io/agencyanalytics-pricing/"
+    },
+    {
+      "title": "Swydo: AgencyAnalytics pricing",
+      "url": "https://www.swydo.com/blog/agencyanalytics-pricing/"
+    },
+    {
+      "title": "Reporting Ninja: AgencyAnalytics pricing",
+      "url": "https://www.reportingninja.com/blog/agency-analytics-pricing"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "Every agency sends monthly reports",
+      "text": "Clients expect a monthly update. The numbers are automated, but the explanation is still written by hand."
+    },
+    {
+      "title": "Pricing frustration is documented",
+      "text": "Per-client pricing at the market leader grows with every new client; reviewers complain it adds up fast."
+    },
+    {
+      "title": "Easy for Jonatan to explain",
+      "text": "\"We write your monthly report commentary for you\" is a simple pitch to agency owners on LinkedIn."
+    },
+    {
+      "title": "Reusable engine",
+      "text": "The narrative report writer is shared with AgencyPulse, CleanProof and QBR Autopilot."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "SEO, pay-per-click and social-media agencies with 1–15 people and 5–40 clients."
+    },
+    {
+      "label": "Buyer",
+      "text": "The agency owner."
+    },
+    {
+      "label": "Start market",
+      "text": "English-speaking agencies worldwide, found on LinkedIn and agency communities."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Connect Google",
+      "text": "Google login connects GA4, Search Console and Google Ads per client."
+    },
+    {
+      "title": "Templated metrics",
+      "text": "standard metrics per client, no dashboard building."
+    },
+    {
+      "title": "AI narrative",
+      "text": "AI explains unusual changes (\"why did cost per lead rise?\") in the agency's own voice."
+    },
+    {
+      "title": "Approve",
+      "text": "the agency comments and approves before anything is sent."
+    },
+    {
+      "title": "Send",
+      "text": "a white-label PDF and scheduled email to each client."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Google login connections for GA4, Search Console and Google Ads",
+      "Templated metrics per client",
+      "AI narrative explaining unusual changes",
+      "Agency voice settings (tone, examples)",
+      "Comment-and-approve step before sending",
+      "White-label PDF and scheduled email"
+    ],
+    "later": [
+      "Meta Ads and LinkedIn Ads",
+      "Bulk approve for many clients",
+      "Client portal",
+      "Integration as an add-on to existing dashboards"
+    ]
+  },
+  "techStack": [
+    "Next.js",
+    "Google APIs (GA4 Data API, Search Console, Google Ads API)",
+    "PostgreSQL (Supabase)",
+    "LLM for narrative",
+    "PDF generation",
+    "Stripe billing"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "**Validate, no code.** Offer 10 agencies a free AI-written report for one client using exported data; ask for $49/month to continue. Goal: 3 yes. Apply for a Google Ads developer token early."
+    },
+    {
+      "when": "Week 3–4",
+      "what": "Victor builds GA4 and Search Console connections and templated metrics."
+    },
+    {
+      "when": "Week 5–6",
+      "what": "AI narrative, approve step, white-label PDF and scheduled email."
+    },
+    {
+      "when": "Week 7–8",
+      "what": "Google Ads connection (once the token is approved); move pilot agencies to paid."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server + database",
+      "note": "Vercel + Supabase low tiers",
+      "cost": "€0–20 / month"
+    },
+    {
+      "item": "AI API",
+      "note": "Monthly narratives",
+      "cost": "€10–20 / month"
+    },
+    {
+      "item": "Email sending",
+      "note": "Resend / Postmark free or low tiers",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Landing page",
+      "note": "No-code builder or built by us",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €450–700 (report estimate €150–250 for hosting, AI and validation, plus €300–450 for AI coding tools)",
+  "pricing": [
+    {
+      "name": "Starter: $49/mo",
+      "description": "Up to 10 clients"
+    },
+    {
+      "name": "Growth: $99/mo",
+      "description": "Up to 30 clients"
+    },
+    {
+      "name": "Unlimited: $199/mo",
+      "description": "Unlimited clients"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 500,
+      "value": 30,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 49,
+      "max": 199,
+      "value": 89,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "AgencyAnalytics",
+      "what": "Market-leading agency dashboards, about $20/client/month",
+      "gap": "Per-client pricing adds up; commentary still written by hand"
+    },
+    {
+      "name": "Swydo, Reporting Ninja, Databox, Whatagraph",
+      "what": "Reporting dashboards",
+      "gap": "Data first, explanation second"
+    },
+    {
+      "name": "Porter Metrics, Coupler, Looker Studio (free)",
+      "what": "Data connectors and free dashboards",
+      "gap": "No narrative, more setup"
+    },
+    {
+      "name": "Us",
+      "what": "AI-written commentary in the agency's voice + white-label PDF",
+      "gap": "Flat price; the part clients actually read",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Very crowded market",
+      "answer": "Sell only the commentary and flat pricing; position as an add-on, not a full dashboard."
+    },
+    {
+      "risk": "Google Ads API needs a developer token that takes time",
+      "answer": "Apply in week 1; start with GA4 and Search Console."
+    },
+    {
+      "risk": "Incumbents add AI summaries",
+      "answer": "Win on agency voice, approval workflow and flat price."
+    },
+    {
+      "risk": "Agencies themselves churn",
+      "answer": "Annual plans with a discount; fast onboarding."
+    }
+  ],
+  "questions": [
+    "How many hours a month go into client reports?",
+    "Which part is most painful: collecting data or writing the commentary?",
+    "What tool do you use now, and what does it cost?",
+    "Do your clients actually read the reports?",
+    "Would a flat price change your choice of tool?"
+  ],
+  "numbers": {
+    "cashMin": 450,
+    "cashMax": 700,
+    "mvpWeeksMin": 6,
+    "mvpWeeksMax": 8,
+    "priceLabel": "$49–199 / month",
+    "competition": "Very crowded; commentary + flat price gap",
+    "competitionLevel": "high",
+    "whoSells": "Jonatan → marketing agency owners (LinkedIn)"
+  },
+  "skills": [
+    "coding",
+    "ai",
+    "integrations",
+    "marketing",
+    "writing"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 6,
+    "willingnessToPay": 6,
+    "lowCompetition": 3,
+    "easyToBuild": 6,
+    "easyToSell": 8,
+    "skillFit": 8,
+    "globalPotential": 8,
+    "excitement": 6
+  },
+  "notes": "",
+  "interviews": [],
+  "rank": 20,
+  "batch": "Top 50 research (Nov 2026)"
+}

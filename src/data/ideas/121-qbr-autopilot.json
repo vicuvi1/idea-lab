@@ -1,0 +1,276 @@
+{
+  "id": "r-qbr-autopilot",
+  "title": "QBR Autopilot: AI-drafted quarterly client reviews for small MSPs",
+  "color": "#d55181",
+  "industry": "IT services / MSP",
+  "status": "idea",
+  "source": "Top 25 SaaS ideas for Victor (research report, Nov 2026)",
+  "tags": [
+    "MSP channel",
+    "Add-on to InsureReady",
+    "Report writer engine"
+  ],
+  "summary": "Turns an MSP's ticket history and Microsoft 365 data into a ready-to-edit quarterly business review (QBR) report for each client. Small MSPs often skip QBRs because preparing them takes hours.",
+  "priceLabel": "$79–149 / month",
+  "hook": "\"I know I should show every client what we did this quarter, but preparing one review takes me half a day.\"",
+  "story": "**Mark owns a 6-person MSP with 30 small business clients.** He knows quarterly reviews keep clients loyal and open up upsells. But each one means exporting tickets from his PSA, sorting them by category, checking Microsoft 365 licences and writing slides.\n\nSo he does them for **only his biggest clients**. The others never see the value he delivers, and one of them recently left for a cheaper provider, saying \"we never hear from you\". Mark wants a **drafted QBR per client** that he can edit in ten minutes.",
+  "whyNow": "In Kaseya's 2026 survey, staffing replaced tool sprawl as MSPs' biggest operational challenge, so tools that save technician hours sell better. 19% of MSPs say they cannot quickly show clients their value (search summary).",
+  "evidence": [
+    "Staffing replaced tool sprawl as MSPs' biggest operational challenge in 2026 [Kaseya]",
+    "19% of MSPs say they cannot quickly show clients their value (search summary) [MSP Success]",
+    "ScalePad Lifecycle Insights listed from about $149/month; ScalePad bundles from $250/month [Software Advice / ScalePad]",
+    "An aggregator lists Lifecycle Manager at $99/month for 10 clients (low confidence) [checkthat.ai]",
+    "No survey of hours per QBR was found [Top 25 report]"
+  ],
+  "sources": [
+    {
+      "title": "Kaseya: MSP growth challenges 2026",
+      "url": "https://www.kaseya.com/blog/msp-growth-challenges-2026/"
+    },
+    {
+      "title": "MSP Success",
+      "url": "https://mspsuccess.com/?p=21070"
+    },
+    {
+      "title": "Software Advice: ScalePad Lifecycle Insights",
+      "url": "https://www.softwareadvice.com/product/451074-ScalePad-Lifecycle-Insights/"
+    },
+    {
+      "title": "ScalePad pricing",
+      "url": "https://www.scalepad.com/pricing"
+    },
+    {
+      "title": "checkthat.ai: ScalePad",
+      "url": "https://checkthat.ai/brands/scalepad"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "MSPs are short of staff",
+      "text": "Staffing is now their biggest operational challenge, so anything that saves technician hours is welcome."
+    },
+    {
+      "title": "Showing value keeps clients",
+      "text": "Some MSPs say they cannot quickly show clients their value; a regular QBR fixes that."
+    },
+    {
+      "title": "Buyers already pay for this",
+      "text": "ScalePad tools cost $149–250+ a month, which shows MSPs pay for client-facing reports."
+    },
+    {
+      "title": "Shares the MSP channel",
+      "text": "Same buyer and Microsoft connector as InsureReady, Leaver and AI Use Guard, so it can be sold as an add-on."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "Small MSPs whose owners or virtual CIOs skip QBRs because preparing them takes hours."
+    },
+    {
+      "label": "Buyer",
+      "text": "The MSP owner."
+    },
+    {
+      "label": "Start market",
+      "text": "English-speaking MSPs not on ScalePad, reached through MSP communities and as an InsureReady add-on."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Connect the PSA",
+      "text": "connect HaloPSA, Syncro or Autotask, or upload a CSV export as a fallback."
+    },
+    {
+      "title": "Group tickets",
+      "text": "tickets are sorted into categories and trends per client."
+    },
+    {
+      "title": "AI draft",
+      "text": "AI writes editable sections: what we did, risks, recommendations, budget."
+    },
+    {
+      "title": "Edit and brand",
+      "text": "the MSP edits in 10 minutes and exports a branded PDF or slides."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Connection to one or two PSA systems (HaloPSA, Syncro or Autotask)",
+      "CSV upload as a fallback",
+      "Ticket categories and trends per client",
+      "AI summary with editable sections (what we did, risks, recommendations, budget)",
+      "Branded PDF or slide output"
+    ],
+    "later": [
+      "Microsoft 365 licence and security data",
+      "Combined InsureReady evidence pack + QBR",
+      "More PSA integrations (ConnectWise)",
+      "Client feedback form after each QBR"
+    ]
+  },
+  "techStack": [
+    "Next.js",
+    "PSA APIs (HaloPSA, Syncro, Autotask)",
+    "Microsoft Graph API (later)",
+    "PostgreSQL (EU hosting)",
+    "Zero-retention LLM API",
+    "PDF / PPTX generation"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "**Validate, no code.** Ask 5 MSPs for one anonymised client's ticket export; produce the QBR by hand with an LLM; ask whether they would pay $79/month."
+    },
+    {
+      "when": "Week 3–4",
+      "what": "Victor builds CSV import, ticket categorisation and AI draft sections."
+    },
+    {
+      "when": "Week 5–6",
+      "what": "First PSA connection, editor, branded PDF/slide export."
+    },
+    {
+      "when": "Week 7–8",
+      "what": "Second PSA connection; convert validation MSPs; pitch with InsureReady."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server + database",
+      "note": "EU hosting",
+      "cost": "€10–25 / month"
+    },
+    {
+      "item": "AI API (zero-retention)",
+      "note": "Main running cost, roughly €0.05–0.30 per report (estimate)",
+      "cost": "€10–40 / month"
+    },
+    {
+      "item": "Email sending",
+      "note": "Resend / Postmark free or low tiers",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Landing page",
+      "note": "No-code builder or built by us",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €500–750 (report estimate €200–300 for hosting, AI and validation, plus €300–450 for AI coding tools)",
+  "pricing": [
+    {
+      "name": "Small MSP: $79/mo",
+      "description": "Up to 10 clients"
+    },
+    {
+      "name": "Growth: $149/mo",
+      "description": "Up to 30 clients"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 300,
+      "value": 25,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 79,
+      "max": 199,
+      "value": 109,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "ScalePad Lifecycle Insights",
+      "what": "Client reports for MSPs, from about $149/month; bundles from $250/month",
+      "gap": "Premium price; tied to ScalePad"
+    },
+    {
+      "name": "BrightGauge, Liongard",
+      "what": "MSP dashboards and documentation",
+      "gap": "Dashboards, not written client narratives"
+    },
+    {
+      "name": "PSA built-in reports",
+      "what": "ConnectWise, Kaseya, HaloPSA reports",
+      "gap": "Raw data, not a client-ready review"
+    },
+    {
+      "name": "Us",
+      "what": "AI-drafted QBR from tickets, edit in 10 minutes",
+      "gap": "Cheap and fast for MSPs not on ScalePad",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "PSA vendors add AI summaries",
+      "answer": "Stay PSA-neutral and bundle with InsureReady evidence."
+    },
+    {
+      "risk": "Integrations need maintenance",
+      "answer": "Start with one or two PSAs plus CSV upload."
+    },
+    {
+      "risk": "Privacy of ticket data in AI tools",
+      "answer": "EU hosting and zero-retention AI APIs."
+    }
+  ],
+  "questions": [
+    "Do you run QBRs, and how often?",
+    "How long does one take to prepare?",
+    "Which tools do you use for it?",
+    "What do clients care about most in them?",
+    "Would an auto-drafted report that you edit in 10 minutes be worth $79 a month?"
+  ],
+  "numbers": {
+    "cashMin": 500,
+    "cashMax": 750,
+    "mvpWeeksMin": 7,
+    "mvpWeeksMax": 8,
+    "priceLabel": "$79–149 / month",
+    "competition": "ScalePad premium; cheap AI gap",
+    "competitionLevel": "medium",
+    "whoSells": "Jonatan → MSP owners (with InsureReady)"
+  },
+  "skills": [
+    "coding",
+    "ai",
+    "integrations",
+    "b2b-sales"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 7,
+    "willingnessToPay": 7,
+    "lowCompetition": 5,
+    "easyToBuild": 6,
+    "easyToSell": 7,
+    "skillFit": 6,
+    "globalPotential": 7,
+    "excitement": 6
+  },
+  "notes": "",
+  "interviews": [],
+  "rank": 21,
+  "batch": "Top 50 research (Nov 2026)"
+}

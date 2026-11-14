@@ -1,0 +1,286 @@
+{
+  "id": "r-cleanproof",
+  "title": "CleanProof: quality inspections and client reports for cleaning companies",
+  "color": "#9085e9",
+  "industry": "Facility services",
+  "status": "idea",
+  "source": "Top 25 SaaS ideas for Victor (research report, Nov 2026)",
+  "tags": [
+    "Jonatan's network",
+    "Same buyer as SubDocs",
+    "Easy to sell"
+  ],
+  "summary": "Supervisors inspect cleaning with phone photos and scores, and AI writes the monthly quality report the client actually reads. Built for cleaning firms with 5–60 sites that find bigger systems too heavy.",
+  "priceLabel": "€59–149 / month",
+  "hook": "\"The client says the office is dirty. I know my team was there every night, but I have nothing to show them.\"",
+  "story": "**Anders owns a cleaning company in Gothenburg with 40 staff and 25 office sites.** His area manager walks through sites with a paper checklist and takes photos on her own phone. The photos stay on her phone.\n\nWhen a facility manager complains, Anders has **no clear record** of what was checked and when. At contract renewal, a cheaper competitor shows up with a nice-looking report, and Anders has only a spreadsheet. He does not want a big system that takes months to set up; he wants **proof of quality, sent to the client every month**, without extra office work.",
+  "whyNow": "Bigger systems are too heavy for mid-sized cleaners: Aspire is aimed at mid-size to enterprise firms with a claimed 6–12 month setup for 100+ sites (a competitor's claim). AI can now turn photos and scores into a readable report automatically. There is no regulatory deadline.",
+  "evidence": [
+    "Swept starts at about $77/month by number of locations (unverified), with 4.3 stars from 79 reviews [Capterra]",
+    "SafetyCulture Premium costs $24 per user per month for general inspections [SafetyCulture]",
+    "Aspire is aimed at mid-size to enterprise firms with a claimed 6–12 month setup for 100+ sites (claim from competitor SweepOps) [SweepOps]",
+    "Pain evidence is weak: lost contracts from missing proof of quality is an inference from Jonatan's industry, not a measured fact [Top 25 report]"
+  ],
+  "sources": [
+    {
+      "title": "Capterra: Swept pricing",
+      "url": "https://www.capterra.com/p/148615/Swept/pricing/"
+    },
+    {
+      "title": "Software Advice: Swept profile",
+      "url": "https://www.softwareadvice.com/field-service/swept-profile/"
+    },
+    {
+      "title": "SafetyCulture: janitorial inspection software",
+      "url": "https://safetyculture.com/apps/janitorial-inspection-software"
+    },
+    {
+      "title": "SweepOps: Aspire vs Janitorial Manager",
+      "url": "https://sweepops.pages.dev/compare/versus/aspire-vs-janitorial-manager"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "Quality is hard to prove",
+      "text": "Cleaning happens at night when nobody watches. Without photos and scores, a complaint is the client's word against the cleaner's."
+    },
+    {
+      "title": "People already pay for inspection tools",
+      "text": "Swept, SafetyCulture, CleanTelligent and Janitorial Manager all charge for inspections, so willingness to pay exists."
+    },
+    {
+      "title": "The report is the missing piece",
+      "text": "Existing tools collect data. A short, well-written monthly report for the client, with photos, is what helps at contract renewal."
+    },
+    {
+      "title": "Jonatan knows this world",
+      "text": "It is the same buyer as SubDocs (facility-services firms), so one sales call can open two products."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "Commercial cleaning and facility-services companies with 10–100 staff and 5–60 sites."
+    },
+    {
+      "label": "Buyer",
+      "text": "The owner or area manager."
+    },
+    {
+      "label": "Start market",
+      "text": "The Nordics through Jonatan's network, then other English-speaking markets."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Build a checklist",
+      "text": "pick a template (office, restroom, kitchen) and adjust it per site."
+    },
+    {
+      "title": "Inspect on the phone",
+      "text": "the supervisor walks the site, gives scores and takes photos in a mobile web app."
+    },
+    {
+      "title": "QR feedback",
+      "text": "each site gets a \"rate this restroom\" QR code so building users can report problems."
+    },
+    {
+      "title": "Issue tickets",
+      "text": "low scores and complaints become tasks assigned to a cleaner."
+    },
+    {
+      "title": "AI monthly report",
+      "text": "AI turns scores, photos and fixed issues into a short PDF/email report per client."
+    },
+    {
+      "title": "Client portal",
+      "text": "the client can see inspections and reports in a read-only view."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Checklist builder with templates",
+      "Mobile inspections with photos and scores",
+      "QR feedback page per site",
+      "Issue tickets assigned to cleaners",
+      "AI-written monthly PDF/email report per client",
+      "Read-only client portal"
+    ],
+    "later": [
+      "Bundle with SubDocs for the same customers",
+      "Swedish and other Nordic languages in reports",
+      "Staff time and attendance check-in",
+      "Trend charts across sites",
+      "Integration with cleaning-scheduling tools"
+    ]
+  },
+  "techStack": [
+    "Next.js PWA (works on phones)",
+    "Supabase (PostgreSQL + storage)",
+    "Image compression for photo storage",
+    "LLM for report writing",
+    "PDF generation",
+    "Stripe billing"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "**Validate, no code.** Jonatan offers 5 Nordic cleaning firms a free monthly quality report built by hand from their photos (Google Forms + ChatGPT). Measure whether their clients react, and whether firms will pay €59/month to keep it."
+    },
+    {
+      "when": "Week 3–4",
+      "what": "Victor builds checklists, mobile inspections with photos and the QR feedback page."
+    },
+    {
+      "when": "Week 5–6",
+      "what": "Issue tickets, AI monthly report and client portal; login and Stripe."
+    },
+    {
+      "when": "Week 7–8",
+      "what": "Move the pilot firms to the product; offer it to SubDocs prospects as a second product."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server + database",
+      "note": "Supabase / Vercel free or low tiers",
+      "cost": "€0–25 / month"
+    },
+    {
+      "item": "Photo storage",
+      "note": "Main running cost",
+      "cost": "€5–15 / month"
+    },
+    {
+      "item": "AI API",
+      "note": "Monthly report writing",
+      "cost": "€5–15 / month"
+    },
+    {
+      "item": "Email sending",
+      "note": "Resend / Postmark free or low tiers",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Landing page",
+      "note": "No-code builder or built by us",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €450–700 (report estimate €150–250 for hosting, AI and validation, plus €300–450 for AI coding tools)",
+  "pricing": [
+    {
+      "name": "Small: €59/mo",
+      "description": "Up to 10 sites"
+    },
+    {
+      "name": "Growth: €149/mo",
+      "description": "Up to 40 sites, client portal and QR feedback"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 300,
+      "value": 30,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 39,
+      "max": 249,
+      "value": 99,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "Swept",
+      "what": "Cleaning operations software, about $77/month entry by locations (unverified)",
+      "gap": "No AI-written client-facing report"
+    },
+    {
+      "name": "SafetyCulture",
+      "what": "General inspections, Premium $24 per user per month",
+      "gap": "Not built for cleaning clients; per-user price"
+    },
+    {
+      "name": "Aspire, CleanTelligent, Janitorial Manager",
+      "what": "Larger janitorial platforms",
+      "gap": "Heavy setup, aimed at bigger firms"
+    },
+    {
+      "name": "Us",
+      "what": "Photo inspections + QR feedback + AI monthly client report",
+      "gap": "Flat price, set up in a day, report the client actually reads",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Crowded middle market",
+      "answer": "Focus on the client report and the Nordic network; sell as a second product to SubDocs customers."
+    },
+    {
+      "risk": "Weak AI advantage, easy to copy",
+      "answer": "Win on speed to set up, local relationships and bundling, not on AI alone."
+    },
+    {
+      "risk": "Thin margins, price pressure",
+      "answer": "Keep a flat, simple price and show that one saved contract pays for years."
+    }
+  ],
+  "questions": [
+    "How do you prove cleaning quality to clients today?",
+    "When did you last lose or nearly lose a contract over quality complaints?",
+    "Who does inspections, how often, and with what tools?",
+    "How long does monthly client reporting take?",
+    "What software have you tried, and why did it stick or not?"
+  ],
+  "numbers": {
+    "cashMin": 450,
+    "cashMax": 700,
+    "mvpWeeksMin": 6,
+    "mvpWeeksMax": 8,
+    "priceLabel": "€59–149 / month",
+    "competition": "Crowded middle; gap in AI client reports",
+    "competitionLevel": "medium",
+    "whoSells": "Jonatan → cleaning and facility-services owners"
+  },
+  "skills": [
+    "coding",
+    "ai",
+    "design",
+    "local-sales"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 6,
+    "willingnessToPay": 6,
+    "lowCompetition": 5,
+    "easyToBuild": 8,
+    "easyToSell": 9,
+    "skillFit": 6,
+    "globalPotential": 8,
+    "excitement": 6
+  },
+  "notes": "",
+  "interviews": [],
+  "rank": 15,
+  "batch": "Top 50 research (Nov 2026)"
+}

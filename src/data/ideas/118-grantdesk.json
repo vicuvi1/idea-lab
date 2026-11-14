@@ -1,0 +1,281 @@
+{
+  "id": "r-grantdesk",
+  "title": "GrantDesk: multi-client workspace for freelance grant writers",
+  "color": "#d95926",
+  "industry": "Nonprofit / grant consulting",
+  "status": "idea",
+  "source": "Top 25 SaaS ideas for Victor (research report, Nov 2026)",
+  "tags": [
+    "Proven paid category",
+    "Answer library engine",
+    "Consultant niche"
+  ],
+  "summary": "One workspace for freelance grant writers to manage all their clients: deadlines, reusable text per client, report reminders and AI first drafts. Existing tools are built for one organisation, not a consultant with many clients.",
+  "priceLabel": "$39–199 / month",
+  "hook": "\"I have twelve clients, forty deadlines and my boilerplate is spread across a hundred Word files.\"",
+  "story": "**Rachel is a freelance grant writer with 12 nonprofit clients.** Each client has its own mission text, budgets, past applications and funder reports due on different dates. She tracks deadlines in a spreadsheet and keeps text in **folders full of Word files**.\n\nTwice last year she nearly missed a **funder report deadline** because it was buried in an email. Tools like Instrumentl are great for finding funders but are built for one organisation, not a consultant juggling many. Rachel wants one place with client folders, a text library per client, a deadline calendar and a status link she can send to each client.",
+  "whyNow": "Grant software is a proven paid category: Instrumentl starts at $179/month and Grantable at $50/month, and Grantable claims 30,000+ grant professionals as users. AI now writes good first drafts from a client's own past text. There is no regulatory deadline.",
+  "evidence": [
+    "Instrumentl plans start at $179/month; Grantable paid plans start at $50/month (pricing as of May 2026) [Grantable]",
+    "Grantable claims 30,000+ grant professionals as users (vendor claim) [Grantable]",
+    "A third-party review lists Grantable at free / $50 / $150 per month (unverified) [aitoolsbakery]",
+    "Many small new entrants on Capterra, e.g. Imagagrant and ScriptaGrant [Capterra]",
+    "Pain evidence is indirect: no survey of grant-writer hours or missed deadlines was found [Top 25 report]"
+  ],
+  "sources": [
+    {
+      "title": "Grantable: AI grant writer",
+      "url": "https://grantable.co/lp/ai-grant-writer"
+    },
+    {
+      "title": "aitoolsbakery: Grantable pricing review",
+      "url": "https://aitoolsbakery.com/blog/grantable-pricing/"
+    },
+    {
+      "title": "Capterra: ScriptaGrant",
+      "url": "https://www.capterra.com/p/10049361/ScriptaGrant/"
+    },
+    {
+      "title": "Capterra: Imagagrant",
+      "url": "https://www.capterra.com/p/10036878/Imagagrant/"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "People already pay for grant tools",
+      "text": "Instrumentl ($179+) and Grantable ($50–150) show grant professionals pay monthly for software."
+    },
+    {
+      "title": "Consultants juggle many clients",
+      "text": "A freelancer with 5–20 clients has many deadlines and many text libraries. Tools built for one nonprofit do not fit."
+    },
+    {
+      "title": "Missed deadlines cost money",
+      "text": "A missed application or late report can lose a grant and a client. (To confirm in interviews: no survey was found.)"
+    },
+    {
+      "title": "Easy-to-find buyers",
+      "text": "Grant writers list themselves on LinkedIn, Upwork and Fiverr, so Jonatan can build a lead list quickly."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "Freelance grant writers and consultants managing 5–20 clients, and small nonprofits with budgets under $2M."
+    },
+    {
+      "label": "Buyer",
+      "text": "The consultant, or the nonprofit's director."
+    },
+    {
+      "label": "Start market",
+      "text": "English-speaking freelance grant writers (US, UK, Canada, Australia), found on LinkedIn and Upwork."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Pipeline board",
+      "text": "each application moves through prospect, drafting, submitted, awarded and reporting."
+    },
+    {
+      "title": "Deadline reminders",
+      "text": "email reminders for application and report deadlines across all clients."
+    },
+    {
+      "title": "Library per client",
+      "text": "documents and boilerplate stored per client, searchable with AI."
+    },
+    {
+      "title": "AI first drafts",
+      "text": "draft sections from the client's library and the pasted funder guidelines."
+    },
+    {
+      "title": "Client status link",
+      "text": "a shareable page so each client sees progress without emails."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Grant pipeline board (prospect, drafting, submitted, awarded, reporting)",
+      "Email reminders for deadlines and reports",
+      "Document and boilerplate library per client with AI search",
+      "AI drafts of sections from the library and pasted funder guidelines",
+      "Shareable client status link",
+      "Stripe billing"
+    ],
+    "later": [
+      "Export drafts to Word with formatting",
+      "Budget templates per client",
+      "Time tracking and invoicing for consultants",
+      "Agency plan with team members",
+      "Calendar sync (Google / Outlook)"
+    ]
+  },
+  "techStack": [
+    "Next.js",
+    "Supabase (PostgreSQL + pgvector)",
+    "LLM for drafting (RAG over client library)",
+    "Resend for reminders",
+    "Stripe billing"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "**Validate, no code.** Message 150 freelance grant writers on LinkedIn and Upwork; hold 10 interviews; show a clickable prototype (Figma or similar). Target: 5 consultants agree to a $99 founding-member pre-sale or paid pilot."
+    },
+    {
+      "when": "Week 3–4",
+      "what": "Victor builds client workspaces, pipeline board and deadline reminders."
+    },
+    {
+      "when": "Week 5–6",
+      "what": "Library with AI search, AI drafts, client status link, Stripe."
+    },
+    {
+      "when": "Week 7–8",
+      "what": "Onboard founding members and iterate on their feedback."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server + database",
+      "note": "Vercel + Supabase free or low tiers",
+      "cost": "€0–25 / month"
+    },
+    {
+      "item": "AI API",
+      "note": "Drafting and search",
+      "cost": "€10–30 / month"
+    },
+    {
+      "item": "Email sending",
+      "note": "Resend / Postmark free or low tiers",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Landing page",
+      "note": "No-code builder or built by us",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €450–700 (report estimate €150–250 for hosting, AI and validation, plus €300–450 for AI coding tools)",
+  "pricing": [
+    {
+      "name": "Nonprofit: $39/mo",
+      "description": "A single nonprofit organisation"
+    },
+    {
+      "name": "Consultant: $99/mo",
+      "description": "Up to 10 clients"
+    },
+    {
+      "name": "Agency: $199/mo",
+      "description": "More clients and team members"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 400,
+      "value": 30,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 39,
+      "max": 199,
+      "value": 89,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "Instrumentl",
+      "what": "Funder discovery and tracking, from $179/month",
+      "gap": "Strong on finding funders; not built for multi-client consultants"
+    },
+    {
+      "name": "Grantable",
+      "what": "AI grant writing, $50–150/month",
+      "gap": "Single-organisation focus"
+    },
+    {
+      "name": "Granted AI, Imagagrant, ScriptaGrant",
+      "what": "AI grant writing tools",
+      "gap": "Writing only; no multi-client workspace"
+    },
+    {
+      "name": "Us",
+      "what": "Client folders, text library per client, deadline calendar, client status page",
+      "gap": "Built for the consultant with many clients",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Crowded with AI writing tools",
+      "answer": "Sell the multi-client workspace and deadlines, not the AI writing."
+    },
+    {
+      "risk": "Nonprofits are price-sensitive",
+      "answer": "Target consultants first: they bill clients and feel the pain directly."
+    },
+    {
+      "risk": "Funder data is US-centric",
+      "answer": "Do not build a funder database; users bring their own funders."
+    }
+  ],
+  "questions": [
+    "How many clients and applications do you juggle per month?",
+    "How do you track deadlines and reporting duties today?",
+    "Where does your reusable text live, and how do you adapt it?",
+    "Which tools do you pay for now, and what do you dislike about them?",
+    "What has a missed deadline or late report cost you?"
+  ],
+  "numbers": {
+    "cashMin": 450,
+    "cashMax": 700,
+    "mvpWeeksMin": 6,
+    "mvpWeeksMax": 8,
+    "priceLabel": "$39–199 / month",
+    "competition": "Crowded AI writers; consultant niche open",
+    "competitionLevel": "high",
+    "whoSells": "Jonatan → freelance grant writers (LinkedIn, Upwork)"
+  },
+  "skills": [
+    "coding",
+    "ai",
+    "writing",
+    "b2b-sales"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 7,
+    "willingnessToPay": 6,
+    "lowCompetition": 4,
+    "easyToBuild": 7,
+    "easyToSell": 7,
+    "skillFit": 8,
+    "globalPotential": 7,
+    "excitement": 6
+  },
+  "notes": "",
+  "interviews": [],
+  "rank": 18,
+  "batch": "Top 50 research (Nov 2026)"
+}

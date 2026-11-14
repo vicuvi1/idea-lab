@@ -1,0 +1,297 @@
+{
+  "id": "r-afterhours",
+  "title": "AfterHours: AI phone answering in local languages for trades and cleaning firms",
+  "color": "#e66767",
+  "industry": "Trades / home services",
+  "status": "idea",
+  "source": "Top 25 SaaS ideas for Victor (research report, Nov 2026)",
+  "tags": [
+    "Jonatan's network",
+    "Local languages",
+    "Crowded in English"
+  ],
+  "summary": "An AI phone assistant that answers missed calls for plumbers, electricians and cleaning firms in Swedish, Romanian or German, takes the job details and books a slot.",
+  "priceLabel": "€79–199 / month",
+  "hook": "\"When I'm under a sink I can't answer the phone, and the customer just calls the next plumber.\"",
+  "story": "**Erik is a plumber in Uppsala with 4 employees.** During the day he and his team are on jobs with dirty hands; in the evening he is with his kids. Calls go to voicemail, and **most people do not leave a message**. They call the next plumber on Google.\n\nUS products answer calls in English, but his customers speak **Swedish**. He wants something that picks up when he cannot, asks for name, address, problem and urgency, sends him a text summary and books a time.",
+  "whyNow": "No-code voice-AI platforms (such as Vapi or Retell) make a first version possible without telecom expertise. The English-speaking market is full, but local languages are less served. There is no regulatory deadline.",
+  "evidence": [
+    "27% of calls to home-services businesses go unanswered (vendor source) [Invoca]",
+    "14% unanswered according to a CallRail benchmark [StealthAgents]",
+    "A missed call is worth $200–500 in lost jobs [Signpost]",
+    "The common \"62% unanswered\" figure comes from a 2016 study of 85 businesses and should not be used [SchedulingKit]",
+    "US AI receptionists: Rosie about $49/month, Sameday about $449/month [Solvea / Sameday]"
+  ],
+  "sources": [
+    {
+      "title": "Invoca: cost of missed sales calls for home services",
+      "url": "https://invoca.com/blog/how-much-missed-sales-calls-cost-home-services-businesses"
+    },
+    {
+      "title": "StealthAgents: home services missed-call statistics 2026",
+      "url": "https://stealthagents.com/research/home-services-missed-call-revenue-statistics-2026"
+    },
+    {
+      "title": "Signpost: business contractors lose from missed calls",
+      "url": "https://www.signpost.com/blog/how-much-business-do-contractors-lose-from-missed-calls/"
+    },
+    {
+      "title": "SchedulingKit: missed call statistics (62% figure caveat)",
+      "url": "https://schedulingkit.com/statistics/missed-call-statistics"
+    },
+    {
+      "title": "Solvea: best AI receptionist for HVAC",
+      "url": "https://solvea.cx/blog/best-ai-receptionist-for-hvac"
+    },
+    {
+      "title": "Sameday: AI vs human receptionist cost analysis",
+      "url": "https://sameday.ai/post/ai-receptionist-vs-human-receptionist-vs-answering-service-cost-analysis"
+    },
+    {
+      "title": "Housecall Pro: missed calls",
+      "url": "https://www.housecallpro.com/resources/missed-calls/"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "Trades miss many calls",
+      "text": "US data shows 14–27% of calls to home-services firms go unanswered, depending on the source."
+    },
+    {
+      "title": "Each missed call is a lost job",
+      "text": "A missed call is worth $200–500 in lost jobs according to Signpost."
+    },
+    {
+      "title": "Local languages are less served",
+      "text": "The US English market is full of AI receptionists; Swedish, Romanian and German are less covered."
+    },
+    {
+      "title": "Jonatan can sell it locally",
+      "text": "Swedish trades and cleaning firms are in Jonatan's world and easy to call."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "Plumbers, electricians, HVAC firms, locksmiths and cleaning companies with 2–30 staff in the Nordics, Romania and German-speaking countries."
+    },
+    {
+      "label": "Buyer",
+      "text": "The owner."
+    },
+    {
+      "label": "Start market",
+      "text": "Swedish trades and cleaning firms through Jonatan."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Forward missed calls",
+      "text": "the firm forwards unanswered calls to a local number."
+    },
+    {
+      "title": "AI answers",
+      "text": "a voice agent in Swedish (or Romanian/German) takes name, address, problem and urgency."
+    },
+    {
+      "title": "SMS summary",
+      "text": "the owner gets a text with the job details right away."
+    },
+    {
+      "title": "Booking",
+      "text": "the caller gets a calendar booking link."
+    },
+    {
+      "title": "Dashboard",
+      "text": "transcripts of all calls in one place."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Forwarding phone number",
+      "Voice agent that takes name, address, problem and urgency",
+      "SMS summary to the owner",
+      "Calendar booking link",
+      "Dashboard of transcripts"
+    ],
+    "later": [
+      "Links to EU booking and field-service tools",
+      "Romanian and German voices",
+      "Emergency escalation (call the owner for urgent jobs)",
+      "Price estimates for common jobs"
+    ]
+  },
+  "techStack": [
+    "No-code voice-AI platform (Vapi or Retell)",
+    "Twilio or local telecom numbers",
+    "Next.js dashboard",
+    "Supabase",
+    "SMS API",
+    "Calendar links (Cal.com / Google Calendar)"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "**Validate, no code.** Offer 10 Swedish trades an \"answering service trial\" with call forwarding to a no-code voice-agent platform (such as Vapi or Retell). Measure calls captured and willingness to pay."
+    },
+    {
+      "when": "Week 3–5",
+      "what": "Victor builds the voice agent flow, SMS summary and booking link on the platform."
+    },
+    {
+      "when": "Week 6–7",
+      "what": "Dashboard of transcripts, billing that covers per-minute costs."
+    },
+    {
+      "when": "Week 8",
+      "what": "Convert trial firms to paid; test voice quality in Romanian or German."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Voice AI + phone minutes",
+      "note": "Estimated €0.05–0.15 per minute (unverified); rises with call volume",
+      "cost": "€30–100 / month"
+    },
+    {
+      "item": "Phone numbers",
+      "note": "Local numbers per country",
+      "cost": "€5–15 / month"
+    },
+    {
+      "item": "Server + database",
+      "note": "Dashboard",
+      "cost": "€0–20 / month"
+    },
+    {
+      "item": "Email sending",
+      "note": "Resend / Postmark free or low tiers",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Landing page",
+      "note": "No-code builder or built by us",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €600–950 (report estimate €300–500 for hosting, AI and validation, plus €300–450 for AI coding tools)",
+  "pricing": [
+    {
+      "name": "Basic: €79/mo",
+      "description": "Missed-call answering with SMS summaries, limited minutes"
+    },
+    {
+      "name": "Pro: €199/mo",
+      "description": "More minutes, booking links, transcripts dashboard"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 300,
+      "value": 25,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 79,
+      "max": 249,
+      "value": 129,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "Rosie",
+      "what": "AI receptionist, about $49/month",
+      "gap": "US English focus"
+    },
+    {
+      "name": "Sameday",
+      "what": "AI receptionist for home services, about $449/month",
+      "gap": "US English, expensive"
+    },
+    {
+      "name": "Avoca and many others",
+      "what": "AI call answering for trades",
+      "gap": "Heavily crowded in US English"
+    },
+    {
+      "name": "Us",
+      "what": "AI answering in Swedish, Romanian or German, with booking",
+      "gap": "Local languages and EU booking tools",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Heavy competition",
+      "answer": "Stay local: Swedish first, sold by Jonatan in person and by phone."
+    },
+    {
+      "risk": "Telephony rules and numbers differ by country",
+      "answer": "Start in one country (Sweden) before expanding."
+    },
+    {
+      "risk": "Voice quality in Swedish and Romanian",
+      "answer": "Test with real callers during the trial before charging."
+    },
+    {
+      "risk": "Per-minute costs; local product conflicts with global goal",
+      "answer": "Price with minute limits; treat as a Nordic side bet, not the main product."
+    }
+  ],
+  "questions": [
+    "How many calls do you miss in a week, and when?",
+    "What happens to the callers you miss?",
+    "What is a typical job worth?",
+    "Have you used an answering service, and what did it cost?",
+    "Would your customers accept talking to an AI in your language?"
+  ],
+  "numbers": {
+    "cashMin": 600,
+    "cashMax": 950,
+    "mvpWeeksMin": 5,
+    "mvpWeeksMax": 8,
+    "priceLabel": "€79–199 / month",
+    "competition": "Crowded in English; local-language gap",
+    "competitionLevel": "high",
+    "whoSells": "Jonatan → Swedish trades and cleaning firms"
+  },
+  "skills": [
+    "coding",
+    "ai",
+    "integrations",
+    "local-sales"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 7,
+    "willingnessToPay": 7,
+    "lowCompetition": 3,
+    "easyToBuild": 5,
+    "easyToSell": 7,
+    "skillFit": 7,
+    "globalPotential": 6,
+    "excitement": 6
+  },
+  "notes": "",
+  "interviews": [],
+  "rank": 24,
+  "batch": "Top 50 research (Nov 2026)"
+}

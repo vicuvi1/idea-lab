@@ -1,0 +1,305 @@
+{
+  "id": "r-disputekit",
+  "title": "DisputeKit: flat-fee chargeback evidence for WooCommerce and Stripe stores",
+  "color": "#3987e5",
+  "industry": "E-commerce",
+  "status": "idea",
+  "source": "Top 25 SaaS ideas for Victor (research report, Nov 2026)",
+  "tags": [
+    "Flat fee vs % cut",
+    "WooCommerce gap",
+    "Fraud signals"
+  ],
+  "summary": "Gathers chargeback evidence automatically for WooCommerce and Stripe stores and writes the rebuttal, for a flat monthly fee instead of a cut of what the store wins back.",
+  "priceLabel": "$29–149 / month",
+  "hook": "\"Every week I lose money to chargebacks, and writing each response takes me an hour.\"",
+  "story": "**Dan sells digital design templates from a WooCommerce store using Stripe.** Each month he gets **a handful of disputes**, often from customers who downloaded the files and then told their bank they never got them. Each response means digging out the order, the IP address, the download log and the emails.\n\nHe looked at Chargeflow, but it takes **25% of every recovered chargeback** and is built mainly for Shopify. Dan wants a tool that collects the evidence automatically when a dispute arrives, drafts the answer for the right reason code, and submits it to Stripe, for a **flat monthly fee**.",
+  "whyNow": "Card disputes keep rising: about 261 million in 2025, projected at about 324 million by 2028 (sources disagree on the 2028 number). Most tools charge a percentage of recovered money and focus on Shopify. There is no regulatory deadline.",
+  "evidence": [
+    "Card disputes: about 261 million in 2025, projected at about 324 million by 2028 (vendor source; sources disagree on 2028) [chargeback.io]",
+    "Average internal cost of about $82 per chargeback; fraud behind about 45% of chargeback volume; \"friendly fraud\" in about 1 in 5 disputes [Mastercard]",
+    "Chargeflow takes 25% of recovered chargebacks; ChargePay charges $19.99–99.99/month flat on Shopify [Chargeflow]",
+    "Disputifier takes 20% of won disputes, capped at $250 [Chargeflow comparison page]",
+    "chargeback.io sells alerts at $15–29 each [chargeback.io]"
+  ],
+  "sources": [
+    {
+      "title": "chargeback.io: chargeback statistics",
+      "url": "https://www.chargeback.io/de/blog/chargeback-statistics"
+    },
+    {
+      "title": "Mastercard: true cost of a chargeback in 2025",
+      "url": "https://www.mastercard.com/ch/fr/news-and-trends/Insights/2025/what-s-the-true-cost-of-a-chargeback-in-2025.html"
+    },
+    {
+      "title": "Chargeflow vs ChargePay",
+      "url": "https://www.chargeflow.io/blog/chargeflow-vs-chargepay"
+    },
+    {
+      "title": "Chargeflow vs Disputifier",
+      "url": "https://chargeflow.io/chargeflow-vs-disputifier"
+    },
+    {
+      "title": "Redo: Chargeflow alternative",
+      "url": "https://redo.com/products/chargebacks/chargeflow-alternative"
+    },
+    {
+      "title": "chargeback.io: best Chargeflow alternatives",
+      "url": "https://www.chargeback.io/fr/blog/best-chargeflow-alternatives"
+    },
+    {
+      "title": "chargeback.io: Shopify chargeback protection exclusions",
+      "url": "https://www.chargeback.io/nl/blog/shopify-chargeback-protection"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "Each dispute costs real money",
+      "text": "Mastercard estimates about $82 of internal cost per chargeback, on top of the lost sale."
+    },
+    {
+      "title": "Friendly fraud is common",
+      "text": "About 1 in 5 disputes are customers disputing real purchases, which good evidence can often win."
+    },
+    {
+      "title": "Percentage pricing hurts",
+      "text": "Chargeflow takes 25% and Disputifier 20% of what is won back. A flat fee is easier to plan for."
+    },
+    {
+      "title": "WooCommerce is under-served",
+      "text": "Most tools are built for Shopify. WooCommerce and custom Stripe stores are a gap still to validate."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "WooCommerce and custom-cart stores on Stripe or PayPal with 5–100 disputes a month: digital goods, clothing, supplements."
+    },
+    {
+      "label": "Buyer",
+      "text": "The store owner or finance person."
+    },
+    {
+      "label": "Start market",
+      "text": "Global, in English, starting with digital-product sellers on WooCommerce + Stripe."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Connect",
+      "text": "Stripe Connect plus a WooCommerce plugin, set up in minutes."
+    },
+    {
+      "title": "Collect evidence",
+      "text": "when a dispute arrives, gather order details, IP and location match, delivery tracking, login or download logs and customer emails."
+    },
+    {
+      "title": "AI writes the response",
+      "text": "a rebuttal tailored to each dispute reason code."
+    },
+    {
+      "title": "One-click submit",
+      "text": "send the evidence through Stripe's disputes API."
+    },
+    {
+      "title": "Learn and warn",
+      "text": "a win/loss dashboard and fraud warnings on new orders."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "Stripe Connect integration",
+      "WooCommerce plugin for order, IP, delivery and download data",
+      "Automatic evidence collection when a dispute arrives",
+      "AI-written response per dispute reason code",
+      "One-click submission via Stripe disputes API",
+      "Win/loss dashboard",
+      "Fraud warnings on new orders"
+    ],
+    "later": [
+      "PayPal disputes",
+      "Shopify and other carts",
+      "Card-network alerts (pre-dispute)",
+      "Customer-email templates to prevent disputes",
+      "Agency plan for multiple stores"
+    ]
+  },
+  "techStack": [
+    "WordPress/WooCommerce plugin (PHP)",
+    "Node.js or Python backend",
+    "Stripe Connect + Disputes API",
+    "PostgreSQL",
+    "LLM for response drafting",
+    "No card data stored (stay out of PCI scope)"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "**Validate, no code.** Recruit 5 WooCommerce + Stripe merchants. Ask for their last 10 lost disputes. Draft AI responses by hand. Ask whether they prefer flat or percentage pricing. Aim for 2 paid pilots."
+    },
+    {
+      "when": "Week 3–5",
+      "what": "Victor builds Stripe Connect, the WooCommerce plugin and evidence collection."
+    },
+    {
+      "when": "Week 6–7",
+      "what": "AI responses per reason code, one-click submission, dashboard."
+    },
+    {
+      "when": "Week 8",
+      "what": "Submit to WordPress.org; run pilots live and measure win rate."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Server + database",
+      "note": "Small VPS or free tiers",
+      "cost": "€5–20 / month"
+    },
+    {
+      "item": "AI API",
+      "note": "Response drafting per dispute",
+      "cost": "€5–10 / month"
+    },
+    {
+      "item": "Email sending",
+      "note": "Resend / Postmark free or low tiers",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Landing page",
+      "note": "No-code builder or built by us",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €450–700 (report estimate €150–250 for hosting, AI and validation, plus €300–450 for AI coding tools)",
+  "pricing": [
+    {
+      "name": "Starter: $29/mo",
+      "description": "Small stores, flat fee, no success fee"
+    },
+    {
+      "name": "Growth: $79/mo",
+      "description": "More disputes per month, fraud warnings"
+    },
+    {
+      "name": "Pro: $149/mo",
+      "description": "High-volume stores, priority support"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 500,
+      "value": 40,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 29,
+      "max": 149,
+      "value": 69,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "Chargeflow",
+      "what": "Automated chargeback recovery",
+      "gap": "Takes 25% of recovered chargebacks"
+    },
+    {
+      "name": "ChargePay",
+      "what": "Flat $19.99–99.99/month",
+      "gap": "Shopify only"
+    },
+    {
+      "name": "Disputifier",
+      "what": "Dispute automation",
+      "gap": "20% of won disputes, capped at $250"
+    },
+    {
+      "name": "Redo, chargeback.io, Shopify protection",
+      "what": "Free representment claims, alerts at $15–29 each, built-in protection with exclusions",
+      "gap": "Mostly Shopify-centred"
+    },
+    {
+      "name": "Us",
+      "what": "WooCommerce-native evidence builder + Stripe submission",
+      "gap": "Flat $29–149/month, no success fee",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Strong incumbents with card-network alerts",
+      "answer": "Stay narrow: WooCommerce + Stripe, flat fee, digital goods."
+    },
+    {
+      "risk": "Stripe's own tools reduce the need",
+      "answer": "Add value with WooCommerce data Stripe cannot see (download logs, IP match)."
+    },
+    {
+      "risk": "Win rates hard to prove early",
+      "answer": "Run pilots on past lost disputes and publish before/after results."
+    },
+    {
+      "risk": "Sensitive data",
+      "answer": "Never touch card data, to avoid PCI scope."
+    }
+  ],
+  "questions": [
+    "How many disputes do you get per month, and what is your win rate?",
+    "Who writes the responses, and how long does each take?",
+    "Have you tried Chargeflow or similar, and why or why not?",
+    "Do you prefer a percentage fee or a flat fee?",
+    "Which dispute reasons hurt you most?"
+  ],
+  "numbers": {
+    "cashMin": 450,
+    "cashMax": 700,
+    "mvpWeeksMin": 7,
+    "mvpWeeksMax": 8,
+    "priceLabel": "$29–149 / month",
+    "competition": "Crowded on Shopify; WooCommerce flat-fee gap",
+    "competitionLevel": "high",
+    "whoSells": "Victor (WordPress.org, Stripe App Marketplace, SEO) → store owners"
+  },
+  "skills": [
+    "coding",
+    "integrations",
+    "e-commerce",
+    "security",
+    "marketing"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 8,
+    "willingnessToPay": 7,
+    "lowCompetition": 4,
+    "easyToBuild": 6,
+    "easyToSell": 6,
+    "skillFit": 7,
+    "globalPotential": 8,
+    "excitement": 6
+  },
+  "notes": "",
+  "interviews": [],
+  "rank": 17,
+  "batch": "Top 50 research (Nov 2026)"
+}

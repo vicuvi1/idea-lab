@@ -1,0 +1,293 @@
+{
+  "id": "r-tokenguard",
+  "title": "TokenGuard: AI cost per customer and spending caps for small SaaS companies",
+  "color": "#9085e9",
+  "industry": "Developer tools / AI",
+  "status": "idea",
+  "source": "Top 25 SaaS ideas for Victor (research report, Nov 2026)",
+  "tags": [
+    "Developer tool",
+    "Fits Victor's AI skills",
+    "Global market"
+  ],
+  "summary": "Shows small SaaS companies which customers and features lose them money on AI API costs, and stops runaway usage with per-customer spending caps.",
+  "priceLabel": "Free–$99 / month",
+  "hook": "\"One customer used our AI feature so much that he cost us more than he paid, and we only found out from the bill.\"",
+  "story": "**Priya is CTO of a 6-person SaaS startup** that added an AI writing feature. The OpenAI bill grows every month, but she cannot see **which customers or plans** cause it. Last month one free-trial user ran thousands of requests overnight.\n\nShe tried an open-source logging tool, but it shows tokens and traces, not business answers like **\"which plan loses money on AI?\"**. She wants per-customer costs next to Stripe revenue, and hard caps that switch heavy users to a cheaper model instead of failing.",
+  "whyNow": "Several small-team AI usage tools were bought by bigger firms in 2026, according to secondary sources: Langfuse by ClickHouse (January), Helicone put into maintenance mode after Mintlify bought it (March), and Portkey by Palo Alto Networks (May). That may leave small users looking for a simple alternative.",
+  "evidence": [
+    "More than 80% of companies say AI costs eroded gross margin by more than 6% [CIO.com]",
+    "Firms are using up annual AI budgets within months [McKinsey]",
+    "A Harness survey of 700 leaders says about 26% of AI spend is wasted [IT Brew]",
+    "2026 acquisitions of Langfuse, Helicone and Portkey reported by secondary blogs [DevelopersDigest / FutureAGI]",
+    "These surveys mostly describe larger companies [Top 25 report]"
+  ],
+  "sources": [
+    {
+      "title": "DevelopersDigest: LLM observability acquisitions 2026",
+      "url": "https://www.developersdigest.tech/blog/llm-observability-acquisitions-2026"
+    },
+    {
+      "title": "FutureAGI: Helicone alternatives 2026",
+      "url": "https://futureagi.com/blog/helicone-alternatives-2026/"
+    },
+    {
+      "title": "CIO.com: AI cost overruns",
+      "url": "https://www.cio.com/article/4064319/ai-cost-overruns-are-adding-up-with-major-implications-for-cios.html"
+    },
+    {
+      "title": "McKinsey: the cost of intelligence",
+      "url": "https://www.mckinsey.com/our-insights/the-cost-of-intelligence-how-cios-can-manage-ai-demand-at-scale"
+    },
+    {
+      "title": "IT Brew: more than a quarter of AI spend is wasted",
+      "url": "https://www.itbrew.com/stories/more-than-one-quarter-of-all-ai-spend-is-wasted-report"
+    },
+    {
+      "title": "Costbench: Helicone vs Langfuse",
+      "url": "https://www.costbench.com/compare/helicone-vs-langfuse/"
+    }
+  ],
+  "whyReal": [
+    {
+      "title": "AI costs hurt margins",
+      "text": "Most companies in one survey say AI costs cut gross margin by more than 6%."
+    },
+    {
+      "title": "Business answers are missing",
+      "text": "Existing tools show tokens and traces, not \"which customer or plan loses money\"."
+    },
+    {
+      "title": "Small-team tools were bought",
+      "text": "Langfuse, Helicone and Portkey changed owners in 2026 (secondary sources), which may push small users to look for alternatives."
+    },
+    {
+      "title": "Perfect fit for Victor",
+      "text": "A developer tool built by a developer, with AI and security skills, sold through developer communities."
+    }
+  ],
+  "whoPays": [
+    {
+      "label": "Customer",
+      "text": "Founders and CTOs of 2–30 person SaaS companies with AI features, and AI agencies building chatbots for clients."
+    },
+    {
+      "label": "Buyer",
+      "text": "The founder or CTO."
+    },
+    {
+      "label": "Start market",
+      "text": "Global, through Hacker News, Indie Hackers and r/SaaS."
+    }
+  ],
+  "solution": [
+    {
+      "title": "Drop-in proxy",
+      "text": "an OpenAI-compatible proxy and SDK wrapper tags each call with customer and feature."
+    },
+    {
+      "title": "Live prices",
+      "text": "a live price table per model turns tokens into money."
+    },
+    {
+      "title": "Margin per customer",
+      "text": "a dashboard combines AI cost with Stripe revenue per customer."
+    },
+    {
+      "title": "Caps",
+      "text": "budget caps return a graceful error or switch to a cheaper model."
+    },
+    {
+      "title": "Alerts",
+      "text": "Slack and email alerts, plus CSV export."
+    }
+  ],
+  "mvp": {
+    "must": [
+      "OpenAI-compatible proxy and SDK wrapper with customer and feature tags",
+      "Live price table per model",
+      "Margin-per-customer dashboard pulling Stripe revenue",
+      "Budget caps with graceful error or cheaper-model fallback",
+      "Slack and email alerts",
+      "CSV export"
+    ],
+    "later": [
+      "Automatic overage billing through Stripe",
+      "Logging-only mode (no proxy in the request path)",
+      "Anthropic, Gemini and OpenRouter native support",
+      "Per-plan profitability reports",
+      "Self-host option"
+    ]
+  },
+  "techStack": [
+    "Edge proxy (Cloudflare Workers or Node.js)",
+    "TypeScript and Python SDK wrappers",
+    "ClickHouse or PostgreSQL for usage events",
+    "Stripe API",
+    "Next.js dashboard"
+  ],
+  "timeline": [
+    {
+      "when": "Week 0–2",
+      "what": "**Validate, no code.** Publish a landing page and a \"migrate from Helicone\" guide; post to Hacker News, r/SaaS and Indie Hackers. Target 100 waitlist sign-ups and 10 calls. Ask 3 founders to share their AI bill and Stripe export for a free hand-made \"AI margin report\"."
+    },
+    {
+      "when": "Week 3–5",
+      "what": "Victor builds the proxy, SDK wrapper, price table and usage storage."
+    },
+    {
+      "when": "Week 6–7",
+      "what": "Stripe margin dashboard, caps, alerts."
+    },
+    {
+      "when": "Week 8",
+      "what": "Show HN launch; onboard waitlist; free tier live."
+    }
+  ],
+  "costs": [
+    {
+      "item": "Domain",
+      "note": ".com or .io",
+      "cost": "€15–40 / year"
+    },
+    {
+      "item": "Proxy + database hosting",
+      "note": "Edge workers + managed database",
+      "cost": "€10–40 / month"
+    },
+    {
+      "item": "Monitoring / uptime",
+      "note": "The proxy sits in the request path",
+      "cost": "€0–10 / month"
+    },
+    {
+      "item": "Email sending",
+      "note": "Resend / Postmark free or low tiers",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Landing page",
+      "note": "No-code builder or built by us",
+      "cost": "€0–15 / month"
+    },
+    {
+      "item": "Stripe",
+      "note": "Only a % of payments",
+      "cost": "~3%"
+    },
+    {
+      "item": "Claude Code / AI coding tools",
+      "note": "Victor builds faster with AI (subscription)",
+      "cost": "€100–150 / month"
+    }
+  ],
+  "costTotal3Months": "≈ €450–700 (report estimate €150–250 for hosting, AI and validation, plus €300–450 for AI coding tools)",
+  "pricing": [
+    {
+      "name": "Free",
+      "description": "Up to $50 of tracked AI spend"
+    },
+    {
+      "name": "Starter: $29/mo",
+      "description": "Up to $2k tracked AI spend"
+    },
+    {
+      "name": "Growth: $99/mo",
+      "description": "Up to $20k tracked, then 1% of spend above that"
+    }
+  ],
+  "calculator": {
+    "customers": {
+      "min": 1,
+      "max": 500,
+      "value": 30,
+      "label": "Paying customers"
+    },
+    "price": {
+      "min": 29,
+      "max": 199,
+      "value": 59,
+      "label": "Average price per month ($)"
+    },
+    "multiplier": null
+  },
+  "competitors": [
+    {
+      "name": "Langfuse",
+      "what": "Open-source LLM observability (self-hostable), bought by ClickHouse (secondary source)",
+      "gap": "Engineering traces, not business margins"
+    },
+    {
+      "name": "Helicone, Portkey",
+      "what": "AI gateways/observability with free tiers of about 10,000 requests or logs a month",
+      "gap": "Changed owners in 2026 (secondary sources)"
+    },
+    {
+      "name": "LiteLLM, OpenRouter, Cloudflare and Vercel AI gateways",
+      "what": "Free or cheap AI routing",
+      "gap": "No margin per customer or Stripe link"
+    },
+    {
+      "name": "Us",
+      "what": "Cost per customer + Stripe revenue + hard caps",
+      "gap": "Answers \"which customer loses us money?\"",
+      "isUs": true
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Strong free alternatives",
+      "answer": "Focus on business answers (margin per customer) that free tools lack."
+    },
+    {
+      "risk": "AI gateways add the same feature",
+      "answer": "Stay neutral across gateways; offer logging-only mode."
+    },
+    {
+      "risk": "Outages in the request path hurt customers",
+      "answer": "Fail-open design and edge hosting; logging-only option."
+    },
+    {
+      "risk": "Developer-led sale Jonatan cannot run",
+      "answer": "Victor drives distribution through content and developer communities."
+    }
+  ],
+  "questions": [
+    "What is your monthly AI API spend, and how has it changed?",
+    "Do you know your most expensive customer by AI cost?",
+    "Have you ever been surprised by an AI bill?",
+    "What do you use today (Langfuse, Helicone, a spreadsheet)?",
+    "Would you route traffic through a proxy, or only accept logging after the fact?"
+  ],
+  "numbers": {
+    "cashMin": 450,
+    "cashMax": 700,
+    "mvpWeeksMin": 6,
+    "mvpWeeksMax": 8,
+    "priceLabel": "Free–$99 / month",
+    "competition": "Free/open-source tools dominate",
+    "competitionLevel": "high",
+    "whoSells": "Victor → SaaS founders (Hacker News, Indie Hackers, content)"
+  },
+  "skills": [
+    "coding",
+    "ai",
+    "integrations",
+    "marketing"
+  ],
+  "recurring": true,
+  "scores": {
+    "pain": 7,
+    "willingnessToPay": 6,
+    "lowCompetition": 4,
+    "easyToBuild": 6,
+    "easyToSell": 3,
+    "skillFit": 8,
+    "globalPotential": 9,
+    "excitement": 6
+  },
+  "notes": "",
+  "interviews": [],
+  "rank": 23,
+  "batch": "Top 50 research (Nov 2026)"
+}
