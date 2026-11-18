@@ -4,6 +4,7 @@ import { downloadFile, storageLocation } from '../lib/storage'
 import type { AppState, Idea } from '../types'
 import { CRITERIA } from '../lib/criteria'
 import { UpdatePanel } from '../components/UpdatePanel'
+import { SharePanel } from '../components/SharePanel'
 
 function ideaToMarkdown(i: Idea) {
   const L: string[] = [`## ${i.title}`, '', `*${i.industry} · ${i.status} · ${i.priceLabel}*`, '', i.summary, '']
@@ -37,6 +38,7 @@ export default function Settings() {
     <>
       <div className="page-head"><div><h1>Settings & Backup</h1><p className="sub">Your data is stored only on this computer.</p></div></div>
       <div className="grid g2">
+        <SharePanel />
         <div className="card stack">
           <div className="card-title">Where your data lives</div>
           <p><strong>{storageLocation()}</strong></p>

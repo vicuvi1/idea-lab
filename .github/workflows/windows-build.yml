@@ -85,8 +85,12 @@ jobs:
           releaseBody: |
             ${{ github.event.head_commit.message || 'Manual build' }}
 
-            **New install:** download `Idea.Lab_${{ env.VERSION }}_x64-setup.exe` below and run it.
+            **Install on any Windows PC:** download **IdeaLab-Setup.exe** below and run it (adds a desktop icon).
+            **No install:** download **IdeaLab-Portable-Windows.zip**, unzip, double-click `Idea Lab.exe`.
             **Already installed:** open Idea Lab and click "Update" — it updates itself.
+
+            Permanent link to share (always the newest version):
+            https://github.com/vicuvi1/idea-lab-releases/releases/latest/download/IdeaLab-Setup.exe
           releaseDraft: false
           prerelease: false
           includeUpdaterJson: true
@@ -100,6 +104,7 @@ jobs:
           echo "::warning::Signed build failed — publishing an UNSIGNED installer (auto-update won't see it). Check the TAURI_SIGNING_PRIVATE_KEY secret."
           npx tauri build --config '{"bundle":{"createUpdaterArtifacts":false}}'
       - name: Publish fallback installer
+        id: fallback
         if: steps.signed.outcome == 'failure'
         shell: bash
         env:
@@ -109,10 +114,29 @@ jobs:
             --notes "Installer only (update signing failed for this build — install manually)." \
             src-tauri/target/release/bundle/nsis/*.exe
 
+      # Files with fixed names, so one permanent link always gives the newest version:
+      #   .../releases/latest/download/IdeaLab-Setup.exe
+      #   .../releases/latest/download/IdeaLab-Portable-Windows.zip
+      - name: Add easy-to-share downloads
+        if: steps.signed.outcome == 'success' || steps.fallback.outcome == 'success'
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.RELEASES_TOKEN }}
+        run: |
+          mkdir -p share/portable
+          cp src-tauri/target/release/bundle/nsis/*-setup.exe share/IdeaLab-Setup.exe
+          cp src-tauri/target/release/idea-lab.exe "share/portable/Idea Lab.exe"
+          printf 'Idea Lab %s (portable)\r\n\r\nDouble-click "Idea Lab.exe" to start. No installation needed.\r\nNeeds Windows 10 or 11 (Microsoft Edge WebView2, already built into Windows).\r\nYour data is saved in %%APPDATA%%\\com.idealab.app\r\n' "$VERSION" > share/portable/README.txt
+          (cd share/portable && 7z a -tzip ../IdeaLab-Portable-Windows.zip . > /dev/null)
+          gh release upload "v$VERSION" --repo vicuvi1/idea-lab-releases --clobber share/IdeaLab-Setup.exe share/IdeaLab-Portable-Windows.zip
+
       - name: Keep installers as build artifact
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: idea-lab-windows-${{ env.VERSION }}
+          if-no-files-found: ignore
           path: |
             src-tauri/target/release/bundle/nsis/*.exe
             src-tauri/target/release/bundle/msi/*.msi
+            src-tauri/target/release/idea-lab.exe

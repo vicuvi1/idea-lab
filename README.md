@@ -33,12 +33,21 @@ Your browser opens at http://localhost:5173. On Windows you can also just double
 
 ## Run it as a desktop app (Windows)
 
-**Install:** download the latest `Idea.Lab_x.y.z_x64-setup.exe` from
-**https://github.com/vicuvi1/idea-lab-releases/releases/latest** and run it. The installer adds a desktop and Start-menu icon.
+**Share or install on any PC with one permanent link** (always the newest version):
+**https://github.com/vicuvi1/idea-lab-releases/releases/latest/download/IdeaLab-Setup.exe**
+
+- **Installer** (`IdeaLab-Setup.exe`): adds a desktop and Start-menu icon, and updates itself.
+- **Portable, no install:** [`IdeaLab-Portable-Windows.zip`](https://github.com/vicuvi1/idea-lab-releases/releases/latest/download/IdeaLab-Portable-Windows.zip). Unzip it (a USB stick works) and double-click `Idea Lab.exe`.
+- **Move your data:** Settings → *Download backup*, then *Load backup* on the other PC.
+- If Windows shows "Windows protected your PC": click **More info → Run anyway** (the app isn't code-signed).
+
+The same link and steps are in the app under **Settings → Install on another PC**.
 
 **Updates:** the app checks for a new version at start-up. Click **Update** in the sidebar (or **Settings → App updates**) and it downloads, installs and restarts itself. Your data is kept.
 
-**From source:** install [Rust](https://rustup.rs) (and the "Desktop development with C++" tools it asks for), then run `npm run desktop`, or double-click **`start-desktop.bat`**.
+**From source:** install [Rust](https://rustup.rs), then run `npm run desktop`, or double-click **`start-desktop.bat`**.
+
+**Watch a build:** https://github.com/vicuvi1/idea-lab/actions. Each push to `main` builds a new version in about 12 minutes.
 
 ### How releases work
 
